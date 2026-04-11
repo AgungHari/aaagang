@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 import { Users, Trophy, Zap, Heart } from "lucide-react";
 import { getClanData } from "@/lib/coc";
 
@@ -58,43 +59,57 @@ export default async function MembersPage() {
         {/* Member Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {members.map((m: any, i: number) => (
-            <div key={m.tag} className="p-6 bg-zinc-900/20 border border-zinc-800/50 rounded-[2rem] hover:border-amber-500/30 transition-all group relative overflow-hidden">
-              <div className="absolute -right-4 -top-4 w-24 h-24 bg-amber-500/5 blur-3xl rounded-full group-hover:bg-amber-500/10 transition-colors"></div>
-              
-              <div className="flex justify-between items-start mb-6 relative z-10">
-                <div className="flex items-center gap-4">
-                  <span className="text-2xl font-black italic text-zinc-800 group-hover:text-amber-500/20 transition-colors">
-                    {String(i + 1).padStart(2, '0')}
-                  </span>
-                  <div className="flex items-center gap-3">
-                    {m.leagueTier?.iconUrls?.small && (
-                      <img 
-                        src={m.leagueTier.iconUrls.small} 
-                        alt={m.leagueTier.name} 
-                        className="w-10 h-10 object-contain drop-shadow-[0_0_8px_rgba(245,158,11,0.3)] group-hover:scale-110 transition-transform" 
-                      />
-                    )}
-                    <div>
-                      <div className="font-black uppercase italic text-lg tracking-tight leading-none mb-1">
-                        {m.name}
-                      </div>
-                      <div className="text-[9px] text-zinc-500 font-bold uppercase tracking-widest flex flex-col">
-                        <span>
-                          {m.role === 'admin' ? 'Elder' : m.role === 'leader' ? 'Leader' : m.role === 'coLeader' ? 'Co-Leader' : 'Member'} • TH {m.townHallLevel}
-                        </span>
-                        <span className="text-amber-500/60 text-[7px] mt-0.5">{m.league?.name || "Unranked"}</span>
+            <Link 
+              href={`/members/${encodeURIComponent(m.tag)}`} 
+              key={m.tag} 
+              className="block group active:scale-[0.98] transition-all"
+            >
+              <div className="p-6 bg-zinc-900/20 border border-zinc-800/50 rounded-[2rem] hover:border-amber-500/30 transition-all group relative overflow-hidden h-full">
+                <div className="absolute -right-4 -top-4 w-24 h-24 bg-amber-500/5 blur-3xl rounded-full group-hover:bg-amber-500/10 transition-colors"></div>
+                
+                <div className="flex justify-between items-start mb-6 relative z-10">
+                  <div className="flex items-center gap-4">
+                    <span className="text-2xl font-black italic text-zinc-800 group-hover:text-amber-500/20 transition-colors">
+                      {String(i + 1).padStart(2, '0')}
+                    </span>
+                    <div className="flex items-center gap-3">
+                      {m.leagueTier?.iconUrls?.small && (
+                        <img 
+                          src={m.leagueTier.iconUrls.small} 
+                          alt={m.leagueTier.name} 
+                          className="w-10 h-10 object-contain drop-shadow-[0_0_8px_rgba(245,158,11,0.3)] group-hover:scale-110 transition-transform" 
+                        />
+                      )}
+                      <div>
+                        <div className="font-black uppercase italic text-lg tracking-tight leading-none mb-1 group-hover:text-amber-500 transition-colors">
+                          {m.name}
+                        </div>
+                        <div className="text-[9px] text-zinc-500 font-bold uppercase tracking-widest flex flex-col gap-0.5">
+                          <span className="text-zinc-600 font-mono tracking-normal text-[8px] bg-zinc-800/50 w-fit px-1 rounded">
+                            {m.tag}
+                          </span>
+                          <span>
+                            {m.role === 'admin' ? 'Elder' : m.role === 'leader' ? 'Leader' : m.role === 'coLeader' ? 'Co-Leader' : 'Member'} • TH {m.townHallLevel}
+                          </span>
+                          <span className="text-amber-500/60 text-[7px] mt-0.5">{m.league?.name || "Unranked"}</span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div className="grid grid-cols-3 gap-2 border-t border-zinc-800/50 pt-4 relative z-10">
-                <StatMini label="Trophies" value={m.trophies} icon={<Trophy size={10}/>} color="text-amber-500" />
-                <StatMini label="Donated" value={m.donations} icon={<Heart size={10}/>} color="text-red-500" />
-                <StatMini label="Received" value={m.donationsReceived} icon={<Zap size={10}/>} color="text-blue-500" />
+                <div className="grid grid-cols-3 gap-2 border-t border-zinc-800/50 pt-4 relative z-10">
+                  <StatMini label="Trophies" value={m.trophies} icon={<Trophy size={10}/>} color="text-amber-500" />
+                  <StatMini label="Donated" value={m.donations} icon={<Heart size={10}/>} color="text-red-500" />
+                  <StatMini label="Received" value={m.donationsReceived} icon={<Zap size={10}/>} color="text-blue-500" />
+                </div>
+                
+                {/* Indikator Klik */}
+                <div className="absolute bottom-2 right-6 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span className="text-[7px] font-black italic text-amber-500 uppercase tracking-widest">Full Profile →</span>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>
