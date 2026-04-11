@@ -116,7 +116,6 @@ export default async function MembersPage() {
             <FooterStat label="Clan Level" value={clan.clanLevel} icon={<Medal size={14} className="text-amber-500/50" />} />
             <FooterStat label="Strategic Assets" value={`${clan.members}/50`} icon={<Users size={14} className="text-amber-500/50" />} />
             <FooterStat label="Battle Wins" value={clan.warWins} icon={<Sword size={14} className="text-amber-500/50" />} />
-            <FooterStat label="Win Streak" value={clan.warWinStreak} icon={<Flame size={14} className="text-amber-500/50" />} />
           </div>
 
           <div className="flex flex-col md:flex-row justify-between items-center border-t border-zinc-800/50 pt-10 gap-6">
