@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ConsoleLogger from "@/components/ConsoleLogger";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -13,6 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://3agang.pro"),
   title: {
     default: "AAA GANG - Clash Of Clans",
     template: "%s | AAA GANG" 
@@ -52,7 +54,10 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <ConsoleLogger />
+        {children}
+      </body>
     </html>
   );
 }

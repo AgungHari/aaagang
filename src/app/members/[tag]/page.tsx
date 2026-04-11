@@ -127,8 +127,13 @@ export default async function MemberDetailPage({ params }: { params: Promise<{ t
             <img src={leagueIcon} alt="League" className="w-32 h-32 md:w-48 md:h-48 object-contain relative z-10 drop-shadow-[0_0_30px_rgba(245,158,11,0.3)]" />
           </div>
           <div className="flex-1 text-center md:text-left">
-            <div className="inline-block px-3 py-1 rounded-full border border-amber-500/20 bg-amber-500/5 text-amber-500 text-[10px] font-black uppercase tracking-[0.3em] mb-4">
-              Town Hall {player.townHallLevel}
+            <div className="flex flex-wrap items-center gap-3 mb-4 justify-center md:justify-start">
+              <span className="inline-flex items-center px-3 py-1 rounded-full border border-amber-500/20 bg-amber-500/5 text-amber-500 text-[10px] font-black uppercase tracking-[0.3em]">
+                Town Hall {player.townHallLevel}
+              </span>
+              <span className="inline-flex items-center px-3 py-1 rounded-full border border-zinc-800/60 bg-zinc-900/80 text-[10px] font-black uppercase tracking-[0.3em] text-zinc-300">
+                {player.leagueTier?.name || player.league?.name || "UNRANKED"}
+              </span>
             </div>
             <h1 className="text-6xl md:text-8xl font-black italic uppercase tracking-tighter leading-[0.8] mb-4">{player.name}</h1>
             <div className="text-zinc-600 font-mono text-xs bg-zinc-900 px-2 py-1 rounded border border-zinc-800 inline-block">{player.tag}</div>

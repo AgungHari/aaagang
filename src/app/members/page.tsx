@@ -91,7 +91,7 @@ export default async function MembersPage() {
                           <span>
                             {m.role === 'admin' ? 'Elder' : m.role === 'leader' ? 'Leader' : m.role === 'coLeader' ? 'Co-Leader' : 'Member'} • TH {m.townHallLevel}
                           </span>
-                          <span className="text-amber-500/60 text-[7px] mt-0.5">{m.league?.name || "Unranked"}</span>
+                          <span className="text-amber-500/60 text-[7px] mt-0.5">{m.leagueTier?.name || "Unranked"}</span>
                         </div>
                       </div>
                     </div>
