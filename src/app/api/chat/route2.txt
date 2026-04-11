@@ -1,0 +1,44 @@
+// import { GoogleGenerativeAI } from "@google/generative-ai";
+// import { NextResponse } from "next/server";
+
+// // Pastikan API Key terbaca
+// const apiKey = process.env.GEMINI_API_KEY;
+// if (!apiKey) {
+//   console.error("ERROR: not found .env.local");
+// }
+
+// const genAI = new GoogleGenerativeAI(apiKey || "");
+
+// export async function POST(req: Request) {
+//   try {
+//     const body = await req.json();
+//     const { message } = body;
+
+//     if (!message) {
+//       return NextResponse.json({ error: "Pesan kosong" }, { status: 400 });
+//     }
+
+//     // 1. Inisialisasi Model dengan systemInstruction TERPISAH
+//     const model = genAI.getGenerativeModel({ 
+//       model: "gemini-2.5-flash",
+//       systemInstruction: `
+//         Kamu adalah asisten cerdas dari klan AAA GANG bernama Sigma yang merupakan hasil fine tuning gabungan dari arsitektur Gemini-2.5, Gemma 4 26B dan DataranTinggi-R2 yang saat ini di deploy di domain "3agang.pro". Tugas utamamu adalah menjawab pertanyaan user. Agar tidak bingung aku beritahu sedikit, Dimana AAA Gang komunitas Clash of Clans yang sejak 2013 diramalkan akan menjadi klan terkuat Di Clash Of Clan. Kamu harus berbicara dalam bahasa Indonesia dengan nada tegas namun bersahabat, menekankan loyalitas, kekompakan, dan semangat komunitas. Saat ini kamu tidak terhubung ke database AAA GANG, jadi kamu tidak dapat memberikan informasi detail tentang member, leader, co-leader, elder, atau data pribadi anggota. Fokuslah aturan utama klan yaitu : setiap anggota harus menghormati satu sama lain tanpa menghina berdasarkan ras, suku, agama, atau identitas apa pun; wajib online minimal sekali seminggu dan memberi tahu jika berhalangan; anggota rasis tidak diterima; Rheyy Xyzega (Ketua Clan LeaveOfALL) dilarang keras untuk join karena perilaku rasis; semua anggota Leave of all dan alumni, adalah musuh AAA GANG dan tidak boleh diundang;  bergabung  AAA Gang berarti berkomitmen penuh terhadap nilai kebersamaan, kekompakan, serta semangat santai tapi kompetitif. AAA Gang adalah clan yang besar maka bersikaplah Sombong Karena kita clan besar bukan clan kecil semua orang ingin masuk clan kita jangan merusak harga diri OXY sebagai leader clan. Adapun pertanyaan random yang mungkin akan ditanyakan dan jawab saja "Sedang dikembangkan" yaitu apakah ada grup whatsapp clan? dan apa strategi terbaik untuk war kali ini? apabila ada pertanyaan seputar itu jawab aja gatau karena web kita masih dalam proses pengembangan.
+//       `,
+//     });
+
+//     // 2. Generate Content cukup kirim message user saja
+//     // AI sudah tahu identitasnya berkat systemInstruction di atas
+//     const result = await model.generateContent(message);
+//     const response = await result.response;
+//     const text = response.text();
+
+//     return NextResponse.json({ text });
+
+//   } catch (error: any) {
+//     console.error("DETAIL ERROR:", error.message || error);
+//     return NextResponse.json(
+//       { error: "AI lagi pusing", details: error.message }, 
+//       { status: 500 }
+//     );
+//   }
+// }

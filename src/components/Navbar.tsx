@@ -13,6 +13,7 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
     { name: "HOME", href: "/" },
     { name: "MEMBERS", href: "/members" },
     { name: "TENTANG KAMI", href: "/tentang" },
+    { name: "LET'S TALK", href: "/kontak" },
     // Tambah rute baru di sini nanti
   ];
 
