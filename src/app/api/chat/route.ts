@@ -11,8 +11,27 @@ export async function POST(req: Request) {
     const { message } = await req.json();
 
     if (!message) {
-      return NextResponse.json({ error: "Pesan kosong rek" }, { status: 400 });
+      return NextResponse.json({ error: "Pesan kosong bang" }, { status: 400 });
     }
+
+    const gameContext = `
+    Kamus Game Clash of Clans:
+    - Setiap pemain clash of clans memiliki TH, Troops, Heroes, Experience Level, Defense, League, Donasi, Roles
+    - Clan adalah tempat berkumpulnya pemain dengan tujuan yang sama, biasanya untuk ikut Clan War dan berbagi donasi.
+    - Maksimal anggota clan adalah 50 orang.
+    - TH adalah singkatan dari Town Hall (Level pusat desa).
+    - Troops adalah pasukan yang digunakan untuk menyerang atau bertahan seperti Barbarian, Archer, Wizard, dll.
+    - Heroes adalah pahlawan khusus seperti Barbarian King, Archer Queen, Grand Warden yang punya kemampuan unik.
+    - Experience Level adalah level keseluruhan pemain yang meningkat seiring dengan aktivitasnya di game.
+    - Defense adalah struktur pertahanan seperti cannon, archer tower, dll.
+    - League adalah sistem peringkat berdasarkan jumlah trophies (piala) yang dimiliki pemain piala reset setiap minggu.
+    - Donasi adalah jumlah pasukan yang telah didonasikan oleh seorang anggota kepada anggota lain yang melakukan permintaan bantuan / request dimana apabila donasinya semakin tinggi artinya semakin dermawan kepada member lain.
+    - Roles yang ada di setiap clan: Leader (Pemimpin), Co-Leader (Wakil), Elder (Sesepuh), Member (Anggota).
+    - Leader adalah pemimpin tertinggi yang memiliki kontrol penuh atas clan, termasuk mengangkat/demote co leader/elder/member, mengatur war, dll.
+    - Clan War adalah pertempuran antar klan. Dimana Klan dengan jumlah bintang terbanyak yang menang dan apabila bintang sama maka akan draw
+    - Urutan rank ranked league dari yang tertinggi ke rendah yaitu : legend, electro, dragon, titan, p.e.k.k.a, golem, witch, valkyrie, wizard, archer, barbarian, dan yang terkecil skeleton.
+    - Apabila player tidak join ranked league maka tidak akan memiliki rank / "unranked"
+    `;
 
     // 1. Ambil Data dari API Supercell (via Proxy RoyaleAPI)
     const cocRes = await fetch("https://cocproxy.royaleapi.dev/v1/clans/%23Q9YY02J9", {
@@ -59,10 +78,11 @@ export async function POST(req: Request) {
       messages: [
         {
           role: 'system',
-          content: `Kamu adalah Sigma, asisten cerdas klan AAA GANG. Kamu berada di Web 3agang.pro yang merupakan website resmi AAA GANG. Akan ada banyak orang yang bertanya bagaimana cara gabung ke clan AAA GANG cukup jawab dengan memasukan tag klan yaitu #Q9YY02J9 ke pencarian klan in game.
-          Gunakan data klan berikut untuk menjawab pertanyaan user secara akurat dan gaya bicara yang asik/sedikit sombong khas klan kuat. 
+          content: `Kamu adalah Sigma, asisten cerdas klan AAA GANG. Kamu berada di Web 3agang.pro yang merupakan website resmi AAA GANG. Akan ada banyak orang yang bertanya bagaimana cara gabung ke clan AAA GANG cukup jawab dengan memasukan tag klan yaitu #Q9YY02J9 ke pencarian klan in game clash of clans.
+          Gunakan data klan berikut untuk menjawab pertanyaan user secara akurat dan gaya bicara yang asik/sedikit sombong seperti seorang pemimpin klan. 
+          Konteks Game clash of clans: ${gameContext}
           Data klan saat ini: ${clanContext}
-          jika ada yang tanya tentang kamu bilang saja kamu dibuat menggunakan kombinasi Arsitektur GPT 5, AgungR2 dan Qwen3,6. 
+          Kamu bebas menggunakan data clan untuk menjawab pertanyaan user.
           `
           
         },
@@ -81,7 +101,7 @@ export async function POST(req: Request) {
   } catch (error: any) {
     console.error("🔴 SIGMA HF ERROR:", error.message);
     return NextResponse.json(
-      { error: "Sigma lagi ke bengkel rek, coba cek koneksi API CoC atau Space HF-mu." }, 
+      { error: "Sigma lagi ke bengkel bang, perlu tes jengat." }, 
       { status: 500 }
     );
   }
