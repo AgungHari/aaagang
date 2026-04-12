@@ -2,8 +2,8 @@ import OpenAI from 'openai';
 import { NextResponse } from 'next/server';
 
 const client = new OpenAI({
-  baseURL: 'https://openrouter.ai/api/v1',
-  apiKey: process.env.OPENROUTER_API_KEY,
+  baseURL: 'https://agunghari2-llm.hf.space/v1', 
+  apiKey: 'pake-apa-aja-bebas',
 });
 
 export async function POST(req: Request) {
@@ -11,36 +11,77 @@ export async function POST(req: Request) {
     const { message } = await req.json();
 
     if (!message) {
-      return NextResponse.json({ error: "Pesan kosong" }, { status: 400 });
+      return NextResponse.json({ error: "Pesan kosong rek" }, { status: 400 });
     }
 
-    // Panggil Nemotron dengan fitur reasoning
+    // 1. Ambil Data dari API Supercell (via Proxy RoyaleAPI)
+    const cocRes = await fetch("https://cocproxy.royaleapi.dev/v1/clans/%23Q9YY02J9", {
+      headers: {
+        "Authorization": `Bearer ${process.env.COC_API_KEY}` // Pake ENV biar aman, Hari!
+      }
+    });
+    
+    const rawClanData = await cocRes.json();
+
+    // 2. DATA PREPROCESSING (Filter biar Sigma gak mabuk token)
+    const clanBrief = {
+      name: rawClanData.name,
+      level: rawClanData.clanLevel,
+      points: rawClanData.clanPoints,
+      membersCount: rawClanData.members,
+      warRecord: `Win: ${rawClanData.warWins}, Loss: ${rawClanData.warLosses}, Streak: ${rawClanData.warWinStreak}`,
+      description: rawClanData.description
+    };
+
+    // Ambil top 10 member berdasarkan donasi/rank untuk efisiensi
+    const memberSummary = rawClanData.memberList
+      .slice(0, 15) // Ambil 15 besar saja sudah cukup mewakili klan
+      .map((m: any) => ({
+        n: m.name,      // Pakai key pendek (n, r, t) buat hemat token lebih ekstrim
+        r: m.role,
+        th: m.townHallLevel,
+        don: m.donations
+      }));
+
+    // 3. Gabungkan jadi Context String
+    const clanContext = `
+    INFO KLAN REAL-TIME:
+    Klan: ${clanBrief.name} (Lvl ${clanBrief.level})
+    Poin: ${clanBrief.points} | Member: ${clanBrief.membersCount}/50
+    War Record: ${clanBrief.warRecord}
+    Deskripsi: ${clanBrief.description}
+    Top Member List (Name|Role|TH|Donation): ${JSON.stringify(memberSummary)}
+    `;
+
+    // 4. Panggil Sigma dengan Context
     const apiResponse = await client.chat.completions.create({
-      model: 'nvidia/nemotron-3-super-120b-a12b:free',
+      model: 'model',
       messages: [
         {
           role: 'system',
-          content: "Kamu adalah asisten cerdas dari klan AAA GANG bernama Sigma yang merupakan hasil fine tuning arsitektur NVIDIA: Nemotron 3 Super yang saat ini di deploy di domain '3agang.pro' yang merupakan website resmi AAA Gang. Tugas utamamu adalah menjawab pertanyaan user. Agar tidak bingung aku beritahu sedikit, Dimana AAA Gang komunitas Clash of Clans yang sejak 2013 diramalkan akan menjadi klan terkuat Di Clash Of Clan. Kamu harus berbicara dalam bahasa Indonesia dengan nada tegas namun bersahabat, menekankan loyalitas, kekompakan, dan semangat komunitas. Saat ini kamu tidak terhubung ke database AAA GANG, jadi kamu tidak dapat memberikan informasi detail tentang member, leader, co-leader, elder, atau data pribadi anggota. Fokuslah aturan utama klan yaitu : setiap anggota harus menghormati satu sama lain tanpa menghina berdasarkan ras, suku, agama, atau identitas apa pun; wajib online minimal sekali seminggu dan memberi tahu jika berhalangan; anggota rasis tidak diterima; Rheyy Xyzega (Ketua Clan LeaveOfALL) dilarang keras untuk join karena perilaku rasis; semua anggota Leave of all dan alumni, adalah musuh AAA GANG dan tidak boleh diundang;  bergabung  AAA Gang berarti berkomitmen penuh terhadap nilai kebersamaan, kekompakan, serta semangat santai tapi kompetitif. AAA Gang adalah clan yang besar maka bersikaplah Sombong Karena kita clan besar bukan clan kecil semua orang ingin masuk clan kita jangan merusak harga diri OXY sebagai leader clan. Adapun pertanyaan random yang mungkin akan ditanyakan dan jawab saja 'Sedang dikembangkan' yaitu apakah ada grup whatsapp clan? dan apa strategi terbaik untuk war kali ini? apabila ada pertanyaan seputar itu jawab aja gatau karena web kita masih dalam proses pengembangan. Oiya kalau klan kita di hina oleh user, roasting balik user 10x lipat. Kurangi juga menggunakan emote karena emote tidak terlalu sigma."
+          content: `Kamu adalah Sigma, asisten cerdas klan AAA GANG. Kamu berada di Web 3agang.pro yang merupakan website resmi AAA GANG. Akan ada banyak orang yang bertanya bagaimana cara gabung ke clan AAA GANG cukup jawab dengan memasukan tag klan yaitu #Q9YY02J9 ke pencarian klan in game.
+          Gunakan data klan berikut untuk menjawab pertanyaan user secara akurat dan gaya bicara yang asik/sedikit sombong khas klan kuat. 
+          Data klan saat ini: ${clanContext}
+          jika ada yang tanya tentang kamu bilang saja kamu dibuat menggunakan kombinasi Arsitektur GPT 5, AgungR2 dan Qwen3,6. 
+          `
+          
         },
         {
           role: 'user',
           content: message,
         },
       ],
-      // @ts-ignore - reasoning adalah fitur spesifik OpenRouter/Nemotron
-      reasoning: { enabled: true }
+      max_tokens: 512,
+      temperature: 0.7, // Biar jawabannya lebih variatif
     });
 
     const response = apiResponse.choices[0].message;
-
     return NextResponse.json({ text: response.content });
 
   } catch (error: any) {
-    console.error("🔴 NEMOTRON ERROR:", error.message);
-    
-    // Fallback kalau Nemotron ikutan limit/down
+    console.error("🔴 SIGMA HF ERROR:", error.message);
     return NextResponse.json(
-      { error: "Sigma lagi ngadem Coba lagi bentar aja." }, 
+      { error: "Sigma lagi ke bengkel rek, coba cek koneksi API CoC atau Space HF-mu." }, 
       { status: 500 }
     );
   }
