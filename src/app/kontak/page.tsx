@@ -28,7 +28,7 @@ export default async function KontakPage() {
             AAA <span className="text-amber-500">INTELLIGENCE</span>
           </h1>
           <p className="mt-4 text-zinc-500 font-bold uppercase tracking-[0.2em] text-[10px]">
-            Tanya strategi, info klan, atau sekadar sapa asisten klan kami. (Sedang dalam pengembangan)
+            Tanya info klan, rules, tutorial atau sekadar sapa asisten klan kami.
           </p>
         </div>
 

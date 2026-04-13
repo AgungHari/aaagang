@@ -1,44 +1,108 @@
-// import { GoogleGenerativeAI } from "@google/generative-ai";
-// import { NextResponse } from "next/server";
+import OpenAI from 'openai';
+import { NextResponse } from 'next/server';
 
-// // Pastikan API Key terbaca
-// const apiKey = process.env.GEMINI_API_KEY;
-// if (!apiKey) {
-//   console.error("ERROR: not found .env.local");
-// }
+const client = new OpenAI({
+  baseURL: 'https://agunghari2-llm.hf.space/v1', 
+  apiKey: 'pake-apa-aja-bebas',
+});
 
-// const genAI = new GoogleGenerativeAI(apiKey || "");
+export async function POST(req: Request) {
+  try {
+    const { message } = await req.json();
 
-// export async function POST(req: Request) {
-//   try {
-//     const body = await req.json();
-//     const { message } = body;
+    if (!message) {
+      return NextResponse.json({ error: "Pesan kosong bang" }, { status: 400 });
+    }
 
-//     if (!message) {
-//       return NextResponse.json({ error: "Pesan kosong" }, { status: 400 });
-//     }
+    const gameContext = `
+    Kamus Game Clash of Clans:
+    - Setiap pemain clash of clans memiliki TH, Troops, Heroes, Experience Level, Defense, League, Donasi, Roles
+    - Clan adalah tempat berkumpulnya pemain dengan tujuan yang sama, biasanya untuk ikut Clan War dan berbagi donasi.
+    - Maksimal anggota clan adalah 50 orang.
+    - TH adalah singkatan dari Town Hall (Level pusat desa).
+    - Troops adalah pasukan yang digunakan untuk menyerang atau bertahan seperti Barbarian, Archer, Wizard, dll.
+    - Heroes adalah pahlawan khusus seperti Barbarian King, Archer Queen, Grand Warden yang punya kemampuan unik.
+    - Experience Level adalah level keseluruhan pemain yang meningkat seiring dengan aktivitasnya di game.
+    - Defense adalah struktur pertahanan seperti cannon, archer tower, dll.
+    - League adalah sistem peringkat berdasarkan jumlah trophies (piala) yang dimiliki pemain piala reset setiap minggu.
+    - Donasi adalah jumlah pasukan yang telah didonasikan oleh seorang anggota kepada anggota lain yang melakukan permintaan bantuan / request dimana apabila donasinya semakin tinggi artinya semakin dermawan kepada member lain.
+    - Roles yang ada di setiap clan: Leader (Pemimpin), Co-Leader (Wakil), Elder (Sesepuh), Member (Anggota).
+    - Leader adalah pemimpin tertinggi yang memiliki kontrol penuh atas clan, termasuk mengangkat/demote co leader/elder/member, mengatur war, dll.
+    - Clan War adalah pertempuran antar klan. Dimana Klan dengan jumlah bintang terbanyak yang menang dan apabila bintang sama maka akan draw
+    - Urutan rank ranked league dari yang tertinggi ke rendah yaitu : legend, electro, dragon, titan, p.e.k.k.a, golem, witch, valkyrie, wizard, archer, barbarian, dan yang terkecil skeleton.
+    - Apabila player tidak join ranked league maka tidak akan memiliki rank / "unranked"
+    `;
 
-//     // 1. Inisialisasi Model dengan systemInstruction TERPISAH
-//     const model = genAI.getGenerativeModel({ 
-//       model: "gemini-2.5-flash",
-//       systemInstruction: `
-//         Kamu adalah asisten cerdas dari klan AAA GANG bernama Sigma yang merupakan hasil fine tuning gabungan dari arsitektur Gemini-2.5, Gemma 4 26B dan DataranTinggi-R2 yang saat ini di deploy di domain "3agang.pro". Tugas utamamu adalah menjawab pertanyaan user. Agar tidak bingung aku beritahu sedikit, Dimana AAA Gang komunitas Clash of Clans yang sejak 2013 diramalkan akan menjadi klan terkuat Di Clash Of Clan. Kamu harus berbicara dalam bahasa Indonesia dengan nada tegas namun bersahabat, menekankan loyalitas, kekompakan, dan semangat komunitas. Saat ini kamu tidak terhubung ke database AAA GANG, jadi kamu tidak dapat memberikan informasi detail tentang member, leader, co-leader, elder, atau data pribadi anggota. Fokuslah aturan utama klan yaitu : setiap anggota harus menghormati satu sama lain tanpa menghina berdasarkan ras, suku, agama, atau identitas apa pun; wajib online minimal sekali seminggu dan memberi tahu jika berhalangan; anggota rasis tidak diterima; Rheyy Xyzega (Ketua Clan LeaveOfALL) dilarang keras untuk join karena perilaku rasis; semua anggota Leave of all dan alumni, adalah musuh AAA GANG dan tidak boleh diundang;  bergabung  AAA Gang berarti berkomitmen penuh terhadap nilai kebersamaan, kekompakan, serta semangat santai tapi kompetitif. AAA Gang adalah clan yang besar maka bersikaplah Sombong Karena kita clan besar bukan clan kecil semua orang ingin masuk clan kita jangan merusak harga diri OXY sebagai leader clan. Adapun pertanyaan random yang mungkin akan ditanyakan dan jawab saja "Sedang dikembangkan" yaitu apakah ada grup whatsapp clan? dan apa strategi terbaik untuk war kali ini? apabila ada pertanyaan seputar itu jawab aja gatau karena web kita masih dalam proses pengembangan.
-//       `,
-//     });
+    // 1. Ambil Data dari API Supercell (via Proxy RoyaleAPI)
+    const cocRes = await fetch("https://cocproxy.royaleapi.dev/v1/clans/%23Q9YY02J9", {
+      headers: {
+        "Authorization": `Bearer ${process.env.COC_API_KEY}` // Pake ENV biar aman, Hari!
+      }
+    });
+    
+    const rawClanData = await cocRes.json();
 
-//     // 2. Generate Content cukup kirim message user saja
-//     // AI sudah tahu identitasnya berkat systemInstruction di atas
-//     const result = await model.generateContent(message);
-//     const response = await result.response;
-//     const text = response.text();
+    // 2. DATA PREPROCESSING (Filter biar Sigma gak mabuk token)
+    const clanBrief = {
+      name: rawClanData.name,
+      level: rawClanData.clanLevel,
+      points: rawClanData.clanPoints,
+      membersCount: rawClanData.members,
+      warRecord: `Win: ${rawClanData.warWins}, Loss: ${rawClanData.warLosses}, Streak: ${rawClanData.warWinStreak}`,
+      description: rawClanData.description
+    };
 
-//     return NextResponse.json({ text });
+    // Ambil top 10 member berdasarkan donasi/rank untuk efisiensi
+    const memberSummary = rawClanData.memberList
+      .slice(0, 15) // Ambil 15 besar saja sudah cukup mewakili klan
+      .map((m: any) => ({
+        n: m.name,      // Pakai key pendek (n, r, t) buat hemat token lebih ekstrim
+        r: m.role,
+        th: m.townHallLevel,
+        don: m.donations
+      }));
 
-//   } catch (error: any) {
-//     console.error("DETAIL ERROR:", error.message || error);
-//     return NextResponse.json(
-//       { error: "AI lagi pusing", details: error.message }, 
-//       { status: 500 }
-//     );
-//   }
-// }
+    // 3. Gabungkan jadi Context String
+    const clanContext = `
+    INFO KLAN REAL-TIME:
+    Klan: ${clanBrief.name} (Lvl ${clanBrief.level})
+    Poin: ${clanBrief.points} | Member: ${clanBrief.membersCount}/50
+    War Record: ${clanBrief.warRecord}
+    Deskripsi: ${clanBrief.description}
+    Top Member List (Name|Role|TH|Donation): ${JSON.stringify(memberSummary)}
+    `;
+
+    // 4. Panggil Sigma dengan Context
+    const apiResponse = await client.chat.completions.create({
+      model: 'model',
+      messages: [
+        {
+          role: 'system',
+          content: `Kamu adalah Sigma, asisten cerdas klan AAA GANG. Kamu berada di Web 3agang.pro yang merupakan website resmi AAA GANG. Akan ada banyak orang yang bertanya bagaimana cara gabung ke clan AAA GANG cukup jawab dengan memasukan tag klan yaitu #Q9YY02J9 ke pencarian klan in game clash of clans.
+          Gunakan data klan berikut untuk menjawab pertanyaan user secara akurat dan gaya bicara yang asik/sedikit sombong seperti seorang pemimpin klan. 
+          Konteks Game clash of clans: ${gameContext}
+          Data klan saat ini: ${clanContext}
+          Kamu bebas menggunakan data clan untuk menjawab pertanyaan user.
+          `
+          
+        },
+        {
+          role: 'user',
+          content: message,
+        },
+      ],
+      max_tokens: 512,
+      temperature: 0.7, // Biar jawabannya lebih variatif
+    });
+
+    const response = apiResponse.choices[0].message;
+    return NextResponse.json({ text: response.content });
+
+  } catch (error: any) {
+    console.error("🔴 SIGMA HF ERROR:", error.message);
+    return NextResponse.json(
+      { error: "Sigma lagi ke bengkel bang, perlu tes jengat." }, 
+      { status: 500 }
+    );
+  }
+}
