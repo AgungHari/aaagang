@@ -38,7 +38,7 @@ export default async function MembersPage() {
     <main className="min-h-screen bg-[#050505] text-zinc-100 font-sans selection:bg-amber-500 selection:text-black">
       
       {/* 1. Navbar: Pakai komponen yang sama dengan Home */}
-      <Navbar clanName={clan.name} badge={clan.badgeUrls.small} />
+      <Navbar clanName={clan.name} badge="/badge_clan.webp" />
 
       <section className="max-w-7xl mx-auto px-6 pt-16">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">

@@ -10,7 +10,7 @@ export default async function AboutPage() {
 
   return (
     <main className="min-h-screen bg-[#050505] text-zinc-100 font-sans selection:bg-amber-500 selection:text-black">
-      <Navbar clanName={clan.name} badge={clan.badgeUrls.small} />
+      <Navbar clanName={clan.name} badge="/badge_clan.webp" />
 
       <section className="max-w-4xl mx-auto px-6 pt-24 pb-32">
         {/* Header Section */}

@@ -13,7 +13,39 @@ export default function ChatInterface() {
   const [messages, setMessages] = useState(initialMessages);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [placeholderIndex, setPlaceholderIndex] = useState(0);
+  const [showPlaceholder, setShowPlaceholder] = useState(true);
   const scrollRef = useRef<HTMLDivElement>(null);
+
+  const placeholderOptions = [
+    "Ask Sigma",
+    "Ada slot kosong ga di clan saat ini?",
+    "Apa rules clan ini?",
+    "Apa benefit jadi anggota clan ini?",
+    "Siapa leader clan ini?"
+  ];
+
+  useEffect(() => {
+    if (input.trim() || isLoading) {
+      setShowPlaceholder(false);
+      return;
+    }
+
+    setShowPlaceholder(true);
+    let timeout: ReturnType<typeof setTimeout>;
+    const interval = setInterval(() => {
+      setShowPlaceholder(false);
+      timeout = setTimeout(() => {
+        setPlaceholderIndex((prev) => (prev + 1) % placeholderOptions.length);
+        setShowPlaceholder(true);
+      }, 220);
+    }, 2800);
+
+    return () => {
+      clearInterval(interval);
+      clearTimeout(timeout);
+    };
+  }, [input, isLoading]);
 
   // Auto-scroll ke bawah tiap ada pesan baru
   useEffect(() => {
@@ -97,49 +129,54 @@ export default function ChatInterface() {
   };
 
   return (
-    <div className="bg-zinc-950/90 border border-zinc-800/60 rounded-[2rem] flex flex-col h-[min(88vh,740px)] max-h-[calc(100vh-3rem)] overflow-hidden backdrop-blur-xl shadow-[0_40px_90px_rgba(0,0,0,0.4)]">
+    <div className="bg-[#081014]/95 ring-1 ring-white/10 rounded-[2rem] flex flex-col h-[min(88vh,740px)] max-h-[calc(100vh-3rem)] overflow-hidden shadow-[0_35px_80px_rgba(0,0,0,0.35)]">
       {/* HEADER */}
-      <div className="flex items-center justify-between gap-3 px-5 py-4 border-b border-zinc-800/60 bg-zinc-950/95">
+      <div className="flex items-center justify-between gap-4 px-5 py-4 bg-zinc-950/95">
         <div>
-          <p className="text-[10px] uppercase tracking-[0.4em] text-amber-500 font-black">AAA GANG Chat</p>
-          <h2 className="text-base md:text-lg font-bold text-zinc-100">Sigma (Current Model : Ministral-14B)</h2>
+          <p className="text-[9px] uppercase tracking-[0.36em] text-zinc-400">AAA GANG Chat</p>
+          <h2 className="text-lg font-semibold text-zinc-200">Sigma • Ministral-14B</h2>
         </div>
         <button
           onClick={clearChat}
-          className="inline-flex items-center gap-2 rounded-full border border-zinc-800/60 bg-zinc-900/80 px-3 py-2 text-xs font-semibold text-zinc-300 hover:border-amber-400 hover:text-amber-300 transition-all"
+          className="inline-flex items-center gap-2 rounded-full px-3 py-2 text-[11px] font-semibold text-zinc-400 transition hover:text-white"
         >
-          <Trash2 size={16} /> Hapus
+          <Trash2 size={14} /> Clear
         </button>
       </div>
 
       {/* CHAT BODY */}
       <div
         ref={scrollRef}
-        className="flex-1 overflow-y-auto px-4 py-5 sm:px-6 sm:py-6 flex flex-col gap-4 scrollbar-hide"
+        className="flex-1 overflow-y-auto px-4 py-5 sm:px-6 space-y-4 hide-scrollbar"
       >
         {messages.map((msg, index) => (
-          <div key={index} className={`flex items-end gap-3 ${msg.role === "user" ? "justify-end" : "justify-start"}`}>
+          <div
+            key={index}
+            className={`flex items-end gap-3 ${msg.role === "user" ? "justify-end" : "justify-start"}`}
+          >
             {msg.role === "ai" && (
-              <div className="w-10 h-10 rounded-2xl flex items-center justify-center border border-amber-500/20 bg-amber-500/5 shadow-[0_0_18px_rgba(245,158,11,0.18)]">
-                <img src="/favicon.ico" alt="AAA GANG" className="w-7 h-7 object-contain" />
+              <div className="h-10 w-10 rounded-full border border-amber-400/15 bg-amber-500/10 flex items-center justify-center text-amber-300">
+                S
               </div>
             )}
-            <div className={`rounded-[1.75rem] px-5 py-4 text-sm leading-7 break-words ${
+
+            <div className={`max-w-[82%] rounded-[1.75rem] px-5 py-4 text-sm leading-7 break-words ${
               msg.role === "ai"
-                ? "bg-zinc-900 border border-amber-500/10 text-zinc-200"
-                : "bg-amber-500 text-zinc-950 font-semibold"
+                ? "bg-zinc-900/95 border border-white/10 text-zinc-100"
+                : "bg-amber-500/15 border border-amber-500/20 text-amber-100"
             }`}>
               {msg.role === "ai" ? (
-                <div className="prose prose-invert max-w-none prose-p:leading-relaxed prose-strong:text-amber-400 prose-strong:font-black">
+                <div className="prose prose-invert max-w-none prose-p:leading-relaxed prose-strong:text-amber-300 prose-strong:font-semibold">
                   <ReactMarkdown>{msg.text}</ReactMarkdown>
                 </div>
               ) : (
                 msg.text
               )}
             </div>
+
             {msg.role === "user" && (
-              <div className="w-10 h-10 rounded-2xl flex items-center justify-center border border-zinc-700 bg-zinc-900 text-zinc-300">
-                <User size={20} />
+              <div className="h-10 w-10 rounded-full border border-zinc-700/70 bg-zinc-900 text-zinc-300 flex items-center justify-center">
+                <User size={18} />
               </div>
             )}
           </div>
@@ -147,20 +184,29 @@ export default function ChatInterface() {
       </div>
 
       {/* INPUT FIELD */}
-      <div className="px-4 pb-4 pt-3 sm:px-6 sm:pb-6 bg-zinc-950/90 border-t border-zinc-800/60">
+      <div className="px-4 pb-4 pt-3 sm:px-6 bg-zinc-950/90">
         <div className="flex gap-3">
-          <input
-            type="text"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            onKeyDown={(e) => e.key === "Enter" && sendMessage()}
-            placeholder="Tulis pesanmu ke Sigma..."
-            className="flex-1 rounded-2xl border border-zinc-800 bg-zinc-900 px-4 py-3 text-sm text-white outline-none focus:border-amber-400"
-          />
+          <div className="relative flex-1">
+            <input
+              type="text"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              onKeyDown={(e) => e.key === "Enter" && sendMessage()}
+              placeholder=""
+              className="w-full rounded-full border border-zinc-800/70 bg-zinc-900/90 px-4 py-3 text-sm text-white outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-500/15 transition"
+            />
+            <div
+              className={`pointer-events-none absolute inset-y-0 left-4 flex items-center text-sm text-zinc-500 transition-opacity duration-300 ease-out ${
+                showPlaceholder ? "opacity-100" : "opacity-0"
+              }`}
+            >
+              {placeholderOptions[placeholderIndex]}
+            </div>
+          </div>
           <button
             onClick={sendMessage}
             disabled={isLoading}
-            className="h-12 w-12 flex items-center justify-center rounded-2xl bg-amber-500 text-black hover:bg-amber-400 disabled:opacity-40"
+            className="h-12 w-12 flex items-center justify-center rounded-full bg-amber-500 text-zinc-950 shadow-sm hover:bg-amber-400 disabled:opacity-40"
           >
             <Send size={18} />
           </button>

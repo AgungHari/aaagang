@@ -24,3 +24,22 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.hide-scrollbar {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+  scrollbar-color: transparent transparent !important;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.hide-scrollbar::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+.hide-scrollbar::-webkit-scrollbar-thumb {
+  background: transparent !important;
+}

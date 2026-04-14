@@ -112,7 +112,7 @@ export default async function MemberDetailPage({ params }: { params: Promise<{ t
 
   return (
     <main className="min-h-screen bg-[#050505] text-zinc-100 font-sans selection:bg-amber-500 selection:text-black">
-      <Navbar clanName={clan.name} badge={clan.badgeUrls.small} />
+      <Navbar clanName={clan.name} badge="/badge_clan.webp" />
 
       <section className="max-w-5xl mx-auto px-6 pt-24 pb-12">
         {/* Tombol Back */}
@@ -135,7 +135,7 @@ export default async function MemberDetailPage({ params }: { params: Promise<{ t
                 {player.leagueTier?.name || player.league?.name || "UNRANKED"}
               </span>
             </div>
-            <h1 className="text-6xl md:text-8xl font-black italic uppercase tracking-tighter leading-[0.8] mb-4">{player.name}</h1>
+            <h1 className="text-5xl md:text-8xl font-black italic uppercase tracking-tighter leading-[0.8] mb-4">{player.name}</h1>
             <div className="text-zinc-600 font-mono text-xs bg-zinc-900 px-2 py-1 rounded border border-zinc-800 inline-block">{player.tag}</div>
           </div>
         </div>

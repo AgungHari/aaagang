@@ -72,7 +72,7 @@ export default async function Home() {
     <main className="min-h-screen bg-[#050505] text-zinc-100 selection:bg-amber-500 selection:text-black overflow-x-hidden font-sans">
       
       {/* 1. Navbar Component */}
-      <Navbar clanName={clan.name} badge={clan.badgeUrls.small} />
+      <Navbar clanName={clan.name} badge="/badge_clan.webp" />
 
       <section className="relative flex flex-col items-center justify-center pt-20 pb-20 text-center px-4">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-amber-600/10 blur-[120px] rounded-full -z-10 animate-pulse"></div>

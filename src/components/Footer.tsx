@@ -8,7 +8,7 @@ export default function Footer({ clan }: FooterProps) {
   return (
     <footer className="mt-32 border-t border-zinc-900/50 bg-[#030303] relative overflow-hidden">
       <img 
-        src={clan.badgeUrls.medium} 
+        src="/badge_clan_medium.webp"
         alt="" 
         className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] opacity-[0.02] grayscale pointer-events-none" 
       />
@@ -20,7 +20,7 @@ export default function Footer({ clan }: FooterProps) {
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center border-t border-zinc-800/50 pt-10 gap-6">
           <div className="flex items-center gap-3">
-            <img src={clan.badgeUrls.small} alt="Badge" className="w-6 h-6 grayscale opacity-30" />
+            <img src="/badge_clan.webp" alt="Badge" className="w-6 h-6 grayscale opacity-30" />
             <div className="text-left">
               <div className="text-[10px] font-black tracking-[0.4em] text-zinc-500 uppercase italic leading-none">{clan.name}</div>
               <div className="text-[7px] text-zinc-700 font-bold uppercase tracking-widest mt-1">Clan Tag: {clan.tag}</div>
