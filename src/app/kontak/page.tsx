@@ -22,7 +22,7 @@ export default async function KontakPage() {
       <section className="max-w-5xl mx-auto px-6 pt-16 pb-20">
         <div className="mb-12">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-amber-500/20 bg-amber-500/5 text-amber-500 text-[10px] font-black uppercase tracking-[0.3em] mb-4">
-            <Zap size={12} /> Neural Network Active
+            <Zap size={12} /> Let's Talk
           </div>
           <h1 className="text-5xl md:text-8xl font-black tracking-tighter uppercase italic leading-[0.8]">
             AAA <span className="text-amber-500">INTELLIGENCE</span>

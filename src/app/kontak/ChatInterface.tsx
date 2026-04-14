@@ -81,19 +81,29 @@ export default function ChatInterface() {
     if (!input.trim() || isLoading) return;
 
     const userMsg = { role: "user", text: input };
-    setMessages((prev) => [...prev, userMsg]);
+    const newMessages = [...messages, userMsg];
+    
+    setMessages(newMessages);
     setInput("");
     setIsLoading(true);
-
-    // Tambahkan placeholder pesan AI kosong untuk diisi stream
     setMessages((prev) => [...prev, { role: "ai", text: "" }]);
 
     try {
+      const formattedHistory = newMessages.map(msg => ({
+        role: msg.role === "ai" ? "assistant" : "user",
+        content: msg.text
+      }));
+
       const response = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: input }),
+        body: JSON.stringify({ messages: formattedHistory }),
       });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || "Gagal nembak API");
+      }
 
       if (!response.body) throw new Error("Gak ada body stream");
 
@@ -133,8 +143,8 @@ export default function ChatInterface() {
       {/* HEADER */}
       <div className="flex items-center justify-between gap-4 px-5 py-4 bg-zinc-950/95">
         <div>
-          <p className="text-[9px] uppercase tracking-[0.36em] text-zinc-400">AAA GANG Chat</p>
-          <h2 className="text-lg font-semibold text-zinc-200">Sigma • Ministral-14B</h2>
+          <p className="text-[5px] uppercase tracking-[0.36em] text-zinc-600">We do not store your chat logs.</p>
+          <h2 className="text-lg font-semibold text-zinc-200">Sigma <span className="text-[9px] text-amber-500">Pro</span></h2>
         </div>
         <button
           onClick={clearChat}
@@ -156,7 +166,7 @@ export default function ChatInterface() {
           >
             {msg.role === "ai" && (
               <div className="h-10 w-10 rounded-full border border-amber-400/15 bg-amber-500/10 flex items-center justify-center text-amber-300">
-                S
+                Σ
               </div>
             )}
 
@@ -208,7 +218,7 @@ export default function ChatInterface() {
             disabled={isLoading}
             className="h-12 w-12 flex items-center justify-center rounded-full bg-amber-500 text-zinc-950 shadow-sm hover:bg-amber-400 disabled:opacity-40"
           >
-            <Send size={18} />
+            <Send size={19} />
           </button>
         </div>
       </div>

@@ -10,10 +10,10 @@ const client = new OpenAI({
 
 export async function POST(req: Request) {
   try {
-    const { messages } = await req.json();
+    const { message } = await req.json();
 
-    if (!messages || !Array.isArray(messages)) {
-      return new Response(JSON.stringify({ error: "Format chat salah bang" }), { status: 400 });
+    if (!message) {
+      return new Response(JSON.stringify({ error: "Pesan kosong bang" }), { status: 400 });
     }
 
     const gameContext = `
@@ -117,10 +117,10 @@ export async function POST(req: Request) {
           - Apabila ada yang bertanya Grup Whatsapp AAA Gang atau sosial media lainnya, bilang saat ini AAA Gang belum memiliki sosial media official hanya memiliki web 3agang.pro (selain dari itu bukan milik kami).
           `
         },
-        ...messages
+        { role: 'user', content: message },
       ],
       stream: true, // WAJIB biar jengat
-      temperature: 0.3, // Biar makin kreatif nge-roast orang
+      temperature: 0.5, // Biar makin kreatif nge-roast orang
       max_tokens: 2048,
     });
 
