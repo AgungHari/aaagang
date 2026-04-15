@@ -33,8 +33,8 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
               href={link.href}
               className={`transition-all border-b-2 uppercase pb-1 ${
                 pathname === link.href
-                  ? 'text-white border-amber-500 tracking-widest'
-                  : 'text-zinc-500 border-transparent hover:text-amber-500'
+                  ? 'text-white border-amber-500'
+                  : 'text-zinc-500 border-transparent hover:text-amber-500 hover:border-amber-500'
               }`}
             >
               {link.name}
