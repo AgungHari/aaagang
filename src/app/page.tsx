@@ -6,6 +6,8 @@ import {
 } from "lucide-react";
 import { getClanData, getCurrentWar } from "@/lib/coc";
 
+export const revalidate = 60;
+
 export default async function Home() {
   const [clan, war] = await Promise.all([getClanData(), getCurrentWar()]);
 
@@ -128,7 +130,10 @@ export default async function Home() {
         <div className={`p-10 border rounded-[2.5rem] flex items-center justify-between transition-all overflow-hidden relative group ${isWar ? 'bg-red-500/5 border-red-500/20' : 'bg-zinc-900/20 border-zinc-800/50'}`}>
           <Crosshair className={`absolute -right-4 -bottom-4 size-32 -rotate-12 opacity-10`} />
           <div className="relative z-10">
-            <div className="text-[10px] font-black uppercase tracking-[0.4em] text-zinc-500 mb-2">Live War Status</div>
+            <div className="text-[10px] font-black uppercase tracking-[0.4em] text-zinc-500 mb-1">
+              Live War Status
+            </div>
+            <div className="text-[7px] text-zinc-600 uppercase tracking-[0.4em] mb-4"> (Refreshes every 60 seconds for the latest overview)</div>
             <div className={`text-3xl font-black italic uppercase tracking-tighter ${isWar ? 'text-red-500 animate-pulse' : 'text-zinc-400'}`}>
               {isWar ? `VS ${war.opponent.name}` : "Resting / Neutral"}
             </div>
