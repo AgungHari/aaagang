@@ -1,4 +1,4 @@
-import { Medal, Users, Sword } from "lucide-react";
+import { Medal, Users, Sword, Coffee, GitFork } from "lucide-react"; // Tambahin Github disini
 
 interface FooterProps {
   clan: any;
@@ -18,7 +18,10 @@ export default function Footer({ clan }: FooterProps) {
           <FooterStat label="Strategic Assets" value={`${clan.members}/50`} icon={<Users size={14} className="text-amber-500/50" />} />
           <FooterStat label="Battle Wins" value={clan.warWins} icon={<Sword size={14} className="text-amber-500/50" />} />
         </div>
-        <div className="flex flex-col md:flex-row justify-between items-center border-t border-zinc-800/50 pt-10 gap-6">
+        
+        <div className="flex flex-col md:flex-row justify-between items-center border-t border-zinc-800/50 pt-10 gap-8">
+          
+          {/* Bagian Kiri: Clan Info Tetap Aman */}
           <div className="flex items-center gap-3">
             <img src="/badge_clan.webp" alt="Badge" className="w-6 h-6 grayscale opacity-30" />
             <div className="text-left">
@@ -26,9 +29,43 @@ export default function Footer({ clan }: FooterProps) {
               <div className="text-[7px] text-zinc-700 font-bold uppercase tracking-widest mt-1">Clan Tag: {clan.tag}</div>
             </div>
           </div>
-          <div className="text-[9px] text-zinc-700 font-bold tracking-[0.5em] uppercase text-center md:text-right">
-             EST. 2016 • ANAK ANAK ANJING (AAA) • INDONESIA
+
+          {/* Bagian Kanan: EST Info + Action Buttons Ditumpuk */}
+          <div className="flex flex-col items-center md:items-end gap-4 mt-4 md:mt-0">
+            <div className="text-[9px] text-zinc-700 font-bold tracking-[0.5em] uppercase text-center md:text-right">
+               EST. 2016 • ANAK ANAK ANJING (AAA) • INDONESIA
+            </div>
+            
+            {/* Grup Tombol */}
+            <div className="flex flex-row items-center gap-2">
+              {/* Tombol Ko-fi */}
+              <a 
+                href="https://ko-fi.com/oxy" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group flex items-center gap-2 px-3 py-1.5 border border-zinc-800/40 hover:border-[#29abe0]/40 hover:bg-[#29abe0]/5 rounded transition-all w-fit"
+              >
+                <Coffee size={10} className="text-zinc-600 group-hover:text-[#29abe0] transition-colors" />
+                <span className="text-[7px] font-black tracking-[0.3em] text-zinc-600 uppercase group-hover:text-[#29abe0] transition-colors">
+                  Buy me a coffee
+                </span>
+              </a>
+
+              {/* Tombol GitHub */}
+              <a 
+                href="https://github.com/AgungHari/aaagang" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group flex items-center gap-2 px-3 py-1.5 border border-zinc-800/40 hover:border-zinc-500/40 hover:bg-zinc-800/50 rounded transition-all w-fit"
+              >
+                <GitFork size={10} className="text-zinc-600 group-hover:text-zinc-300 transition-colors" />
+                <span className="text-[7px] font-black tracking-[0.3em] text-zinc-600 uppercase group-hover:text-zinc-300 transition-colors">
+                  Fork
+                </span>
+              </a>
+            </div>
           </div>
+          
         </div>
       </div>
     </footer>

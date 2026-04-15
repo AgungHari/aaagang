@@ -102,23 +102,13 @@ export default async function AboutPage() {
               <p className="text-zinc-500 text-sm leading-relaxed">Wajib on minimal seminggu sekali (kalau berhalangan izin)</p>
             </div>
             <div className="p-8 bg-zinc-900/20 border border-zinc-800/50 rounded-[2.5rem] hover:border-amber-500/30 transition-all group">
-              <UserX className="text-amber-500 mb-4 group-hover:scale-110 transition-transform" size={32} />
-              <h3 className="text-xl font-black italic uppercase mb-2">Rule 3</h3>
-              <p className="text-zinc-500 text-sm leading-relaxed">Orang bernickname "Rheyy Xyzega" DILARANG KERAS JOIN (DIA RASIS)</p>
-            </div>
-            <div className="p-8 bg-zinc-900/20 border border-zinc-800/50 rounded-[2.5rem] hover:border-amber-500/30 transition-all group">
-              <Target className="text-amber-500 mb-4 group-hover:scale-110 transition-transform" size={32} />
-              <h3 className="text-xl font-black italic uppercase mb-2">Rule 4</h3>
-              <p className="text-zinc-500 text-sm leading-relaxed">Anggota clan Leave of all maupun alumni clan adalah MUSUH KITA DAN DILARANG KERAS INVITE MAUPUN JOIN</p>
-            </div>
-            <div className="p-8 bg-zinc-900/20 border border-zinc-800/50 rounded-[2.5rem] hover:border-amber-500/30 transition-all group">
               <Clock className="text-amber-500 mb-4 group-hover:scale-110 transition-transform" size={32} />
-              <h3 className="text-xl font-black italic uppercase mb-2">Rule 5</h3>
+              <h3 className="text-xl font-black italic uppercase mb-2">Rule 3</h3>
               <p className="text-zinc-500 text-sm leading-relaxed">Tidak ada aturan nomer saat war bebas serang siapa cepat dia dapat!</p>
             </div>
             <div className="p-8 bg-zinc-900/20 border border-zinc-800/50 rounded-[2.5rem] hover:border-amber-500/30 transition-all group">
               <ShieldCheck className="text-amber-500 mb-4 group-hover:scale-110 transition-transform" size={32} />
-              <h3 className="text-xl font-black italic uppercase mb-2">Rule 6</h3>
+              <h3 className="text-xl font-black italic uppercase mb-2">Rule 4</h3>
               <p className="text-zinc-500 text-sm leading-relaxed">Memasuki clan artinya bersedia berkomitment kuat terhadap nilai-nilai dan komunitas clan</p>
             </div>
           </div>

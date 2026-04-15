@@ -66,7 +66,7 @@ MISTRAL_API_KEY=your_mistral_api_key
 - `CLAN_TAG` identifies the clan used by the dashboard.
 - `MISTRAL_API_KEY` is used by the chat endpoint when an AI assistant backend is configured.
 
-### Clash of Clans API Key Setup
+## Clash of Clans API Key Setup
 
 1. Create an API key on the official Clash of Clans developer portal: https://developer.clashofclans.com/#/
 2. If your server does not have a static IP address, use RoyaleAPI proxy. This proxy is especially useful for deployments that cannot maintain a fixed IP.
