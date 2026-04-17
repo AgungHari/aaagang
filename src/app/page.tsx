@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { 
   Shield, Sword, Users, Trophy, Heart, Flame, Zap, 
-  Crown, UserPlus, Castle, Crosshair, Medal 
+  Crown, UserPlus, Castle, Crosshair, Medal, CrownIcon, Star, StarHalf, StarOff, Timer, ChessQueen 
 } from "lucide-react";
 import { getClanData, getCurrentWar } from "@/lib/coc";
 
@@ -38,28 +38,39 @@ export default async function Home() {
         const opponent = war.opponent.members.find((opp: any) => opp.tag === atk.defenderTag);
         const opponentName = opponent?.name || "Enemy";
         
-        if (atk.stars === 3 && opponent && opponent.townhallLevel > m.townhallLevel) {
+        if (atk.stars === 3 && opponent?.mapPosition === 1) {
           highlights.push({ 
-            name: m.name, type: "Giant Slayer", priority: 1,
-            desc: `Destroy ${opponentName} (TH ${opponent.townhallLevel}) as TH ${m.townhallLevel}!` 
+            name: m.name, type: "King Slayer", priority: 1,
+            desc: `ELIMINATED THE ENEMY KING 1. ${opponentName}! ` 
+          });
+        }
+        else if (atk.stars === 3 && opponent && opponent.townhallLevel > m.townhallLevel) {
+          highlights.push({ 
+            name: m.name, type: "Giant Slayer", priority: 2,
+            desc: `Destroy ${opponent.mapPosition}. ${opponentName} (TH ${opponent.townhallLevel}) as TH ${m.townhallLevel}!` 
           });
         }
         else if (atk.stars === 3 && atk.duration < 100) {
           highlights.push({ 
-            name: m.name, type: "Blitzkrieg", priority: 2,
-            desc: `3-Starred ${opponentName} in just ${atk.duration}s!` 
+            name: m.name, type: "Blitzkrieg", priority: 3,
+            desc: `3-Starred ${opponent.mapPosition}. ${opponentName} in just ${atk.duration}s!` 
           });
         }
         else if (atk.stars === 3) {
           highlights.push({ 
-            name: m.name, type: "Perfect Attack", priority: 3,
-            desc: `Flawless 100% vs ${opponentName}!` 
+            name: m.name, type: "Perfect 3 Star Attack", priority: 4,
+            desc: `Flawless 100% vs ${opponent.mapPosition}. ${opponentName}!` 
+          });
+        }
+        else if (atk.stars === 2){
+          highlights.push({
+            name: m.name, type: "Nice Attack 2 Star", priority: 5, desc:`${atk.destructionPercentage}% vs ${opponent.mapPosition}. ${opponentName} - Nice try!`
           });
         }
         else if (atk.stars === 1) {
           highlights.push({ 
-            name: m.name, type: "Unlucky 1 Star", priority: 4,
-            desc: `${atk.destructionPercentage}% vs ${opponentName} - So close!` 
+            name: m.name, type: "Unlucky 1 Star", priority: 6,
+            desc: `${atk.destructionPercentage}% vs ${opponent.mapPosition}. ${opponentName} - So close!` 
           });
         }
       });
@@ -157,11 +168,18 @@ export default async function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {highlights.map((h, i) => (
                 <div key={i} className={`p-5 bg-zinc-950/40 border rounded-2xl group transition-all ${
-                  h.type === 'Unlucky 1 Star' ? 'border-zinc-800/50 grayscale opacity-60' : 'border-amber-500/10 hover:border-amber-500/30'
+                  h.type === 'Unlucky 1 Star' ? 'border-zinc-800/50 grayscale opacity-60' : h.type === 'Nice Attack 2 Star' ? 'border-amber-500/10 hover:border-amber-800/30 opacity-80' : 'border-amber-500/10 hover:border-amber-500/30'
                 }`}>
                   <div className="flex items-center gap-3 mb-2">
-                    <div className={`p-1.5 rounded-lg ${h.type.includes('Unlucky') ? 'bg-zinc-800 text-zinc-500' : 'bg-amber-500/10 text-amber-500'}`}>
-                      {h.type.includes('Unlucky') ? <Shield size={14}/> : <Zap size={14}/>}
+                    <div className={`p-1.5 rounded-lg ${h.type.includes('Unlucky') ? 'bg-zinc-800 text-zinc-500': h.type === 'Nice Attack 2 Star' ? 'bg-amber-800/10 text-amber-800' : 'bg-amber-500/10 text-amber-500'}`}>
+                      {h.type.includes('Unlucky') ? <StarOff size={14}/> : 
+                        h.type === 'King Slayer' ? <ChessQueen size={14}/> :
+                        h.type === 'Giant Slayer' ? <CrownIcon size={14}/> :
+                        h.type === 'Blitzkrieg' ? <Timer size={14}/> :
+                        h.type === 'Perfect 3 Star Attack' ? <Star size={14}/> :
+                        h.type === 'Nice Attack 2 Star' ? <StarHalf size={14}/> :
+                        <Zap size={14}/>
+                      }
                     </div>
                     <div className="text-xs font-black uppercase italic tracking-tight">{h.name}</div>
                   </div>
