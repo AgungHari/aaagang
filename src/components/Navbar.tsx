@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { motion } from "framer-motion";
 import { Poppins } from "next/font/google";
+import { Sigma } from "lucide-react";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -65,13 +66,14 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
           {/* Let's Talk Button - Desktop */}
           <Link
             href="/kontak"
-            className={`hidden md:block px-6 py-2.5 font-400 text-xs tracking-[0.1em] transition-all rounded-full ${poppins.className} ${
+            className={`hidden md:flex items-center gap-2 px-6 py-2.5 font-400 text-xs tracking-[0.1em] transition-all rounded-full ${poppins.className} ${
               pathname === '/kontak'
                 ? 'border-2 border-amber-500 text-amber-500 hover:bg-amber-600/10'
                 : 'bg-zinc-800 hover:bg-amber-500 text-white'
             }`}
           >
-            Chat
+            <Sigma size={14}/>
+            <span>Ask Sigma</span>
           </Link>
 
           {/* Mobile Toggle Button */}
@@ -94,7 +96,7 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
 
       {/* Mobile Menu */}
       <div className={`
-        fixed inset-0 z-40 bg-black/20 backdrop-blur-xl flex flex-col items-center justify-center text-lg gap-8 md:hidden transition-transform duration-300 overflow-hidden ${poppins.className}
+        fixed inset-0 z-40 bg-black/40 backdrop-blur-xl flex flex-col items-center justify-center text-lg gap-8 md:hidden transition-transform duration-300 overflow-hidden ${poppins.className}
         ${isOpen ? 'translate-x-0' : '-translate-x-full'}
       `}>
         {navLinks.map((link) => (

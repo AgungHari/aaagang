@@ -40,7 +40,7 @@ export default async function MembersPage() {
       {/* 1. Navbar: Pakai komponen yang sama dengan Home */}
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />
 
-      <section className="max-w-7xl mx-auto px-6 pt-16">
+      <section className="max-w-7xl mx-auto px-6 pt-24">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-amber-500/20 bg-amber-500/5 text-amber-500 text-[10px] font-black uppercase tracking-[0.3em] mb-4">

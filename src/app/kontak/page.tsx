@@ -19,7 +19,7 @@ export default async function KontakPage() {
       {/* Navbar: Persis seperti di Member Page */}
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />
 
-      <section className="max-w-5xl mx-auto px-6 pt-16 pb-20">
+      <section className="max-w-5xl mx-auto px-6 pt-24 pb-20">
         <div className="mb-12">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-amber-500/20 bg-amber-500/5 text-amber-500 text-[10px] font-black uppercase tracking-[0.3em] mb-4">
             <Zap size={12} /> Let's Talk

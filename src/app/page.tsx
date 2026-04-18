@@ -1,8 +1,10 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import TiltedImage from "@/components/TiltImage";
+import Link from "next/link";
 import { 
-  Shield, Sword, Users, Trophy, Heart, Flame, Zap, 
-  Crown, UserPlus, Castle, Crosshair, Medal, CrownIcon, Star, StarHalf, StarOff, Timer, ChessQueen 
+  Sigma, Baby, Swords, Trophy, Heart, Flame, Zap, 
+  Crown, UserPlus, Castle, Crosshair, Medal, CrownIcon, Star, StarHalf, StarOff, Timer, ChessQueen, CheckIcon, HandHeart
 } from "lucide-react";
 import { getClanData, getCurrentWar } from "@/lib/coc";
 
@@ -25,6 +27,16 @@ export default async function Home() {
   const topDonators = [...members].sort((a, b) => b.donations - a.donations).slice(0, 3);
   const topLeagues = [...members].sort((a, b) => b.trophies - a.trophies).slice(0, 3);
   const topReceived = [...members].sort((a, b) => b.donationsReceived - a.donationsReceived).slice(0, 3);
+
+  // MOCK DATA - Remove after checking
+  const mockNewMembers = [
+    { tag: '#NEWMEMBER1', name: 'Ninja Fighter', townHallLevel: 10, previousClanRank: 0 },
+    { tag: '#NEWMEMBER2', name: 'Sky Warrior', townHallLevel: 9, previousClanRank: 0 },
+    { tag: '#NEWMEMBER3', name: 'Thunder Storm', townHallLevel: 11, previousClanRank: 0 },
+  ];
+  
+  // Use mock data if no real new members
+  const displayNewMembers = newMembers.length > 0 ? newMembers : mockNewMembers;
 
   const isWar = war && war.state !== 'notInWar';
 
@@ -87,22 +99,79 @@ export default async function Home() {
       {/* 1. Navbar Component */}
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />
 
-      <section className="relative flex flex-col items-center justify-center pt-20 pb-20 text-center px-4">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-amber-600/10 blur-[120px] rounded-full -z-10 animate-pulse"></div>
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-amber-500/20 bg-amber-500/5 text-amber-500 text-[10px] font-black uppercase tracking-[0.3em] mb-4">
-          <Flame size={12} /> Established for Dominance
+      {/* Hero Section - Merged from HeroSection.tsx */}
+      <section className="relative flex flex-col items-center justify-center px-4 md:px-16 lg:px-24 xl:px-32 pt-20 pb-20">
+        <div className="absolute top-30 -z-10 left-1/4 size-72 bg-amber-600/10 blur-[300px]"></div>
+        
+        {/* Clan Badge */}
+        <div className="flex items-center gap-2 rounded-full p-1 pr-3 mt-10 text-amber-100 bg-amber-200/15 border border-amber-500/20 mb-8">
+          <span className="bg-amber-800 text-white text-xs px-3.5 py-1 rounded-full font-black">
+            {clan.memberList?.length < 50 ? "OPEN" : "CLOSED"}
+          </span>
+          <p className="flex items-center gap-1 text-sm">
+            <span>{50 - clan.memberList?.length} Slot Left !</span>
+            <Flame size={16} />
+          </p>
         </div>
-        <h1 className="text-7xl md:text-[13rem] font-black tracking-tighter leading-none mb-4 uppercase italic">
-          AAA <span className="text-amber-500 drop-shadow-[0_0_30px_rgba(245,158,11,0.3)]">GANG</span>
+        
+        {/* Main Title */}
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-center mb-6 max-w-4xl italic leading-tight">
+          <span className="text-white">AAA</span>{" "}
+          <span className="text-amber-500 drop-shadow-[0_0_30px_rgba(245,158,11,0.3)] italic"> GANG</span>
         </h1>
-        <p className="max-w-2xl text-zinc-500 text-[10px] md:text-xs font-bold leading-relaxed uppercase tracking-[0.4em] italic px-6 italic">
-          "{clan.description}"
+        
+        {/* Clan Description */}
+        <p className="text-base text-center text-slate-300 max-w-2xl mb-8 font-medium">
+          {clan.description}
         </p>
+        
+        {/* Action Buttons */}
+        <div className="flex items-center gap-4 mt-8 mb-16">
+          <a
+            href="https://link.clashofclans.com/en/?action=OpenClanProfile&tag=Q9YY02J9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-amber-600 hover:bg-amber-700 text-white rounded-full px-7 h-11 font-black transition-all flex items-center justify-center"
+          >
+            Join Now
+          </a>
+          <Link 
+            href="/kontak"
+            className="flex items-center gap-2 border-2 border-amber-900 hover:bg-amber-950/50 transition rounded-full px-6 h-11 font-medium"
+          >
+            <Sigma strokeWidth={1} size={18} />
+            <span>Ask Sigma</span>
+          </Link>
+        </div>
+        
+        {/* Clan Stats */}
+        <div className="flex flex-wrap justify-center items-center gap-4 md:gap-14 mb-10">
+          <div className="flex items-center gap-2">
+            <Baby className="size-5 text-amber-600" />
+            <span className="text-slate-400 font-medium">Newbie Friendly</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <CheckIcon className="size-5 text-amber-600" />
+            <span className="text-slate-400 font-medium">Level {clan.clanLevel} Clan</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <Swords className="size-5 text-amber-600" />
+            <span className="text-slate-400 font-medium">Always War</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <HandHeart className="size-5 text-amber-600" />
+            <span className="text-slate-400 font-medium">Donasi Lancar</span>
+          </div>
+        </div>
+        
+        {/* Tilt Image */}
+        <TiltedImage />
+      </section>
 
-        {/* --- WELCOME NEW MEMBER SECTION --- */}
-        {newMembers.length > 0 && (
-          <div className="mt-12 animate-in fade-in slide-in-from-bottom-4 duration-700">
-            <span className="text-zinc-600 text-[9px] font-black tracking-[0.5em] uppercase mb-4 block">Welcome Our Newest Member</span>
+      {/* --- WELCOME NEW MEMBER SECTION --- */}
+      {newMembers.length > 0 && (
+        <div className="max-w-7xl mx-auto px-6 mt-12 mb-12 animate-in fade-in slide-in-from-bottom-4 duration-700">
+            <span className="text-zinc-600 text-center text-[9px] font-black tracking-[0.5em] uppercase mb-4 block">Welcome Our Newest Member</span>
             <div className="flex flex-wrap justify-center gap-4">
               {newMembers.map((m) => (
                 <div key={m.tag} className="px-6 py-3 bg-zinc-900/30 border border-amber-500/20 rounded-2xl flex items-center gap-3 group hover:border-amber-500/50 transition-all">
@@ -116,7 +185,6 @@ export default async function Home() {
             </div>
           </div>
         )}
-      </section>
 
       {/* Leaderboard Cards */}
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
