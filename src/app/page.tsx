@@ -94,7 +94,7 @@ export default async function Home() {
   const highlights = getWarHighlights();
 
   return (
-    <main className="min-h-screen bg-[#050505] text-zinc-100 selection:bg-amber-500 selection:text-black overflow-x-hidden font-sans">
+    <main className="min-h-screen text-zinc-100 selection:bg-amber-500 selection:text-black overflow-x-hidden font-sans">
       
       {/* 1. Navbar Component */}
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />
@@ -108,7 +108,7 @@ export default async function Home() {
           <span className="bg-amber-800 text-white text-xs px-3.5 py-1 rounded-full font-black">
             {clan.memberList?.length < 50 ? "OPEN" : "CLOSED"}
           </span>
-          <p className="flex items-center gap-1 text-sm">
+          <p className="flex items-center gap-1 text-sm animate-pulse">
             <span>{50 - clan.memberList?.length} Slot Left !</span>
             <Flame size={16} />
           </p>
@@ -131,7 +131,7 @@ export default async function Home() {
             href="https://link.clashofclans.com/en/?action=OpenClanProfile&tag=Q9YY02J9"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-amber-600 hover:bg-amber-700 text-white rounded-full px-7 h-11 font-black transition-all flex items-center justify-center"
+            className="bg-amber-600 hover:bg-amber-700 text-white rounded-full px-7 h-11 font-400 transition-all flex items-center justify-center"
           >
             Join Now
           </a>

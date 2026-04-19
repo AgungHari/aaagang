@@ -35,7 +35,7 @@ export default async function MembersPage() {
   });
 
   return (
-    <main className="min-h-screen bg-[#050505] text-zinc-100 font-sans selection:bg-amber-500 selection:text-black">
+    <main className="min-h-screen text-zinc-100 font-sans selection:bg-amber-500 selection:text-black">
       
       {/* 1. Navbar: Pakai komponen yang sama dengan Home */}
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />

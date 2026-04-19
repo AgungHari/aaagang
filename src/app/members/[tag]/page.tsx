@@ -111,7 +111,7 @@ export default async function MemberDetailPage({ params }: { params: Promise<{ t
   const builderMachines = player.heroes?.filter((hero: any) => hero.name === "Battle Machine" || hero.name === "Battle Copter");
 
   return (
-    <main className="min-h-screen bg-[#050505] text-zinc-100 font-sans selection:bg-amber-500 selection:text-black">
+    <main className="min-h-screen text-zinc-100 font-sans selection:bg-amber-500 selection:text-black">
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />
 
       <section className="max-w-5xl mx-auto px-6 pt-24 pb-12">
