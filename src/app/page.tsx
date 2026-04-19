@@ -4,7 +4,7 @@ import TiltedImage from "@/components/TiltImage";
 import Link from "next/link";
 import { 
   Sigma, Baby, Swords, Trophy, Heart, Flame, Zap, 
-  Crown, UserPlus, Castle, Crosshair, Medal, CrownIcon, Star, StarHalf, StarOff, Timer, ChessQueen, CheckIcon, HandHeart
+  Crown, UserPlus, Castle, Crosshair, Medal, CrownIcon, Star, StarHalf, StarOff, Timer, ChessQueen, HandHeart
 } from "lucide-react";
 import { getClanData, getCurrentWar } from "@/lib/coc";
 
@@ -151,7 +151,7 @@ export default async function Home() {
             <span className="text-slate-400 font-medium">Newbie Friendly</span>
           </div>
           <div className="flex items-center gap-2">
-            <CheckIcon className="size-5 text-amber-600" />
+            <Castle className="size-5 text-amber-600" />
             <span className="text-slate-400 font-medium">Level {clan.clanLevel} Clan</span>
           </div>
           <div className="flex items-center gap-2">
@@ -230,7 +230,7 @@ export default async function Home() {
       {isWar && highlights.length > 0 && (
         <div className="max-w-7xl mx-auto px-6 mt-12">
           <div className="p-8 bg-zinc-900/10 border border-zinc-800/50 rounded-[2.5rem]">
-            <div className="flex items-center gap-2 text-zinc-500 text-[10px] font-black uppercase tracking-[0.4em] mb-8">
+            <div className="flex items-center gap-2 text-zinc-500 text-[10px] font-black uppercase tracking-[0.4em] mb-8 animate-pulse">
               <Medal size={14} className="text-amber-500" /> Live War Hall of Fame
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
