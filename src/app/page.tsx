@@ -224,13 +224,13 @@ export default async function Home() {
 
       {/* Leaderboard Cards */}
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <ScrollReveal delay={0.1}>
+        <ScrollReveal delay={0.1} mobileDelay={0.1}>
           <LeaderboardCard title="Donation Kings" icon={<Heart size={20} className="text-red-500" />} data={topDonators} dataKey="donations" suffix="Troops" />
         </ScrollReveal>
-        <ScrollReveal delay={0.3}>
+        <ScrollReveal delay={0.2} mobileDelay={0.1}>
           <LeaderboardCard title="Ranked Trophy" icon={<Trophy size={20} className="text-amber-500" />} data={topLeagues} dataKey="trophies" suffix="Trophies" />
         </ScrollReveal>
-        <ScrollReveal delay={0.6}>
+        <ScrollReveal delay={0.3} mobileDelay={0.1}>
           <LeaderboardCard title="Most Active" icon={<Zap size={20} className="text-blue-500" />} data={topReceived} dataKey="donationsReceived" suffix="Reqs" />
         </ScrollReveal>
 
@@ -239,7 +239,7 @@ export default async function Home() {
       {/* Clan Capital & War Status */}
       <div className="max-w-7xl mx-auto px-6 mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
         {/* Card 1 */}
-        <ScrollReveal delay={0.7} className="w-full h-full flex">
+        <ScrollReveal delay={0.4} mobileDelay={0.1} className="w-full h-full flex">
           <div className="w-full p-10 bg-zinc-900/20 border border-zinc-800/50 rounded-[2.5rem] flex items-center justify-between group hover:border-amber-500/30 transition-all overflow-hidden relative">
             <Castle className="absolute -right-4 -bottom-4 size-32 text-zinc-800/20 -rotate-12 group-hover:text-amber-500/10 transition-colors" />
             <div className="relative z-10">
@@ -253,7 +253,7 @@ export default async function Home() {
         </ScrollReveal>
 
         {/* Card 2 */}
-        <ScrollReveal delay={0.9} className="w-full h-full flex">
+        <ScrollReveal delay={0.5} mobileDelay={0.1}className="w-full h-full flex">
           <div className={`w-full p-10 border rounded-[2.5rem] flex items-center justify-between transition-all overflow-hidden relative group ${isWar ? 'bg-red-500/5 border-red-500/20' : 'bg-zinc-900/20 border-zinc-800/50'}`}>
             <Crosshair className={`absolute -right-4 -bottom-4 size-32 -rotate-12 opacity-10`} />
             <div className="relative z-10">
@@ -275,7 +275,7 @@ export default async function Home() {
 
       {/* Hall of Fame */}
       {isWar && highlights.length > 0 && (
-        <ScrollReveal delay={0.1}>
+        <ScrollReveal delay={0.5} mobileDelay={0.1}>
         <div className="max-w-7xl mx-auto px-6 mt-12">
           <div className="p-8 bg-zinc-900/10 border border-zinc-800/50 rounded-[2.5rem]">
             <div className="flex items-center gap-2 text-zinc-500 text-[10px] font-black uppercase tracking-[0.4em] mb-8 animate-pulse">
