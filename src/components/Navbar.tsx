@@ -66,10 +66,10 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
           {/* Let's Talk Button - Desktop */}
           <Link
             href="/kontak"
-            className={`hidden md:flex items-center gap-2 px-6 py-2.5 font-400 text-xs tracking-[0.1em] transition-all rounded-full ${poppins.className} ${
+            className={`hidden md:flex items-center gap-2 px-6 py-2.5 font-400 text-xs tracking-[0.1em] transition-all rounded rounded-tl-3xl rounded-br-3xl rounded-bl-3xl ${poppins.className} ${
               pathname === '/kontak'
                 ? 'border-2 border-amber-500 text-amber-500 hover:bg-amber-600/10'
-                : 'bg-zinc-800 hover:bg-amber-500 text-white'
+                : 'bg-zinc-800 hover:bg-amber-700 text-white'
             }`}
           >
             <Sigma size={14}/>

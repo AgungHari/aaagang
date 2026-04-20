@@ -23,3 +23,15 @@ export async function getCurrentWar() {
   if (!res.ok) return null;
   return res.json();
 }
+
+export async function getWarLog() {
+  const res = await fetch(`https://cocproxy.royaleapi.dev/v1/clans/${process.env.CLAN_TAG}/warlog`, {
+    headers: {
+      "Authorization": `Bearer ${process.env.COC_API_KEY}`,
+    },
+    next: { revalidate: 43200 },
+  });
+
+  if (!res.ok) return null;
+  return res.json();
+}

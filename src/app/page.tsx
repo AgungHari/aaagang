@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import TiltedImage from "@/components/TiltImage";
+import ScrollReveal from "@/components/ScrollReveal";
 import Link from "next/link";
 import { 
   Sigma, Baby, Swords, Trophy, Heart, Flame, Zap, 
@@ -28,6 +29,7 @@ export default async function Home() {
   const topLeagues = [...members].sort((a, b) => b.trophies - a.trophies).slice(0, 3);
   const topReceived = [...members].sort((a, b) => b.donationsReceived - a.donationsReceived).slice(0, 3);
 
+  const isWar = war && war.state !== 'notInWar';
   // MOCK DATA - Remove after checking
   const mockNewMembers = [
     { tag: '#NEWMEMBER1', name: 'Ninja Fighter', townHallLevel: 10, previousClanRank: 0 },
@@ -38,7 +40,41 @@ export default async function Home() {
   // Use mock data if no real new members
   const displayNewMembers = newMembers.length > 0 ? newMembers : mockNewMembers;
 
-  const isWar = war && war.state !== 'notInWar';
+  const mockisWar = true; 
+
+  // 2. Data dummy Hall of Fame
+  const mockhighlights = [
+    {
+      name: "Sigma Master",
+      type: "Perfect 3 Star Attack",
+      desc: "Energen Sereal Minum Makanan Bergizi"
+    },
+    {
+      name: "King Agung",
+      type: "King Slayer",
+      desc: "Energen Sereal Minum Makanan Bergizi"
+    },
+    {
+      name: "Lord Gajah",
+      type: "Unlucky 1 Star",
+      desc: "Energen Sereal Minum Makanan Bergizi"
+    },
+    {
+      name: "Blitz Master",
+      type: "Blitzkrieg",
+      desc: "Energen Sereal Minum Makanan Bergizi."
+    },
+    {
+      name: "Solid Player",
+      type: "Nice Attack 2 Star",
+      desc: "Energen Sereal Minum Makanan Bergizi"
+    },
+    {
+      name: "Giant Crusher",
+      type: "Giant Slayer",
+      desc: "Energen Sereal Minum Makanan Bergizi"
+    }
+  ];
 
   const getWarHighlights = () => {
     if (!isWar || !war.clan.members) return [];
@@ -104,40 +140,40 @@ export default async function Home() {
         <div className="absolute top-30 -z-10 left-1/4 size-72 bg-amber-600/10 blur-[300px]"></div>
         
         {/* Clan Badge */}
-        <div className="flex items-center gap-2 rounded-full p-1 pr-3 mt-10 text-amber-100 bg-amber-200/15 border border-amber-500/20 mb-8">
+        <div className="flex items-center gap-2 rounded-full p-1 pr-3 mt-10 text-amber-100 bg-amber-200/15 border border-amber-500/20 mb-8 animate-slide-up">
           <span className="bg-amber-800 text-white text-xs px-3.5 py-1 rounded-full font-black">
             {clan.memberList?.length < 50 ? "OPEN" : "CLOSED"}
           </span>
           <p className="flex items-center gap-1 text-sm animate-pulse">
-            <span>{50 - clan.memberList?.length} Slot Left !</span>
+            <span>{50 - clan.memberList?.length} Slot Left</span>
             <Flame size={16} />
           </p>
         </div>
         
         {/* Main Title */}
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-center mb-6 max-w-4xl italic leading-tight">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-center mb-6 max-w-4xl italic leading-tight animate-slide-up tracking-wider">
           <span className="text-white">AAA</span>{" "}
           <span className="text-amber-500 drop-shadow-[0_0_30px_rgba(245,158,11,0.3)] italic"> GANG</span>
         </h1>
         
         {/* Clan Description */}
-        <p className="text-base text-center text-slate-300 max-w-2xl mb-8 font-medium">
+        <p className="text-base text-center text-slate-300 max-w-2xl mb-8 font-medium animate-slide-up tracking-wide">
           {clan.description}
         </p>
         
         {/* Action Buttons */}
-        <div className="flex items-center gap-4 mt-8 mb-16">
+        <div className="flex items-center gap-2 mt-8 mb-16">
           <a
             href="https://link.clashofclans.com/en/?action=OpenClanProfile&tag=Q9YY02J9"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-amber-600 hover:bg-amber-700 text-white rounded-full px-7 h-11 font-400 transition-all flex items-center justify-center"
+            className="bg-amber-700 hover:bg-amber-900 text-white rounded-xl px-7 h-11 font-400 transition-all flex items-center justify-center animate-slide-up"
           >
             Join Now
           </a>
           <Link 
             href="/kontak"
-            className="flex items-center gap-2 border-2 border-amber-900 hover:bg-amber-950/50 transition rounded-full px-6 h-11 font-medium"
+            className="flex items-center gap-1 border-2 border-amber-900 hover:bg-amber-950/50 transition rounded rounded-tl-3xl rounded-br-3xl rounded-bl-3xl px-6 h-11 font-medium animate-slide-up"
           >
             <Sigma strokeWidth={1} size={18} />
             <span>Ask Sigma</span>
@@ -146,19 +182,19 @@ export default async function Home() {
         
         {/* Clan Stats */}
         <div className="flex flex-wrap justify-center items-center gap-4 md:gap-14 mb-10">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 animate-slide-up">
             <Baby className="size-5 text-amber-600" />
             <span className="text-slate-400 font-medium">Newbie Friendly</span>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 animate-slide-up">
             <Castle className="size-5 text-amber-600" />
             <span className="text-slate-400 font-medium">Level {clan.clanLevel} Clan</span>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 animate-slide-up">
             <Swords className="size-5 text-amber-600" />
             <span className="text-slate-400 font-medium">Always War</span>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 animate-slide-up">
             <HandHeart className="size-5 text-amber-600" />
             <span className="text-slate-400 font-medium">Donasi Lancar</span>
           </div>
@@ -170,7 +206,7 @@ export default async function Home() {
 
       {/* --- WELCOME NEW MEMBER SECTION --- */}
       {newMembers.length > 0 && (
-        <div className="max-w-7xl mx-auto px-6 mt-12 mb-12 animate-in fade-in slide-in-from-bottom-4 duration-700">
+        <div className="max-w-7xl mx-auto px-6 mt-12 mb-12 animate-in fade-in slide-in-from-bottom-4 duration-700 animate-slide-up">
             <span className="text-zinc-600 text-center text-[9px] font-black tracking-[0.5em] uppercase mb-4 block">Welcome Our Newest Member</span>
             <div className="flex flex-wrap justify-center gap-4">
               {newMembers.map((m) => (
@@ -188,46 +224,58 @@ export default async function Home() {
 
       {/* Leaderboard Cards */}
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <LeaderboardCard title="Donation Kings" icon={<Heart size={20} className="text-red-500" />} data={topDonators} dataKey="donations" suffix="Troops" />
-        <LeaderboardCard title="Ranked Trophy" icon={<Trophy size={20} className="text-amber-500" />} data={topLeagues} dataKey="trophies" suffix="Trophies" />
-        <LeaderboardCard title="Most Active" icon={<Zap size={20} className="text-blue-500" />} data={topReceived} dataKey="donationsReceived" suffix="Reqs" />
+        <ScrollReveal delay={0.1}>
+          <LeaderboardCard title="Donation Kings" icon={<Heart size={20} className="text-red-500" />} data={topDonators} dataKey="donations" suffix="Troops" />
+        </ScrollReveal>
+        <ScrollReveal delay={0.3}>
+          <LeaderboardCard title="Ranked Trophy" icon={<Trophy size={20} className="text-amber-500" />} data={topLeagues} dataKey="trophies" suffix="Trophies" />
+        </ScrollReveal>
+        <ScrollReveal delay={0.6}>
+          <LeaderboardCard title="Most Active" icon={<Zap size={20} className="text-blue-500" />} data={topReceived} dataKey="donationsReceived" suffix="Reqs" />
+        </ScrollReveal>
+
       </div>
 
       {/* Clan Capital & War Status */}
-      <div className="max-w-7xl mx-auto px-6 mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="p-10 bg-zinc-900/20 border border-zinc-800/50 rounded-[2.5rem] flex items-center justify-between group hover:border-amber-500/30 transition-all overflow-hidden relative">
-          <Castle className="absolute -right-4 -bottom-4 size-32 text-zinc-800/20 -rotate-12 group-hover:text-amber-500/10 transition-colors" />
-          <div className="relative z-10">
-            <div className="text-[10px] font-black uppercase tracking-[0.4em] text-zinc-500 mb-2">Clan Capital District</div>
-            <div className="text-3xl font-black italic uppercase text-amber-500 tracking-tighter">
-              {clan.capitalLeague?.name || "Unranked"}
-            </div>
-            <div className="mt-4 text-lg font-black italic">{clan.clanCapitalPoints?.toLocaleString()} <span className="text-[8px] text-zinc-600 uppercase tracking-widest block">Capital Points</span></div>
-          </div>
-        </div>
-
-        <div className={`p-10 border rounded-[2.5rem] flex items-center justify-between transition-all overflow-hidden relative group ${isWar ? 'bg-red-500/5 border-red-500/20' : 'bg-zinc-900/20 border-zinc-800/50'}`}>
-          <Crosshair className={`absolute -right-4 -bottom-4 size-32 -rotate-12 opacity-10`} />
-          <div className="relative z-10">
-            <div className="text-[10px] font-black uppercase tracking-[0.4em] text-zinc-500 mb-1">
-              Live War Status
-            </div>
-            <div className="text-[7px] text-zinc-600 uppercase tracking-[0.4em] mb-4"> (Refreshes every 60 seconds for the latest overview)</div>
-            <div className={`text-3xl font-black italic uppercase tracking-tighter ${isWar ? 'text-red-500 animate-pulse' : 'text-zinc-400'}`}>
-              {isWar ? `VS ${war.opponent.name}` : "Resting / Neutral"}
-            </div>
-            {isWar && (
-              <div className="mt-4 flex gap-6 text-lg font-black italic">
-                <div>{war.clan.stars} - {war.opponent.stars} <span className="text-[8px] text-zinc-600 uppercase block">Stars</span></div>
-                <div>{war.clan.attacks} / {war.teamSize * 2} <span className="text-[8px] text-zinc-600 uppercase block">Attacks</span></div>
+      <div className="max-w-7xl mx-auto px-6 mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+        {/* Card 1 */}
+        <ScrollReveal delay={0.7} className="w-full h-full flex">
+          <div className="w-full p-10 bg-zinc-900/20 border border-zinc-800/50 rounded-[2.5rem] flex items-center justify-between group hover:border-amber-500/30 transition-all overflow-hidden relative">
+            <Castle className="absolute -right-4 -bottom-4 size-32 text-zinc-800/20 -rotate-12 group-hover:text-amber-500/10 transition-colors" />
+            <div className="relative z-10">
+              <div className="text-[10px] font-black uppercase tracking-[0.4em] text-zinc-500 mb-2">Clan Capital District</div>
+              <div className="text-3xl font-black italic uppercase text-amber-500 tracking-tighter">
+                {clan.capitalLeague?.name || "Unranked"}
               </div>
-            )}
+              <div className="mt-4 text-lg font-black italic">{clan.clanCapitalPoints?.toLocaleString()} <span className="text-[8px] text-zinc-600 uppercase tracking-widest block">Capital Points</span></div>
+            </div>
           </div>
-        </div>
+        </ScrollReveal>
+
+        {/* Card 2 */}
+        <ScrollReveal delay={0.9} className="w-full h-full flex">
+          <div className={`w-full p-10 border rounded-[2.5rem] flex items-center justify-between transition-all overflow-hidden relative group ${isWar ? 'bg-red-500/5 border-red-500/20' : 'bg-zinc-900/20 border-zinc-800/50'}`}>
+            <Crosshair className={`absolute -right-4 -bottom-4 size-32 -rotate-12 opacity-10`} />
+            <div className="relative z-10">
+              <div className="text-[10px] font-black uppercase tracking-[0.4em] text-zinc-500 mb-1">Live War Status</div>
+              <div className="text-[7px] text-zinc-600 uppercase tracking-[0.4em] mb-4"> (Refreshes every 60 seconds for the latest overview)</div>
+              <div className={`text-3xl font-black italic uppercase tracking-tighter ${isWar ? 'text-red-500 animate-pulse' : 'text-zinc-400'}`}>
+                {isWar ? `VS ${war.opponent.name}` : "Resting / Neutral"}
+              </div>
+              {isWar && (
+                <div className="mt-4 flex gap-6 text-lg font-black italic">
+                  <div>{war.clan.stars} - {war.opponent.stars} <span className="text-[8px] text-zinc-600 uppercase block">Stars</span></div>
+                  <div>{war.clan.attacks} / {war.teamSize * 2} <span className="text-[8px] text-zinc-600 uppercase block">Attacks</span></div>
+                </div>
+              )}
+            </div>
+          </div>
+        </ScrollReveal>
       </div>
 
       {/* Hall of Fame */}
       {isWar && highlights.length > 0 && (
+        <ScrollReveal delay={0.1}>
         <div className="max-w-7xl mx-auto px-6 mt-12">
           <div className="p-8 bg-zinc-900/10 border border-zinc-800/50 rounded-[2.5rem]">
             <div className="flex items-center gap-2 text-zinc-500 text-[10px] font-black uppercase tracking-[0.4em] mb-8 animate-pulse">
@@ -235,31 +283,34 @@ export default async function Home() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {highlights.map((h, i) => (
-                <div key={i} className={`p-5 bg-zinc-950/40 border rounded-2xl group transition-all ${
-                  h.type === 'Unlucky 1 Star' ? 'border-zinc-800/50 grayscale opacity-60' : h.type === 'Nice Attack 2 Star' ? 'border-amber-500/10 hover:border-amber-800/30 opacity-80' : 'border-amber-500/10 hover:border-amber-500/30'
-                }`}>
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className={`p-1.5 rounded-lg ${h.type.includes('Unlucky') ? 'bg-zinc-800 text-zinc-500': h.type === 'Nice Attack 2 Star' ? 'bg-amber-800/10 text-amber-800' : 'bg-amber-500/10 text-amber-500'}`}>
-                      {h.type.includes('Unlucky') ? <StarOff size={14}/> : 
-                        h.type === 'King Slayer' ? <ChessQueen size={14}/> :
-                        h.type === 'Giant Slayer' ? <CrownIcon size={14}/> :
-                        h.type === 'Blitzkrieg' ? <Timer size={14}/> :
-                        h.type === 'Perfect 3 Star Attack' ? <Star size={14}/> :
-                        h.type === 'Nice Attack 2 Star' ? <StarHalf size={14}/> :
-                        <Zap size={14}/>
-                      }
+                <ScrollReveal key={i} delay={i * 0.1}>
+                  <div key={i} className={`p-5 bg-zinc-950/40 border rounded-2xl group transition-all ${
+                    h.type === 'Unlucky 1 Star' ? 'border-zinc-800/50 grayscale opacity-60' : h.type === 'Nice Attack 2 Star' ? 'border-amber-500/10 hover:border-amber-800/30 opacity-80' : 'border-amber-500/10 hover:border-amber-500/30'
+                  }`}>
+                    <div className="flex items-center gap-3 mb-2">
+                      <div className={`p-1.5 rounded-lg ${h.type.includes('Unlucky') ? 'bg-zinc-800 text-zinc-500': h.type === 'Nice Attack 2 Star' ? 'bg-amber-800/10 text-amber-800' : 'bg-amber-500/10 text-amber-500'}`}>
+                        {h.type.includes('Unlucky') ? <StarOff size={14}/> : 
+                          h.type === 'King Slayer' ? <ChessQueen size={14}/> :
+                          h.type === 'Giant Slayer' ? <CrownIcon size={14}/> :
+                          h.type === 'Blitzkrieg' ? <Timer size={14}/> :
+                          h.type === 'Perfect 3 Star Attack' ? <Star size={14}/> :
+                          h.type === 'Nice Attack 2 Star' ? <StarHalf size={14}/> :
+                          <Zap size={14}/>
+                        }
+                      </div>
+                      <div className="text-xs font-black uppercase italic tracking-tight">{h.name}</div>
                     </div>
-                    <div className="text-xs font-black uppercase italic tracking-tight">{h.name}</div>
+                    <div className={`text-[9px] font-bold uppercase tracking-tighter leading-tight ${h.type.includes('Unlucky') ? 'text-zinc-500' : 'text-amber-500/70'}`}>
+                      {h.type}
+                    </div>
+                    <div className="text-[10px] text-zinc-500 font-medium italic mt-1 line-clamp-1">{h.desc}</div>
                   </div>
-                  <div className={`text-[9px] font-bold uppercase tracking-tighter leading-tight ${h.type.includes('Unlucky') ? 'text-zinc-500' : 'text-amber-500/70'}`}>
-                    {h.type}
-                  </div>
-                  <div className="text-[10px] text-zinc-500 font-medium italic mt-1 line-clamp-1">{h.desc}</div>
-                </div>
+                </ScrollReveal>
               ))}
             </div>
           </div>
         </div>
+        </ScrollReveal>
       )}
 
       {/* 2. Footer Component */}

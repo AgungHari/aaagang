@@ -114,7 +114,7 @@ export default async function MemberDetailPage({ params }: { params: Promise<{ t
     <main className="min-h-screen text-zinc-100 font-sans selection:bg-amber-500 selection:text-black">
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />
 
-      <section className="max-w-5xl mx-auto px-6 pt-24 pb-12">
+      <section className="max-w-5xl mx-auto px-6 pt-24 pb-12 animate-slide-up">
         {/* Tombol Back */}
         <Link href="/members" className="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.3em] text-zinc-500 hover:text-amber-500 transition-colors mb-12">
           <ArrowLeft size={12} /> Back to Directory

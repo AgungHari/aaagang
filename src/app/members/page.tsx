@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 import { Users, Trophy, Zap, Heart } from "lucide-react";
 import { getClanData } from "@/lib/coc";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default async function MembersPage() {
   const clan = await getClanData();
@@ -43,14 +44,14 @@ export default async function MembersPage() {
       <section className="max-w-7xl mx-auto px-6 pt-24">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-amber-500/20 bg-amber-500/5 text-amber-500 text-[10px] font-black uppercase tracking-[0.3em] mb-4">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-amber-500/20 bg-amber-500/5 text-amber-500 text-[10px] font-black uppercase tracking-[0.3em] mb-4 animate-slide-up">
               <Users size={12} /> Personnel Directory
             </div>
-            <h1 className="text-6xl md:text-8xl font-black tracking-tighter uppercase italic leading-none">
+            <h1 className="text-6xl md:text-8xl font-black tracking-tighter uppercase italic leading-none animate-slide-up">
               CLAN <span className="text-amber-500">MEMBERS</span>
             </h1>
           </div>
-          <div className="text-right">
+          <div className="text-right animate-slide-up">
             <div className="text-4xl font-black italic text-zinc-800">{clan.members} / 50</div>
             <div className="text-[10px] text-zinc-600 font-bold uppercase tracking-[0.3em]">Active Slots</div>
           </div>
@@ -59,7 +60,8 @@ export default async function MembersPage() {
         {/* Member Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {members.map((m: any, i: number) => (
-            <Link 
+            <ScrollReveal key={m.tag} delay={i * 0.02}>
+              <Link 
               href={`/members/${encodeURIComponent(m.tag)}`} 
               key={m.tag} 
               className="block group active:scale-[0.98] transition-all"
@@ -110,6 +112,7 @@ export default async function MembersPage() {
                 </div>
               </div>
             </Link>
+            </ScrollReveal>
           ))}
         </div>
       </section>

@@ -4,6 +4,7 @@ import { SectionDivider } from "@/components/SectionDivider";
 import { getClanData } from "@/lib/coc";
 import { AboutCard } from "@/components/AboutCard";
 import { TimelineItem } from "@/components/TimelineItem";
+import ScrollReveal from "@/components/ScrollReveal";
 import { Shield, Target, Zap, Users, Heart, Clock, ShieldCheck, HandHeart, Swords, Medal, MessageCircle, Repeat } from "lucide-react";
 
 export default async function AboutPage() {
@@ -46,7 +47,7 @@ export default async function AboutPage() {
 
       <section className="max-w-4xl mx-auto px-6 pt-24 pb-32">
         {/* Header Tetap Manual Karena Unik */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-20 animate-slide-up">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-amber-500/20 bg-amber-500/5 text-amber-500 text-[10px] font-black uppercase tracking-[0.3em] mb-6">
             <Shield size={12} /> About Us
           </div>
@@ -68,7 +69,11 @@ export default async function AboutPage() {
         {/* Timeline - Pakai Map */}
         <div className="mb-20">
            <div className="space-y-10">
-              {timeline.map((t, i) => <TimelineItem key={i} {...t} />)}
+              {timeline.map((t, i) => (
+                <ScrollReveal key={i} delay={i * 0.1}>
+                  <TimelineItem key={i} {...t} />
+                </ScrollReveal>
+              ))}
            </div>
         </div>
 
@@ -76,13 +81,21 @@ export default async function AboutPage() {
 
         {/* Rules Grid - Pakai Map */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-          {rules.map((r, i) => <AboutCard key={i} {...r} />)}
+          {rules.map((r, i) => (
+            <ScrollReveal key={i} delay={i * 0.05}>
+              <AboutCard key={i} {...r} />
+            </ScrollReveal>
+          ))}
         </div>
 
         <SectionDivider label="Syarat Jadi Elder" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-          {elder.map((r, i) => <AboutCard key={i} {...r} />)}
+          {elder.map((r, i) => (
+            <ScrollReveal key={i} delay={i * 0.05}>
+              <AboutCard key={i} {...r} />
+            </ScrollReveal>
+          ))}
         </div>
       </section>
       <Footer clan={clan} />
