@@ -139,7 +139,7 @@ export default function ChatInterface() {
   };
 
   return (
-    <div className="bg-[#081014]/95 ring-1 ring-white/10 rounded-[2rem] flex flex-col h-[min(88vh,740px)] max-h-[calc(100vh-3rem)] overflow-hidden shadow-[0_35px_80px_rgba(0,0,0,0.35)]">
+    <div className="ring-1 ring-white/10 flex flex-col h-[min(88vh,740px)] max-h-[calc(100vh-3rem)] overflow-hidden shadow-[0_35px_80px_rgba(0,0,0,0.35)]">
       {/* HEADER */}
       <div className="flex items-center justify-between gap-4 px-5 py-4 bg-zinc-950/95">
         <div>
@@ -203,7 +203,7 @@ export default function ChatInterface() {
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && sendMessage()}
               placeholder=""
-              className="w-full rounded-full border border-zinc-800/70 bg-zinc-900/90 px-4 py-3 text-sm text-white outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-500/15 transition"
+              className="w-full rounded-lg border-1 border-zinc-800/70 bg-zinc-900/90 px-4 py-3 text-sm text-white outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-600 transition"
             />
             <div
               className={`pointer-events-none absolute inset-y-0 left-4 flex items-center text-sm text-zinc-500 transition-opacity duration-300 ease-out ${
@@ -216,7 +216,7 @@ export default function ChatInterface() {
           <button
             onClick={sendMessage}
             disabled={isLoading}
-            className="h-12 w-12 flex items-center justify-center rounded-full bg-amber-500 text-zinc-950 shadow-sm hover:bg-amber-400 disabled:opacity-40"
+            className="h-12 w-12 flex items-center justify-center rounded-full bg-amber-600 text-zinc-950 shadow-sm hover:bg-amber-500 disabled:opacity-40"
           >
             <Send size={19} />
           </button>

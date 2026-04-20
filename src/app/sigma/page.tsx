@@ -9,7 +9,7 @@ export default async function KontakPage() {
 
   if (!clan) return (
     <div className="min-h-screen bg-[#050505] flex items-center justify-center text-white font-black text-4xl italic">
-      DATABASE ERROR...
+      SUPERCELL MAINTENANCE
     </div>
   );
 
@@ -24,10 +24,10 @@ export default async function KontakPage() {
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-amber-500/20 bg-amber-500/5 text-amber-500 text-[10px] font-black uppercase tracking-[0.3em] mb-4">
             <Zap size={12} /> Let's Talk
           </div>
-          <h1 className="text-5xl md:text-8xl font-black tracking-tighter uppercase italic leading-[0.8]">
-            AAA <span className="text-amber-500">INTELLIGENCE</span>
+          <h1 className="text-4xl md:text-7xl font-black tracking-widest uppercase italic leading-[0.8]" style={{ fontFamily: "'Docallisme', sans-serif" }}>
+            TRIPLE <span className="text-amber-500">AI `SIGMA'</span>
           </h1>
-          <p className="mt-4 text-zinc-500 font-bold uppercase tracking-[0.2em] text-[10px]">
+          <p className="mt-5 text-zinc-500 font-bold uppercase tracking-[0.2em] text-[10px]">
             Tanya info klan, rules, tutorial atau sekadar sapa asisten klan kami.
           </p>
         </div>

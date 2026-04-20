@@ -151,9 +151,9 @@ export default async function Home() {
         </div>
         
         {/* Main Title */}
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-center mb-6 max-w-4xl italic leading-tight animate-slide-up tracking-wider">
+        <h1 className="text-5xl md:text-6xl lg:text-8xl font-black text-center mb-6 max-w-4xl leading-tight animate-slide-up tracking-wider" style={{ fontFamily: "'Docallisme', sans-serif" }}>
           <span className="text-white">AAA</span>{" "}
-          <span className="text-amber-500 drop-shadow-[0_0_30px_rgba(245,158,11,0.3)] italic"> GANG</span>
+          <span className="text-amber-500 drop-shadow-[0_0_30px_rgba(245,158,11,0.3)] italic"> GANGS</span>
         </h1>
         
         {/* Clan Description */}
@@ -172,7 +172,7 @@ export default async function Home() {
             Join Now
           </a>
           <Link 
-            href="/kontak"
+            href="/sigma"
             className="flex items-center gap-1 border-2 border-amber-900 hover:bg-amber-950/50 transition rounded rounded-tl-3xl rounded-br-3xl rounded-bl-3xl px-6 h-11 font-medium animate-slide-up"
           >
             <Sigma strokeWidth={1} size={18} />

@@ -9,7 +9,7 @@ import { Shield, Target, Zap, Users, Heart, Clock, ShieldCheck, HandHeart, Sword
 
 export default async function AboutPage() {
   const clan = await getClanData();
-  if (!clan) return <div className="text-white text-center py-20">DATABASE ERROR...</div>;
+  if (!clan) return <div className="text-white text-center py-20">SUPERCELL MAINTENANCE</div>;
 
   const visions = [
     { icon: Target, title: "Visi Kami", description: "Membangun komunitas Clash of Clans yang solid, kompetitif, namun tetap santai. Kekalahan di War hanyalah bahan evaluasi (dan candaan) untuk kemenangan hari esok." },
@@ -51,7 +51,7 @@ export default async function AboutPage() {
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-amber-500/20 bg-amber-500/5 text-amber-500 text-[10px] font-black uppercase tracking-[0.3em] mb-6">
             <Shield size={12} /> About Us
           </div>
-          <h1 className="text-6xl md:text-8xl font-black tracking-tighter uppercase italic leading-none mb-6">
+          <h1 className="text-6xl md:text-8xl font-black uppercase italic leading-none mb-6" style={{ fontFamily: "'Docallisme', sans-serif" }}>
             MENCARI <br /> YANG <span className="text-amber-500">TERTAWA</span>
           </h1>
           <p className="text-zinc-500 text-sm md:text-base leading-relaxed max-w-2xl mx-auto italic font-medium">

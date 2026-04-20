@@ -12,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${baseUrl}/kontak`,
+      url: `${baseUrl}/sigma`,
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.9,
@@ -29,6 +29,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.3,
     },
-    // Tambahin halaman lain kalau ada, misal /stats atau /members
   ]
 }

@@ -21,7 +21,7 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
     { name: "Home", href: "/" },
     { name: "Personel", href: "/members" },
     { name: "About Us", href: "/tentang" },
-    { name: "Chat", href: "/kontak" },
+    { name: "Ask Sigma", href: "/sigma" },
   ];
 
   return (
@@ -33,14 +33,14 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
         viewport={{ once: true }}
         transition={{ type: "spring", stiffness: 250, damping: 70, mass: 1 }}
       >
-        <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition">
+        <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition" style={{ fontFamily: "'Docallisme', sans-serif" }}>
           <img 
             src={badge} 
             alt="Badge" 
             className="w-8 h-8 drop-shadow-[0_0_10px_rgba(245,158,11,0.5)]" 
           />
-          <span className="font-black text-xl tracking-tighter text-amber-500 hidden sm:inline">
-            {clanName}
+          <span className="font-black text-xl tracking-tighter text-white hidden sm:inline tracking-tighter uppercase">
+            AAA <span className="text-amber-500 italic">GANGS</span>
           </span>
         </Link>
 
@@ -65,11 +65,11 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
         <div className="flex items-center gap-4 md:gap-6">
           {/* Let's Talk Button - Desktop */}
           <Link
-            href="/kontak"
+            href="/sigma"
             className={`hidden md:flex items-center gap-2 px-6 py-2.5 font-400 text-xs tracking-[0.1em] transition-all rounded rounded-tl-3xl rounded-br-3xl rounded-bl-3xl ${poppins.className} ${
-              pathname === '/kontak'
+              pathname === '/sigma'
                 ? 'border-2 border-amber-500 text-amber-500 hover:bg-amber-600/10'
-                : 'bg-zinc-800 hover:bg-amber-700 text-white'
+                : 'border-1 border-zinc-800/70 bg-zinc-900/90 hover:bg-amber-700 text-white'
             }`}
           >
             <Sigma size={14}/>

@@ -10,7 +10,7 @@ export default async function MembersPage() {
 
   if (!clan) return (
     <div className="min-h-screen bg-[#050505] flex items-center justify-center text-white font-black text-4xl italic">
-      DATABASE ERROR...
+      SUPERCELL MAINTENANCE
     </div>
   );
 
@@ -47,8 +47,8 @@ export default async function MembersPage() {
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-amber-500/20 bg-amber-500/5 text-amber-500 text-[10px] font-black uppercase tracking-[0.3em] mb-4 animate-slide-up">
               <Users size={12} /> Personnel Directory
             </div>
-            <h1 className="text-6xl md:text-8xl font-black tracking-tighter uppercase italic leading-none animate-slide-up">
-              CLAN <span className="text-amber-500">MEMBERS</span>
+            <h1 className="text-6xl md:text-8xl font-black uppercase italic leading-none animate-slide-up" style={{ fontFamily: "'Docallisme', sans-serif" }}>
+              GANG <span className="text-amber-500">MEMBERS</span>
             </h1>
           </div>
           <div className="text-right animate-slide-up">

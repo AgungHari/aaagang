@@ -69,3 +69,11 @@ body {
 .hide-scrollbar::-webkit-scrollbar-thumb {
   background: transparent !important;
 }
+
+@font-face {
+  font-family: 'Docallisme';
+  src: url('/fonts/UrbanHeroes.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
