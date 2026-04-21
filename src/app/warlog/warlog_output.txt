@@ -1,0 +1,3927 @@
+{
+    "items": [
+        {
+            "result": "win",
+            "endTime": "20260420T022323.000Z",
+            "teamSize": 45,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png"
+                },
+                "clanLevel": 17,
+                "attacks": 52,
+                "stars": 129,
+                "destructionPercentage": 96.2,
+                "expEarned": 576
+            },
+            "opponent": {
+                "tag": "#UPLPLGPY",
+                "name": "SKY丶魔神",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/-h5RtATqb7CAm_BMXOBDaawbVtpKoRVKPb6gOTUnOcY.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/-h5RtATqb7CAm_BMXOBDaawbVtpKoRVKPb6gOTUnOcY.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/-h5RtATqb7CAm_BMXOBDaawbVtpKoRVKPb6gOTUnOcY.png"
+                },
+                "clanLevel": 16,
+                "stars": 127,
+                "destructionPercentage": 96.46667
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20260417T203212.000Z",
+            "teamSize": 45,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png"
+                },
+                "clanLevel": 17,
+                "attacks": 45,
+                "stars": 110,
+                "destructionPercentage": 86.04444,
+                "expEarned": 554
+            },
+            "opponent": {
+                "tag": "#2QGY2Q2JU",
+                "name": "india",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/9quZkwmfejP2bMAUOfEwCZSdgLCqsK3aCYKB53ZrbUE.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/9quZkwmfejP2bMAUOfEwCZSdgLCqsK3aCYKB53ZrbUE.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/9quZkwmfejP2bMAUOfEwCZSdgLCqsK3aCYKB53ZrbUE.png"
+                },
+                "clanLevel": 18,
+                "stars": 63,
+                "destructionPercentage": 50.577778
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20260415T202025.000Z",
+            "teamSize": 45,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png"
+                },
+                "clanLevel": 17,
+                "attacks": 50,
+                "stars": 127,
+                "destructionPercentage": 96.22222,
+                "expEarned": 604
+            },
+            "opponent": {
+                "tag": "#2JPPYQYJR",
+                "name": "Krishna my Clan",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/3slk6MSKV8yWZ9HOtREcivQ_0lmuyH65vB8btFK1D4o.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/3slk6MSKV8yWZ9HOtREcivQ_0lmuyH65vB8btFK1D4o.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/3slk6MSKV8yWZ9HOtREcivQ_0lmuyH65vB8btFK1D4o.png"
+                },
+                "clanLevel": 9,
+                "stars": 40,
+                "destructionPercentage": 31.644444
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20260413T172834.000Z",
+            "teamSize": 50,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png"
+                },
+                "clanLevel": 17,
+                "attacks": 51,
+                "stars": 116,
+                "destructionPercentage": 82.96,
+                "expEarned": 555
+            },
+            "opponent": {
+                "tag": "#Q0G0VG9Q",
+                "name": "1453'Ay,Yildiz",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Yr0JPIAwrEl_y5ZREAnsDX0Zu09uc29k64gSET24UY4.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Yr0JPIAwrEl_y5ZREAnsDX0Zu09uc29k64gSET24UY4.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Yr0JPIAwrEl_y5ZREAnsDX0Zu09uc29k64gSET24UY4.png"
+                },
+                "clanLevel": 15,
+                "stars": 130,
+                "destructionPercentage": 89.38
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20260411T123105.000Z",
+            "teamSize": 40,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png"
+                },
+                "clanLevel": 17,
+                "attacks": 44,
+                "stars": 97,
+                "destructionPercentage": 88.675,
+                "expEarned": 465
+            },
+            "opponent": {
+                "tag": "#2QRCGQVL0",
+                "name": "❤️SOUL❤️Dragon❤",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/tE3o4rwQ4GoaTdaTzgDrcYbtLURNIFKRWLDb5SQsR44.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/tE3o4rwQ4GoaTdaTzgDrcYbtLURNIFKRWLDb5SQsR44.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/tE3o4rwQ4GoaTdaTzgDrcYbtLURNIFKRWLDb5SQsR44.png"
+                },
+                "clanLevel": 21,
+                "stars": 120,
+                "destructionPercentage": 100.0
+            }
+        },
+        {
+            "result": null,
+            "endTime": "20260409T111646.000Z",
+            "teamSize": 30,
+            "attacksPerMember": 1,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png"
+                },
+                "clanLevel": 17,
+                "attacks": 146,
+                "stars": 442,
+                "destructionPercentage": 464.23334,
+                "expEarned": 0
+            },
+            "opponent": {
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+                },
+                "clanLevel": 0,
+                "stars": 331,
+                "destructionPercentage": 0.0
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20260331T113106.000Z",
+            "teamSize": 45,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png"
+                },
+                "clanLevel": 17,
+                "attacks": 43,
+                "stars": 102,
+                "destructionPercentage": 86.4,
+                "expEarned": 487
+            },
+            "opponent": {
+                "tag": "#2YGR29J2J",
+                "name": "Z&rO",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Nu6mEAt7Nhtj-y7OvgdaOPOT7QcTXW_66QLINj8kn6g.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Nu6mEAt7Nhtj-y7OvgdaOPOT7QcTXW_66QLINj8kn6g.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Nu6mEAt7Nhtj-y7OvgdaOPOT7QcTXW_66QLINj8kn6g.png"
+                },
+                "clanLevel": 15,
+                "stars": 131,
+                "destructionPercentage": 99.37778
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20260329T022424.000Z",
+            "teamSize": 45,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png"
+                },
+                "clanLevel": 17,
+                "attacks": 44,
+                "stars": 109,
+                "destructionPercentage": 85.755554,
+                "expEarned": 465
+            },
+            "opponent": {
+                "tag": "#PLGRVP",
+                "name": "KING STRIKER",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Z8Z1Er0uyqqaTAyDqsIh21SoIfs9WWFvmUgw8vH8jcw.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Z8Z1Er0uyqqaTAyDqsIh21SoIfs9WWFvmUgw8vH8jcw.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Z8Z1Er0uyqqaTAyDqsIh21SoIfs9WWFvmUgw8vH8jcw.png"
+                },
+                "clanLevel": 20,
+                "stars": 135,
+                "destructionPercentage": 100.0
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20260327T022111.000Z",
+            "teamSize": 50,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png"
+                },
+                "clanLevel": 17,
+                "attacks": 35,
+                "stars": 85,
+                "destructionPercentage": 61.2,
+                "expEarned": 434
+            },
+            "opponent": {
+                "tag": "#2RVGGQQR0",
+                "name": "1 ASGABAT 1",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/lh5138F8tqr755o4PEhvhwnDuJTw4x_eEYCbV9ZU56E.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/lh5138F8tqr755o4PEhvhwnDuJTw4x_eEYCbV9ZU56E.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/lh5138F8tqr755o4PEhvhwnDuJTw4x_eEYCbV9ZU56E.png"
+                },
+                "clanLevel": 14,
+                "stars": 54,
+                "destructionPercentage": 38.24
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20260324T231714.000Z",
+            "teamSize": 50,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png"
+                },
+                "clanLevel": 17,
+                "attacks": 39,
+                "stars": 103,
+                "destructionPercentage": 71.22,
+                "expEarned": 414
+            },
+            "opponent": {
+                "tag": "#229R222CP",
+                "name": "جبابره البصره",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/ISyB5wAm2v7B_rm-LJS360ga-83IFL8MABcjxft1RkA.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/ISyB5wAm2v7B_rm-LJS360ga-83IFL8MABcjxft1RkA.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/ISyB5wAm2v7B_rm-LJS360ga-83IFL8MABcjxft1RkA.png"
+                },
+                "clanLevel": 18,
+                "stars": 150,
+                "destructionPercentage": 100.0
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20260322T185631.000Z",
+            "teamSize": 50,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/tQhnRkh3DxU18IV-cHpvvNbQhU7Ig0_-jKHtOx55M10.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/tQhnRkh3DxU18IV-cHpvvNbQhU7Ig0_-jKHtOx55M10.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/tQhnRkh3DxU18IV-cHpvvNbQhU7Ig0_-jKHtOx55M10.png"
+                },
+                "clanLevel": 16,
+                "attacks": 40,
+                "stars": 97,
+                "destructionPercentage": 70.6,
+                "expEarned": 496
+            },
+            "opponent": {
+                "tag": "#2QG8YYJPL",
+                "name": "미쑤박",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/C_xLZslenfzgonwCJafQy5wy8rWAIOSGwO8PS4PBwKk.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/C_xLZslenfzgonwCJafQy5wy8rWAIOSGwO8PS4PBwKk.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/C_xLZslenfzgonwCJafQy5wy8rWAIOSGwO8PS4PBwKk.png"
+                },
+                "clanLevel": 18,
+                "stars": 22,
+                "destructionPercentage": 14.86
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20260320T134528.000Z",
+            "teamSize": 50,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/tQhnRkh3DxU18IV-cHpvvNbQhU7Ig0_-jKHtOx55M10.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/tQhnRkh3DxU18IV-cHpvvNbQhU7Ig0_-jKHtOx55M10.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/tQhnRkh3DxU18IV-cHpvvNbQhU7Ig0_-jKHtOx55M10.png"
+                },
+                "clanLevel": 16,
+                "attacks": 47,
+                "stars": 115,
+                "destructionPercentage": 80.04,
+                "expEarned": 467
+            },
+            "opponent": {
+                "tag": "#2JQ0PQ2PG",
+                "name": "Solo War",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/3slk6MSKV8yWZ9HOtREcivQ_0lmuyH65vB8btFK1D4o.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/3slk6MSKV8yWZ9HOtREcivQ_0lmuyH65vB8btFK1D4o.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/3slk6MSKV8yWZ9HOtREcivQ_0lmuyH65vB8btFK1D4o.png"
+                },
+                "clanLevel": 9,
+                "stars": 150,
+                "destructionPercentage": 100.0
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20260318T130031.000Z",
+            "teamSize": 45,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/tQhnRkh3DxU18IV-cHpvvNbQhU7Ig0_-jKHtOx55M10.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/tQhnRkh3DxU18IV-cHpvvNbQhU7Ig0_-jKHtOx55M10.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/tQhnRkh3DxU18IV-cHpvvNbQhU7Ig0_-jKHtOx55M10.png"
+                },
+                "clanLevel": 16,
+                "attacks": 48,
+                "stars": 113,
+                "destructionPercentage": 87.31111,
+                "expEarned": 464
+            },
+            "opponent": {
+                "tag": "#2QUU02PRU",
+                "name": "kopi hitam",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/rVJOtZckk_GoWXqPCgiQo-5SjpUgXpSIpf1babZkDmM.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/rVJOtZckk_GoWXqPCgiQo-5SjpUgXpSIpf1babZkDmM.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/rVJOtZckk_GoWXqPCgiQo-5SjpUgXpSIpf1babZkDmM.png"
+                },
+                "clanLevel": 16,
+                "stars": 121,
+                "destructionPercentage": 93.6
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20260316T114534.000Z",
+            "teamSize": 45,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/tQhnRkh3DxU18IV-cHpvvNbQhU7Ig0_-jKHtOx55M10.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/tQhnRkh3DxU18IV-cHpvvNbQhU7Ig0_-jKHtOx55M10.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/tQhnRkh3DxU18IV-cHpvvNbQhU7Ig0_-jKHtOx55M10.png"
+                },
+                "clanLevel": 16,
+                "attacks": 49,
+                "stars": 107,
+                "destructionPercentage": 85.755554,
+                "expEarned": 428
+            },
+            "opponent": {
+                "tag": "#2QLRG88VC",
+                "name": "REQ N LEAVE",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/hFx9Zts_rmx2vjElnAINeRx0xoLOFJ2e6nB-inEOM9I.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/hFx9Zts_rmx2vjElnAINeRx0xoLOFJ2e6nB-inEOM9I.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/hFx9Zts_rmx2vjElnAINeRx0xoLOFJ2e6nB-inEOM9I.png"
+                },
+                "clanLevel": 27,
+                "stars": 127,
+                "destructionPercentage": 97.0
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20260314T104152.000Z",
+            "teamSize": 50,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/tQhnRkh3DxU18IV-cHpvvNbQhU7Ig0_-jKHtOx55M10.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/tQhnRkh3DxU18IV-cHpvvNbQhU7Ig0_-jKHtOx55M10.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/tQhnRkh3DxU18IV-cHpvvNbQhU7Ig0_-jKHtOx55M10.png"
+                },
+                "clanLevel": 16,
+                "attacks": 44,
+                "stars": 111,
+                "destructionPercentage": 77.62,
+                "expEarned": 495
+            },
+            "opponent": {
+                "tag": "#2GR2208Y8",
+                "name": "Antots",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/aRr38blDOJ0cR0yjb8rnsgUhQS3JIn7surubi-p780g.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/aRr38blDOJ0cR0yjb8rnsgUhQS3JIn7surubi-p780g.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/aRr38blDOJ0cR0yjb8rnsgUhQS3JIn7surubi-p780g.png"
+                },
+                "clanLevel": 12,
+                "stars": 150,
+                "destructionPercentage": 100.0
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20260311T130632.000Z",
+            "teamSize": 40,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/tQhnRkh3DxU18IV-cHpvvNbQhU7Ig0_-jKHtOx55M10.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/tQhnRkh3DxU18IV-cHpvvNbQhU7Ig0_-jKHtOx55M10.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/tQhnRkh3DxU18IV-cHpvvNbQhU7Ig0_-jKHtOx55M10.png"
+                },
+                "clanLevel": 16,
+                "attacks": 44,
+                "stars": 101,
+                "destructionPercentage": 88.35,
+                "expEarned": 425
+            },
+            "opponent": {
+                "tag": "#2QL9GG2QL",
+                "name": "BLAMMATSSS",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/va-Khje5Nt74M6itnh4e3Gvq0p0RZZOtzJLGsuFEuGE.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/va-Khje5Nt74M6itnh4e3Gvq0p0RZZOtzJLGsuFEuGE.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/va-Khje5Nt74M6itnh4e3Gvq0p0RZZOtzJLGsuFEuGE.png"
+                },
+                "clanLevel": 19,
+                "stars": 120,
+                "destructionPercentage": 100.0
+            }
+        },
+        {
+            "result": null,
+            "endTime": "20260309T092703.000Z",
+            "teamSize": 30,
+            "attacksPerMember": 1,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/tQhnRkh3DxU18IV-cHpvvNbQhU7Ig0_-jKHtOx55M10.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/tQhnRkh3DxU18IV-cHpvvNbQhU7Ig0_-jKHtOx55M10.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/tQhnRkh3DxU18IV-cHpvvNbQhU7Ig0_-jKHtOx55M10.png"
+                },
+                "clanLevel": 16,
+                "attacks": 154,
+                "stars": 377,
+                "destructionPercentage": 440.9,
+                "expEarned": 0
+            },
+            "opponent": {
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+                },
+                "clanLevel": 0,
+                "stars": 397,
+                "destructionPercentage": 0.0
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20260228T115041.000Z",
+            "teamSize": 40,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/tQhnRkh3DxU18IV-cHpvvNbQhU7Ig0_-jKHtOx55M10.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/tQhnRkh3DxU18IV-cHpvvNbQhU7Ig0_-jKHtOx55M10.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/tQhnRkh3DxU18IV-cHpvvNbQhU7Ig0_-jKHtOx55M10.png"
+                },
+                "clanLevel": 16,
+                "attacks": 55,
+                "stars": 101,
+                "destructionPercentage": 87.025,
+                "expEarned": 362
+            },
+            "opponent": {
+                "tag": "#G2UPYRVP",
+                "name": "High Life",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/e1EnJdKfiPAPEeXE3o4-a6z7_-0MFZ8VgvkPidnRJ3g.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/e1EnJdKfiPAPEeXE3o4-a6z7_-0MFZ8VgvkPidnRJ3g.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/e1EnJdKfiPAPEeXE3o4-a6z7_-0MFZ8VgvkPidnRJ3g.png"
+                },
+                "clanLevel": 15,
+                "stars": 120,
+                "destructionPercentage": 100.0
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20260226T045049.000Z",
+            "teamSize": 35,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/tQhnRkh3DxU18IV-cHpvvNbQhU7Ig0_-jKHtOx55M10.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/tQhnRkh3DxU18IV-cHpvvNbQhU7Ig0_-jKHtOx55M10.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/tQhnRkh3DxU18IV-cHpvvNbQhU7Ig0_-jKHtOx55M10.png"
+                },
+                "clanLevel": 16,
+                "attacks": 37,
+                "stars": 74,
+                "destructionPercentage": 77.11429,
+                "expEarned": 396
+            },
+            "opponent": {
+                "tag": "#2Y2CC9R8J",
+                "name": "ERROR GUY'S",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/ovYGY0pbPKxfsr9SdgSunCwAuuEjmauZRUz1iF8Yats.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/ovYGY0pbPKxfsr9SdgSunCwAuuEjmauZRUz1iF8Yats.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/ovYGY0pbPKxfsr9SdgSunCwAuuEjmauZRUz1iF8Yats.png"
+                },
+                "clanLevel": 14,
+                "stars": 48,
+                "destructionPercentage": 46.857143
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20260222T140545.000Z",
+            "teamSize": 35,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/tQhnRkh3DxU18IV-cHpvvNbQhU7Ig0_-jKHtOx55M10.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/tQhnRkh3DxU18IV-cHpvvNbQhU7Ig0_-jKHtOx55M10.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/tQhnRkh3DxU18IV-cHpvvNbQhU7Ig0_-jKHtOx55M10.png"
+                },
+                "clanLevel": 16,
+                "attacks": 40,
+                "stars": 83,
+                "destructionPercentage": 85.4,
+                "expEarned": 396
+            },
+            "opponent": {
+                "tag": "#CLVV02C",
+                "name": "StayAlive -GSC",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/75v1HLGKU1Bx2TKBurUBaOTr3ZRomP49Pzf0ZQ6w3do.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/75v1HLGKU1Bx2TKBurUBaOTr3ZRomP49Pzf0ZQ6w3do.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/75v1HLGKU1Bx2TKBurUBaOTr3ZRomP49Pzf0ZQ6w3do.png"
+                },
+                "clanLevel": 17,
+                "stars": 40,
+                "destructionPercentage": 39.057144
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20260219T121604.000Z",
+            "teamSize": 20,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/WLZ7opL7d4XeSN6llmrDs2fn-4-72cYwZQKgPdpGMmc.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/WLZ7opL7d4XeSN6llmrDs2fn-4-72cYwZQKgPdpGMmc.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/WLZ7opL7d4XeSN6llmrDs2fn-4-72cYwZQKgPdpGMmc.png"
+                },
+                "clanLevel": 16,
+                "attacks": 28,
+                "stars": 47,
+                "destructionPercentage": 85.55,
+                "expEarned": 234
+            },
+            "opponent": {
+                "tag": "#2QVY8202G",
+                "name": "#GEAR ONE CLAN#",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/eHiqNbxOFuOFYXVoC-81n5pyn4DodDuA1IlAYt8I2Bw.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/eHiqNbxOFuOFYXVoC-81n5pyn4DodDuA1IlAYt8I2Bw.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/eHiqNbxOFuOFYXVoC-81n5pyn4DodDuA1IlAYt8I2Bw.png"
+                },
+                "clanLevel": 18,
+                "stars": 58,
+                "destructionPercentage": 98.1
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20260217T022640.000Z",
+            "teamSize": 40,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/WLZ7opL7d4XeSN6llmrDs2fn-4-72cYwZQKgPdpGMmc.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/WLZ7opL7d4XeSN6llmrDs2fn-4-72cYwZQKgPdpGMmc.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/WLZ7opL7d4XeSN6llmrDs2fn-4-72cYwZQKgPdpGMmc.png"
+                },
+                "clanLevel": 16,
+                "attacks": 42,
+                "stars": 95,
+                "destructionPercentage": 86.625,
+                "expEarned": 387
+            },
+            "opponent": {
+                "tag": "#2JRRUYURV",
+                "name": "Lamb of God",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/4hafIHyKqSeLpp7oQAGvVr_Q1k44vVLyBhjncbWBBqo.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/4hafIHyKqSeLpp7oQAGvVr_Q1k44vVLyBhjncbWBBqo.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/4hafIHyKqSeLpp7oQAGvVr_Q1k44vVLyBhjncbWBBqo.png"
+                },
+                "clanLevel": 9,
+                "stars": 118,
+                "destructionPercentage": 99.125
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20260214T202835.000Z",
+            "teamSize": 35,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/WLZ7opL7d4XeSN6llmrDs2fn-4-72cYwZQKgPdpGMmc.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/WLZ7opL7d4XeSN6llmrDs2fn-4-72cYwZQKgPdpGMmc.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/WLZ7opL7d4XeSN6llmrDs2fn-4-72cYwZQKgPdpGMmc.png"
+                },
+                "clanLevel": 16,
+                "attacks": 40,
+                "stars": 88,
+                "destructionPercentage": 86.542854,
+                "expEarned": 341
+            },
+            "opponent": {
+                "tag": "#28VGG220L",
+                "name": "KINGS OF KINGS",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/6TCZf43gOXgWxsfGipXdeToqx5tWea2xmletMhEIPbo.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/6TCZf43gOXgWxsfGipXdeToqx5tWea2xmletMhEIPbo.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/6TCZf43gOXgWxsfGipXdeToqx5tWea2xmletMhEIPbo.png"
+                },
+                "clanLevel": 15,
+                "stars": 103,
+                "destructionPercentage": 99.37143
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20260212T084422.000Z",
+            "teamSize": 35,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/WLZ7opL7d4XeSN6llmrDs2fn-4-72cYwZQKgPdpGMmc.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/WLZ7opL7d4XeSN6llmrDs2fn-4-72cYwZQKgPdpGMmc.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/WLZ7opL7d4XeSN6llmrDs2fn-4-72cYwZQKgPdpGMmc.png"
+                },
+                "clanLevel": 16,
+                "attacks": 26,
+                "stars": 62,
+                "destructionPercentage": 65.37143,
+                "expEarned": 237
+            },
+            "opponent": {
+                "tag": "#2RJJYJLPY",
+                "name": "Req N Leave",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/XeR1g3Glwe_k9DWvMHwj9v9XPzXr3wwj0i9kRZHQqy4.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/XeR1g3Glwe_k9DWvMHwj9v9XPzXr3wwj0i9kRZHQqy4.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/XeR1g3Glwe_k9DWvMHwj9v9XPzXr3wwj0i9kRZHQqy4.png"
+                },
+                "clanLevel": 10,
+                "stars": 97,
+                "destructionPercentage": 96.171425
+            }
+        },
+        {
+            "result": "tie",
+            "endTime": "20260210T060901.000Z",
+            "teamSize": 15,
+            "attacksPerMember": 1,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/WLZ7opL7d4XeSN6llmrDs2fn-4-72cYwZQKgPdpGMmc.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/WLZ7opL7d4XeSN6llmrDs2fn-4-72cYwZQKgPdpGMmc.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/WLZ7opL7d4XeSN6llmrDs2fn-4-72cYwZQKgPdpGMmc.png"
+                },
+                "clanLevel": 16,
+                "attacks": 29,
+                "stars": 71,
+                "destructionPercentage": 153.06667,
+                "expEarned": 0
+            },
+            "opponent": {
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+                },
+                "clanLevel": 0,
+                "stars": 195,
+                "destructionPercentage": 0.0
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20260131T183344.000Z",
+            "teamSize": 10,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png"
+                },
+                "clanLevel": 16,
+                "attacks": 8,
+                "stars": 15,
+                "destructionPercentage": 66.3,
+                "expEarned": 142
+            },
+            "opponent": {
+                "tag": "#2L2RJJPY9",
+                "name": "MODERN",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/5ottiKBkjQf71zgE311KSibvpFxO0KeiFBN_TTQImlo.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/5ottiKBkjQf71zgE311KSibvpFxO0KeiFBN_TTQImlo.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/5ottiKBkjQf71zgE311KSibvpFxO0KeiFBN_TTQImlo.png"
+                },
+                "clanLevel": 12,
+                "stars": 6,
+                "destructionPercentage": 20.0
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20260114T183429.000Z",
+            "teamSize": 10,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png"
+                },
+                "clanLevel": 16,
+                "attacks": 6,
+                "stars": 12,
+                "destructionPercentage": 53.9,
+                "expEarned": 81
+            },
+            "opponent": {
+                "tag": "#2JVQRR82",
+                "name": "FairyTale BD",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/gyvjOdtl3ixP5ivqB8yFZK9rpSgKuHchdLKySCVkPqY.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/gyvjOdtl3ixP5ivqB8yFZK9rpSgKuHchdLKySCVkPqY.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/gyvjOdtl3ixP5ivqB8yFZK9rpSgKuHchdLKySCVkPqY.png"
+                },
+                "clanLevel": 22,
+                "stars": 22,
+                "destructionPercentage": 89.3
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20260110T060335.000Z",
+            "teamSize": 15,
+            "attacksPerMember": 1,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png"
+                },
+                "clanLevel": 16,
+                "attacks": 81,
+                "stars": 298,
+                "destructionPercentage": 530.73334,
+                "expEarned": 0
+            },
+            "opponent": {
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+                },
+                "clanLevel": 0,
+                "stars": 106,
+                "destructionPercentage": 0.0
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20260101T151118.000Z",
+            "teamSize": 10,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png"
+                },
+                "clanLevel": 16,
+                "attacks": 5,
+                "stars": 7,
+                "destructionPercentage": 35.8,
+                "expEarned": 59
+            },
+            "opponent": {
+                "tag": "#LPLQPRUV",
+                "name": "ابو المجد",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/nbE0E9qK2pNxyYK7qHyP-zU6yCJal3kwGaVKPN6oxuQ.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/nbE0E9qK2pNxyYK7qHyP-zU6yCJal3kwGaVKPN6oxuQ.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/nbE0E9qK2pNxyYK7qHyP-zU6yCJal3kwGaVKPN6oxuQ.png"
+                },
+                "clanLevel": 13,
+                "stars": 30,
+                "destructionPercentage": 100.0
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20251223T200924.000Z",
+            "teamSize": 20,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png"
+                },
+                "clanLevel": 16,
+                "attacks": 14,
+                "stars": 35,
+                "destructionPercentage": 62.1,
+                "expEarned": 170
+            },
+            "opponent": {
+                "tag": "#2RPG8C89P",
+                "name": "GOB CITY",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/oGTnqUtEQwKipZHmc-T8YC5cR4JKYJsA2Hgtr-QRvkE.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/oGTnqUtEQwKipZHmc-T8YC5cR4JKYJsA2Hgtr-QRvkE.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/oGTnqUtEQwKipZHmc-T8YC5cR4JKYJsA2Hgtr-QRvkE.png"
+                },
+                "clanLevel": 17,
+                "stars": 54,
+                "destructionPercentage": 95.7
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20251221T164020.000Z",
+            "teamSize": 20,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png"
+                },
+                "clanLevel": 16,
+                "attacks": 5,
+                "stars": 9,
+                "destructionPercentage": 16.0,
+                "expEarned": 48
+            },
+            "opponent": {
+                "tag": "#2R2GQVGC0",
+                "name": "Red Eagle",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/71WEGf8OFsvY5BrtQfW0vVmCHWJxeA9SqjHYVZpR4ms.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/71WEGf8OFsvY5BrtQfW0vVmCHWJxeA9SqjHYVZpR4ms.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/71WEGf8OFsvY5BrtQfW0vVmCHWJxeA9SqjHYVZpR4ms.png"
+                },
+                "clanLevel": 14,
+                "stars": 59,
+                "destructionPercentage": 99.6
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20251219T160020.000Z",
+            "teamSize": 20,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png"
+                },
+                "clanLevel": 16,
+                "attacks": 12,
+                "stars": 25,
+                "destructionPercentage": 53.05,
+                "expEarned": 147
+            },
+            "opponent": {
+                "tag": "#20CRP0G9C",
+                "name": "sb bd clan",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/u1D9g8kGRbqQomygcR5DscR-mkCZHtG-5QNmQ-kOPgI.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/u1D9g8kGRbqQomygcR5DscR-mkCZHtG-5QNmQ-kOPgI.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/u1D9g8kGRbqQomygcR5DscR-mkCZHtG-5QNmQ-kOPgI.png"
+                },
+                "clanLevel": 17,
+                "stars": 60,
+                "destructionPercentage": 100.0
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20251213T180425.000Z",
+            "teamSize": 20,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png"
+                },
+                "clanLevel": 16,
+                "attacks": 16,
+                "stars": 31,
+                "destructionPercentage": 58.8,
+                "expEarned": 179
+            },
+            "opponent": {
+                "tag": "#2QUC2V80C",
+                "name": "Iran",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Kr5qoWnQR6g3ibf4yHW2LmvkUvf_7DgFZ--uZOkwU2M.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Kr5qoWnQR6g3ibf4yHW2LmvkUvf_7DgFZ--uZOkwU2M.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Kr5qoWnQR6g3ibf4yHW2LmvkUvf_7DgFZ--uZOkwU2M.png"
+                },
+                "clanLevel": 16,
+                "stars": 55,
+                "destructionPercentage": 94.2
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20251210T061136.000Z",
+            "teamSize": 15,
+            "attacksPerMember": 1,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png"
+                },
+                "clanLevel": 16,
+                "attacks": 84,
+                "stars": 296,
+                "destructionPercentage": 522.3333,
+                "expEarned": 0
+            },
+            "opponent": {
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+                },
+                "clanLevel": 0,
+                "stars": 101,
+                "destructionPercentage": 0.0
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20251126T022008.000Z",
+            "teamSize": 5,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png"
+                },
+                "clanLevel": 16,
+                "attacks": 1,
+                "stars": 2,
+                "destructionPercentage": 18.8,
+                "expEarned": 12
+            },
+            "opponent": {
+                "tag": "#2CP8URJ08",
+                "name": "VânTeku",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/DcHcgP14dK0OPmf_G77JtangGL7_5u6oAOWUbbXP8Yw.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/DcHcgP14dK0OPmf_G77JtangGL7_5u6oAOWUbbXP8Yw.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/DcHcgP14dK0OPmf_G77JtangGL7_5u6oAOWUbbXP8Yw.png"
+                },
+                "clanLevel": 1,
+                "stars": 14,
+                "destructionPercentage": 98.2
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20251122T152735.000Z",
+            "teamSize": 5,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png"
+                },
+                "clanLevel": 16,
+                "attacks": 6,
+                "stars": 12,
+                "destructionPercentage": 93.8,
+                "expEarned": 143
+            },
+            "opponent": {
+                "tag": "#QVU8GR20",
+                "name": "D®€@D♏@nG¥@n$",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/KbvkwGYgxLk7hpcoXKrhmrFJNkyQtG2aGlEZVs3HVTw.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/KbvkwGYgxLk7hpcoXKrhmrFJNkyQtG2aGlEZVs3HVTw.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/KbvkwGYgxLk7hpcoXKrhmrFJNkyQtG2aGlEZVs3HVTw.png"
+                },
+                "clanLevel": 15,
+                "stars": 12,
+                "destructionPercentage": 85.4
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20251119T145923.000Z",
+            "teamSize": 5,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png"
+                },
+                "clanLevel": 16,
+                "attacks": 4,
+                "stars": 8,
+                "destructionPercentage": 62.6,
+                "expEarned": 107
+            },
+            "opponent": {
+                "tag": "#2LYGUGVR9",
+                "name": "ANAK RANTAU",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/EPVN5XnbNxThtrmKGKCF2TqlpP53He4H5lQCxQvyj1I.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/EPVN5XnbNxThtrmKGKCF2TqlpP53He4H5lQCxQvyj1I.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/EPVN5XnbNxThtrmKGKCF2TqlpP53He4H5lQCxQvyj1I.png"
+                },
+                "clanLevel": 23,
+                "stars": 4,
+                "destructionPercentage": 31.6
+            }
+        },
+        {
+            "result": null,
+            "endTime": "20251111T005404.000Z",
+            "teamSize": 15,
+            "attacksPerMember": 1,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png"
+                },
+                "clanLevel": 16,
+                "attacks": 18,
+                "stars": 65,
+                "destructionPercentage": 110.4,
+                "expEarned": 0
+            },
+            "opponent": {
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+                },
+                "clanLevel": 0,
+                "stars": 105,
+                "destructionPercentage": 0.0
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20251017T100243.000Z",
+            "teamSize": 10,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png"
+                },
+                "clanLevel": 16,
+                "attacks": 7,
+                "stars": 19,
+                "destructionPercentage": 66.7,
+                "expEarned": 98
+            },
+            "opponent": {
+                "tag": "#PYVLRLPC",
+                "name": "EZclan.com.tw",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/1DZaxGoeujxfpiDSlD8QtREUzLPTSc-7nb40YkCWkj0.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/1DZaxGoeujxfpiDSlD8QtREUzLPTSc-7nb40YkCWkj0.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/1DZaxGoeujxfpiDSlD8QtREUzLPTSc-7nb40YkCWkj0.png"
+                },
+                "clanLevel": 23,
+                "stars": 28,
+                "destructionPercentage": 94.2
+            }
+        },
+        {
+            "result": "tie",
+            "endTime": "20251010T165922.000Z",
+            "teamSize": 15,
+            "attacksPerMember": 1,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png"
+                },
+                "clanLevel": 16,
+                "attacks": 10,
+                "stars": 28,
+                "destructionPercentage": 64.6,
+                "expEarned": 0
+            },
+            "opponent": {
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+                },
+                "clanLevel": 0,
+                "stars": 110,
+                "destructionPercentage": 0.0
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20250921T164156.000Z",
+            "teamSize": 5,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png"
+                },
+                "clanLevel": 16,
+                "attacks": 0,
+                "stars": 0,
+                "destructionPercentage": 0.0,
+                "expEarned": 0
+            },
+            "opponent": {
+                "tag": "#PVCCJYU2",
+                "name": "fuez@ mort",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/ORJ4sHY78hNQXZcsUzT18I5Jj_qSbEpNQP2wamNsGO8.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/ORJ4sHY78hNQXZcsUzT18I5Jj_qSbEpNQP2wamNsGO8.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/ORJ4sHY78hNQXZcsUzT18I5Jj_qSbEpNQP2wamNsGO8.png"
+                },
+                "clanLevel": 15,
+                "stars": 12,
+                "destructionPercentage": 89.8
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20250915T103655.000Z",
+            "teamSize": 5,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png"
+                },
+                "clanLevel": 16,
+                "attacks": 5,
+                "stars": 12,
+                "destructionPercentage": 89.0,
+                "expEarned": 127
+            },
+            "opponent": {
+                "tag": "#2R00G8Y09",
+                "name": "Real Madrid cf",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/X2y4NHf-TTkj0V6LjUzlautRlOG9n5gdyRCjEwnl_7Q.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/X2y4NHf-TTkj0V6LjUzlautRlOG9n5gdyRCjEwnl_7Q.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/X2y4NHf-TTkj0V6LjUzlautRlOG9n5gdyRCjEwnl_7Q.png"
+                },
+                "clanLevel": 10,
+                "stars": 12,
+                "destructionPercentage": 87.4
+            }
+        },
+        {
+            "result": "tie",
+            "endTime": "20250909T135642.000Z",
+            "teamSize": 15,
+            "attacksPerMember": 1,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png"
+                },
+                "clanLevel": 16,
+                "attacks": 22,
+                "stars": 75,
+                "destructionPercentage": 145.2,
+                "expEarned": 0
+            },
+            "opponent": {
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+                },
+                "clanLevel": 0,
+                "stars": 109,
+                "destructionPercentage": 0.0
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20250824T165223.000Z",
+            "teamSize": 10,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png"
+                },
+                "clanLevel": 16,
+                "attacks": 4,
+                "stars": 7,
+                "destructionPercentage": 29.1,
+                "expEarned": 46
+            },
+            "opponent": {
+                "tag": "#YVYYJQ92",
+                "name": "End Game",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/kwonQ_n8Y_vzGTbf4RYncZPf8tNyg_I-CKgAfko_tDc.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/kwonQ_n8Y_vzGTbf4RYncZPf8tNyg_I-CKgAfko_tDc.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/kwonQ_n8Y_vzGTbf4RYncZPf8tNyg_I-CKgAfko_tDc.png"
+                },
+                "clanLevel": 19,
+                "stars": 28,
+                "destructionPercentage": 97.4
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20250816T221200.000Z",
+            "teamSize": 35,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png"
+                },
+                "clanLevel": 16,
+                "attacks": 10,
+                "stars": 26,
+                "destructionPercentage": 26.6,
+                "expEarned": 112
+            },
+            "opponent": {
+                "tag": "#2LY2VPYR8",
+                "name": "MEGA EMPIRE",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Gxyzk2yFg4h_shM6CTgpJPrP1vqaQezB81ewTW8KCpc.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Gxyzk2yFg4h_shM6CTgpJPrP1vqaQezB81ewTW8KCpc.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Gxyzk2yFg4h_shM6CTgpJPrP1vqaQezB81ewTW8KCpc.png"
+                },
+                "clanLevel": 14,
+                "stars": 94,
+                "destructionPercentage": 92.08572
+            }
+        },
+        {
+            "result": null,
+            "endTime": "20250809T202518.000Z",
+            "teamSize": 15,
+            "attacksPerMember": 1,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Nq20JY11Jd8-4syVlGcUTa0VGPW5qi96dD1jed-A6JQ.png"
+                },
+                "clanLevel": 16,
+                "attacks": 55,
+                "stars": 192,
+                "destructionPercentage": 349.2,
+                "expEarned": 0
+            },
+            "opponent": {
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+                },
+                "clanLevel": 0,
+                "stars": 132,
+                "destructionPercentage": 0.0
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20250725T140923.000Z",
+            "teamSize": 10,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png"
+                },
+                "clanLevel": 15,
+                "attacks": 4,
+                "stars": 10,
+                "destructionPercentage": 36.1,
+                "expEarned": 40
+            },
+            "opponent": {
+                "tag": "#2QY0JGY8J",
+                "name": "HOTSPOT 2.0",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/0rIjeUELQSwOlBCLPdMcgwg3TizMtf2oM8Isv8G9ZSo.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/0rIjeUELQSwOlBCLPdMcgwg3TizMtf2oM8Isv8G9ZSo.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/0rIjeUELQSwOlBCLPdMcgwg3TizMtf2oM8Isv8G9ZSo.png"
+                },
+                "clanLevel": 11,
+                "stars": 29,
+                "destructionPercentage": 99.1
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20250722T184831.000Z",
+            "teamSize": 10,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png"
+                },
+                "clanLevel": 15,
+                "attacks": 9,
+                "stars": 21,
+                "destructionPercentage": 74.3,
+                "expEarned": 171
+            },
+            "opponent": {
+                "tag": "#9LPQURU0",
+                "name": "Eagle's Rein",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/lU7jvlXBvWLOGLRm3MQNd9WFLstQsZ04jOYWp-54qCA.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/lU7jvlXBvWLOGLRm3MQNd9WFLstQsZ04jOYWp-54qCA.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/lU7jvlXBvWLOGLRm3MQNd9WFLstQsZ04jOYWp-54qCA.png"
+                },
+                "clanLevel": 21,
+                "stars": 11,
+                "destructionPercentage": 38.8
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20250720T133724.000Z",
+            "teamSize": 10,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png"
+                },
+                "clanLevel": 15,
+                "attacks": 10,
+                "stars": 22,
+                "destructionPercentage": 79.5,
+                "expEarned": 187
+            },
+            "opponent": {
+                "tag": "#292U8PQUY",
+                "name": "FTML SCM",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/75v1HLGKU1Bx2TKBurUBaOTr3ZRomP49Pzf0ZQ6w3do.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/75v1HLGKU1Bx2TKBurUBaOTr3ZRomP49Pzf0ZQ6w3do.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/75v1HLGKU1Bx2TKBurUBaOTr3ZRomP49Pzf0ZQ6w3do.png"
+                },
+                "clanLevel": 17,
+                "stars": 12,
+                "destructionPercentage": 45.2
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20250712T193930.000Z",
+            "teamSize": 20,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png"
+                },
+                "clanLevel": 15,
+                "attacks": 5,
+                "stars": 8,
+                "destructionPercentage": 20.45,
+                "expEarned": 55
+            },
+            "opponent": {
+                "tag": "#2QVQG8RL2",
+                "name": "Protick COC",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/FJuKL7UdBezTAgHKTdaaLaRjVo95KewAVlS-IZk7r1w.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/FJuKL7UdBezTAgHKTdaaLaRjVo95KewAVlS-IZk7r1w.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/FJuKL7UdBezTAgHKTdaaLaRjVo95KewAVlS-IZk7r1w.png"
+                },
+                "clanLevel": 17,
+                "stars": 57,
+                "destructionPercentage": 97.05
+            }
+        },
+        {
+            "result": "tie",
+            "endTime": "20250710T020456.000Z",
+            "teamSize": 15,
+            "attacksPerMember": 1,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png"
+                },
+                "clanLevel": 15,
+                "attacks": 33,
+                "stars": 97,
+                "destructionPercentage": 205.4,
+                "expEarned": 0
+            },
+            "opponent": {
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+                },
+                "clanLevel": 0,
+                "stars": 171,
+                "destructionPercentage": 0.0
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20250623T155045.000Z",
+            "teamSize": 10,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png"
+                },
+                "clanLevel": 15,
+                "attacks": 3,
+                "stars": 7,
+                "destructionPercentage": 24.3,
+                "expEarned": 31
+            },
+            "opponent": {
+                "tag": "#2LGRJPGU8",
+                "name": "1อิ่มตีนน",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/z3TxfvlsS1uMiboQBYGkRWBWgfmblMyaG5BOsSkc8n4.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/z3TxfvlsS1uMiboQBYGkRWBWgfmblMyaG5BOsSkc8n4.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/z3TxfvlsS1uMiboQBYGkRWBWgfmblMyaG5BOsSkc8n4.png"
+                },
+                "clanLevel": 18,
+                "stars": 18,
+                "destructionPercentage": 59.2
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20250619T182226.000Z",
+            "teamSize": 20,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png"
+                },
+                "clanLevel": 15,
+                "attacks": 18,
+                "stars": 39,
+                "destructionPercentage": 70.05,
+                "expEarned": 207
+            },
+            "opponent": {
+                "tag": "#2PRCR2Y8V",
+                "name": "Nakamas",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/VmUTsqUKKts2s0j3W-9O0tzPU7OtWKGHIsTI5wNEg_0.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/VmUTsqUKKts2s0j3W-9O0tzPU7OtWKGHIsTI5wNEg_0.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/VmUTsqUKKts2s0j3W-9O0tzPU7OtWKGHIsTI5wNEg_0.png"
+                },
+                "clanLevel": 19,
+                "stars": 43,
+                "destructionPercentage": 75.55
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20250615T181129.000Z",
+            "teamSize": 20,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png"
+                },
+                "clanLevel": 15,
+                "attacks": 19,
+                "stars": 45,
+                "destructionPercentage": 81.1,
+                "expEarned": 207
+            },
+            "opponent": {
+                "tag": "#8JRV9L8C",
+                "name": "NKRI 1945",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/hMfYQ0M9fiIZLXcwVP0m05e85Iz-vVdCHibzDQw0IPw.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/hMfYQ0M9fiIZLXcwVP0m05e85Iz-vVdCHibzDQw0IPw.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/hMfYQ0M9fiIZLXcwVP0m05e85Iz-vVdCHibzDQw0IPw.png"
+                },
+                "clanLevel": 17,
+                "stars": 60,
+                "destructionPercentage": 100.0
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20250613T182636.000Z",
+            "teamSize": 20,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png"
+                },
+                "clanLevel": 15,
+                "attacks": 18,
+                "stars": 49,
+                "destructionPercentage": 85.35,
+                "expEarned": 234
+            },
+            "opponent": {
+                "tag": "#2LY2V2L2G",
+                "name": "●Destructor's●",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/K1iZjqeORuZ4qbySnw_VHWTDlzIrAeN2JYjtMyIJhtA.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/K1iZjqeORuZ4qbySnw_VHWTDlzIrAeN2JYjtMyIJhtA.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/K1iZjqeORuZ4qbySnw_VHWTDlzIrAeN2JYjtMyIJhtA.png"
+                },
+                "clanLevel": 15,
+                "stars": 49,
+                "destructionPercentage": 88.95
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20250523T135544.000Z",
+            "teamSize": 10,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png"
+                },
+                "clanLevel": 15,
+                "attacks": 13,
+                "stars": 26,
+                "destructionPercentage": 91.2,
+                "expEarned": 148
+            },
+            "opponent": {
+                "tag": "#2L92292UU",
+                "name": "KARAJ_DV1",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/94BD5ptOZPb-BsPmpENuKg1tWPWehpnYhlgpMNyFkDs.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/94BD5ptOZPb-BsPmpENuKg1tWPWehpnYhlgpMNyFkDs.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/94BD5ptOZPb-BsPmpENuKg1tWPWehpnYhlgpMNyFkDs.png"
+                },
+                "clanLevel": 12,
+                "stars": 28,
+                "destructionPercentage": 96.3
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20250520T185334.000Z",
+            "teamSize": 20,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png"
+                },
+                "clanLevel": 15,
+                "attacks": 17,
+                "stars": 35,
+                "destructionPercentage": 64.15,
+                "expEarned": 168
+            },
+            "opponent": {
+                "tag": "#2GU29GVLL",
+                "name": "فعال بازان",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/otvLj5AFX0DDoTRXpTVtrkngN3y_my_V-Sx9CWm0SRM.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/otvLj5AFX0DDoTRXpTVtrkngN3y_my_V-Sx9CWm0SRM.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/otvLj5AFX0DDoTRXpTVtrkngN3y_my_V-Sx9CWm0SRM.png"
+                },
+                "clanLevel": 16,
+                "stars": 53,
+                "destructionPercentage": 95.9
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20250518T193928.000Z",
+            "teamSize": 20,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png"
+                },
+                "clanLevel": 15,
+                "attacks": 24,
+                "stars": 56,
+                "destructionPercentage": 95.95,
+                "expEarned": 305
+            },
+            "opponent": {
+                "tag": "#2QPYU0L2P",
+                "name": "we are best",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/iw2QXvRgFe6fKYqj4ywDTARG2pKNoAIrBtWFcVGS6OU.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/iw2QXvRgFe6fKYqj4ywDTARG2pKNoAIrBtWFcVGS6OU.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/iw2QXvRgFe6fKYqj4ywDTARG2pKNoAIrBtWFcVGS6OU.png"
+                },
+                "clanLevel": 17,
+                "stars": 33,
+                "destructionPercentage": 62.75
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20250516T184455.000Z",
+            "teamSize": 20,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png"
+                },
+                "clanLevel": 15,
+                "attacks": 13,
+                "stars": 25,
+                "destructionPercentage": 51.15,
+                "expEarned": 143
+            },
+            "opponent": {
+                "tag": "#2GCJVLPLR",
+                "name": "Dex Disciples",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/-oqOIY73JWAhHJpwnh_R_OOmxSJ0o54MkHsiH7C6IE8.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/-oqOIY73JWAhHJpwnh_R_OOmxSJ0o54MkHsiH7C6IE8.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/-oqOIY73JWAhHJpwnh_R_OOmxSJ0o54MkHsiH7C6IE8.png"
+                },
+                "clanLevel": 15,
+                "stars": 60,
+                "destructionPercentage": 100.0
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20250514T185231.000Z",
+            "teamSize": 20,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/U18YAEKiLXMKhMMzgKMUlMnDVq-pl60D7J9Xuz_ZNE0.png"
+                },
+                "clanLevel": 15,
+                "attacks": 29,
+                "stars": 55,
+                "destructionPercentage": 91.95,
+                "expEarned": 251
+            },
+            "opponent": {
+                "tag": "#2RV2CUYQ8",
+                "name": "FAMILY TREE",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/AbVwGKQisDzC2AXxCHMg-EF3giW9dLURr32P8LTHaMM.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/AbVwGKQisDzC2AXxCHMg-EF3giW9dLURr32P8LTHaMM.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/AbVwGKQisDzC2AXxCHMg-EF3giW9dLURr32P8LTHaMM.png"
+                },
+                "clanLevel": 14,
+                "stars": 59,
+                "destructionPercentage": 99.7
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20210918T035907.000Z",
+            "teamSize": 5,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png"
+                },
+                "clanLevel": 11,
+                "attacks": 0,
+                "stars": 0,
+                "destructionPercentage": 0.0,
+                "expEarned": 0
+            },
+            "opponent": {
+                "tag": "#2LJJL8P2P",
+                "name": "war time",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/i2IV7UXQr7HT9pAfFeuSNsHFivYdXkLNPLC8PKt-msc.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/i2IV7UXQr7HT9pAfFeuSNsHFivYdXkLNPLC8PKt-msc.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/i2IV7UXQr7HT9pAfFeuSNsHFivYdXkLNPLC8PKt-msc.png"
+                },
+                "clanLevel": 1,
+                "stars": 7,
+                "destructionPercentage": 47.4
+            }
+        },
+        {
+            "result": "tie",
+            "endTime": "20210915T124812.000Z",
+            "teamSize": 5,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png"
+                },
+                "clanLevel": 11,
+                "attacks": 0,
+                "stars": 0,
+                "destructionPercentage": 0.0,
+                "expEarned": 0
+            },
+            "opponent": {
+                "tag": "#2L9RVPQJL",
+                "name": "BROKEN HART",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/X0z34tdxU2a_tMs0BiQMqjhQwVIl3Mdl1lbBCUyQqAU.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/X0z34tdxU2a_tMs0BiQMqjhQwVIl3Mdl1lbBCUyQqAU.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/X0z34tdxU2a_tMs0BiQMqjhQwVIl3Mdl1lbBCUyQqAU.png"
+                },
+                "clanLevel": 2,
+                "stars": 0,
+                "destructionPercentage": 0.0
+            }
+        },
+        {
+            "result": "tie",
+            "endTime": "20210909T083837.000Z",
+            "teamSize": 30,
+            "attacksPerMember": 1,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png"
+                },
+                "clanLevel": 11,
+                "attacks": 25,
+                "stars": 72,
+                "destructionPercentage": 81.13333,
+                "expEarned": 0
+            },
+            "opponent": {
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+                },
+                "clanLevel": 0,
+                "stars": 214,
+                "destructionPercentage": 0.0
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20210828T061803.000Z",
+            "teamSize": 5,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png"
+                },
+                "clanLevel": 11,
+                "attacks": 2,
+                "stars": 3,
+                "destructionPercentage": 26.0,
+                "expEarned": 1
+            },
+            "opponent": {
+                "tag": "#YLQYQC9V",
+                "name": "THE CLANNET",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/EfxyJ6L_3XC17tScX0T3l1yXAmQczUn7kUL3P2VjKMg.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/EfxyJ6L_3XC17tScX0T3l1yXAmQczUn7kUL3P2VjKMg.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/EfxyJ6L_3XC17tScX0T3l1yXAmQczUn7kUL3P2VjKMg.png"
+                },
+                "clanLevel": 15,
+                "stars": 14,
+                "destructionPercentage": 97.0
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20210826T045650.000Z",
+            "teamSize": 15,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png"
+                },
+                "clanLevel": 11,
+                "attacks": 3,
+                "stars": 6,
+                "destructionPercentage": 17.733334,
+                "expEarned": 13
+            },
+            "opponent": {
+                "tag": "#RPG29YGV",
+                "name": "مختبرجية",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/1_3SDHNj0GEyTLQV2rziXX888R1Y35__ZJtebmnOdG4.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/1_3SDHNj0GEyTLQV2rziXX888R1Y35__ZJtebmnOdG4.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/1_3SDHNj0GEyTLQV2rziXX888R1Y35__ZJtebmnOdG4.png"
+                },
+                "clanLevel": 13,
+                "stars": 44,
+                "destructionPercentage": 99.8
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20210824T031611.000Z",
+            "teamSize": 15,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png"
+                },
+                "clanLevel": 11,
+                "attacks": 6,
+                "stars": 15,
+                "destructionPercentage": 36.133335,
+                "expEarned": 79
+            },
+            "opponent": {
+                "tag": "#C8Y008PU",
+                "name": "Death Squad",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/XcSvJHFjTGjrGhg_DjCo1EUK3iq81kcTirJxZMutY24.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/XcSvJHFjTGjrGhg_DjCo1EUK3iq81kcTirJxZMutY24.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/XcSvJHFjTGjrGhg_DjCo1EUK3iq81kcTirJxZMutY24.png"
+                },
+                "clanLevel": 14,
+                "stars": 13,
+                "destructionPercentage": 33.066666
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20210818T204056.000Z",
+            "teamSize": 15,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png"
+                },
+                "clanLevel": 11,
+                "attacks": 5,
+                "stars": 14,
+                "destructionPercentage": 31.6,
+                "expEarned": 22
+            },
+            "opponent": {
+                "tag": "#JLYCYUUP",
+                "name": "پسرهای با حال",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/x2dpI9_E_YAIL39xVcEVoUaYYLGZS1bQFQmD6EAOA5M.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/x2dpI9_E_YAIL39xVcEVoUaYYLGZS1bQFQmD6EAOA5M.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/x2dpI9_E_YAIL39xVcEVoUaYYLGZS1bQFQmD6EAOA5M.png"
+                },
+                "clanLevel": 12,
+                "stars": 41,
+                "destructionPercentage": 94.333336
+            }
+        },
+        {
+            "result": null,
+            "endTime": "20210810T202530.000Z",
+            "teamSize": 15,
+            "attacksPerMember": 1,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png"
+                },
+                "clanLevel": 11,
+                "attacks": 32,
+                "stars": 163,
+                "destructionPercentage": 209.26666,
+                "expEarned": 0
+            },
+            "opponent": {
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+                },
+                "clanLevel": 0,
+                "stars": 32,
+                "destructionPercentage": 0.0
+            }
+        },
+        {
+            "result": null,
+            "endTime": "20210709T225303.000Z",
+            "teamSize": 15,
+            "attacksPerMember": 1,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png"
+                },
+                "clanLevel": 11,
+                "attacks": 37,
+                "stars": 176,
+                "destructionPercentage": 243.53334,
+                "expEarned": 0
+            },
+            "opponent": {
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+                },
+                "clanLevel": 0,
+                "stars": 54,
+                "destructionPercentage": 0.0
+            }
+        },
+        {
+            "result": null,
+            "endTime": "20210610T043348.000Z",
+            "teamSize": 15,
+            "attacksPerMember": 1,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png"
+                },
+                "clanLevel": 11,
+                "attacks": 28,
+                "stars": 127,
+                "destructionPercentage": 178.2,
+                "expEarned": 0
+            },
+            "opponent": {
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+                },
+                "clanLevel": 0,
+                "stars": 52,
+                "destructionPercentage": 0.0
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20210531T190847.000Z",
+            "teamSize": 15,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png"
+                },
+                "clanLevel": 11,
+                "attacks": 0,
+                "stars": 0,
+                "destructionPercentage": 0.0,
+                "expEarned": 0
+            },
+            "opponent": {
+                "tag": "#VL9RGP0U",
+                "name": "DGM BOYS ....",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Xh-XdC6uyAx_DyArFreORxhxHbx7vct4hDC58a0IKdA.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Xh-XdC6uyAx_DyArFreORxhxHbx7vct4hDC58a0IKdA.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Xh-XdC6uyAx_DyArFreORxhxHbx7vct4hDC58a0IKdA.png"
+                },
+                "clanLevel": 13,
+                "stars": 45,
+                "destructionPercentage": 100.0
+            }
+        },
+        {
+            "result": null,
+            "endTime": "20210509T124951.000Z",
+            "teamSize": 15,
+            "attacksPerMember": 1,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png"
+                },
+                "clanLevel": 11,
+                "attacks": 28,
+                "stars": 152,
+                "destructionPercentage": 185.6,
+                "expEarned": 0
+            },
+            "opponent": {
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+                },
+                "clanLevel": 0,
+                "stars": 24,
+                "destructionPercentage": 0.0
+            }
+        },
+        {
+            "result": "tie",
+            "endTime": "20210409T101419.000Z",
+            "teamSize": 15,
+            "attacksPerMember": 1,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/FuzG_d86BiYZTXJJQM49L7oCZiFWkfpXtFjYICo86bE.png"
+                },
+                "clanLevel": 11,
+                "attacks": 36,
+                "stars": 109,
+                "destructionPercentage": 227.86667,
+                "expEarned": 0
+            },
+            "opponent": {
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+                },
+                "clanLevel": 0,
+                "stars": 133,
+                "destructionPercentage": 0.0
+            }
+        },
+        {
+            "result": "tie",
+            "endTime": "20210310T001123.000Z",
+            "teamSize": 15,
+            "attacksPerMember": 1,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/e1HZYS8ggrr7SsQUOP-kAOA2Aa94fK5R5tmQO--nkIA.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/e1HZYS8ggrr7SsQUOP-kAOA2Aa94fK5R5tmQO--nkIA.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/e1HZYS8ggrr7SsQUOP-kAOA2Aa94fK5R5tmQO--nkIA.png"
+                },
+                "clanLevel": 10,
+                "attacks": 19,
+                "stars": 61,
+                "destructionPercentage": 119.333336,
+                "expEarned": 0
+            },
+            "opponent": {
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+                },
+                "clanLevel": 0,
+                "stars": 97,
+                "destructionPercentage": 0.0
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20210213T125146.000Z",
+            "teamSize": 10,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/e1HZYS8ggrr7SsQUOP-kAOA2Aa94fK5R5tmQO--nkIA.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/e1HZYS8ggrr7SsQUOP-kAOA2Aa94fK5R5tmQO--nkIA.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/e1HZYS8ggrr7SsQUOP-kAOA2Aa94fK5R5tmQO--nkIA.png"
+                },
+                "clanLevel": 10,
+                "attacks": 7,
+                "stars": 19,
+                "destructionPercentage": 63.5,
+                "expEarned": 98
+            },
+            "opponent": {
+                "tag": "#222CPLRYP",
+                "name": "BLACK PANTHERS.",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/IH1mjlZmGdo5TvOuxZqb_5Bcy22il6HgwveJMth1ags.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/IH1mjlZmGdo5TvOuxZqb_5Bcy22il6HgwveJMth1ags.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/IH1mjlZmGdo5TvOuxZqb_5Bcy22il6HgwveJMth1ags.png"
+                },
+                "clanLevel": 14,
+                "stars": 24,
+                "destructionPercentage": 82.7
+            }
+        },
+        {
+            "result": null,
+            "endTime": "20210209T133149.000Z",
+            "teamSize": 15,
+            "attacksPerMember": 1,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png"
+                },
+                "clanLevel": 10,
+                "attacks": 24,
+                "stars": 99,
+                "destructionPercentage": 151.26666,
+                "expEarned": 0
+            },
+            "opponent": {
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+                },
+                "clanLevel": 0,
+                "stars": 63,
+                "destructionPercentage": 0.0
+            }
+        },
+        {
+            "result": "tie",
+            "endTime": "20210109T155957.000Z",
+            "teamSize": 15,
+            "attacksPerMember": 1,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png"
+                },
+                "clanLevel": 10,
+                "attacks": 26,
+                "stars": 70,
+                "destructionPercentage": 166.13333,
+                "expEarned": 0
+            },
+            "opponent": {
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+                },
+                "clanLevel": 0,
+                "stars": 126,
+                "destructionPercentage": 0.0
+            }
+        },
+        {
+            "result": "tie",
+            "endTime": "20201209T111141.000Z",
+            "teamSize": 15,
+            "attacksPerMember": 1,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png"
+                },
+                "clanLevel": 10,
+                "attacks": 18,
+                "stars": 47,
+                "destructionPercentage": 109.86667,
+                "expEarned": 0
+            },
+            "opponent": {
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+                },
+                "clanLevel": 0,
+                "stars": 183,
+                "destructionPercentage": 0.0
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20201021T182451.000Z",
+            "teamSize": 15,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png"
+                },
+                "clanLevel": 10,
+                "attacks": 6,
+                "stars": 14,
+                "destructionPercentage": 34.8,
+                "expEarned": 36
+            },
+            "opponent": {
+                "tag": "#JY9VCPJG",
+                "name": "CAT GIRL",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/bz6CGONoJHBd1RE3CtlcS3RcGPOoGBkxZHnntrfKdZ8.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/bz6CGONoJHBd1RE3CtlcS3RcGPOoGBkxZHnntrfKdZ8.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/bz6CGONoJHBd1RE3CtlcS3RcGPOoGBkxZHnntrfKdZ8.png"
+                },
+                "clanLevel": 14,
+                "stars": 34,
+                "destructionPercentage": 77.73333
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20201019T170101.000Z",
+            "teamSize": 15,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png"
+                },
+                "clanLevel": 10,
+                "attacks": 11,
+                "stars": 25,
+                "destructionPercentage": 65.2,
+                "expEarned": 79
+            },
+            "opponent": {
+                "tag": "#LYYC8C89",
+                "name": "Costa Rica",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/XuXdKRYKk9rHBRs9qTyOJ3rF395YDNDJLzkJwy5s3ow.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/XuXdKRYKk9rHBRs9qTyOJ3rF395YDNDJLzkJwy5s3ow.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/XuXdKRYKk9rHBRs9qTyOJ3rF395YDNDJLzkJwy5s3ow.png"
+                },
+                "clanLevel": 8,
+                "stars": 41,
+                "destructionPercentage": 93.666664
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20201017T120425.000Z",
+            "teamSize": 20,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png"
+                },
+                "clanLevel": 10,
+                "attacks": 18,
+                "stars": 40,
+                "destructionPercentage": 72.05,
+                "expEarned": 142
+            },
+            "opponent": {
+                "tag": "#28LYP9Y0Q",
+                "name": "PATATAS",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/uHOr7CGhVekq-p8bnVSfD9B-L_RX1_xeSALR38O_PA0.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/uHOr7CGhVekq-p8bnVSfD9B-L_RX1_xeSALR38O_PA0.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/uHOr7CGhVekq-p8bnVSfD9B-L_RX1_xeSALR38O_PA0.png"
+                },
+                "clanLevel": 10,
+                "stars": 49,
+                "destructionPercentage": 86.6
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20201012T194348.000Z",
+            "teamSize": 20,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png"
+                },
+                "clanLevel": 10,
+                "attacks": 13,
+                "stars": 34,
+                "destructionPercentage": 60.05,
+                "expEarned": 95
+            },
+            "opponent": {
+                "tag": "#YPPJ2GJQ",
+                "name": "ارتش عظیم",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/RrlDM5vv2HFoDgIKikMteuIf1z3omGxu6j1ymW9H6MU.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/RrlDM5vv2HFoDgIKikMteuIf1z3omGxu6j1ymW9H6MU.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/RrlDM5vv2HFoDgIKikMteuIf1z3omGxu6j1ymW9H6MU.png"
+                },
+                "clanLevel": 13,
+                "stars": 53,
+                "destructionPercentage": 93.55
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20201009T172757.000Z",
+            "teamSize": 20,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png"
+                },
+                "clanLevel": 10,
+                "attacks": 17,
+                "stars": 42,
+                "destructionPercentage": 75.15,
+                "expEarned": 204
+            },
+            "opponent": {
+                "tag": "#2UUPJQRJ",
+                "name": "The USA 國防部",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/so5nI_yf7qYg0qW5Um_QNul_u8Lfslm6qeS_u-toV7I.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/so5nI_yf7qYg0qW5Um_QNul_u8Lfslm6qeS_u-toV7I.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/so5nI_yf7qYg0qW5Um_QNul_u8Lfslm6qeS_u-toV7I.png"
+                },
+                "clanLevel": 12,
+                "stars": 29,
+                "destructionPercentage": 50.8
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20201006T182253.000Z",
+            "teamSize": 20,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png"
+                },
+                "clanLevel": 10,
+                "attacks": 24,
+                "stars": 47,
+                "destructionPercentage": 83.1,
+                "expEarned": 222
+            },
+            "opponent": {
+                "tag": "#88UVGPR2",
+                "name": "Die Piraten",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/f4e7_kKTdTQlRB9QAd2SKFcqTRF-v0vTGfsr883ZfRw.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/f4e7_kKTdTQlRB9QAd2SKFcqTRF-v0vTGfsr883ZfRw.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/f4e7_kKTdTQlRB9QAd2SKFcqTRF-v0vTGfsr883ZfRw.png"
+                },
+                "clanLevel": 12,
+                "stars": 44,
+                "destructionPercentage": 79.45
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20201002T162909.000Z",
+            "teamSize": 20,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png"
+                },
+                "clanLevel": 10,
+                "attacks": 20,
+                "stars": 45,
+                "destructionPercentage": 84.75,
+                "expEarned": 179
+            },
+            "opponent": {
+                "tag": "#RVG9280",
+                "name": "cebu clan",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/IQ1xLl2Jqa-eCIy-MLH9G8RcI1UFNTnoJ28YoQRNqlY.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/IQ1xLl2Jqa-eCIy-MLH9G8RcI1UFNTnoJ28YoQRNqlY.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/IQ1xLl2Jqa-eCIy-MLH9G8RcI1UFNTnoJ28YoQRNqlY.png"
+                },
+                "clanLevel": 12,
+                "stars": 52,
+                "destructionPercentage": 90.1
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20200930T164619.000Z",
+            "teamSize": 20,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png"
+                },
+                "clanLevel": 10,
+                "attacks": 25,
+                "stars": 53,
+                "destructionPercentage": 89.8,
+                "expEarned": 178
+            },
+            "opponent": {
+                "tag": "#8YCP0UV",
+                "name": "Allianz Busster",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/9soYI8ikq5IFi8w-d4Eq4UA51rwqmjXhSYt-jjISupE.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/9soYI8ikq5IFi8w-d4Eq4UA51rwqmjXhSYt-jjISupE.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/9soYI8ikq5IFi8w-d4Eq4UA51rwqmjXhSYt-jjISupE.png"
+                },
+                "clanLevel": 15,
+                "stars": 55,
+                "destructionPercentage": 96.2
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20200928T163148.000Z",
+            "teamSize": 20,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png"
+                },
+                "clanLevel": 10,
+                "attacks": 13,
+                "stars": 29,
+                "destructionPercentage": 55.4,
+                "expEarned": 111
+            },
+            "opponent": {
+                "tag": "#YVRCRRRY",
+                "name": "DINBHAGUN",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/sNTN_KuyChkkLepASyk2oiG5PFz4FxhR8fttqbwUvHs.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/sNTN_KuyChkkLepASyk2oiG5PFz4FxhR8fttqbwUvHs.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/sNTN_KuyChkkLepASyk2oiG5PFz4FxhR8fttqbwUvHs.png"
+                },
+                "clanLevel": 11,
+                "stars": 48,
+                "destructionPercentage": 81.8
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20200924T203957.000Z",
+            "teamSize": 20,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png"
+                },
+                "clanLevel": 10,
+                "attacks": 20,
+                "stars": 41,
+                "destructionPercentage": 73.0,
+                "expEarned": 163
+            },
+            "opponent": {
+                "tag": "#208V0JV8L",
+                "name": "KARDEŞLİK KLANI",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Ui9LvvgpYVzNqUIvANiXXRVmyXhRj9ua5LGfb7LxwtE.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Ui9LvvgpYVzNqUIvANiXXRVmyXhRj9ua5LGfb7LxwtE.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Ui9LvvgpYVzNqUIvANiXXRVmyXhRj9ua5LGfb7LxwtE.png"
+                },
+                "clanLevel": 8,
+                "stars": 44,
+                "destructionPercentage": 78.05
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20200921T205428.000Z",
+            "teamSize": 30,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png"
+                },
+                "clanLevel": 10,
+                "attacks": 31,
+                "stars": 70,
+                "destructionPercentage": 86.96667,
+                "expEarned": 285
+            },
+            "opponent": {
+                "tag": "#22J8JUJQ8",
+                "name": "Tornado",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/9hjCnfsQVy8LIWGiYGDbM-a3ZYCkOavxO4A4hqU8UJM.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/9hjCnfsQVy8LIWGiYGDbM-a3ZYCkOavxO4A4hqU8UJM.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/9hjCnfsQVy8LIWGiYGDbM-a3ZYCkOavxO4A4hqU8UJM.png"
+                },
+                "clanLevel": 10,
+                "stars": 46,
+                "destructionPercentage": 56.3
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20200918T193809.000Z",
+            "teamSize": 30,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png"
+                },
+                "clanLevel": 10,
+                "attacks": 25,
+                "stars": 55,
+                "destructionPercentage": 68.9,
+                "expEarned": 218
+            },
+            "opponent": {
+                "tag": "#229LU8Q08",
+                "name": "DAWN OF SHADOW",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/iCBGRpSUbgFWNi0NIbr-I6WHHs-oeVFIvQB5z3YLCKo.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/iCBGRpSUbgFWNi0NIbr-I6WHHs-oeVFIvQB5z3YLCKo.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/iCBGRpSUbgFWNi0NIbr-I6WHHs-oeVFIvQB5z3YLCKo.png"
+                },
+                "clanLevel": 12,
+                "stars": 77,
+                "destructionPercentage": 93.166664
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20200915T183625.000Z",
+            "teamSize": 25,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png"
+                },
+                "clanLevel": 10,
+                "attacks": 28,
+                "stars": 58,
+                "destructionPercentage": 84.28,
+                "expEarned": 201
+            },
+            "opponent": {
+                "tag": "#UVPVVPL8",
+                "name": "saturday",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/vjoWLjuHv9UJTcm0BTzUhkyfyMT0IVZIW0ZHEm_ZNT4.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/vjoWLjuHv9UJTcm0BTzUhkyfyMT0IVZIW0ZHEm_ZNT4.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/vjoWLjuHv9UJTcm0BTzUhkyfyMT0IVZIW0ZHEm_ZNT4.png"
+                },
+                "clanLevel": 14,
+                "stars": 61,
+                "destructionPercentage": 91.84
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20200913T182014.000Z",
+            "teamSize": 40,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png"
+                },
+                "clanLevel": 10,
+                "attacks": 32,
+                "stars": 68,
+                "destructionPercentage": 63.6,
+                "expEarned": 229
+            },
+            "opponent": {
+                "tag": "#C2CCLL2G",
+                "name": "أصدقاء اوفياء",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/SfewAMajmC1nKwju4MMzp91hmJw8K677Vg7nOCfZubU.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/SfewAMajmC1nKwju4MMzp91hmJw8K677Vg7nOCfZubU.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/SfewAMajmC1nKwju4MMzp91hmJw8K677Vg7nOCfZubU.png"
+                },
+                "clanLevel": 12,
+                "stars": 101,
+                "destructionPercentage": 88.875
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20200911T181813.000Z",
+            "teamSize": 40,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png"
+                },
+                "clanLevel": 10,
+                "attacks": 39,
+                "stars": 95,
+                "destructionPercentage": 86.725,
+                "expEarned": 354
+            },
+            "opponent": {
+                "tag": "#QP00QQG0",
+                "name": "أصدقاء العمر",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/IJSyCH4CxjGAaxRMNITYqn_bkyqrx-fklrtAEnhikDY.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/IJSyCH4CxjGAaxRMNITYqn_bkyqrx-fklrtAEnhikDY.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/IJSyCH4CxjGAaxRMNITYqn_bkyqrx-fklrtAEnhikDY.png"
+                },
+                "clanLevel": 10,
+                "stars": 90,
+                "destructionPercentage": 85.4
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20200901T162007.000Z",
+            "teamSize": 25,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png"
+                },
+                "clanLevel": 10,
+                "attacks": 32,
+                "stars": 66,
+                "destructionPercentage": 89.4,
+                "expEarned": 264
+            },
+            "opponent": {
+                "tag": "#VY2RUU2U",
+                "name": "coc华夏之巅",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/DN1VHO77P8tLKGHAuuIEwnA_GPeDixQj-slNcnQcvIg.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/DN1VHO77P8tLKGHAuuIEwnA_GPeDixQj-slNcnQcvIg.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/DN1VHO77P8tLKGHAuuIEwnA_GPeDixQj-slNcnQcvIg.png"
+                },
+                "clanLevel": 13,
+                "stars": 25,
+                "destructionPercentage": 40.84
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20200829T183807.000Z",
+            "teamSize": 30,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png"
+                },
+                "clanLevel": 10,
+                "attacks": 36,
+                "stars": 72,
+                "destructionPercentage": 84.46667,
+                "expEarned": 230
+            },
+            "opponent": {
+                "tag": "#29V8UVRVG",
+                "name": "АРАБ САРАЙ",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/4M5-kKk7cip3UT5vj4GmH8mVyyU3Bi9O-2xbNz2GQOo.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/4M5-kKk7cip3UT5vj4GmH8mVyyU3Bi9O-2xbNz2GQOo.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/4M5-kKk7cip3UT5vj4GmH8mVyyU3Bi9O-2xbNz2GQOo.png"
+                },
+                "clanLevel": 10,
+                "stars": 85,
+                "destructionPercentage": 96.1
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20200826T200442.000Z",
+            "teamSize": 30,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png"
+                },
+                "clanLevel": 10,
+                "attacks": 32,
+                "stars": 67,
+                "destructionPercentage": 84.76667,
+                "expEarned": 231
+            },
+            "opponent": {
+                "tag": "#2YY00J2L8",
+                "name": "stargate sg1",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/0gxUZ6JnUfY-n1Jn1QorZ_hdBGDLQatLYsfNJKNCU4k.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/0gxUZ6JnUfY-n1Jn1QorZ_hdBGDLQatLYsfNJKNCU4k.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/0gxUZ6JnUfY-n1Jn1QorZ_hdBGDLQatLYsfNJKNCU4k.png"
+                },
+                "clanLevel": 6,
+                "stars": 76,
+                "destructionPercentage": 89.36667
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20200824T201711.000Z",
+            "teamSize": 30,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png"
+                },
+                "clanLevel": 10,
+                "attacks": 37,
+                "stars": 67,
+                "destructionPercentage": 84.2,
+                "expEarned": 257
+            },
+            "opponent": {
+                "tag": "#VPYYQ2PG",
+                "name": "INDO WARIORS 86",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Hl0g6w-hr3qsiX_mAl9YDtgB8UksV_5KsVKgYBTyERE.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Hl0g6w-hr3qsiX_mAl9YDtgB8UksV_5KsVKgYBTyERE.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Hl0g6w-hr3qsiX_mAl9YDtgB8UksV_5KsVKgYBTyERE.png"
+                },
+                "clanLevel": 7,
+                "stars": 83,
+                "destructionPercentage": 95.8
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20200822T193627.000Z",
+            "teamSize": 30,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png"
+                },
+                "clanLevel": 10,
+                "attacks": 49,
+                "stars": 79,
+                "destructionPercentage": 90.96667,
+                "expEarned": 298
+            },
+            "opponent": {
+                "tag": "#29YYRCUGQ",
+                "name": "นอนน้อย100%",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/M4f7Y6ry24NA5KlbI3OEpV7YLaNY7Cvr7X3BQduZSrI.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/M4f7Y6ry24NA5KlbI3OEpV7YLaNY7Cvr7X3BQduZSrI.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/M4f7Y6ry24NA5KlbI3OEpV7YLaNY7Cvr7X3BQduZSrI.png"
+                },
+                "clanLevel": 8,
+                "stars": 77,
+                "destructionPercentage": 93.5
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20200820T164142.000Z",
+            "teamSize": 30,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png"
+                },
+                "clanLevel": 10,
+                "attacks": 41,
+                "stars": 82,
+                "destructionPercentage": 94.1,
+                "expEarned": 301
+            },
+            "opponent": {
+                "tag": "#2829GLQ0R",
+                "name": "UZBEK",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/guwefDArOw7x8wBnSbZE9KeMre-fcProQl_GS6IqbqQ.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/guwefDArOw7x8wBnSbZE9KeMre-fcProQl_GS6IqbqQ.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/guwefDArOw7x8wBnSbZE9KeMre-fcProQl_GS6IqbqQ.png"
+                },
+                "clanLevel": 10,
+                "stars": 82,
+                "destructionPercentage": 93.96667
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20200818T170530.000Z",
+            "teamSize": 30,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png"
+                },
+                "clanLevel": 10,
+                "attacks": 45,
+                "stars": 82,
+                "destructionPercentage": 94.166664,
+                "expEarned": 289
+            },
+            "opponent": {
+                "tag": "#9U0YJU0U",
+                "name": "РОССИЯ",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/-h5RtATqb7CAm_BMXOBDaawbVtpKoRVKPb6gOTUnOcY.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/-h5RtATqb7CAm_BMXOBDaawbVtpKoRVKPb6gOTUnOcY.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/-h5RtATqb7CAm_BMXOBDaawbVtpKoRVKPb6gOTUnOcY.png"
+                },
+                "clanLevel": 16,
+                "stars": 67,
+                "destructionPercentage": 83.26667
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20200816T163153.000Z",
+            "teamSize": 30,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/ZdQ76OcknBAjLXpXIhQZVvJory-9Nt0Io3j7msJu_Js.png"
+                },
+                "clanLevel": 10,
+                "attacks": 35,
+                "stars": 66,
+                "destructionPercentage": 81.666664,
+                "expEarned": 286
+            },
+            "opponent": {
+                "tag": "#G0V8JUQJ",
+                "name": "LOS GUERREROS",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/RyzP2362NSCUqGf8irbkrKZWzhC0wDehD_kBgFOhs7k.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/RyzP2362NSCUqGf8irbkrKZWzhC0wDehD_kBgFOhs7k.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/RyzP2362NSCUqGf8irbkrKZWzhC0wDehD_kBgFOhs7k.png"
+                },
+                "clanLevel": 17,
+                "stars": 65,
+                "destructionPercentage": 84.36667
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20200814T074842.000Z",
+            "teamSize": 30,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/9hjCnfsQVy8LIWGiYGDbM-a3ZYCkOavxO4A4hqU8UJM.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/9hjCnfsQVy8LIWGiYGDbM-a3ZYCkOavxO4A4hqU8UJM.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/9hjCnfsQVy8LIWGiYGDbM-a3ZYCkOavxO4A4hqU8UJM.png"
+                },
+                "clanLevel": 10,
+                "attacks": 38,
+                "stars": 69,
+                "destructionPercentage": 86.73333,
+                "expEarned": 247
+            },
+            "opponent": {
+                "tag": "#222GUGLPY",
+                "name": "Rebels",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/IePSbXHoye5359HEb2QaPU_V14cyMuRzG5vDP4SzfpI.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/IePSbXHoye5359HEb2QaPU_V14cyMuRzG5vDP4SzfpI.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/IePSbXHoye5359HEb2QaPU_V14cyMuRzG5vDP4SzfpI.png"
+                },
+                "clanLevel": 13,
+                "stars": 70,
+                "destructionPercentage": 84.53333
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20200811T174413.000Z",
+            "teamSize": 40,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/6vxx8pKBQXNp7oyueSBp_lfyG0OL4t5wV642Xx2Xkaw.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/6vxx8pKBQXNp7oyueSBp_lfyG0OL4t5wV642Xx2Xkaw.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/6vxx8pKBQXNp7oyueSBp_lfyG0OL4t5wV642Xx2Xkaw.png"
+                },
+                "clanLevel": 9,
+                "attacks": 39,
+                "stars": 96,
+                "destructionPercentage": 84.075,
+                "expEarned": 332
+            },
+            "opponent": {
+                "tag": "#2Y0CCGPRU",
+                "name": "Лучшие",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/AfuuIk4OrGLYQbmLy0SAaHXel0_cybcL3O1bFtJNISo.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/AfuuIk4OrGLYQbmLy0SAaHXel0_cybcL3O1bFtJNISo.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/AfuuIk4OrGLYQbmLy0SAaHXel0_cybcL3O1bFtJNISo.png"
+                },
+                "clanLevel": 5,
+                "stars": 27,
+                "destructionPercentage": 28.95
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20200729T181953.000Z",
+            "teamSize": 30,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/6vxx8pKBQXNp7oyueSBp_lfyG0OL4t5wV642Xx2Xkaw.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/6vxx8pKBQXNp7oyueSBp_lfyG0OL4t5wV642Xx2Xkaw.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/6vxx8pKBQXNp7oyueSBp_lfyG0OL4t5wV642Xx2Xkaw.png"
+                },
+                "clanLevel": 9,
+                "attacks": 42,
+                "stars": 77,
+                "destructionPercentage": 91.0,
+                "expEarned": 244
+            },
+            "opponent": {
+                "tag": "#G9V02UYQ",
+                "name": "WILSTERMANN",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/RpCGg47O45G0VPAE-mI98K2979z5IDqkUEtSmcX_0nE.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/RpCGg47O45G0VPAE-mI98K2979z5IDqkUEtSmcX_0nE.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/RpCGg47O45G0VPAE-mI98K2979z5IDqkUEtSmcX_0nE.png"
+                },
+                "clanLevel": 10,
+                "stars": 80,
+                "destructionPercentage": 91.833336
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20200727T163610.000Z",
+            "teamSize": 30,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/6vxx8pKBQXNp7oyueSBp_lfyG0OL4t5wV642Xx2Xkaw.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/6vxx8pKBQXNp7oyueSBp_lfyG0OL4t5wV642Xx2Xkaw.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/6vxx8pKBQXNp7oyueSBp_lfyG0OL4t5wV642Xx2Xkaw.png"
+                },
+                "clanLevel": 9,
+                "attacks": 42,
+                "stars": 75,
+                "destructionPercentage": 88.03333,
+                "expEarned": 273
+            },
+            "opponent": {
+                "tag": "#99PQYYJU",
+                "name": "sinhala lanka",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/otvLj5AFX0DDoTRXpTVtrkngN3y_my_V-Sx9CWm0SRM.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/otvLj5AFX0DDoTRXpTVtrkngN3y_my_V-Sx9CWm0SRM.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/otvLj5AFX0DDoTRXpTVtrkngN3y_my_V-Sx9CWm0SRM.png"
+                },
+                "clanLevel": 16,
+                "stars": 68,
+                "destructionPercentage": 80.23333
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20200725T144945.000Z",
+            "teamSize": 40,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/6vxx8pKBQXNp7oyueSBp_lfyG0OL4t5wV642Xx2Xkaw.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/6vxx8pKBQXNp7oyueSBp_lfyG0OL4t5wV642Xx2Xkaw.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/6vxx8pKBQXNp7oyueSBp_lfyG0OL4t5wV642Xx2Xkaw.png"
+                },
+                "clanLevel": 9,
+                "attacks": 37,
+                "stars": 77,
+                "destructionPercentage": 72.7,
+                "expEarned": 261
+            },
+            "opponent": {
+                "tag": "#U2QGC8UR",
+                "name": "G. I. JOE...",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Jk9ROWUzbBcyIYvRPfKmKbZbYf6b5m5kYL9W6P8HxsU.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Jk9ROWUzbBcyIYvRPfKmKbZbYf6b5m5kYL9W6P8HxsU.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Jk9ROWUzbBcyIYvRPfKmKbZbYf6b5m5kYL9W6P8HxsU.png"
+                },
+                "clanLevel": 12,
+                "stars": 90,
+                "destructionPercentage": 80.925
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20200723T110830.000Z",
+            "teamSize": 40,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/6vxx8pKBQXNp7oyueSBp_lfyG0OL4t5wV642Xx2Xkaw.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/6vxx8pKBQXNp7oyueSBp_lfyG0OL4t5wV642Xx2Xkaw.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/6vxx8pKBQXNp7oyueSBp_lfyG0OL4t5wV642Xx2Xkaw.png"
+                },
+                "clanLevel": 9,
+                "attacks": 56,
+                "stars": 97,
+                "destructionPercentage": 86.4,
+                "expEarned": 278
+            },
+            "opponent": {
+                "tag": "#20J0VPYP9",
+                "name": "Spread Beaver",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/ejXhKP9-sZFDSbczefEHmyz8xnCAxs_g06fppXErVVI.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/ejXhKP9-sZFDSbczefEHmyz8xnCAxs_g06fppXErVVI.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/ejXhKP9-sZFDSbczefEHmyz8xnCAxs_g06fppXErVVI.png"
+                },
+                "clanLevel": 14,
+                "stars": 106,
+                "destructionPercentage": 93.725
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20200720T191452.000Z",
+            "teamSize": 40,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/HoNaAdDvSUAri8qQew4UG_tnvE6g9Qvre9MHJmcKSj4.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/HoNaAdDvSUAri8qQew4UG_tnvE6g9Qvre9MHJmcKSj4.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/HoNaAdDvSUAri8qQew4UG_tnvE6g9Qvre9MHJmcKSj4.png"
+                },
+                "clanLevel": 9,
+                "attacks": 54,
+                "stars": 100,
+                "destructionPercentage": 90.9,
+                "expEarned": 308
+            },
+            "opponent": {
+                "tag": "#20J2QCRVC",
+                "name": "astralis",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/1aOFtTaEK655HWXmAnQkMe_dP97z3jRr2pvkDjhH1Tg.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/1aOFtTaEK655HWXmAnQkMe_dP97z3jRr2pvkDjhH1Tg.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/1aOFtTaEK655HWXmAnQkMe_dP97z3jRr2pvkDjhH1Tg.png"
+                },
+                "clanLevel": 9,
+                "stars": 104,
+                "destructionPercentage": 91.15
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20200718T193722.000Z",
+            "teamSize": 40,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/HoNaAdDvSUAri8qQew4UG_tnvE6g9Qvre9MHJmcKSj4.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/HoNaAdDvSUAri8qQew4UG_tnvE6g9Qvre9MHJmcKSj4.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/HoNaAdDvSUAri8qQew4UG_tnvE6g9Qvre9MHJmcKSj4.png"
+                },
+                "clanLevel": 9,
+                "attacks": 52,
+                "stars": 105,
+                "destructionPercentage": 90.975,
+                "expEarned": 330
+            },
+            "opponent": {
+                "tag": "#28JQJLVRL",
+                "name": "کلن هرات",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/Hy256pwZFfeOwhQ965HAUSj_5owzzLM_W6Pl5CI_Gl0.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/Hy256pwZFfeOwhQ965HAUSj_5owzzLM_W6Pl5CI_Gl0.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/Hy256pwZFfeOwhQ965HAUSj_5owzzLM_W6Pl5CI_Gl0.png"
+                },
+                "clanLevel": 12,
+                "stars": 100,
+                "destructionPercentage": 88.3
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20200716T194923.000Z",
+            "teamSize": 40,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/HoNaAdDvSUAri8qQew4UG_tnvE6g9Qvre9MHJmcKSj4.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/HoNaAdDvSUAri8qQew4UG_tnvE6g9Qvre9MHJmcKSj4.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/HoNaAdDvSUAri8qQew4UG_tnvE6g9Qvre9MHJmcKSj4.png"
+                },
+                "clanLevel": 9,
+                "attacks": 59,
+                "stars": 109,
+                "destructionPercentage": 94.15,
+                "expEarned": 352
+            },
+            "opponent": {
+                "tag": "#29JVQ92GV",
+                "name": "URACAN",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/1YBtCvLSc51tvTuJBZos-ml87frIhdFB7J7Dsn26lwc.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/1YBtCvLSc51tvTuJBZos-ml87frIhdFB7J7Dsn26lwc.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/1YBtCvLSc51tvTuJBZos-ml87frIhdFB7J7Dsn26lwc.png"
+                },
+                "clanLevel": 10,
+                "stars": 108,
+                "destructionPercentage": 93.525
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20200714T194745.000Z",
+            "teamSize": 40,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/HoNaAdDvSUAri8qQew4UG_tnvE6g9Qvre9MHJmcKSj4.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/HoNaAdDvSUAri8qQew4UG_tnvE6g9Qvre9MHJmcKSj4.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/HoNaAdDvSUAri8qQew4UG_tnvE6g9Qvre9MHJmcKSj4.png"
+                },
+                "clanLevel": 9,
+                "attacks": 51,
+                "stars": 108,
+                "destructionPercentage": 94.15,
+                "expEarned": 364
+            },
+            "opponent": {
+                "tag": "#LV09GCQL",
+                "name": "lovsaad",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/HJ7RkGIXIA66rur7UnwtDVDOJ0SWLow_iBl3B02piPQ.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/HJ7RkGIXIA66rur7UnwtDVDOJ0SWLow_iBl3B02piPQ.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/HJ7RkGIXIA66rur7UnwtDVDOJ0SWLow_iBl3B02piPQ.png"
+                },
+                "clanLevel": 12,
+                "stars": 84,
+                "destructionPercentage": 76.275
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20200712T193557.000Z",
+            "teamSize": 40,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/6vxx8pKBQXNp7oyueSBp_lfyG0OL4t5wV642Xx2Xkaw.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/6vxx8pKBQXNp7oyueSBp_lfyG0OL4t5wV642Xx2Xkaw.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/6vxx8pKBQXNp7oyueSBp_lfyG0OL4t5wV642Xx2Xkaw.png"
+                },
+                "clanLevel": 9,
+                "attacks": 52,
+                "stars": 101,
+                "destructionPercentage": 91.475,
+                "expEarned": 340
+            },
+            "opponent": {
+                "tag": "#28J2Y0PJC",
+                "name": "sakarya",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/CHW57LCxB8sASxa4fZ9AcYTA2GUOq3bcJlm_s2IbYIM.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/CHW57LCxB8sASxa4fZ9AcYTA2GUOq3bcJlm_s2IbYIM.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/CHW57LCxB8sASxa4fZ9AcYTA2GUOq3bcJlm_s2IbYIM.png"
+                },
+                "clanLevel": 6,
+                "stars": 81,
+                "destructionPercentage": 81.9
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20200702T093442.000Z",
+            "teamSize": 40,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/6vxx8pKBQXNp7oyueSBp_lfyG0OL4t5wV642Xx2Xkaw.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/6vxx8pKBQXNp7oyueSBp_lfyG0OL4t5wV642Xx2Xkaw.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/6vxx8pKBQXNp7oyueSBp_lfyG0OL4t5wV642Xx2Xkaw.png"
+                },
+                "clanLevel": 9,
+                "attacks": 51,
+                "stars": 110,
+                "destructionPercentage": 94.025,
+                "expEarned": 347
+            },
+            "opponent": {
+                "tag": "#22C2RRLG0",
+                "name": "斗破苍穹(三)",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/LjiqcbfwAmNwZR7yhlo8cMlMlcCTDnEFzYMPTD1ZM7g.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/LjiqcbfwAmNwZR7yhlo8cMlMlcCTDnEFzYMPTD1ZM7g.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/LjiqcbfwAmNwZR7yhlo8cMlMlcCTDnEFzYMPTD1ZM7g.png"
+                },
+                "clanLevel": 11,
+                "stars": 106,
+                "destructionPercentage": 93.8
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20200630T084633.000Z",
+            "teamSize": 40,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/6vxx8pKBQXNp7oyueSBp_lfyG0OL4t5wV642Xx2Xkaw.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/6vxx8pKBQXNp7oyueSBp_lfyG0OL4t5wV642Xx2Xkaw.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/6vxx8pKBQXNp7oyueSBp_lfyG0OL4t5wV642Xx2Xkaw.png"
+                },
+                "clanLevel": 9,
+                "attacks": 55,
+                "stars": 108,
+                "destructionPercentage": 93.025,
+                "expEarned": 318
+            },
+            "opponent": {
+                "tag": "#29R2L8QYY",
+                "name": "电器城三号门面",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/K7X3AVC_wEvs1cjxxrYeKIsvwWwttUBuERHzkrequMo.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/K7X3AVC_wEvs1cjxxrYeKIsvwWwttUBuERHzkrequMo.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/K7X3AVC_wEvs1cjxxrYeKIsvwWwttUBuERHzkrequMo.png"
+                },
+                "clanLevel": 11,
+                "stars": 93,
+                "destructionPercentage": 84.425
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20200628T074022.000Z",
+            "teamSize": 40,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/6vxx8pKBQXNp7oyueSBp_lfyG0OL4t5wV642Xx2Xkaw.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/6vxx8pKBQXNp7oyueSBp_lfyG0OL4t5wV642Xx2Xkaw.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/6vxx8pKBQXNp7oyueSBp_lfyG0OL4t5wV642Xx2Xkaw.png"
+                },
+                "clanLevel": 9,
+                "attacks": 53,
+                "stars": 101,
+                "destructionPercentage": 90.225,
+                "expEarned": 258
+            },
+            "opponent": {
+                "tag": "#28UG8L0G",
+                "name": "Donators 2",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/pzxDNuy3noOixo_oUSSGXvxYTsjAIRx42yQVoDiNU68.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/pzxDNuy3noOixo_oUSSGXvxYTsjAIRx42yQVoDiNU68.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/pzxDNuy3noOixo_oUSSGXvxYTsjAIRx42yQVoDiNU68.png"
+                },
+                "clanLevel": 11,
+                "stars": 114,
+                "destructionPercentage": 96.925
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20200626T072549.000Z",
+            "teamSize": 40,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/-_JSuDcthLfsUeBRFV9fbPIIAqY6pGSci2Rk4I2l3dw.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/-_JSuDcthLfsUeBRFV9fbPIIAqY6pGSci2Rk4I2l3dw.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/-_JSuDcthLfsUeBRFV9fbPIIAqY6pGSci2Rk4I2l3dw.png"
+                },
+                "clanLevel": 8,
+                "attacks": 64,
+                "stars": 103,
+                "destructionPercentage": 90.675,
+                "expEarned": 333
+            },
+            "opponent": {
+                "tag": "#8000UQLP",
+                "name": "samerswar",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/NmAy9iYLKJ9a6_SjUb69-hxkfmWCNT7rHqH8C07nOK0.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/NmAy9iYLKJ9a6_SjUb69-hxkfmWCNT7rHqH8C07nOK0.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/NmAy9iYLKJ9a6_SjUb69-hxkfmWCNT7rHqH8C07nOK0.png"
+                },
+                "clanLevel": 16,
+                "stars": 98,
+                "destructionPercentage": 90.475
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20200624T073407.000Z",
+            "teamSize": 40,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/-_JSuDcthLfsUeBRFV9fbPIIAqY6pGSci2Rk4I2l3dw.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/-_JSuDcthLfsUeBRFV9fbPIIAqY6pGSci2Rk4I2l3dw.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/-_JSuDcthLfsUeBRFV9fbPIIAqY6pGSci2Rk4I2l3dw.png"
+                },
+                "clanLevel": 8,
+                "attacks": 53,
+                "stars": 104,
+                "destructionPercentage": 92.2,
+                "expEarned": 340
+            },
+            "opponent": {
+                "tag": "#V9GYU29V",
+                "name": "强强联盟",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/9hjCnfsQVy8LIWGiYGDbM-a3ZYCkOavxO4A4hqU8UJM.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/9hjCnfsQVy8LIWGiYGDbM-a3ZYCkOavxO4A4hqU8UJM.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/9hjCnfsQVy8LIWGiYGDbM-a3ZYCkOavxO4A4hqU8UJM.png"
+                },
+                "clanLevel": 10,
+                "stars": 98,
+                "destructionPercentage": 86.675
+            }
+        },
+        {
+            "result": "win",
+            "endTime": "20200622T053518.000Z",
+            "teamSize": 40,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/-_JSuDcthLfsUeBRFV9fbPIIAqY6pGSci2Rk4I2l3dw.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/-_JSuDcthLfsUeBRFV9fbPIIAqY6pGSci2Rk4I2l3dw.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/-_JSuDcthLfsUeBRFV9fbPIIAqY6pGSci2Rk4I2l3dw.png"
+                },
+                "clanLevel": 8,
+                "attacks": 60,
+                "stars": 111,
+                "destructionPercentage": 94.8,
+                "expEarned": 328
+            },
+            "opponent": {
+                "tag": "#PR29ULJV",
+                "name": "BD AniRbAn",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/D86XuEJ_yoqCfQnyk0O6CQoRvdGB5bvCRS2EST9t23A.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/D86XuEJ_yoqCfQnyk0O6CQoRvdGB5bvCRS2EST9t23A.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/D86XuEJ_yoqCfQnyk0O6CQoRvdGB5bvCRS2EST9t23A.png"
+                },
+                "clanLevel": 15,
+                "stars": 64,
+                "destructionPercentage": 57.625
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20200620T050542.000Z",
+            "teamSize": 40,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/-_JSuDcthLfsUeBRFV9fbPIIAqY6pGSci2Rk4I2l3dw.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/-_JSuDcthLfsUeBRFV9fbPIIAqY6pGSci2Rk4I2l3dw.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/-_JSuDcthLfsUeBRFV9fbPIIAqY6pGSci2Rk4I2l3dw.png"
+                },
+                "clanLevel": 8,
+                "attacks": 52,
+                "stars": 97,
+                "destructionPercentage": 89.425,
+                "expEarned": 291
+            },
+            "opponent": {
+                "tag": "#GCJ2CL92",
+                "name": "BD BYPASS",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/EtIVqxKnXvZx0Uhs1TpFVIxNzYxteY-uPSjHMUegt5w.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/EtIVqxKnXvZx0Uhs1TpFVIxNzYxteY-uPSjHMUegt5w.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/EtIVqxKnXvZx0Uhs1TpFVIxNzYxteY-uPSjHMUegt5w.png"
+                },
+                "clanLevel": 7,
+                "stars": 109,
+                "destructionPercentage": 94.55
+            }
+        },
+        {
+            "result": "lose",
+            "endTime": "20200618T035858.000Z",
+            "teamSize": 40,
+            "attacksPerMember": 2,
+            "battleModifier": "none",
+            "clan": {
+                "tag": "#Q9YY02J9",
+                "name": "AAA GANG",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/-_JSuDcthLfsUeBRFV9fbPIIAqY6pGSci2Rk4I2l3dw.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/-_JSuDcthLfsUeBRFV9fbPIIAqY6pGSci2Rk4I2l3dw.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/-_JSuDcthLfsUeBRFV9fbPIIAqY6pGSci2Rk4I2l3dw.png"
+                },
+                "clanLevel": 8,
+                "attacks": 65,
+                "stars": 100,
+                "destructionPercentage": 90.025,
+                "expEarned": 250
+            },
+            "opponent": {
+                "tag": "#9P0228GY",
+                "name": "Myanmar SPY",
+                "badgeUrls": {
+                    "small": "https://api-assets.clashofclans.com/badges/70/X187ZPtGxZUxgsIZyMjfbBZC_rR85HorUGr136QItSQ.png",
+                    "large": "https://api-assets.clashofclans.com/badges/512/X187ZPtGxZUxgsIZyMjfbBZC_rR85HorUGr136QItSQ.png",
+                    "medium": "https://api-assets.clashofclans.com/badges/200/X187ZPtGxZUxgsIZyMjfbBZC_rR85HorUGr136QItSQ.png"
+                },
+                "clanLevel": 14,
+                "stars": 110,
+                "destructionPercentage": 93.35
+            }
+        }
+    ],
+    "paging": {
+        "cursors": {}
+    }
+}

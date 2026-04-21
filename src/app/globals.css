@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
+
 
 
 :root {
@@ -12,6 +14,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-poppins: 'Poppins', sans-serif;
 
   /* --- 1. DAFTARKAN ANIMASI DI SINI --- */
   --animate-fade-in: fadeIn 0.5s ease-in;

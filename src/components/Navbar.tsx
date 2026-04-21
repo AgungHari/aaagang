@@ -21,6 +21,7 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
     { name: "Home", href: "/" },
     { name: "Personel", href: "/members" },
     { name: "About Us", href: "/tentang" },
+    { name: "War Log", href: "/warlog" },
     { name: "Ask Sigma", href: "/sigma" },
   ];
 
@@ -39,8 +40,8 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
             alt="Badge" 
             className="w-8 h-8 drop-shadow-[0_0_10px_rgba(245,158,11,0.5)]" 
           />
-          <span className="font-black text-xl tracking-tighter text-white hidden sm:inline tracking-tighter uppercase">
-            AAA <span className="text-amber-500 italic">GANGS</span>
+          <span className="text-xl text-amber-500 tracking-tighter hidden sm:inline tracking-tighter uppercase">
+            AAA GANGS
           </span>
         </Link>
 
