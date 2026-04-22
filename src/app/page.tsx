@@ -154,7 +154,9 @@ export default async function Home() {
         />
         <WarStatusCard
           isWar={isWar}
+          state={war?.state}
           opponentName={war?.opponent.name}
+          opponentBadgeUrl={war?.opponent.badgeUrls.medium}
           clanStars={war?.clan.stars}
           opponentStars={war?.opponent.stars}
           clanAttacks={war?.clan.attacks}

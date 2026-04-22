@@ -65,26 +65,6 @@ export default async function WarLogPage() {
         <p className="text-center text-slate-300 max-w-2xl mb-12 font-poppins animate-slide-up">
           Arsip pembantaian AAA GANG tersimpan abadi sejak era keemasan. Data sebelumnya telah menjadi sejarah yang tak tertulis. <br /> <span className="text-xs text-zinc-600">(Limitasi API Supercell: Data War Log AAA GANG hanya ter-index secara publik mulai tahun 2020.)</span>
         </p>
-
-        {/* Stats Cards
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-4xl mb-10">
-          <div className="p-4 bg-zinc-900/20 border border-zinc-800/50 rounded-xl text-center">
-            <div className="text-2xl font-black text-amber-500">{validWars.length}</div>
-            <div className="text-[9px] font-bold text-zinc-500 uppercase mt-1">Total Wars</div>
-          </div>
-          <div className="p-4 bg-zinc-900/20 rounded-xl text-center">
-            <div className="text-2xl font-black text-amber-500">{wins}</div>
-            <div className="text-[9px] font-bold text-green-600 uppercase mt-1">Victories</div>
-          </div>
-          <div className="p-4 bg-zinc-900/2  rounded-xl text-center">
-            <div className="text-2xl font-black text-amber-500">{losses}</div>
-            <div className="text-[9px] font-bold text-red-600 uppercase mt-1">Defeats</div>
-          </div>
-          <div className="p-4 bg-zinc-900/20 rounded-xl text-center">
-            <div className="text-2xl font-black text-amber-500">{winRate}%</div>
-            <div className="text-[9px] font-bold text-amber-600 uppercase mt-1">Win Rate</div>
-          </div>
-        </div> */}
       </section>
 
       {/* War Log Grid */}

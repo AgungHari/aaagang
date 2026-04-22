@@ -79,7 +79,7 @@ export default function HallOfFame({ isWar, war }: HallOfFameProps) {
   if (!isWar || highlights.length === 0) return null;
 
   return (
-    <ScrollReveal delay={0.5} mobileDelay={0.1}>
+    <ScrollReveal delay={0.1} mobileDelay={0.1}>
       <div className="max-w-7xl mx-auto px-6 mt-12">
         <div className="p-8 bg-zinc-900/10 border border-zinc-800/50 rounded-[2.5rem]">
           <div className="flex items-center gap-2 text-zinc-500 text-[10px] font-black uppercase tracking-[0.4em] mb-8 animate-pulse">
