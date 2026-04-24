@@ -57,7 +57,7 @@ export default async function WarLogPage() {
       <section className="relative flex flex-col items-center justify-center px-4 md:px-16 lg:px-24 xl:px-32 pt-24 pb-16">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-amber-500/20 bg-amber-500/5 text-amber-500 text-[10px] font-black uppercase tracking-[0.3em] mb-4 animate-slide-up"><Skull size={12} /> Arsip Pembantaian</div>
         <div className="flex items-center gap-3 mb-6">
-          <h1 className="text-6xl md:text-7xl italic uppercase animate-slide-up" style={{ fontFamily: "'Docallisme', sans-serif" }} >
+          <h1 className="text-5xl md:text-7xl italic uppercase animate-slide-up" style={{ fontFamily: "'Docallisme', sans-serif" }} >
             War <span className="text-amber-500">History</span>
           </h1>
         </div>

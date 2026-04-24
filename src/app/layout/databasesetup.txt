@@ -1,0 +1,14 @@
+CREATE TABLE layouts (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  th_level INTEGER NOT NULL,
+  base_tag TEXT NOT NULL,
+  copy_link TEXT NOT NULL,
+  image_url TEXT,
+  description TEXT,
+  source_type TEXT,
+  source_url TEXT,
+  view_count INTEGER DEFAULT 0,
+  like_count INTEGER DEFAULT 0,
+  upload_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+  is_active BOOLEAN DEFAULT TRUE
+);

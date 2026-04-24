@@ -22,6 +22,7 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
     { name: "Personel", href: "/members" },
     { name: "About Us", href: "/tentang" },
     { name: "War Log", href: "/warlog" },
+    { name: "Base Layouts", href: "/layout" },
     { name: "Ask Sigma", href: "/sigma" },
   ];
 
@@ -46,7 +47,7 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
         </Link>
 
         {/* Desktop Menu - Centered */}
-        <div className={`hidden md:flex items-center gap-6 transition duration-500 absolute left-1/2 transform -translate-x-1/2 ${poppins.className}`}>
+        <div className={`hidden lg:flex items-center gap-6 transition duration-500 absolute left-1/2 transform -translate-x-1/2 ${poppins.className}`}>
           {navLinks.slice(0, -1).map((link) => (
             <Link
               key={link.href}
@@ -67,7 +68,7 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
           {/* Let's Talk Button - Desktop */}
           <Link
             href="/sigma"
-            className={`hidden md:flex items-center gap-2 px-6 py-2.5 font-400 text-xs tracking-[0.1em] transition-all rounded rounded-tl-3xl rounded-br-3xl rounded-bl-3xl ${poppins.className} ${
+            className={`hidden lg:flex items-center gap-2 px-6 py-2.5 font-400 text-xs tracking-[0.1em] transition-all rounded rounded-tl-3xl rounded-br-3xl rounded-bl-3xl ${poppins.className} ${
               pathname === '/sigma'
                 ? 'border-2 border-amber-500 text-amber-500 hover:bg-amber-600/10'
                 : 'border-1 border-zinc-800/70 bg-zinc-900/90 hover:bg-amber-700 text-white'
@@ -80,7 +81,7 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
           {/* Mobile Toggle Button */}
           <button 
             onClick={() => setIsOpen(true)} 
-            className="md:hidden text-amber-500 p-2 hover:bg-amber-500/10 rounded transition"
+            className="lg:hidden text-amber-500 p-2 hover:bg-amber-500/10 rounded transition"
           >
             <Menu size={26} className="active:scale-90 transition" />
           </button>
@@ -89,7 +90,7 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
 
       {/* Mobile Menu Overlay */}
       <div 
-        className={`fixed inset-0 z-40 bg-black/40 backdrop-blur transition-opacity duration-300 md:hidden ${
+        className={`fixed inset-0 z-40 bg-black/40 backdrop-blur transition-opacity duration-300 lg:hidden ${
           isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
         onClick={() => setIsOpen(false)}
@@ -97,7 +98,7 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
 
       {/* Mobile Menu */}
       <div className={`
-        fixed inset-0 z-40 bg-black/40 backdrop-blur-xl flex flex-col items-center justify-center text-lg gap-8 md:hidden transition-transform duration-300 overflow-hidden ${poppins.className}
+        fixed inset-0 z-40 bg-black/40 backdrop-blur-xl flex flex-col items-center justify-center text-lg gap-8 lg:hidden transition-transform duration-300 overflow-hidden ${poppins.className}
         ${isOpen ? 'translate-x-0' : '-translate-x-full'}
       `}>
         {navLinks.map((link) => (
