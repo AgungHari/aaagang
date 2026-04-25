@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import WarLogCard from "@/components/WarLogCard";
+import WarLogFilter from "@/components/WarLogFilter";
 import { getWarLog, getClanData } from "@/lib/coc";
 import { Users, Skull } from "lucide-react";
 
@@ -26,6 +26,8 @@ interface WarLogResponse {
   }>;
 }
 
+type War = WarLogResponse['items'][number];
+
 export default async function WarLogPage() {
   const [clan, warLog] = await Promise.all([getClanData(), getWarLog()]);
 
@@ -41,12 +43,11 @@ export default async function WarLogPage() {
   const wars = (warLog as WarLogResponse).items || [];
   const validWars = wars.filter((w) => w.clan && w.opponent);
 
-  // Calculate stats
-  const wins = validWars.filter((w) => w.result === "win").length;
-  const losses = validWars.filter((w) => w.result === "lose").length;
-  const ties = validWars.filter((w) => w.result === "tie").length;
-  const winRate = validWars.length > 0 ? ((wins / validWars.length) * 100).toFixed(1) : "0";
-  const totalExpEarned = validWars.reduce((sum, w) => sum + (w.clan.expEarned || 0), 0);
+  // Serialize wars ke plain objects untuk Client Component
+  const serializedWars = JSON.parse(JSON.stringify(validWars));
+
+  // Calculate total experience
+  const totalExpEarned = serializedWars.reduce((sum: number, w: War) => sum + (w.clan.expEarned || 0), 0);
 
   return (
     <main className="min-h-screen text-zinc-100 selection:bg-amber-500 selection:text-black overflow-x-hidden font-sans">
@@ -54,7 +55,7 @@ export default async function WarLogPage() {
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />
 
       {/* Hero Section */}
-      <section className="relative flex flex-col items-center justify-center px-4 md:px-16 lg:px-24 xl:px-32 pt-24 pb-16">
+      <section className="relative flex flex-col items-center justify-center px-4 md:px-16 lg:px-24 xl:px-32 pt-24 ">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-amber-500/20 bg-amber-500/5 text-amber-500 text-[10px] font-black uppercase tracking-[0.3em] mb-4 animate-slide-up"><Skull size={12} /> Arsip Pembantaian</div>
         <div className="flex items-center gap-3 mb-6">
           <h1 className="text-5xl md:text-7xl italic uppercase animate-slide-up" style={{ fontFamily: "'Docallisme', sans-serif" }} >
@@ -78,11 +79,9 @@ export default async function WarLogPage() {
           </div>
         </div>
 
-        {validWars.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {validWars.map((war, index) => (
-              <WarLogCard key={index} war={war} index={index} />
-            ))}
+        {serializedWars.length > 0 ? (
+          <div className="animate-slide-up">
+            <WarLogFilter wars={serializedWars} />
           </div>
         ) : (
           <div className="text-center py-20">

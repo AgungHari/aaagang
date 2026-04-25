@@ -1,9 +1,8 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import LayoutCard from "@/components/LayoutCard";
+import LayoutsFilter from "@/components/LayoutsFilter";
 import { getClanData } from "@/lib/coc";
 import { createClient } from "@libsql/client";
-import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import { Users } from "lucide-react";
 
@@ -28,6 +27,9 @@ export default async function LayoutPage() {
 
   const layouts = layoutsResult.rows;
 
+  // Serialize layouts ke plain objects untuk Client Component
+  const serializedLayouts = JSON.parse(JSON.stringify(layouts));
+
   return (
     <main className="min-h-screen text-zinc-100 selection:bg-amber-500 selection:text-black overflow-x-hidden font-poppins">
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />
@@ -46,33 +48,10 @@ export default async function LayoutPage() {
             Koleksi base layouts terbaik dari AAA GANG, Temukan inspirasi untuk pertahanan dan seranganmu di sini. Setiap layout dilengkapi dengan detail lengkap.
           </p>
 
-          {/* Layouts Grid */}
-          {layouts.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {layouts.map((layout: any) => (
-                <ScrollReveal key={layout.id} delay={layouts.indexOf(layout) * 0.02}>
-                  <Link 
-                      key={layout.id}
-                      href={`/layout/${Number(layout.id)}`}
-                      className="hover:opacity-90 transition-opacity"
-                    >
-                    <LayoutCard
-                      id={Number(layout.id)}
-                      th_level={Number(layout.th_level)}
-                      base_tag={String(layout.base_tag)}
-                      copy_link={String(layout.copy_link)}
-                      image_url={String(layout.image_url)}
-                      description={String(layout.description || "")}
-                      source_type={String(layout.source_type || "")}
-                      source_url={String(layout.source_url || "")}
-                      upload_date={String(layout.upload_date)}
-                      view_count={Number(layout.view_count || 0)}
-                      like_count={Number(layout.like_count || 0)}
-                      is_active={Number(layout.is_active || 1)}
-                    />
-                  </Link>
-                </ScrollReveal>
-              ))}
+          {/* Layouts Filter & Grid */}
+          {serializedLayouts.length > 0 ? (
+            <div className="animate-slide-up">
+              <LayoutsFilter layouts={serializedLayouts} />
             </div>
           ) : (
             <div className="text-center py-12">
