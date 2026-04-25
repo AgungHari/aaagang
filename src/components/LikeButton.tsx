@@ -55,7 +55,10 @@ export default function LikeButton({ layoutId, initialCount }: LikeButtonProps) 
       }`}
     >
       <ThumbsUp size={16} />
-      <span>{likeCount} {hasLiked ? '' : 'Like'}</span>
+      <span>
+        <span>{likeCount}</span>
+        <span className="hidden md:inline"> {hasLiked ? 'Liked' : 'Like'}</span>
+      </span>
     </button>
   );
 }
