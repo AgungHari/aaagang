@@ -124,7 +124,7 @@ export default function LayoutCard({
             fill
             sizes="(max-width: 768px) 100vw, 33vw"
             className="object-cover group-hover:scale-105 transition-transform duration-300"
-            priority={false}
+            loading="lazy"
             onError={() => setImageError(true)}
           />
           {/* TH Level Badge */}

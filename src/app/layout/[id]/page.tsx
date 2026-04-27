@@ -215,7 +215,6 @@ export default async function LayoutDetailPage({
                     >
                       {getSourceIcon()}
                       <span>{String(layout.source_type || "External Link")}</span>
-                      <ExternalLink size={16} />
                     </a>
                   </div>
                 )}
@@ -224,7 +223,7 @@ export default async function LayoutDetailPage({
                 <div className="flex items-center gap-6 pt-4 border-t border-white/10">
                   <div className="flex items-center gap-2 text-gray-400">
                     <Eye size={18} />
-                    <span className="text-sm">{Number(layout.view_count)} Views</span>
+                    <span className="text-sm">{Number(layout.view_count)} <span className="hidden md:inline">Views</span></span>
                   </div>
                   <LikeButton 
                     layoutId={Number(layout.id)}

@@ -1,4 +1,5 @@
 import { Trophy, Target, Flame, Zap, Users } from "lucide-react";
+import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
 
 interface WarLogItem {
@@ -94,9 +95,13 @@ export default function WarLogCard({ war, index }: WarLogCardProps) {
         <div className="flex items-center justify-between mb-4 relative z-10">
           <div className="flex items-center gap-3">
             {war.opponent.badgeUrls?.small && (
-              <img
+              <Image
                 src={war.opponent.badgeUrls.small}
-                alt={war.opponent.name}
+                alt={`${war.opponent.name} clan badge`}
+                width={40}
+                height={40}
+                loading="eager"
+                unoptimized
                 className={`w-10 h-10 object-contain drop-shadow-[0_0_8px_rgba(245,158,11,0.3)] transition-transform ${isLose ? "" : "group-hover:scale-110"}`}
               />
             )}
