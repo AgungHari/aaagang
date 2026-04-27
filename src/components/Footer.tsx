@@ -1,8 +1,22 @@
-import { Medal, Users, Sword, Coffee, GitFork } from "lucide-react"; // Tambahin Github disini
+import { Medal, Users, Sword, Coffee, Info } from "lucide-react";
+import { siGithub } from 'simple-icons';
 
 interface FooterProps {
   clan: any;
 }
+
+const renderSI = (icon: any, className = "text-white", size = "w-4 h-4") => {
+  const svg = icon.svg
+    .replace(/fill="[^"]*"/g, "") // hapus semua fill
+    .replace("<svg", '<svg fill="currentColor"'); // inject ke root
+
+  return (
+    <span
+      dangerouslySetInnerHTML={{ __html: svg }}
+      className={`${size} inline-block ${className}`}
+    />
+  );
+};
 
 export default function Footer({ clan }: FooterProps) {
   return (
@@ -58,12 +72,24 @@ export default function Footer({ clan }: FooterProps) {
                 rel="noopener noreferrer"
                 className="group flex items-center gap-2 px-3 py-1.5 border border-zinc-800/40 hover:border-zinc-500/40 hover:bg-zinc-800/50 rounded transition-all w-fit"
               >
-                <GitFork size={10} className="text-zinc-600 group-hover:text-zinc-300 transition-colors" />
+                {renderSI(siGithub, "text-zinc-600 group-hover:text-zinc-300 transition-colors", "w-2.5 h-2.5")}
                 <span className="text-[7px] font-black tracking-[0.3em] text-zinc-600 uppercase group-hover:text-zinc-300 transition-colors">
-                  Fork
+                  Github
                 </span>
               </a>
             </div>
+            {/* Tombol Status Page */}
+              <a 
+                href="https://status.3agang.pro/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group flex items-center gap-2 px-3 py-1.5 border border-zinc-800/40 hover:border-zinc-500/40 hover:bg-amber-800/50 rounded transition-all w-fit"
+              >
+                <Info size={10} className="text-zinc-600 group-hover:text-zinc-300 transition-colors" />
+                <span className="text-[7px] font-black tracking-[0.3em] text-zinc-600 uppercase group-hover:text-zinc-300 transition-colors">
+                  Maintenance Status
+                </span>
+              </a>
           </div>
           
         </div>

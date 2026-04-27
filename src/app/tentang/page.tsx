@@ -9,7 +9,32 @@ import { Shield, Target, Zap, Users, Heart, Clock, ShieldCheck, HandHeart, Sword
 
 export default async function AboutPage() {
   const clan = await getClanData();
-  if (!clan) return <div className="text-white text-center py-20">SUPERCELL MAINTENANCE</div>;
+  if (!clan) {
+      return (
+        <div className="flex flex-col items-center justify-center py-24 px-4 text-center">
+          <h1 className="text-amber-600 text-5xl md:text-6xl mb-6 " style={{ fontFamily: "'Docallisme', sans-serif" }}>
+            SUPERCELL MAINTENANCE
+          </h1>
+          <p className="text-gray-400 text-md mb-10 max-w-lg font-poppins">
+            We couldn&apos;t fetch the data right now. Check in-game for the maintenance timer or visit our status page.
+          </p>
+          
+          <a 
+            href="https://status.3agang.pro" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="group relative inline-flex items-center justify-center px-8 py-4 font-semibold text-white transition-all duration-200 bg-zinc-600/30 font-sans rounded-xl border border-zinc-500/10 hover:bg-zinc-500/10"
+          >
+            <span className="relative flex items-center gap-2">
+              <span className="flex h-3 w-3">
+                <span className="animate-ping relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+              </span>
+              Check System Status
+            </span>
+          </a>
+        </div>
+      );
+    }
 
   const visions = [
     { icon: Target, title: "Visi Kami", description: "Membangun komunitas Clash of Clans yang solid, kompetitif, namun tetap santai. Kekalahan di War hanyalah bahan evaluasi (dan candaan) untuk kemenangan hari esok." },

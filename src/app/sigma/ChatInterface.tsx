@@ -21,7 +21,7 @@ export default function ChatInterface() {
     "Ask Sigma",
     "Ada slot kosong ga di clan saat ini?",
     "Apa rules clan ini?",
-    "Apa benefit jadi anggota clan ini?",
+    "Apa benar Agung-R1-Distill-Llama-70B model yang bagus?",
     "Siapa leader clan ini?"
   ];
 
@@ -144,7 +144,7 @@ export default function ChatInterface() {
       <div className="flex items-center justify-between gap-4 px-5 py-4 bg-zinc-950/95">
         <div>
           <p className="text-[5px] uppercase tracking-[0.36em] text-zinc-600">We do not store your chat logs.</p>
-          <h2 className="text-lg font-semibold text-zinc-200">Sigma <span className="text-[9px] text-amber-500">Pro</span></h2>
+          <h2 className="text-lg font-semibold text-zinc-200">Sigma <span className="text-[9px] text-amber-500">Basic</span></h2>
         </div>
         <button
           onClick={clearChat}
