@@ -22,7 +22,7 @@ export default async function Home() {
   if (!clan) {
     return (
       <div className="text-white text-center py-20 font-black tracking-tighter text-5xl">
-        DATABASE ERROR... <br/>RECHECK API TOKEN!
+        SUPERCELL MAINTENANCE... <br/> CHECK IN GAME FOR TIMER
       </div>
     );
   }

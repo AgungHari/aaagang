@@ -20,6 +20,7 @@ const HERO_ASSETS: Record<string, string> = {
 const EQ_ASSETS: Record<string, string> = {
   "Giant Gauntlet": "Hero_Equipment_BQ_Giant_Gauntlet.webp",
   "Rocket Spear": "HeroGear_RoyalChampion_RocketSpear_Equipment_03.webp",
+  "Rocket Backpack": "HG_DD_DeadlyDash_Marketing.webp",
   "Spiky Ball": "Hero_Equipment_BK_Spiky_Ball.webp",
   "Snake Bracelet": "Hero_Equipment_BK_SnakeBracelet.webp",
   "Dark Crown": "HeroGear_MP_DarkCrown_2k.webp",
