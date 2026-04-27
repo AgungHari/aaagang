@@ -7,6 +7,7 @@ import LeaderboardCard from "@/components/LeaderboardCard";
 import ClanCapitalCard from "@/components/ClanCapitalCard";
 import WarStatusCard from "@/components/WarStatusCard";
 import WarTestimonial from "@/components/WarTestimonial";
+import DecorativeHeroes from "@/components/DecorativeHeroes";
 import Link from "next/link";
 import { 
   Sigma, Baby, Swords, Trophy, Heart, Zap, 
@@ -46,7 +47,8 @@ export default async function Home() {
   const displayNewMembers = newMembers.length > 0 ? newMembers : mockNewMembers;
 
   return (
-    <main className="min-h-screen text-zinc-100 selection:bg-amber-500 selection:text-black overflow-x-hidden font-sans">
+    <main className="min-h-screen text-zinc-100 selection:bg-amber-500 selection:text-black overflow-x-hidden font-sans relative">
+      <DecorativeHeroes />
       
       {/* 1. Navbar Component */}
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />
@@ -67,7 +69,7 @@ export default async function Home() {
         </div>
         
         {/* Main Title */}
-        <h1 className="text-5xl/17 md:text-6xl/21 text-center mb-3 max-w-2xl lg:max-w-3xl font-poppins font-medium animate-slide-up" > Kuasai perang bersama di  <span className="px-3 rounded-xl text-nowrap text-amber-500" style={{ fontFamily: "'Docallisme', sans-serif" }} >AAA GANGS</span>
+        <h1 className="text-5xl/17 lg:text-6xl/21 text-center mb-3 max-w-2xl lg:max-w-3xl font-poppins font-medium animate-slide-up" > Kuasai perang bersama di  <span className="px-3 rounded-xl text-nowrap text-amber-500" style={{ fontFamily: "'Docallisme', sans-serif" }} >AAA GANGS</span>
         </h1>
         
         {/* Clan Description */}
@@ -133,17 +135,18 @@ export default async function Home() {
         )}
 
       {/* Leaderboard Cards */}
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <ScrollReveal delay={0.1} mobileDelay={0.1}>
           <LeaderboardCard title="Donation Kings" icon={<Heart size={20} className="text-red-500" />} data={topDonators} dataKey="donations" suffix="Troops" />
         </ScrollReveal>
         <ScrollReveal delay={0.2} mobileDelay={0.1}>
           <LeaderboardCard title="Ranked Trophy" icon={<Trophy size={20} className="text-amber-500" />} data={topLeagues} dataKey="trophies" suffix="Trophies" />
         </ScrollReveal>
-        <ScrollReveal delay={0.3} mobileDelay={0.1}>
-          <LeaderboardCard title="Most Active" icon={<Zap size={20} className="text-blue-500" />} data={topReceived} dataKey="donationsReceived" suffix="Reqs" />
-        </ScrollReveal>
-
+        <div className="md:col-span-2 lg:col-span-1 md:w-1/2 lg:w-full md:justify-self-center">
+          <ScrollReveal delay={0.3} mobileDelay={0.1}>
+            <LeaderboardCard title="Most Active" icon={<Zap size={20} className="text-blue-500" />} data={topReceived} dataKey="donationsReceived" suffix="Reqs" />
+          </ScrollReveal>
+        </div>
       </div>
 
       {/* Clan Capital & War Status */}
