@@ -8,11 +8,12 @@ import ClanCapitalCard from "@/components/ClanCapitalCard";
 import WarStatusCard from "@/components/WarStatusCard";
 import WarTestimonial from "@/components/WarTestimonial";
 import DecorativeHeroes from "@/components/DecorativeHeroes";
+import MorphingTitle from "@/components/MorphingTitle";
 import Link from "next/link";
 import Image from "next/image";
 import { 
-  Sigma, Baby, Swords, 
-  UserPlus, HandHeart, ChevronRightIcon
+  Sigma,
+  UserPlus, ChevronRightIcon
 } from "lucide-react";
 import { getClanData, getCurrentWar, getWarLog } from "@/lib/coc";
 
@@ -89,8 +90,7 @@ export default async function Home() {
         </div>
         
         {/* Main Title */}
-        <h1 className="text-5xl/17 lg:text-6xl/21 text-center mb-3 max-w-2xl lg:max-w-3xl font-poppins font-medium animate-slide-up" > Kuasai perang bersama di  <span className="px-3 rounded-xl text-nowrap text-amber-500" style={{ fontFamily: "'Docallisme', sans-serif" }} >AAA GANGS</span>
-        </h1>
+        <MorphingTitle />
         
         {/* Clan Description */}
         <p className="text-base text-center text-slate-300 max-w-lg md:max-w-lg lg:max-w-lg mb-8 font-poppins animate-slide-up">
@@ -119,15 +119,15 @@ export default async function Home() {
         {/* Clan Stats */}
         <div className="flex flex-wrap justify-center items-center gap-4 md:gap-14">
           <div className="flex items-center gap-2 animate-slide-up">
-            <Baby className="size-5 text-amber-600" />
+            <Image className="opacity-80 saturate-60 hue-rotate-100" src="/1_newb.png" alt="Newbie Friendly" width={20} height={20} style={{ width: 'auto', height: 'auto' }} />
             <span className="text-slate-400 font-medium">Newbie Friendly</span>
           </div>
           <div className="flex items-center gap-2 animate-slide-up">
-            <Swords className="size-5 text-amber-600" />
+            <Image className="opacity-80 saturate-60" src="/3_war.png" alt="Always War" width={20} height={20} style={{ width: 'auto', height: 'auto' }} />
             <span className="text-slate-400 font-medium">Always War</span>
           </div>
           <div className="flex items-center gap-2 animate-slide-up">
-            <HandHeart className="size-5 text-amber-600" />
+            <Image className="opacity-80 saturate-90 hue-rotate-260" src="/2_donat.png" alt="Donasi Lancar" width={20} height={20} style={{ width: 'auto', height: 'auto' }} />
             <span className="text-slate-400 font-medium">Donasi Lancar</span>
           </div>
         </div>
@@ -157,14 +157,14 @@ export default async function Home() {
       {/* Leaderboard Cards */}
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <ScrollReveal delay={0.1} mobileDelay={0.1}>
-          <LeaderboardCard title="Donation Kings" icon={<Image src="/Icon_HV_donate_Troops.png" alt="Donate" width={30} height={30} />} data={topDonators} dataKey="donations" suffix="Troops" />
+          <LeaderboardCard title="Donation Kings" icon={<Image src="/Icon_HV_donate_Troops.png" alt="Donate" width={30} height={30} style={{ width: 'auto', height: 'auto' }} />} data={topDonators} dataKey="donations" suffix="Troops" />
         </ScrollReveal>
         <ScrollReveal delay={0.2} mobileDelay={0.1}>
-          <LeaderboardCard title="Ranked Trophy" icon={<Image src="/Icon_HV_CWL_Champion_3.webp" alt="League" width={30} height={30} />} data={topLeagues} dataKey="trophies" suffix="Trophies" />
+          <LeaderboardCard title="Ranked Trophy" icon={<Image src="/Icon_HV_CWL_Champion_3.webp" alt="League" width={30} height={30} style={{ width: 'auto', height: 'auto' }} />} data={topLeagues} dataKey="trophies" suffix="Trophies" />
         </ScrollReveal>
         <div className="md:col-span-2 lg:col-span-1 md:w-1/2 lg:w-full md:justify-self-center">
           <ScrollReveal delay={0.3} mobileDelay={0.1}>
-            <LeaderboardCard title="Most Active" icon={<Image src="/Building_HV_Clan_Castle_level_14.webp" alt="Request" width={30} height={30} />} data={topReceived} dataKey="donationsReceived" suffix="Reqs" />
+            <LeaderboardCard title="Most Active" icon={<Image src="/Building_HV_Clan_Castle_level_14.webp" alt="Request" width={30} height={30} style={{ width: 'auto', height: 'auto' }} />} data={topReceived} dataKey="donationsReceived" suffix="Reqs" />
           </ScrollReveal>
         </div>
       </div>

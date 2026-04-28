@@ -33,6 +33,7 @@ export default function DecorativeHeroes() {
           alt="Warden" 
           width={500}
           height={500}
+          loading="eager"
           className="w-40 md:w-96 lg:w-120 xl:w-215 h-auto object-contain"
         />
         </ScrollReveal>

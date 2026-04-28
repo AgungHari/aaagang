@@ -87,7 +87,7 @@ export default function HallOfFame({ isWar, war }: HallOfFameProps) {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {highlights.map((h, i) => (
-              <ScrollReveal key={i} delay={i * 0.1}>
+              <ScrollReveal key={i} delay={i * 0.02}>
                 <div
                   className={`p-5 bg-zinc-950/40 border rounded-2xl group transition-all ${
                     h.type === "Unlucky 1 Star"
