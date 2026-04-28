@@ -35,7 +35,7 @@ export default function MorphingTitle() {
           {phrases[current]}
         </motion.span>
       </AnimatePresence>
-      {" "}
+      <br />
       <motion.span 
         className="px-3 rounded-xl text-nowrap bg-gradient-to-r bg-clip-text text-transparent"
         style={{ fontFamily: "'Docallisme', sans-serif" }}
