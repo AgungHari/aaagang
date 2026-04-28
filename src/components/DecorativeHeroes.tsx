@@ -1,5 +1,4 @@
 import Image from "next/image";
-import ScrollReveal from "@/components/ScrollReveal";
 
 export default function DecorativeHeroes() {
   return (
@@ -12,17 +11,15 @@ export default function DecorativeHeroes() {
       xl:top-[7%] xl:left-[-28%] 
       2xl:top-[7%] 2xl:left-[-17%] 
       3xl:top-[7%] 3xl:left-[-12%]
-      -z-10 opacity-10 pointer-events-none"> 
-      {/* xl 3xl, macbook imac kontol */}
-       <ScrollReveal>
+      -z-10 opacity-10 pointer-events-none animate-fade-inX"> 
         <Image 
-          src="/2.svg" 
+          src="/12.webp" 
           alt="Archer Queen" 
           width={500}
           height={500}
+          loading="eager"
           className="w-40 md:w-96 lg:w-110 xl:w-200 h-auto object-contain"
         />
-        </ScrollReveal>
       </div>
       <div className="hidden md:block absolute 
       top-[3%] right-[-16%] 
@@ -31,17 +28,15 @@ export default function DecorativeHeroes() {
       xl:top-[7%] xl:right-[-34%]
       2xl:top-[7%] 2xl:right-[-22%]
       3xl:top-[7%] 3xl:right-[-15%]
-      -z-10 opacity-10 pointer-events-none">
-       <ScrollReveal>
+      -z-10 opacity-10 pointer-events-none animate-fade-inX">
         <Image 
-          src="/1.svg" 
+          src="/11.webp" 
           alt="Warden" 
           width={500}
           height={500}
           loading="eager"
           className="w-40 md:w-96 lg:w-120 xl:w-215 h-auto object-contain"
         />
-        </ScrollReveal>
       </div>
     </>
   );
