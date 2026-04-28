@@ -9,8 +9,9 @@ import WarStatusCard from "@/components/WarStatusCard";
 import WarTestimonial from "@/components/WarTestimonial";
 import DecorativeHeroes from "@/components/DecorativeHeroes";
 import Link from "next/link";
+import Image from "next/image";
 import { 
-  Sigma, Baby, Swords, Trophy, Heart, Zap, 
+  Sigma, Baby, Swords, 
   UserPlus, HandHeart, ChevronRightIcon
 } from "lucide-react";
 import { getClanData, getCurrentWar, getWarLog } from "@/lib/coc";
@@ -156,14 +157,14 @@ export default async function Home() {
       {/* Leaderboard Cards */}
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <ScrollReveal delay={0.1} mobileDelay={0.1}>
-          <LeaderboardCard title="Donation Kings" icon={<Heart size={20} className="text-red-500" />} data={topDonators} dataKey="donations" suffix="Troops" />
+          <LeaderboardCard title="Donation Kings" icon={<Image src="/Icon_HV_donate_Troops.png" alt="Donate" width={30} height={30} />} data={topDonators} dataKey="donations" suffix="Troops" />
         </ScrollReveal>
         <ScrollReveal delay={0.2} mobileDelay={0.1}>
-          <LeaderboardCard title="Ranked Trophy" icon={<Trophy size={20} className="text-amber-500" />} data={topLeagues} dataKey="trophies" suffix="Trophies" />
+          <LeaderboardCard title="Ranked Trophy" icon={<Image src="/Icon_HV_CWL_Champion_3.webp" alt="League" width={30} height={30} />} data={topLeagues} dataKey="trophies" suffix="Trophies" />
         </ScrollReveal>
         <div className="md:col-span-2 lg:col-span-1 md:w-1/2 lg:w-full md:justify-self-center">
           <ScrollReveal delay={0.3} mobileDelay={0.1}>
-            <LeaderboardCard title="Most Active" icon={<Zap size={20} className="text-blue-500" />} data={topReceived} dataKey="donationsReceived" suffix="Reqs" />
+            <LeaderboardCard title="Most Active" icon={<Image src="/Building_HV_Clan_Castle_level_14.webp" alt="Request" width={30} height={30} />} data={topReceived} dataKey="donationsReceived" suffix="Reqs" />
           </ScrollReveal>
         </div>
       </div>
