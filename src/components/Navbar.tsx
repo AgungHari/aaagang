@@ -22,6 +22,7 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
     { name: "Personel", href: "/members" },
     { name: "About Us", href: "/tentang" },
     { name: "War Log", href: "/warlog" },
+    { name: "News", href: "/news" },
     { name: "Base Layouts", href: "/layout" },
     { name: "Ask Sigma", href: "/sigma" },
   ];

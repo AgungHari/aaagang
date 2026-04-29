@@ -1,0 +1,2133 @@
+{
+  "events": [
+    {
+      "id": "56l3qJUbq9HqDPdN7FOcoS",
+      "metadata": {
+        "id": "56l3qJUbq9HqDPdN7FOcoS",
+        "publishedAt": "2025-11-17T08:25:21.448Z",
+        "publishedVersion": 41
+      },
+      "targeting": null,
+      "postDate": 1763367921448,
+      "sortDate": 1763367921448,
+      "lang": "id",
+      "title": "Pembaruan November",
+      "ctas": [
+        {
+          "title": null,
+          "type": "url",
+          "urlType": "url",
+          "id": "AdG5ATS5v4Bycpc0xhFPc-id-3fd96",
+          "order": "0",
+          "variant": "red",
+          "url": "https://youtu.be/2H_e4O2D9IU",
+          "label": "Ayo Tonton!"
+        }
+      ],
+      "relatedMedia": [],
+      "type": "eventEntry",
+      "displayTimer": false,
+      "timerTarget": 1777417443149,
+      "hideTitle": false,
+      "background": {
+        "small": {
+          "title": "Artboard 2.jpg",
+          "path": "/lqe2co20rkhw/6EWrm7cIQMW5W0HMFk14FW/6a2c00a8551dceda00709a5dc9fb73b5/Artboard_2.jpg?w=172&h=264&f=center&fit=fill",
+          "width": 172,
+          "height": 264
+        },
+        "smallRetina": {
+          "title": "Artboard 2.jpg",
+          "path": "/lqe2co20rkhw/6EWrm7cIQMW5W0HMFk14FW/6a2c00a8551dceda00709a5dc9fb73b5/Artboard_2.jpg?w=344&h=528&f=center&fit=fill",
+          "width": 344,
+          "height": 528
+        },
+        "medium": {
+          "title": "Artboard 2.jpg",
+          "path": "/lqe2co20rkhw/6EWrm7cIQMW5W0HMFk14FW/6a2c00a8551dceda00709a5dc9fb73b5/Artboard_2.jpg?w=430&h=660&f=center&fit=fill",
+          "width": 430,
+          "height": 660
+        },
+        "mediumRetina": {
+          "title": "Artboard 2.jpg",
+          "path": "/lqe2co20rkhw/6EWrm7cIQMW5W0HMFk14FW/6a2c00a8551dceda00709a5dc9fb73b5/Artboard_2.jpg?w=516&h=792&f=center&fit=fill",
+          "width": 516,
+          "height": 792
+        },
+        "large": {
+          "title": "Artboard 2.jpg",
+          "path": "/lqe2co20rkhw/6EWrm7cIQMW5W0HMFk14FW/6a2c00a8551dceda00709a5dc9fb73b5/Artboard_2.jpg?w=688&h=1056&f=center&fit=fill",
+          "width": 688,
+          "height": 1056
+        },
+        "largeRetina": {
+          "title": "Artboard 2.jpg",
+          "path": "/lqe2co20rkhw/6EWrm7cIQMW5W0HMFk14FW/6a2c00a8551dceda00709a5dc9fb73b5/Artboard_2.jpg?w=860&h=1320&f=center&fit=fill",
+          "width": 860,
+          "height": 1320
+        }
+      }
+    },
+    {
+      "id": "4dO89EhnQfKj2tB0SrMO6L",
+      "metadata": {
+        "id": "4dO89EhnQfKj2tB0SrMO6L",
+        "publishedAt": "2025-10-01T13:00:21.804Z",
+        "publishedVersion": 41
+      },
+      "targeting": null,
+      "postDate": 1759323621804,
+      "sortDate": 1759323621804,
+      "lang": "id",
+      "title": "Kutukan Kosmik",
+      "ctas": [
+        {
+          "title": null,
+          "type": "url",
+          "urlType": "url",
+          "id": "5HI9csCvtreTt68F3fwkf9-id-65ec1",
+          "order": "0",
+          "variant": "green",
+          "url": "https://youtu.be/yBg1zfHpJTE",
+          "label": "Tonton! "
+        }
+      ],
+      "relatedMedia": [],
+      "type": "eventEntry",
+      "displayTimer": false,
+      "timerTarget": 1777417443150,
+      "hideTitle": false,
+      "background": {
+        "small": {
+          "title": "Clashoween_splash_cosmiccurse.png",
+          "path": "/lqe2co20rkhw/6TFR3IUPRt3KRwTK27eh1l/5be9e0b93b100b28c1ec66e846bc4741/Clashoween_splash_cosmiccurse.png?w=172&h=264&f=center&fit=fill",
+          "width": 172,
+          "height": 264
+        },
+        "smallRetina": {
+          "title": "Clashoween_splash_cosmiccurse.png",
+          "path": "/lqe2co20rkhw/6TFR3IUPRt3KRwTK27eh1l/5be9e0b93b100b28c1ec66e846bc4741/Clashoween_splash_cosmiccurse.png?w=344&h=528&f=center&fit=fill",
+          "width": 344,
+          "height": 528
+        },
+        "medium": {
+          "title": "Clashoween_splash_cosmiccurse.png",
+          "path": "/lqe2co20rkhw/6TFR3IUPRt3KRwTK27eh1l/5be9e0b93b100b28c1ec66e846bc4741/Clashoween_splash_cosmiccurse.png?w=430&h=660&f=center&fit=fill",
+          "width": 430,
+          "height": 660
+        },
+        "mediumRetina": {
+          "title": "Clashoween_splash_cosmiccurse.png",
+          "path": "/lqe2co20rkhw/6TFR3IUPRt3KRwTK27eh1l/5be9e0b93b100b28c1ec66e846bc4741/Clashoween_splash_cosmiccurse.png?w=516&h=792&f=center&fit=fill",
+          "width": 516,
+          "height": 792
+        },
+        "large": {
+          "title": "Clashoween_splash_cosmiccurse.png",
+          "path": "/lqe2co20rkhw/6TFR3IUPRt3KRwTK27eh1l/5be9e0b93b100b28c1ec66e846bc4741/Clashoween_splash_cosmiccurse.png?w=688&h=1056&f=center&fit=fill",
+          "width": 688,
+          "height": 1056
+        },
+        "largeRetina": {
+          "title": "Clashoween_splash_cosmiccurse.png",
+          "path": "/lqe2co20rkhw/6TFR3IUPRt3KRwTK27eh1l/5be9e0b93b100b28c1ec66e846bc4741/Clashoween_splash_cosmiccurse.png?w=860&h=1320&f=center&fit=fill",
+          "width": 860,
+          "height": 1320
+        }
+      }
+    },
+    {
+      "id": "1Dk58Dx2RVaEmDXhYSxB3w",
+      "metadata": {
+        "id": "1Dk58Dx2RVaEmDXhYSxB3w",
+        "publishedAt": "2025-07-14T07:33:46.644Z",
+        "publishedVersion": 49
+      },
+      "targeting": null,
+      "postDate": 1751529603380,
+      "sortDate": 1752472800000,
+      "lang": "id",
+      "title": "Pesta Musim Panas Tiba!",
+      "ctas": [
+        {
+          "title": null,
+          "type": "url",
+          "urlType": "url",
+          "id": "3CDYEs05Wx5w34galbpeyh-id-c071d",
+          "order": "1",
+          "variant": "green",
+          "url": "https://youtu.be/wm53USBhoTc",
+          "label": "Tonton selengkapnya"
+        }
+      ],
+      "relatedMedia": [],
+      "type": "eventEntry",
+      "displayTimer": false,
+      "timerTarget": 1777417443150,
+      "hideTitle": false,
+      "background": {
+        "small": {
+          "title": "Summer Jam Carrousel.png",
+          "path": "/lqe2co20rkhw/7AmdA75PaY2KIkyN3vaNoo/6af4b749ac7eb2c5bb6ea596e77cebb3/Summer_Jam_Carrousel.png?w=172&h=264&f=center&fit=fill",
+          "width": 172,
+          "height": 264
+        },
+        "smallRetina": {
+          "title": "Summer Jam Carrousel.png",
+          "path": "/lqe2co20rkhw/7AmdA75PaY2KIkyN3vaNoo/6af4b749ac7eb2c5bb6ea596e77cebb3/Summer_Jam_Carrousel.png?w=344&h=528&f=center&fit=fill",
+          "width": 344,
+          "height": 528
+        },
+        "medium": {
+          "title": "Summer Jam Carrousel.png",
+          "path": "/lqe2co20rkhw/7AmdA75PaY2KIkyN3vaNoo/6af4b749ac7eb2c5bb6ea596e77cebb3/Summer_Jam_Carrousel.png?w=430&h=660&f=center&fit=fill",
+          "width": 430,
+          "height": 660
+        },
+        "mediumRetina": {
+          "title": "Summer Jam Carrousel.png",
+          "path": "/lqe2co20rkhw/7AmdA75PaY2KIkyN3vaNoo/6af4b749ac7eb2c5bb6ea596e77cebb3/Summer_Jam_Carrousel.png?w=516&h=792&f=center&fit=fill",
+          "width": 516,
+          "height": 792
+        },
+        "large": {
+          "title": "Summer Jam Carrousel.png",
+          "path": "/lqe2co20rkhw/7AmdA75PaY2KIkyN3vaNoo/6af4b749ac7eb2c5bb6ea596e77cebb3/Summer_Jam_Carrousel.png?w=688&h=1056&f=center&fit=fill",
+          "width": 688,
+          "height": 1056
+        },
+        "largeRetina": {
+          "title": "Summer Jam Carrousel.png",
+          "path": "/lqe2co20rkhw/7AmdA75PaY2KIkyN3vaNoo/6af4b749ac7eb2c5bb6ea596e77cebb3/Summer_Jam_Carrousel.png?w=860&h=1320&f=center&fit=fill",
+          "width": 860,
+          "height": 1320
+        }
+      }
+    },
+    {
+      "id": "4du43lu07aWYmv9KiJz2xy",
+      "metadata": {
+        "id": "4du43lu07aWYmv9KiJz2xy",
+        "publishedAt": "2024-12-26T06:35:44.880Z",
+        "publishedVersion": 62
+      },
+      "targeting": null,
+      "postDate": 1730981405272,
+      "sortDate": 1731016800000,
+      "lang": "id",
+      "title": "Karakter Baru?",
+      "ctas": [
+        {
+          "title": null,
+          "type": "url",
+          "urlType": "url",
+          "id": "6O0TKZBkjWS62v68wU4hPW",
+          "order": "0",
+          "variant": "gray",
+          "url": "https://youtu.be/i5Zgpf-woNM",
+          "label": "Lihat!"
+        }
+      ],
+      "relatedMedia": [],
+      "type": "eventEntry",
+      "displayTimer": false,
+      "timerTarget": 1777417443166,
+      "hideTitle": false,
+      "background": {
+        "small": {
+          "title": "MP.png",
+          "path": "/lqe2co20rkhw/79o760nTWkOyCSmqmEAqT3/b7d1549f3be45a8514af77878c7f3b58/MP.png?w=172&h=264&f=center&fit=fill",
+          "width": 172,
+          "height": 264
+        },
+        "smallRetina": {
+          "title": "MP.png",
+          "path": "/lqe2co20rkhw/79o760nTWkOyCSmqmEAqT3/b7d1549f3be45a8514af77878c7f3b58/MP.png?w=344&h=528&f=center&fit=fill",
+          "width": 344,
+          "height": 528
+        },
+        "medium": {
+          "title": "MP.png",
+          "path": "/lqe2co20rkhw/79o760nTWkOyCSmqmEAqT3/b7d1549f3be45a8514af77878c7f3b58/MP.png?w=430&h=660&f=center&fit=fill",
+          "width": 430,
+          "height": 660
+        },
+        "mediumRetina": {
+          "title": "MP.png",
+          "path": "/lqe2co20rkhw/79o760nTWkOyCSmqmEAqT3/b7d1549f3be45a8514af77878c7f3b58/MP.png?w=516&h=792&f=center&fit=fill",
+          "width": 516,
+          "height": 792
+        },
+        "large": {
+          "title": "MP.png",
+          "path": "/lqe2co20rkhw/79o760nTWkOyCSmqmEAqT3/b7d1549f3be45a8514af77878c7f3b58/MP.png?w=688&h=1056&f=center&fit=fill",
+          "width": 688,
+          "height": 1056
+        },
+        "largeRetina": {
+          "title": "MP.png",
+          "path": "/lqe2co20rkhw/79o760nTWkOyCSmqmEAqT3/b7d1549f3be45a8514af77878c7f3b58/MP.png?w=860&h=1320&f=center&fit=fill",
+          "width": 860,
+          "height": 1320
+        }
+      }
+    }
+  ],
+  "articles": [
+    {
+      "id": "X0jk8EQUZOo6Y87w7UhLv",
+      "index": 0,
+      "targeting": null,
+      "metadata": {
+        "id": "X0jk8EQUZOo6Y87w7UhLv",
+        "publishedVersion": 57,
+        "publishedAt": "2026-04-27T09:40:05.052Z"
+      },
+      "postDate": 1777282805052,
+      "lang": "id",
+      "section": "newsEntries",
+      "title": "PEMBARUAN GAUNG CLASH",
+      "categories": [
+        {
+          "title": "Catatan Rilis",
+          "color": "#007a00",
+          "secondaryColor": null
+        }
+      ],
+      "newUntil": 1777417443149,
+      "relatedMedia": [],
+      "type": "newsEntry",
+      "listingSize": "large",
+      "showInNewsFeed": "SHOW_IN_NEWS_FEED",
+      "thumbnail": {
+        "small": {
+          "title": "inbox thumbnail sound of clash.png",
+          "path": "/lqe2co20rkhw/6NLulnT6x9luaDteMUXnLv/5a6e7d9173df11536bdc27f4b037a9fc/inbox_thumbnail_sound_of_clash.png?w=180&h=101&f=center&fit=fill",
+          "width": 180,
+          "height": 101
+        },
+        "smallRetina": {
+          "title": "inbox thumbnail sound of clash.png",
+          "path": "/lqe2co20rkhw/6NLulnT6x9luaDteMUXnLv/5a6e7d9173df11536bdc27f4b037a9fc/inbox_thumbnail_sound_of_clash.png?w=360&h=202&f=center&fit=fill",
+          "width": 360,
+          "height": 202
+        },
+        "medium": {
+          "title": "inbox thumbnail sound of clash.png",
+          "path": "/lqe2co20rkhw/6NLulnT6x9luaDteMUXnLv/5a6e7d9173df11536bdc27f4b037a9fc/inbox_thumbnail_sound_of_clash.png?w=450&h=253&f=center&fit=fill",
+          "width": 450,
+          "height": 253
+        },
+        "mediumRetina": {
+          "title": "inbox thumbnail sound of clash.png",
+          "path": "/lqe2co20rkhw/6NLulnT6x9luaDteMUXnLv/5a6e7d9173df11536bdc27f4b037a9fc/inbox_thumbnail_sound_of_clash.png?w=540&h=304&f=center&fit=fill",
+          "width": 540,
+          "height": 304
+        },
+        "large": {
+          "title": "inbox thumbnail sound of clash.png",
+          "path": "/lqe2co20rkhw/6NLulnT6x9luaDteMUXnLv/5a6e7d9173df11536bdc27f4b037a9fc/inbox_thumbnail_sound_of_clash.png?w=720&h=405&f=center&fit=fill",
+          "width": 720,
+          "height": 405
+        },
+        "largeRetina": {
+          "title": "inbox thumbnail sound of clash.png",
+          "path": "/lqe2co20rkhw/6NLulnT6x9luaDteMUXnLv/5a6e7d9173df11536bdc27f4b037a9fc/inbox_thumbnail_sound_of_clash.png?w=900&h=506&f=center&fit=fill",
+          "width": 900,
+          "height": 506
+        }
+      },
+      "heroImage": {
+        "small": {
+          "title": "sound of clash inbox hero.png",
+          "path": "/lqe2co20rkhw/6FtRhkvPUjKTkCFVLaAyDH/78bccb71becdb7465a4613b7d398c93f/sound_of_clash_inbox_hero.png?w=390&h=160&f=center&fit=fill",
+          "width": 390,
+          "height": 160
+        },
+        "smallRetina": {
+          "title": "sound of clash inbox hero.png",
+          "path": "/lqe2co20rkhw/6FtRhkvPUjKTkCFVLaAyDH/78bccb71becdb7465a4613b7d398c93f/sound_of_clash_inbox_hero.png?w=780&h=320&f=center&fit=fill",
+          "width": 780,
+          "height": 320
+        },
+        "medium": {
+          "title": "sound of clash inbox hero.png",
+          "path": "/lqe2co20rkhw/6FtRhkvPUjKTkCFVLaAyDH/78bccb71becdb7465a4613b7d398c93f/sound_of_clash_inbox_hero.png?w=975&h=400&f=center&fit=fill",
+          "width": 975,
+          "height": 400
+        },
+        "mediumRetina": {
+          "title": "sound of clash inbox hero.png",
+          "path": "/lqe2co20rkhw/6FtRhkvPUjKTkCFVLaAyDH/78bccb71becdb7465a4613b7d398c93f/sound_of_clash_inbox_hero.png?w=1170&h=480&f=center&fit=fill",
+          "width": 1170,
+          "height": 480
+        },
+        "large": {
+          "title": "sound of clash inbox hero.png",
+          "path": "/lqe2co20rkhw/6FtRhkvPUjKTkCFVLaAyDH/78bccb71becdb7465a4613b7d398c93f/sound_of_clash_inbox_hero.png?w=1560&h=640&f=center&fit=fill",
+          "width": 1560,
+          "height": 640
+        },
+        "largeRetina": {
+          "title": "sound of clash inbox hero.png",
+          "path": "/lqe2co20rkhw/6FtRhkvPUjKTkCFVLaAyDH/78bccb71becdb7465a4613b7d398c93f/sound_of_clash_inbox_hero.png?w=1950&h=800&f=center&fit=fill",
+          "width": 1950,
+          "height": 800
+        }
+      },
+      "details": [
+        {
+          "title": "",
+          "type": "textBlock",
+          "body": "\u003Cp\u003EMonster. Musik. Huru-hara.\u003C/p\u003E\u003Cp\u003ESaatnya mengeraskan volume, Chief. Bulan April ini, Clash bakal Cadas abis, dan medan tempur dijamin bakal memekakkan telinga. PERISAI DAGING jadi penampil utama. Basismu jadi tempat konsernya. Dan penontonnya? Bawa banyak senjata. Bersiaplah menyambut musim yang lebih lantang, lebih ganas, dan lebih metal dari sebelumnya!\u003C/p\u003E\u003Cp\u003EBerikut uraian tentang apa saja yang akan tampil dan mengajakmu headbang musim ini.\u003C/p\u003E\u003Chr/\u003E\u003Ch3\u003E\u003Cb\u003ELIGA LEGENDA SIAP MENGGETARKAN PANGGUNG\u003C/b\u003E\u003C/h3\u003E\u003Cp\u003ESatu Liga Legenda tidak cukup lantang.\u003C/p\u003E\u003Cp\u003ELiga Legenda kini terbagi ke dalam tiga tingkat, masing-masing dengan struktur, tekanan, dan temponya sendiri. Ketiga tingkat ini memiliki Bonus Bintang serta Bonus Liga yang sama. Namun, tiap tingkat menawarkan kompetisi yang berbeda, dengan perubahan pada struktur, progres, serta tingkat kesulitan pertempuran.\u003C/p\u003E\u003Cp\u003ECatatan: Dengan mencapai Legenda III, kamu sudah bisa menyelesaikan tingkat akhir Pencapaian “Master Liga”.\u003C/p\u003E\u003Ch3\u003E\u003Cb\u003ESTRUKTUR TINGKAT LIGA LEGENDA: URAIAN LEBIH LENGKAP\u003C/b\u003E\u003C/h3\u003E\u003Ch3\u003E\u003Cb\u003ELegenda III\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003ETurnamen Mingguan\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EAda 24 pertempuran per minggu\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ELima pemain teratas per grup akan dipromosikan tiap minggunya\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMenggunakan Modifikasi Pertempuran Legenda III \u003Ci\u003E(lihat bagan di bawah)\u003C/i\u003E\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Ch3\u003E\u003Cb\u003ELegenda II\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003ETurnamen Mingguan\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EAda 30 pertempuran per minggu\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ETiga pemain teratas per grup akan dipromosikan tiap minggunya\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMenggunakan Modifikasi Pertempuran Legenda II \u003Ci\u003E(lihat bagan di bawah)\u003C/i\u003E\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Ch3\u003E\u003Cb\u003ELegenda I\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003ETurnamen selama 4 minggu\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EAda 8 pertempuran per hari\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EPemain dengan Peringkat di bawah 10.000 akan didemosi tiap minggunya\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMenggunakan Modifikasi Pertempuran Legenda I \u003Ci\u003E(lihat bagan di bawah)\u003C/i\u003E\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Ch3\u003E\u003Cb\u003EPERATURAN KHUSUS LEGENDA I: KHUSUS PENAMPIL UTAMA\u003C/b\u003E\u003C/h3\u003E\u003Ch3\u003E\u003Cb\u003EDemosi\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EPemain yang berada di bawah \u003Cb\u003EPeringkat 10.000\u003C/b\u003E pada akhir hari Minggu akan didemosi ke \u003Cb\u003ELegenda II\u003C/b\u003E pada hari Senin\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Ch3\u003E\u003Cb\u003EReset Trofi Mingguan\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EPemain baru akan memulai dengan \u003Cb\u003E5.000 Trofi\u003C/b\u003E\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ETrofi pemain di bawah 5.000 akan direset ke \u003Cb\u003E5.000\u003C/b\u003E\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ETrofi semua pemain akan direset ke 5.000 pada awal tiap Turnamen\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Ch3\u003E\u003Cb\u003EPapan Peringkat Legenda I\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EMenampilkan \u003Cb\u003E200 pemain teratas\u003C/b\u003E\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMenampilkan peringkatmu saat ini jika peringkatmu di bawah 200 Teratas\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMemberikan peringatan ketika kamu berisiko kena demosi\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Ch3\u003E\u003Cb\u003EPertahanan Terisi\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EPertahanan yang hilang akan diganti dengan rata-rata hasil pertahanan hari ini dan hari sebelumnya. Dengan begitu, keadilan bisa lebih ditingkatkan tanpa mengurangi integritas kompetitif.\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Chr/\u003E\u003Ch3\u003E\u003Cb\u003EPERUBAHAN PADA MODIFIKASI PERTEMPURAN: VERSI REMIX\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EModifikasi Pertempuran akan dihilangkan dari Elektro 32 dan Elektro 33\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EModifikasi Pertempuran diganti namanya agar sesuai dengan tingkat Liganya:\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003ELegenda III\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ELegenda II\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ELegenda I\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003C/li\u003E\u003C/ul\u003E\u003Cp\u003EPerubahan selengkapnya bisa dilihat di tabel berikut:\u003C/p\u003E\u003Ctable\u003E\u003Ctr\u003E\u003Ctd\u003E\u003Cp\u003E\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003EEsports\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003ELAMA\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003EBARU\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E\u003C/p\u003E\u003C/td\u003E\u003C/tr\u003E\u003Ctr\u003E\u003Ctd\u003E\u003Cp\u003E\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003ESaat Ini\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003EBARU\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003ELegenda Saat Ini\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003ELegenda 1\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003ELegenda 2\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003ELegenda 3\u003C/p\u003E\u003C/td\u003E\u003C/tr\u003E\u003Ctr\u003E\u003Ctd\u003E\u003Cp\u003EKerusakan/Detik Pertahanan\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E+20%\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E+25%\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E+15%\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E+20%\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E+15%\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E+10%\u003C/p\u003E\u003C/td\u003E\u003C/tr\u003E\u003Ctr\u003E\u003Ctd\u003E\u003Cp\u003EHP atau Kerusakan/Detik Pahlawan Bertahan\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E+20%\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E+25%\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E+15%\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E+20%\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E+15%\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E+10%\u003C/p\u003E\u003C/td\u003E\u003C/tr\u003E\u003Ctr\u003E\u003Ctd\u003E\u003Cp\u003EHP atau Kerusakan/Detik Pelindung\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E0%\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E+20%\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E0%\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E+20%\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E+10%\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E+5%\u003C/p\u003E\u003C/td\u003E\u003C/tr\u003E\u003Ctr\u003E\u003Ctd\u003E\u003Cp\u003EHP atau Kerusakan/Detik Pahlawan Menyerang\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E-20%\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E-20%\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E-5%\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E-20%\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E-10%\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E-5%\u003C/p\u003E\u003C/td\u003E\u003C/tr\u003E\u003Ctr\u003E\u003Ctd\u003E\u003Cp\u003EPeralatan\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E-3/-6\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E-3/-6\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E0/0\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E0/0\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E0/0\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E0/0\u003C/p\u003E\u003C/td\u003E\u003C/tr\u003E\u003C/table\u003E\u003Chr/\u003E\u003Ch3\u003E\u003Cb\u003EPERUBAHAN WAKTU PERTUNJUKAN\u003C/b\u003E\u003C/h3\u003E\u003Cp\u003EArea depan panggung dibuka sesuai jadwal.\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003ETurnamen Mingguan kini dimulai:\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003E\u003Cb\u003ESenin pukul 17.00 UTC\u003C/b\u003E\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ESebelumnya:\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003ESelasa pukul 05.00 UTC\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003C/li\u003E\u003C/ul\u003E\u003Chr/\u003E\u003Ch3\u003E\u003Cb\u003EPERUBAHAN LANTAI LIGA: PERHATIKAN LANGKAHMU\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003ELantai Liga Balai Kota Level 16 dipindah dari Golem 21 menjadi Golem 20\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ELantai Liga Balai Kota Level 17 dipindah dari Titan 25 menjadi P.E.K.K.A 23\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EBalai Kota Level 18 sekarang punya Lantai Liganya sendiri di Titan 26\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Chr/\u003E\u003Ch3\u003E\u003Cb\u003EPENYESUAIAN SEMUA LIGA MODE PERINGKAT\u003C/b\u003E\u003C/h3\u003E\u003Ch3\u003E\u003Cb\u003EKetidakaktifan dan Demosi\u003C/b\u003E\u003C/h3\u003E\u003Cp\u003EPemain akan melihat peringatan ketidakaktifan baru dengan pewaktu yang melakukan hitung mundur sampai waktu demosi. Jadi, kamu tak perlu lagi menerka-nerka kapan akan kena demosi!\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EDemosi kini akan dilakukan setelah 4 minggu tidak aktif alih-alih 1 minggu\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EPemain dapat tidak aktif dari sistem mode peringkat (tidak mendaftar) selama 4 minggu tanpa kena demosi.\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ESetelah demosi tidak aktif pertama, pemain akan didemosi 1 peringkat setiap 4 minggu selama tidak aktif hingga mencapai batas bawah Balai Kota.\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ESetelah 4 minggu tidak aktif di batas bawah Balai Kota, pemain akan kehilangan peringkat.\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003C/li\u003E\u003C/ul\u003E\u003Chr/\u003E\u003Ch3\u003E\u003Cb\u003EPERUBAHAN JUMLAH PERTEMPURAN: TIDAK ADA ENCORE\u003C/b\u003E\u003C/h3\u003E\u003Ctable\u003E\u003Ctr\u003E\u003Ctd\u003E\u003Cp\u003ELiga\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003EJumlah Pertempuran Saat Ini\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003EJumlah Pertempuran Baru\u003C/p\u003E\u003C/td\u003E\u003C/tr\u003E\u003Ctr\u003E\u003Ctd\u003E\u003Cp\u003ETitan 25\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E14\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E12\u003C/p\u003E\u003C/td\u003E\u003C/tr\u003E\u003Ctr\u003E\u003Ctd\u003E\u003Cp\u003ETitan 26\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E14\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E12\u003C/p\u003E\u003C/td\u003E\u003C/tr\u003E\u003Ctr\u003E\u003Ctd\u003E\u003Cp\u003ETitan 27\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E14\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E12\u003C/p\u003E\u003C/td\u003E\u003C/tr\u003E\u003Ctr\u003E\u003Ctd\u003E\u003Cp\u003ENaga 28\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E18\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E14\u003C/p\u003E\u003C/td\u003E\u003C/tr\u003E\u003Ctr\u003E\u003Ctd\u003E\u003Cp\u003ENaga 29\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E18\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E14\u003C/p\u003E\u003C/td\u003E\u003C/tr\u003E\u003Ctr\u003E\u003Ctd\u003E\u003Cp\u003ENaga 30\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E18\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E14\u003C/p\u003E\u003C/td\u003E\u003C/tr\u003E\u003Ctr\u003E\u003Ctd\u003E\u003Cp\u003EElektro 31\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E24\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E18\u003C/p\u003E\u003C/td\u003E\u003C/tr\u003E\u003Ctr\u003E\u003Ctd\u003E\u003Cp\u003EElektro 32\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E24\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E18\u003C/p\u003E\u003C/td\u003E\u003C/tr\u003E\u003Ctr\u003E\u003Ctd\u003E\u003Cp\u003EElektro 33\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E24\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E18\u003C/p\u003E\u003C/td\u003E\u003C/tr\u003E\u003Ctr\u003E\u003Ctd\u003E\u003Cp\u003ELegenda III\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003En/a\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E24\u003C/p\u003E\u003C/td\u003E\u003C/tr\u003E\u003Ctr\u003E\u003Ctd\u003E\u003Cp\u003ELegenda II\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003En/a\u003C/p\u003E\u003C/td\u003E\u003Ctd\u003E\u003Cp\u003E30\u003C/p\u003E\u003C/td\u003E\u003C/tr\u003E\u003C/table\u003E\u003Chr/\u003E\u003Ch3\u003E\u003Cb\u003EPERUBAHAN TATA LETAK PERTAHANAN MODE PERINGKAT: ADA YANG LIHAT PETA FESTIVAL?\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003ETata letak bisa diedit langsung di UI Turnamen\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ESekarang seharusnya sudah lebih jelas bahwa tata letak bisa diubah hingga waktu pertempuran dimulai di Turnamen baru (Hari Liga di Legenda I)\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EPerubahan apa pun yang dibuat setelah pertempuran dimulai hanya akan diterapkan di Turnamen berikutnya (Hari Liga di Legenda I)\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EPembaruan apa pun yang dibuat pada tata letak yang telah ditetapkan sebagai tata letak aktif di mode Peringkat kini akan otomatis diterapkan di tata letak Turnamen berikutnya (Hari Liga di Legenda I)\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Chr/\u003E\u003Ch3\u003E\u003Cb\u003EPEMBARUAN LOG PERTEMPURAN DAN PAPAN PERINGKAT: PANGGUNG UTAMA\u003C/b\u003E\u003C/h3\u003E\u003Ch3\u003E\u003Cb\u003ELog Pertempuran\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003ELog Pertempuran Turnamen kini punya tampilan serta gaya baru supaya lebih mudah dibaca (dan supaya kamu lebih mudah mengambil tangkapan layar serta membagikannya!)\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EKode warna baru berdasarkan performa\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ETampilan ringkasan Kartu Pertempuran yang baru memungkinkanmu mengambil tangkapan layar dengan mudah untuk pamer ke teman-teman\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Ch3\u003E\u003Cb\u003EPapan Peringkat\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EUI Terpadu di seluruh Mode Peringkat\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EStruktur yang lebih jelas antara tampilan global dan pribadi\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Ch3\u003E\u003Cb\u003EBaru: Papan Peringkat Balai Kota\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EKamu kini bisa melihat pemain teratas di Level Balai Kota mana pun di Papan Peringkat Balai Kota baru\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Chr/\u003E\u003Ch3\u003E\u003Cb\u003EPENINGKATAN ALUR PROMOSI DAN DEMOSI: PUNCAK TANGGA LAGU\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EMasukan yang lebih jelas tentang perubahan peringkat\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EPeningkatan visibilitas performa dan progres\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EAlur promosi/demosi baru bisa diakses lewat riwayat Pemain setelah periode promosi/demosi\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Chr/\u003E\u003Ch3\u003E\u003Cb\u003EPEMBARUAN PROFIL PEMAIN DAN SOSIAL: AKSES CEPAT PANGGUNG\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EProfil Legenda mempertahankan:\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EPeringkat terbaik\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EJumlah trofi\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ETotal trofi Legenda\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EDiperbarui ketika rekor baru tercapai\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ETrofi kini bisa dilihat lagi di:\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EProfil Pemain (Liga saat ini)\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EDaftar teman di tab Sosial\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003C/li\u003E\u003C/ul\u003E\u003Chr/\u003E\u003Ch3\u003E\u003Cb\u003EPERUBAHAN EKONOMI BERBASIS LIGA: TENDA MERCH\u003C/b\u003E\u003C/h3\u003E\u003Ch3\u003E\u003Cb\u003EBonus Bintang\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003ESedikit bertambah untuk:\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EEmas, Eliksir, Eliksir Hitam, dan semua jenis Mineral\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMakin banyak ketika mencapai Balai Kota baru\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Ch3\u003E\u003Cb\u003EBonus Liga\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EPeningkatan penyesuaian ketika mencapai Liga baru\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Ch3\u003E\u003Cb\u003ERampasan Pertempuran Mode Peringkat\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003ESedikit dikurangi untuk mengimbangi peningkatan di atas\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Chr/\u003E\u003Ch3\u003E\u003Cb\u003EANGGOTA BAND BARU\u003C/b\u003E\u003C/h3\u003E\u003Cp\u003EAmplifier sudah menyala. Penonton sudah tak sabar. Lini pemain pun sudah nyaring suaranya.\u003C/p\u003E\u003Cp\u003EMusim ini, kami memperkenalkan unit dan peningkatan baru yang pastinya super-keren dan lebih lantang, serta menawarkan cara baru untuk mendominasi medan tempur. Inilah anggota baru band medan tempurmu.\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EPELINDUNG BALAI KOTA BARU: PEMBALAK\u003C/b\u003E\u003C/p\u003E\u003Cp\u003ETiap panggung pasti perlu penampil utama. Nah, yang satu ini pas banget jadi penampil utama.\u003C/p\u003E\u003Cp\u003EPembalak adalah unit pertahanan jarak jauh kuat yang didesain untuk mendominasi medan tempur dan menghukum siapa pun yang nekat masuk ke dalam jangkauannya.\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EMenembakkan proyektil yang, meskipun bergerak lambat, mampu menghantam apa pun yang ada di jalurnya\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMenyasar unit udara dan darat\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMemberikan 350 Kerusakan/Detik\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMenerapkan hantam mundur 1 petak setelah terhantam\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Cp\u003E\u003Cb\u003EJangkauan Serangan:\u003C/b\u003E\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003ELevel 1 sampai 4: 7 petak\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ELevel 5: 8 petak\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Cp\u003E\u003Cb\u003EMESIN PENGEPUNGAN BARU: KERETA LANGIT\u003C/b\u003E\u003C/p\u003E\u003Cp\u003EKalau band biasanya bawa penyanyi cadangan, kamu bawa bala bantuan dari langit.\u003C/p\u003E\u003Cp\u003EKereta Langit adalah Mesin Pengepungan udara yang didesain untuk membantu tentaramu di tengah pertempuran.\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EBisa bergerak mandiri, tapi paling efektif jika dikerahkan di belakang peleton udara\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMeluncurkan maksimum 6 tong, masing-masing berisi campuran peleton Kastel Klanmu beserta Minion, Balon, dan Bayi Naga. Makin tinggi levelnya, makin kuat bala bantuannya.\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Cp\u003EPada Level Maks., tiap pengerahan akan meluncurkan bala bantuan berikut:\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003E5 Minion (Level 14)\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003E1 Balon (Level 13)\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003E1 Bayi Naga (Level 12)\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Chr/\u003E\u003Ch3\u003E\u003Cb\u003ESIAP MENUMPAS HABIS LAWAN\u003C/b\u003E\u003C/h3\u003E\u003Cp\u003E\u003Cb\u003EPERALATAN UMUM BARU ADIPATI NAGA: TARING ELEKTRO\u003C/b\u003E\u003C/p\u003E\u003Cp\u003EAdipati Naga tentu saja dikerahkan bukan sebagai cadangan. Peralatan Umum baru ini, yang terbuka di \u003Cb\u003EBalai Kota 17\u003C/b\u003E, mengubah tiap serangan menjadi badai kilat.\u003C/p\u003E\u003Ch3\u003E\u003Cb\u003ETaring Elektro\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EKemampuan Pasif\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ESerangan berantai hingga maksimum 4 target\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EKerusakan berkurang 20% setiap kali melompat\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMaksimum 400 kerusakan per serangan\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Chr/\u003E\u003Ch3\u003E\u003Cb\u003ELEVEL BARU: TANTANGAN BARU NAN SERU\u003C/b\u003E\u003C/h3\u003E\u003Cp\u003ETentaramu makin kuat di seluruh papan. Level baru kini tersedia untuk beberapa unit:\u003C/p\u003E\u003Ch3\u003E\u003Cb\u003EPeleton\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EOrang Barbar: Level 13\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EGoblin: Level 10\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EValkyrie: Level 12\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EGolem: Level 15\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ENaga: Level 13\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EBalon: Level 13\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EYeti: Level 8\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EPemburu: Level 4\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EPenunggang Akar: Level 4\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EPawang: Level 6\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Ch3\u003E\u003Cb\u003EMesin Pengepungan\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EPenggali Tempur: Level 6\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EBarak Pengepungan: Level 6\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EPeluncur Sang Kayu: Level 6\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EZeppelin Tempur: Level 6\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Ch3\u003E\u003Cb\u003EMantra\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EAmarah: Level 7\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EPembeku: Level 8\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EKlona: Level 9\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EPemanggil: Level 7\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ETumbuh Lebat: Level 5\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EKristal Es: Level 6\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Ch3\u003E\u003Cb\u003EPANGGUNG MAKIN PETJAH\u003C/b\u003E\u003C/h3\u003E\u003Cp\u003EBangunan intimu punya level baru agar bisa mengimbangi kekacauan festival.\u003C/p\u003E\u003Ch3\u003E\u003Cb\u003EBangunan\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EBengkel Pengepungan: Level 9\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EKamp Tentara: Level 14\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EBengkel Pandai Besi: Level 10\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Ch3\u003E\u003Cb\u003EPertahanan\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EBusur X - Level 13\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EKatapel Tempur - Level 7\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Ch3\u003E\u003Cb\u003EJebakan\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EBom Raksasa: Level 12\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003E+1 Bom Udara tambahan terbuka\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Chr/\u003E\u003Ch3\u003E\u003Cb\u003ETEMBOK: BANGUN YANG LEBIH BESAR\u003C/b\u003E\u003C/h3\u003E\u003Cp\u003ETembok lebih kuat = basis lebih kuat. Perhitungannya memang seperti itu.\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EAda 75 bagian lagi yang kini bisa ditingkatkan ke Level 19\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Cp\u003EArtinya, 25% lebih banyak tembok\u003C/p\u003E\u003Chr/\u003E\u003Ch3\u003E\u003Cb\u003EBUSTER SUPER: LAMPAUI BATAS\u003C/b\u003E\u003C/h3\u003E\u003Cp\u003EUntuk beberapa pertahanan, peningkatan bukanlah batas potensinya. Lebih dari itu. Karena jika peningkatan dirasa tidak cukup, masih ada Buster Super.\u003C/p\u003E\u003Ch3\u003E\u003Cb\u003ELevel Buster Super Baru Tersedia\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EMortir: Level 1–2\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMenara Inferno: Level 1–2\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ETesla Tersembunyi: Level 1–2\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EPelontar Api: Level 1–2\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMenara Pembalasan: Level 1–2\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Chr/\u003E\u003Ch3\u003E\u003Cb\u003EEKONOMI: PENINGKATAN LEBIH CEPAT, PROGRES LEBIH KENTARA\u003C/b\u003E\u003C/h3\u003E\u003Cp\u003ETiap acara yang luar biasa butuh momentum.\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EPengurangan waktu dan biaya peningkatan sumber daya untuk beberapa peningkatan di berbagai level Balai Kota\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Chr/\u003E\u003Ch3\u003E\u003Cb\u003ELIGA PERANG KLAN: TUR DUNIA MAKIN LUAS\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EAda 4 liga baru yang ditambahkan:\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ETitan III\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ETitan II\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ETitan I\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ELegenda\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EDukungan modifikasi pertempuran: Modifikasi Pertempuran aktif di Titan II, Titan I, dan liga Legenda\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EJumlah promosi dan demosi untuk beberapa liga yang ada telah disesuaikan agar promosi secara menyeluruh bisa lebih mudah\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EBerhubung ada liga baru, hadiah telah diseimbangkan ulang di semua liga\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ELebih banyak pemain bisa memperoleh hadiah bonus di liga yang lebih tinggi\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EPapan Peringkat disesuaikan agar menampilkan hasil liga Legenda, bukan hasil liga Juara I\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ELencana liga baru ditambahkan untuk Titan dan Legenda\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EPembaruan visual Peta Perang untuk liga yang lebih tinggi\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EPeningkatan pemosisian target untuk mengurangi kesalahan klik di Peta Perang\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Ch3\u003E\u003Cb\u003EPERUBAHAN MEKANIKA PERMAINAN: GANTI SETLIST\u003C/b\u003E\u003C/h3\u003E\u003Ch3\u003E\u003Cb\u003EPahlawan &amp; Tentara\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EMenambahkan kemampuan untuk memilih visual proyektil Ratu Pemanah sesuai keinginan jika kamu punya peralatan yang mengubahnya. Pengaturan ini tersedia di layar ganti kostum\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EKamu kini bisa menggunakan Pahlawan dan Hewan yang sedang ditingkatkan di Tantangan Teman dan Perang Teman\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Ch3\u003E\u003Cb\u003EPerubahan Keseimbangan\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EMengaktifkan lagi kerusakan racun ke Pelindung, tapi racun hanya akan memberikan 30% kerusakan pada mereka\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMenyesuaikan waktu Mortir Siap Alat supaya ledakan pertamanya punya jeda 0,5 detik, alih-alih langsung terjadi\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMantra Pemanggil kini memprioritaskan Pahlawan\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Ch3\u003E\u003Cb\u003EMesin Pengepungan\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EKini menerima kerusakan dari api Kutu Api\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EKini kebal terhadap:\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003ERacun BK14–16\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EEfek Permata Kehidupan\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EAura Wali Muda\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003C/li\u003E\u003C/ul\u003E\u003Cp\u003E\u003Cb\u003EPerubahan Lain\u003C/b\u003E\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EPatung kini kebal terhadap kemampuan Obor Heroik\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMasa tunggu berbagi tayangan dikurangi dari 5 menjadi 2 menit\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EPeleton yang dikerahkan, seperti Jerangkong dan Bayi Yeti, kini menampilkan kapasitas mereka\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ETeks modifikasi pertempuran telah diperbarui dan diperjelas.\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EKumpulan rampasan peti diperbarui\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EPelindung tak lagi diaktifkan ketika dalam keadaan Beku\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EBatas pesan yang disematkan di Obrolan klan ditambah dari 10 jadi 20\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Chr/\u003E\u003Ch3\u003E\u003Cb\u003EPERBAIKAN BUG: KRU BAND SIAP BERAKSI\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EMemperbaiki bug yang membuat Peleton Super yang kamu klaim dari acara Medali menghilang dari serangan pertama jika kamu sudah mengaktifkan Peleton Super tersebut sebelum mengklaimnya\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EUnit Kastel Klan tidak lagi akan dihapus dari tentara aktif jika Perang Teman menyerang Kastel Klan\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMemperbaiki bug yang menyebabkan klan baru memiliki log perang pribadi. Bug ini juga menonaktifkan Perang Teman secara default, padahal opsi yang ditampilkan saat pembuatan klan menunjukkan Perang Teman sudah diaktifkan\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EGame kini akan memeriksa tentara yang kosong sebelum pemain berpartisipasi dalam serangan Perang, Legenda, atau Mode Peringkat supaya mereka tidak bisa melakukan penyerangan tanpa ada tentara yang dikerahkan\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMemperbaiki bug AI Kerbau yang membuatnya terkadang terlalu ragu untuk menyerang Tembok\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMembuka layar permintaan bala bantuan tak lagi menutup Peta Perang atau layar Peta Liga Perang Klan\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EAula Pahlawan kini menampilkan indikator pengunduhan jika kostum yang dipakai belum diunduh\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EGambar mantra atau peleton yang ditingkatkan di Lab kini akan diperbarui dengan benar ketika item yang sebelumnya diriset diberi permata untuk diselesaikan\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMemperbaiki berbagai bug layar info\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMenelusuri hari selain hari perang yang sedang berjalan di Liga Perang Klan tidak lagi akan menghapus pemberitahuan serangan tertunda\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EPalu Konstruksi kini bisa digunakan di Jebakan Basis Tukang\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMemperbaiki berbagai masalah dengan peralatan Ransel Roket untuk Adipati Naga\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Chr/\u003E\u003Ch3\u003E\u003Cb\u003ESAATNYA MENGERASKAN VOLUME, CHIEF\u003C/b\u003E\u003C/h3\u003E\u003Cp\u003EPanggung sudah siap. Penonton sudah tak sabar. Ketenaran dan kejayaan sudah menunggu.\u003C/p\u003E\u003Cp\u003EKeraskan volumenya, ambil kapakmu, dan taklukkan semua lawan untuk mencapai posisi puncak.\u003C/p\u003E\u003Cp\u003ESalam Clash! 🤘\u003C/p\u003E",
+          "accordion": "no"
+        }
+      ]
+    },
+    {
+      "id": "5RyKtBzqUXV4yAFCnjpWBI",
+      "index": 1,
+      "targeting": null,
+      "metadata": {
+        "id": "5RyKtBzqUXV4yAFCnjpWBI",
+        "publishedVersion": 66,
+        "publishedAt": "2026-04-16T11:34:09.281Z"
+      },
+      "postDate": 1776339249281,
+      "lang": "id",
+      "section": "newsEntries",
+      "title": "Perubahan Besar hadir di Mode Peringkat di Bulan April Ini",
+      "categories": [
+        {
+          "title": "Berita",
+          "color": "#55901b",
+          "secondaryColor": null
+        }
+      ],
+      "newUntil": 1776546000000,
+      "relatedMedia": [],
+      "type": "newsEntry",
+      "listingSize": "large",
+      "showInNewsFeed": "SHOW_IN_NEWS_FEED",
+      "thumbnail": {
+        "small": {
+          "title": "20250918 - Inbox&Thumbnail_evergreenV1_900x506.png",
+          "path": "/lqe2co20rkhw/hbUILQfMK7pYhleJgrPiP/351d03ad62cf1ba750bd0208782552a5/20250918_-_Inbox_Thumbnail_evergreenV1_900x506.png?w=180&h=101&f=center&fit=fill",
+          "width": 180,
+          "height": 101
+        },
+        "smallRetina": {
+          "title": "20250918 - Inbox&Thumbnail_evergreenV1_900x506.png",
+          "path": "/lqe2co20rkhw/hbUILQfMK7pYhleJgrPiP/351d03ad62cf1ba750bd0208782552a5/20250918_-_Inbox_Thumbnail_evergreenV1_900x506.png?w=360&h=202&f=center&fit=fill",
+          "width": 360,
+          "height": 202
+        },
+        "medium": {
+          "title": "20250918 - Inbox&Thumbnail_evergreenV1_900x506.png",
+          "path": "/lqe2co20rkhw/hbUILQfMK7pYhleJgrPiP/351d03ad62cf1ba750bd0208782552a5/20250918_-_Inbox_Thumbnail_evergreenV1_900x506.png?w=450&h=253&f=center&fit=fill",
+          "width": 450,
+          "height": 253
+        },
+        "mediumRetina": {
+          "title": "20250918 - Inbox&Thumbnail_evergreenV1_900x506.png",
+          "path": "/lqe2co20rkhw/hbUILQfMK7pYhleJgrPiP/351d03ad62cf1ba750bd0208782552a5/20250918_-_Inbox_Thumbnail_evergreenV1_900x506.png?w=540&h=304&f=center&fit=fill",
+          "width": 540,
+          "height": 304
+        },
+        "large": {
+          "title": "20250918 - Inbox&Thumbnail_evergreenV1_900x506.png",
+          "path": "/lqe2co20rkhw/hbUILQfMK7pYhleJgrPiP/351d03ad62cf1ba750bd0208782552a5/20250918_-_Inbox_Thumbnail_evergreenV1_900x506.png?w=720&h=405&f=center&fit=fill",
+          "width": 720,
+          "height": 405
+        },
+        "largeRetina": {
+          "title": "20250918 - Inbox&Thumbnail_evergreenV1_900x506.png",
+          "path": "/lqe2co20rkhw/hbUILQfMK7pYhleJgrPiP/351d03ad62cf1ba750bd0208782552a5/20250918_-_Inbox_Thumbnail_evergreenV1_900x506.png?w=900&h=506&f=center&fit=fill",
+          "width": 900,
+          "height": 506
+        }
+      },
+      "heroImage": {
+        "small": {
+          "title": "20250918 - Inbox&Thumbnail_evergreenV1_1950x800.png",
+          "path": "/lqe2co20rkhw/4EjGA1BEzUYsLXEDlNGqCb/52397c07cc3e051e6601c03418d570a8/20250918_-_Inbox_Thumbnail_evergreenV1_1950x800.png?w=390&h=160&f=center&fit=fill",
+          "width": 390,
+          "height": 160
+        },
+        "smallRetina": {
+          "title": "20250918 - Inbox&Thumbnail_evergreenV1_1950x800.png",
+          "path": "/lqe2co20rkhw/4EjGA1BEzUYsLXEDlNGqCb/52397c07cc3e051e6601c03418d570a8/20250918_-_Inbox_Thumbnail_evergreenV1_1950x800.png?w=780&h=320&f=center&fit=fill",
+          "width": 780,
+          "height": 320
+        },
+        "medium": {
+          "title": "20250918 - Inbox&Thumbnail_evergreenV1_1950x800.png",
+          "path": "/lqe2co20rkhw/4EjGA1BEzUYsLXEDlNGqCb/52397c07cc3e051e6601c03418d570a8/20250918_-_Inbox_Thumbnail_evergreenV1_1950x800.png?w=975&h=400&f=center&fit=fill",
+          "width": 975,
+          "height": 400
+        },
+        "mediumRetina": {
+          "title": "20250918 - Inbox&Thumbnail_evergreenV1_1950x800.png",
+          "path": "/lqe2co20rkhw/4EjGA1BEzUYsLXEDlNGqCb/52397c07cc3e051e6601c03418d570a8/20250918_-_Inbox_Thumbnail_evergreenV1_1950x800.png?w=1170&h=480&f=center&fit=fill",
+          "width": 1170,
+          "height": 480
+        },
+        "large": {
+          "title": "20250918 - Inbox&Thumbnail_evergreenV1_1950x800.png",
+          "path": "/lqe2co20rkhw/4EjGA1BEzUYsLXEDlNGqCb/52397c07cc3e051e6601c03418d570a8/20250918_-_Inbox_Thumbnail_evergreenV1_1950x800.png?w=1560&h=640&f=center&fit=fill",
+          "width": 1560,
+          "height": 640
+        },
+        "largeRetina": {
+          "title": "20250918 - Inbox&Thumbnail_evergreenV1_1950x800.png",
+          "path": "/lqe2co20rkhw/4EjGA1BEzUYsLXEDlNGqCb/52397c07cc3e051e6601c03418d570a8/20250918_-_Inbox_Thumbnail_evergreenV1_1950x800.png?w=1950&h=800&f=center&fit=fill",
+          "width": 1950,
+          "height": 800
+        }
+      },
+      "details": [
+        {
+          "title": "",
+          "type": "textBlock",
+          "body": "\u003Cp\u003EChief, perubahan besar hadir di mode peringkat di bulan April ini!\u003C/p\u003E\u003Cp\u003EKami telah mendengarkan masukanmu dan kami setuju! Mode Peringkat sudah seharusnya memuaskan, jelas, dan seru untuk dimainkan baik saat kamu bermain serius untuk ambisi besar atau hanya bermain santai di beberapa pertempuran.\u003C/p\u003E\u003Cp\u003EDengan tujuan tersebut, kami menghadirkan sejumlah perubahan yang fokus pada menjadikan Liga Legenda lebih adil dan seru, memastikan progres Mode Peringkat lebih lancar, serta memberikan pengalaman yang lebih baik dan fleksibel dengan caramu sendiri.\u003C/p\u003E\u003Cp\u003EMari kita bedah semua yang perlu kami ketahui:\u003C/p\u003E\u003Ch2\u003E\u003Cb\u003ELiga Legenda Berevolusi\u003C/b\u003E\u003C/h2\u003E\u003Cp\u003ESatu Legenda tidak cukup! Sambut Liga-Liga Legenda!\u003C/p\u003E\u003Cp\u003ELiga Legenda kini terbagi menjadi tiga tingkat:\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003ELegenda I\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ELegenda II\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ELegenda III\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Cp\u003ESemua tingkat:\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003ERaih Bonus Bintang yang sama\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ERaih Bonus Liga yang sama\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EModifikasi Pertempuran unik tersedia\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Cp\u003EYang berubah cuma di sisi kompetisi. Setiap tingkat memiliki tingkat kesulitan, struktur, dan Modifikasi Pertempuran yang berbeda. Dengan begitu, kamu punya jalur yang lebih jelas dan pengalaman yang lebih berimbang tergantung level kemampuanmu.\u003C/p\u003E\u003Cp\u003EArtinya:\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EPemain yang ada di posisi atas akan menemukan tantangan yang lebih terstruktur\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ELebih banyak pemain yang bisa menikmati Mode Peringkat dengan cara yang seru dan memuaskan\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Ch2\u003E\u003Cb\u003EStruktur Tingkat Liga Legenda\u003C/b\u003E\u003C/h2\u003E\u003Ch3\u003E\u003Cb\u003ELegenda III\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003ETurnamen Mingguan\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003E24 pertempuran per minggu\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ELima pemain teratas per grup akan dipromosikan tiap minggu\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMenggunakan Modifikasi Pertempuran Legenda III\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Ch3\u003E\u003Cb\u003ELegenda II\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003ETurnamen Mingguan\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003E30 pertempuran per minggu\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ETiga pemain teratas per grup akan dipromosikan tiap minggu\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMenggunakan Modifikasi Pertempuran Legenda II\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Ch3\u003E\u003Cb\u003ELegenda I\u003C/b\u003E\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003ETurnamen selama 4 minggu\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003E8 pertempuran per hari\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EPemain dengan Peringkat di bawah 10.000 akan didemosi tiap minggu\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMenggunakan Modifikasi Pertempuran Legenda I\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Ch2\u003E\u003Cb\u003EMinggu Migrasi\u003C/b\u003E\u003C/h2\u003E\u003Cp\u003E\u003Cb\u003EMulai dari 20 April\u003C/b\u003E\u003C/p\u003E\u003Cp\u003EIni adalah masa penempatan bagimu. Mulai dari 20 April hingga pembaruan dirilis, performa yang kamu tunjukkan akan menentukan titik awal di Liga Legenda baru.\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003E12.500 pemain teratas akan mulai di Legenda I\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003E50.000 pemain berikutnya akan mulai di Legenda II\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ESisa pemain berikutnya akan mulai di Legenda III\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EPemain yang didemosi akan berada di Elektro 33\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Cp\u003EMasa penempatan ini \u003Cb\u003Ehanya berlangsung satu kali\u003C/b\u003E. Performamu akan menentukan titik awalmu di Liga Legenda yang baru, jadi pastikan kamu menunjukkan yang terbaik!\u003C/p\u003E\u003Cp\u003EPosisi yang lebih tinggi juga berarti:\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EAkses lebih cepat ke permainan dan kompetisi elite\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EProses mendaki yang lebih mudah dibandingkan masa mendatang\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Ch2\u003E\u003Cb\u003EPerubahan Mode Peringkat: Lebih Fleksibel, Lebih Jelas\u003C/b\u003E\u003C/h2\u003E\u003Cp\u003EKami juga melakukan sejumlah perubahan untuk memastikan Mode Peringkat punya transisi yang lebih halus dan lebih mudah diikuti.\u003C/p\u003E\u003Cp\u003E\u003Cb\u003ETotal Pertempuran Mode Peringkat\u003C/b\u003E\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EKami mengurangi jumlah pertempuran Mode Peringkat yang diperlukan untuk Liga Titan 25 sampai Elektro 33\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Cp\u003E\u003Cb\u003ETurun Liga (Tidak Aktif)\u003C/b\u003E\u003C/p\u003E\u003Cp\u003EKamu akan punya lebih banyak fleksibilitas saat rehat:\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003ETidak ada demosi saat tidak aktif selama 4 minggu\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EPemain dapat tidak aktif dari sistem mode peringkat (tidak mendaftar) selama 4 minggu\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Cp\u003Etanpa kena demosi.\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003ESetelah demosi pertama akibat tidak aktif, pemain akan didemosi satu peringkat setiap 4 minggu selama tidak aktif hingga mencapai batas bawah Balai Kota.\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ESetelah 4 minggu tidak aktif di batas bawah Balai Kota, pemain akan kehilangan peringkat.\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EAda tampilan dan nuansa baru untuk peringatan demosi (termasuk pewaktu hitung mundur hingga demosi diberikan). Lebih jelas tanpa ambiguitas!\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Cp\u003E\u003Cb\u003EPeringatan Demosi\u003C/b\u003E\u003C/p\u003E\u003Cp\u003EKami telah meningkatkan penyampaian informasi terkait demosi:\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EPeringatan yang lebih jelas saat kamu berisiko didemosi\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EInformasi yang lebih jelas terkait posisi saat ini\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Ch2\u003E\u003Cb\u003EKenapa Perubahan Ini Terjadi?\u003C/b\u003E\u003C/h2\u003E\u003Cp\u003EPerubahan ini fokus pada dua peningkatan penting:\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EMenjadikan permainan level top terasa lebih terstruktur\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMenjadikan Mode Peringkat terasa lebih mudah diakses oleh siapa saja\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Cp\u003ESekarang:\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EPemain terbaik kini jadi punya lingkungan kompetitif yang lebih baik lagi untuk menguji kemampuan mereka\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003ELebih banyak pemain dapat menikmati Mode Peringkat dengan tempo masing-masing\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EProgres lebih jelas, lebih adil, dan lebih mudah dipahami\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Ch2\u003E\u003Cb\u003EApa Lagi?\u003C/b\u003E\u003C/h2\u003E\u003Cp\u003EPerubahan ini merupakan bagian dari pembaruan besar yang akan hadir di akhir bulan ini, yang mencakup lebih banyak perubahan lagi pada progres, sistem, dan hadiah. Kami mengumumkan bagian ini lebih awal agar pemain punya waktu untuk bersiap dan memanfaatkan minggu migrasi dengan maksimal.\u003C/p\u003E\u003Cp\u003EInformasi lebih lanjut seputar perubahan ini akan menyusul!\u003C/p\u003E\u003Cp\u003ESalam Clash!\u003C/p\u003E",
+          "accordion": "no"
+        }
+      ]
+    },
+    {
+      "id": "2VzNIfbYTKR8ox9oMyDfRd",
+      "index": 2,
+      "targeting": null,
+      "metadata": {
+        "id": "2VzNIfbYTKR8ox9oMyDfRd",
+        "publishedVersion": 39,
+        "publishedAt": "2026-04-08T07:50:14.543Z"
+      },
+      "postDate": 1775634614543,
+      "lang": "id",
+      "section": "newsEntries",
+      "title": "Acara Medali Gaung Clash kini tiba!",
+      "categories": [
+        {
+          "title": "Berita",
+          "color": "#55901b",
+          "secondaryColor": null
+        }
+      ],
+      "newUntil": 1776027600000,
+      "relatedMedia": [],
+      "type": "newsEntry",
+      "listingSize": "large",
+      "showInNewsFeed": "SHOW_IN_NEWS_FEED",
+      "thumbnail": {
+        "small": {
+          "title": "AprilMedalEvent 900x506.png",
+          "path": "/lqe2co20rkhw/5N1JdcdnZ3dQwPYDvjRLFC/8767c3d978b07648ece46a436f06cfbd/AprilMedalEvent_900x506.png?w=180&h=101&f=center&fit=fill",
+          "width": 180,
+          "height": 101
+        },
+        "smallRetina": {
+          "title": "AprilMedalEvent 900x506.png",
+          "path": "/lqe2co20rkhw/5N1JdcdnZ3dQwPYDvjRLFC/8767c3d978b07648ece46a436f06cfbd/AprilMedalEvent_900x506.png?w=360&h=202&f=center&fit=fill",
+          "width": 360,
+          "height": 202
+        },
+        "medium": {
+          "title": "AprilMedalEvent 900x506.png",
+          "path": "/lqe2co20rkhw/5N1JdcdnZ3dQwPYDvjRLFC/8767c3d978b07648ece46a436f06cfbd/AprilMedalEvent_900x506.png?w=450&h=253&f=center&fit=fill",
+          "width": 450,
+          "height": 253
+        },
+        "mediumRetina": {
+          "title": "AprilMedalEvent 900x506.png",
+          "path": "/lqe2co20rkhw/5N1JdcdnZ3dQwPYDvjRLFC/8767c3d978b07648ece46a436f06cfbd/AprilMedalEvent_900x506.png?w=540&h=304&f=center&fit=fill",
+          "width": 540,
+          "height": 304
+        },
+        "large": {
+          "title": "AprilMedalEvent 900x506.png",
+          "path": "/lqe2co20rkhw/5N1JdcdnZ3dQwPYDvjRLFC/8767c3d978b07648ece46a436f06cfbd/AprilMedalEvent_900x506.png?w=720&h=405&f=center&fit=fill",
+          "width": 720,
+          "height": 405
+        },
+        "largeRetina": {
+          "title": "AprilMedalEvent 900x506.png",
+          "path": "/lqe2co20rkhw/5N1JdcdnZ3dQwPYDvjRLFC/8767c3d978b07648ece46a436f06cfbd/AprilMedalEvent_900x506.png?w=900&h=506&f=center&fit=fill",
+          "width": 900,
+          "height": 506
+        }
+      },
+      "heroImage": {
+        "small": {
+          "title": "AprilMedalEvent 1950x800.png",
+          "path": "/lqe2co20rkhw/7AMFFixH6JH0gPMluVAu19/0e9598c3e6f09c68e68507f11655d299/AprilMedalEvent_1950x800.png?w=390&h=160&f=center&fit=fill",
+          "width": 390,
+          "height": 160
+        },
+        "smallRetina": {
+          "title": "AprilMedalEvent 1950x800.png",
+          "path": "/lqe2co20rkhw/7AMFFixH6JH0gPMluVAu19/0e9598c3e6f09c68e68507f11655d299/AprilMedalEvent_1950x800.png?w=780&h=320&f=center&fit=fill",
+          "width": 780,
+          "height": 320
+        },
+        "medium": {
+          "title": "AprilMedalEvent 1950x800.png",
+          "path": "/lqe2co20rkhw/7AMFFixH6JH0gPMluVAu19/0e9598c3e6f09c68e68507f11655d299/AprilMedalEvent_1950x800.png?w=975&h=400&f=center&fit=fill",
+          "width": 975,
+          "height": 400
+        },
+        "mediumRetina": {
+          "title": "AprilMedalEvent 1950x800.png",
+          "path": "/lqe2co20rkhw/7AMFFixH6JH0gPMluVAu19/0e9598c3e6f09c68e68507f11655d299/AprilMedalEvent_1950x800.png?w=1170&h=480&f=center&fit=fill",
+          "width": 1170,
+          "height": 480
+        },
+        "large": {
+          "title": "AprilMedalEvent 1950x800.png",
+          "path": "/lqe2co20rkhw/7AMFFixH6JH0gPMluVAu19/0e9598c3e6f09c68e68507f11655d299/AprilMedalEvent_1950x800.png?w=1560&h=640&f=center&fit=fill",
+          "width": 1560,
+          "height": 640
+        },
+        "largeRetina": {
+          "title": "AprilMedalEvent 1950x800.png",
+          "path": "/lqe2co20rkhw/7AMFFixH6JH0gPMluVAu19/0e9598c3e6f09c68e68507f11655d299/AprilMedalEvent_1950x800.png?w=1950&h=800&f=center&fit=fill",
+          "width": 1950,
+          "height": 800
+        }
+      },
+      "details": [
+        {
+          "title": "",
+          "type": "textBlock",
+          "body": "\u003Cp\u003EHunuskan pedang dan serbulah panggung! Gaung Clash telah tiba.\u003C/p\u003E\u003Cp\u003EMEAT SHIELD hadir dan siap mengubah desa menjadi konser metal paling heboh. Saatnya membuktikan kalau kamu memang berjiwa metal.\u003C/p\u003E\u003Cp\u003EKumpulkan Gelang Berduri, raih Medali Metal, dan gunakan untuk mendapatkan hadiah menarik yang mencakup Peralatan Epik baru.\u003C/p\u003E\u003Chr/\u003E\u003Ch2\u003EAku Mau Tiket!\u003C/h2\u003E\u003Cp\u003EAcara Medali Gaung Clash tersedia bagi para pemain dengan Balai Kota level 6 ke atas.\u003C/p\u003E\u003Ch3\u003EKapan?\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EAcara mulai: 8 April pukul 08.00 UTC\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EAcara berakhir: 29 April pukul 08.00 UTC\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Cp\u003ESetelah acara berakhir, kamu masih bisa mengakses tab Acara di Pedagang dan Bangunan Acara sampai tanggal 1 Mei pukul 08.00 UTC.\u003C/p\u003E\u003Chr/\u003E\u003Ch2\u003ESumber Daya Acara\u003C/h2\u003E\u003Ch3\u003EGelang Berduri\u003C/h3\u003E\u003Cp\u003EKamu bisa menemukan Gelang Berduri yang tersebar di desa musuh dalam pertempuran multipemain.\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EAda 3 bangunan acak yang berisi Gelang Berduri di tiap basis\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMulai dengan 200 Gelang Berduri yang tersedia di tiap pertempuran\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EHancurkan bangunan untuk mengambil Gelang Berduri dan menambah progres di Jalan Acara\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Cp\u003EKamu juga bisa mengumpulkan Gelang Berduri ekstra dari Banteng Mekanik, Bangunan Acara yang dapat menghasilkan Gelang tiap hari dan bertambah terus seiring waktu.\u003C/p\u003E\u003Chr/\u003E\u003Ch3\u003EMedali Metal\u003C/h3\u003E\u003Cp\u003ESambil mengumpulkan Gelang Berduri dan menambah progres Jalan Acara, kamu akan membuka Medali Metal.\u003C/p\u003E\u003Cp\u003EGunakan Medali Metal di Toko Pedagang untuk membeli hadiah yang mencakup Peralatan Epik baru dan lama.\u003C/p\u003E\u003Chr/\u003E\u003Ch2\u003EPeralatan Epik Adipati Naga Baru\u003C/h2\u003E\u003Cp\u003EPeralatan Epik baru untuk Adipati Naga telah tiba di Toko Pedagang.\u003C/p\u003E\u003Cp\u003ESelama 5 hari pada awal acara, Peralatan ini akan ditingkatkan sampai level tertinggi yang dapat dicapai sesuai Balai Kotamu. Jadi, kamu bisa langsung merasakan kekuatan penuhnya!\u003C/p\u003E\u003Chr/\u003E\u003Ch2\u003EPeleton Sementara: Penyihir Pesta\u003C/h2\u003E\u003Cp\u003EKonser tak seru kalau belum kacau!\u003C/p\u003E\u003Cp\u003EPenyihir Pesta ikut tampil sebagai peleton sementara selama acara. Buka peleton ini melalui Jalan Acara dan kejutkan lawanmu.\u003C/p\u003E\u003Chr/\u003E\u003Ch2\u003EBangunan Acara: Banteng Mekanik\u003C/h2\u003E\u003Cp\u003EBanteng Mekanik mengamuk di desamu.\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EMenghasilkan Gelang Berduri seiring waktu\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMemberimu akses ke Jalan Acara\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMembantu membuka hadiah lebih cepat\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Cp\u003EAyo coba dan berpeganganlah erat-erat.\u003C/p\u003E\u003Chr/\u003E\u003Ch2\u003EHadiah Acara\u003C/h2\u003E\u003Cp\u003EDapatkan hadiah melalui Jalan Acara dan gunakan Medali untuk membeli barang di Toko Pedagang, termasuk:\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EPeralatan Epik Adipati Naga\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EPeralatan Epik Lama\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMineral dan Sumber Daya Desa Asal\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EBagian Rumah Ibu Kota Klan\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EDekorasi Super\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003E2 Dekorasi baru\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Chr/\u003E\u003Ch2\u003ETiket Acara\u003C/h2\u003E\u003Cp\u003EBuka Tiket Acara untuk mengakses hadiah tambahan dan tingkatkan progresmu di Jalan Acara.\u003C/p\u003E\u003Chr/\u003E\u003Cp\u003EPanggung sudah dipasang, Banteng Mekanik siap beraksi, dan penonton sudah tidak sabar.\u003C/p\u003E\u003Cp\u003ESekarang giliranmu untuk tampil.\u003C/p\u003E\u003Cp\u003ESalam Clash!\u003C/p\u003E",
+          "accordion": "no"
+        }
+      ]
+    },
+    {
+      "id": "37WKe52bkCyQw3jy18z6RY",
+      "index": 3,
+      "targeting": null,
+      "metadata": {
+        "id": "37WKe52bkCyQw3jy18z6RY",
+        "publishedVersion": 39,
+        "publishedAt": "2026-04-01T08:00:05.704Z"
+      },
+      "postDate": 1775030405704,
+      "lang": "id",
+      "section": "newsEntries",
+      "title": "Inilah Gaung Clash!",
+      "categories": [
+        {
+          "title": "Berita",
+          "color": "#55901b",
+          "secondaryColor": null
+        }
+      ],
+      "newUntil": 1777417443149,
+      "relatedMedia": [],
+      "type": "videoNewsEntry",
+      "embed": {
+        "id": "4cTluDy8eJXLl2yHdtx7Ge-id-eb27c",
+        "provider": "youtube",
+        "url": "https://youtu.be/tDDnFzrnC6w"
+      },
+      "embedVideo": false,
+      "listingSize": "large",
+      "thumbnail": {
+        "small": {
+          "title": "sound clash animation.jpg",
+          "path": "/lqe2co20rkhw/5KU1BvqcR5cSOg2XCdcUvg/2c0d5e48f5ee9c92472d9b7856da7a98/sound_clash_animation.jpg?w=180&h=101&f=center&fit=fill",
+          "width": 180,
+          "height": 101
+        },
+        "smallRetina": {
+          "title": "sound clash animation.jpg",
+          "path": "/lqe2co20rkhw/5KU1BvqcR5cSOg2XCdcUvg/2c0d5e48f5ee9c92472d9b7856da7a98/sound_clash_animation.jpg?w=360&h=202&f=center&fit=fill",
+          "width": 360,
+          "height": 202
+        },
+        "medium": {
+          "title": "sound clash animation.jpg",
+          "path": "/lqe2co20rkhw/5KU1BvqcR5cSOg2XCdcUvg/2c0d5e48f5ee9c92472d9b7856da7a98/sound_clash_animation.jpg?w=450&h=253&f=center&fit=fill",
+          "width": 450,
+          "height": 253
+        },
+        "mediumRetina": {
+          "title": "sound clash animation.jpg",
+          "path": "/lqe2co20rkhw/5KU1BvqcR5cSOg2XCdcUvg/2c0d5e48f5ee9c92472d9b7856da7a98/sound_clash_animation.jpg?w=540&h=304&f=center&fit=fill",
+          "width": 540,
+          "height": 304
+        },
+        "large": {
+          "title": "sound clash animation.jpg",
+          "path": "/lqe2co20rkhw/5KU1BvqcR5cSOg2XCdcUvg/2c0d5e48f5ee9c92472d9b7856da7a98/sound_clash_animation.jpg?w=720&h=405&f=center&fit=fill",
+          "width": 720,
+          "height": 405
+        },
+        "largeRetina": {
+          "title": "sound clash animation.jpg",
+          "path": "/lqe2co20rkhw/5KU1BvqcR5cSOg2XCdcUvg/2c0d5e48f5ee9c92472d9b7856da7a98/sound_clash_animation.jpg?w=900&h=506&f=center&fit=fill",
+          "width": 900,
+          "height": 506
+        }
+      }
+    },
+    {
+      "id": "3Hsa8Oz6wRWbrzoivRmt4X",
+      "index": 4,
+      "targeting": null,
+      "metadata": {
+        "id": "3Hsa8Oz6wRWbrzoivRmt4X",
+        "publishedVersion": 73,
+        "publishedAt": "2026-04-01T07:50:08.525Z"
+      },
+      "postDate": 1775029808525,
+      "lang": "id",
+      "section": "newsEntries",
+      "title": "Inilah Gaung Clash!",
+      "categories": [
+        {
+          "title": "Berita",
+          "color": "#55901b",
+          "secondaryColor": null
+        }
+      ],
+      "newUntil": 1775512800000,
+      "relatedMedia": [],
+      "type": "newsEntry",
+      "listingSize": "large",
+      "showInNewsFeed": "SHOW_IN_NEWS_FEED",
+      "thumbnail": {
+        "small": {
+          "title": "sound of clash 900x506.png",
+          "path": "/lqe2co20rkhw/2HQ4R0cqRROdhWhyMn3HWh/5a58f44eb22b51110fad36b2bd4b4ca4/sound_of_clash_900x506.png?w=180&h=101&f=center&fit=fill",
+          "width": 180,
+          "height": 101
+        },
+        "smallRetina": {
+          "title": "sound of clash 900x506.png",
+          "path": "/lqe2co20rkhw/2HQ4R0cqRROdhWhyMn3HWh/5a58f44eb22b51110fad36b2bd4b4ca4/sound_of_clash_900x506.png?w=360&h=202&f=center&fit=fill",
+          "width": 360,
+          "height": 202
+        },
+        "medium": {
+          "title": "sound of clash 900x506.png",
+          "path": "/lqe2co20rkhw/2HQ4R0cqRROdhWhyMn3HWh/5a58f44eb22b51110fad36b2bd4b4ca4/sound_of_clash_900x506.png?w=450&h=253&f=center&fit=fill",
+          "width": 450,
+          "height": 253
+        },
+        "mediumRetina": {
+          "title": "sound of clash 900x506.png",
+          "path": "/lqe2co20rkhw/2HQ4R0cqRROdhWhyMn3HWh/5a58f44eb22b51110fad36b2bd4b4ca4/sound_of_clash_900x506.png?w=540&h=304&f=center&fit=fill",
+          "width": 540,
+          "height": 304
+        },
+        "large": {
+          "title": "sound of clash 900x506.png",
+          "path": "/lqe2co20rkhw/2HQ4R0cqRROdhWhyMn3HWh/5a58f44eb22b51110fad36b2bd4b4ca4/sound_of_clash_900x506.png?w=720&h=405&f=center&fit=fill",
+          "width": 720,
+          "height": 405
+        },
+        "largeRetina": {
+          "title": "sound of clash 900x506.png",
+          "path": "/lqe2co20rkhw/2HQ4R0cqRROdhWhyMn3HWh/5a58f44eb22b51110fad36b2bd4b4ca4/sound_of_clash_900x506.png?w=900&h=506&f=center&fit=fill",
+          "width": 900,
+          "height": 506
+        }
+      },
+      "heroImage": {
+        "small": {
+          "title": "sound of clash 1950x800.png",
+          "path": "/lqe2co20rkhw/3TmMdsHNBW5fsn6epvJ2pa/2257e030e323ceb4796f4f001e23b62f/sound_of_clash_1950x800.png?w=390&h=160&f=center&fit=fill",
+          "width": 390,
+          "height": 160
+        },
+        "smallRetina": {
+          "title": "sound of clash 1950x800.png",
+          "path": "/lqe2co20rkhw/3TmMdsHNBW5fsn6epvJ2pa/2257e030e323ceb4796f4f001e23b62f/sound_of_clash_1950x800.png?w=780&h=320&f=center&fit=fill",
+          "width": 780,
+          "height": 320
+        },
+        "medium": {
+          "title": "sound of clash 1950x800.png",
+          "path": "/lqe2co20rkhw/3TmMdsHNBW5fsn6epvJ2pa/2257e030e323ceb4796f4f001e23b62f/sound_of_clash_1950x800.png?w=975&h=400&f=center&fit=fill",
+          "width": 975,
+          "height": 400
+        },
+        "mediumRetina": {
+          "title": "sound of clash 1950x800.png",
+          "path": "/lqe2co20rkhw/3TmMdsHNBW5fsn6epvJ2pa/2257e030e323ceb4796f4f001e23b62f/sound_of_clash_1950x800.png?w=1170&h=480&f=center&fit=fill",
+          "width": 1170,
+          "height": 480
+        },
+        "large": {
+          "title": "sound of clash 1950x800.png",
+          "path": "/lqe2co20rkhw/3TmMdsHNBW5fsn6epvJ2pa/2257e030e323ceb4796f4f001e23b62f/sound_of_clash_1950x800.png?w=1560&h=640&f=center&fit=fill",
+          "width": 1560,
+          "height": 640
+        },
+        "largeRetina": {
+          "title": "sound of clash 1950x800.png",
+          "path": "/lqe2co20rkhw/3TmMdsHNBW5fsn6epvJ2pa/2257e030e323ceb4796f4f001e23b62f/sound_of_clash_1950x800.png?w=1950&h=800&f=center&fit=fill",
+          "width": 1950,
+          "height": 800
+        }
+      },
+      "details": [
+        {
+          "title": "",
+          "type": "textBlock",
+          "body": "\u003Cp\u003EAmplifier tercolok, penonton bersorak, dan PERISAI DAGING siap beraksi. Selamat datang di Musim Gaung Clash. Monster, musik, dan mara bahaya bersatu mengubah desamu menjadi panggung festival metal paling menggelegar. Ubah Pahlawanmu menjadi bintang metal legendaris, mainkan musik dahsyat di acara baru, dan persiapkan dirimu untuk menyambut musim paling gahar, liar, dan pastinya keren.\u003C/p\u003E\u003Cp\u003E\u003Cb\u003E1–30 April:\u003C/b\u003E Tiket Emas: Gaung Clash - Guncang desamu dengan Tiket Emas April yang penuh dengan hadiah, fasilitas, dan kebisingan ganas. Buka Kostum Pahlawan Ratu Pembetot, dapatkan hadiah dari semua tingkat, dan buat progresmu makin dahsyat sepanjang musim.\u003C/p\u003E\u003Cp\u003E\u003Cb\u003E1 April–30 Juli:\u003C/b\u003E Pertahanan DIY: Basis Tukang Main Metal - Teknologi Basis Tukang baru siap mengguncang Desa Asalmu. Tiga pertahanan baru akan hadir musim ini:\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003E\u003Cb\u003EBOM UDARA\u003C/b\u003E\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EHanya menarget peleton udara\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMemberi kerusakan percikan dengan muatan balon peledak\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EModul Peningkatan:\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003ENyawa\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EKerusakan per serangan\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EKecepatan serangan\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003E\u003Cb\u003EPENYEMBUR LAVA\u003C/b\u003E\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EHanya menarget peleton darat\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EKerusakan percikan + membuat genangan lava membara\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EModul Peningkatan:\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003ENyawa\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EKerusakan per detik\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EJangkauan\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003E\u003Cb\u003EPEMANGGANG\u003C/b\u003E\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EMenarget peleton darat dan udara\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EMenembakkan ledakan api seperti kembang api mengamuk\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EModul Peningkatan:\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003ENyawa\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EKerusakan per serangan\u003C/p\u003E\u003C/li\u003E\u003Cli\u003E\u003Cp\u003EJumlah ledakan\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003C/li\u003E\u003C/ul\u003E\u003Cp\u003E\u003Cb\u003E1–11 April:\u003C/b\u003E Liga Perang Klan: Kobarkan perang melawan tujuh Klan lain dalam mode 15v15 atau 30v30! Dapatkan rampasan bonus, XP Klan, dan Medali Liga sambil naik peringkat.\u003C/p\u003E\u003Cp\u003E\u003Cb\u003E1-30 April:\u003C/b\u003E Latar Gaung Clash - Ubah desamu menjadi panggung festival terganas di Clash. Ada lumpur, keramaian, dan monster dalam Latar Ekstra Besar ini, lengkap dengan soundtrack heavy metal yang membuat panggung makin kacau dan menghadirkan dahsyatnya suasana konser langsung di basismu.\u003C/p\u003E\u003Cp\u003E\u003Cb\u003E5–30 April:\u003C/b\u003E Kostum Pahlawan Gaung Clash - Tunjukkan jiwa musik liarmu dengan koleksi Kostum Pahlawan yang terinspirasi dari musik metal. Dari Adipati Vokal Brutal yang bisa menyemburkan api dan Raja Amp yang menghipnosis penonton, tiap Pahlawan siap tampil dan menghancurkan pertahanan\u003C/p\u003E\u003Cp\u003E\u003Cb\u003E6–15 April:\u003C/b\u003E Level Tantangan Adipati Naga - Tunjukkan aksimu dengan Level Tantangan yang menghadirkan Peralatan Epik baru Adipati Naga. Kuasai mekanika permainan, lewati level, dan raih hadiah\u003C/p\u003E\u003Cp\u003E\u003Cb\u003E8–29 April:\u003C/b\u003E Acara Medali Gaung Clash - PERISAI DAGING kini tiba dan siap mengguncang panggung. Kumpulkan Gelang Berduri dari pertempuran, raih Medali Metal, dan gunakan di Toko Pedagang untuk membeli hadiah, dekorasi, dan Peralatan Epik Adipati Naga yang pertama. Penyihir Pesta bergabung sebagai peleton sementara untuk membuat seranganmu makin heboh!\u003C/p\u003E\u003Cp\u003E\u003Cb\u003E17 April:\u003C/b\u003E Bundel Patung Kaki - Promosi Toko istimewa ini hanya ditujukan bagi Chief paling berbudaya dan berselera tinggi. Bundel Patung Kaki tidak akan berjinjit pelan, yang ada malah dekorasi ini siap mengentak dengan kencang! Patung mewah ini yang hanya mampu dipahami nilainya oleh peminat seni berselera tinggi. Milikilah, jika kamu berani. Anjing menggonggong, kafilah berlalu. Prestise adalah kepercayaan diri.\u003C/p\u003E\u003Cp\u003E\u003Cb\u003E18–22 April:\u003C/b\u003E Acara 2x Bonus Bintang - Dapatkan hadiah Bonus Bintang dua kali lipat dan percepat progresmu. Waktu yang tepat untuk mengasah kekuatan sebelum Permainan Klan.\u003C/p\u003E\u003Cp\u003E\u003Cb\u003E22–28 April:\u003C/b\u003E Permainan Klan - Permainan Klan hadir kembali dengan Tugas Kejutan dan tantangan ditingkatkan. Selesaikan tugas, dapatkan poin lebih cepat, dan buka semua jalan hadiah bersama Klanmu.\u003C/p\u003E\u003Cp\u003E\u003Cb\u003E28 April–3 Mei:\u003C/b\u003E Acara Perburuan Harta Karun - Ikuti Acara Perburuan Harta Karun baru setelah pembaruan. Ada banyak hadiah menarik yang menantimu!\u003C/p\u003E",
+          "accordion": "no"
+        }
+      ]
+    }
+  ],
+  "fullscreenEntries": [],
+  "globals": {
+    "globalText.langEndsIn": "Berakhir dalam",
+    "globalText.unleashTheDuke": "Bebaskan Sang Adipati!",
+    "globalText.progressThroughDungeon": "Raih progres di penjara bawah tanah dan bebaskan Adipati Naga!",
+    "globalText.collectDarkElixir": "Kumpulkan Eliksir Hitam untuk membuka pintu saat waktu habis",
+    "globalText.dragonDukeFree": "Adipati Naga TELAH BEBAS",
+    "globalText.timeLeft": "Sisa waktu:",
+    "globalText.claimIn": "Klaim dalam",
+    "globalText.unlock": "Buka",
+    "globalText.claim": "Klaim",
+    "globalText.readMore": "Baca lebih lanjut",
+    "globalText.startingIn": "Mulai dalam",
+    "globalText.watchVideo": "Tonton video",
+    "globalText.comeBackToUnlock": "Kembali untuk membuka pintu dalam",
+    "globalText.selectWisely": "Pilih pintu untuk membuka hadiahmu! Pilih dengan bijak!",
+    "globalText.unlockTheFinalDoor": "Buka pintu terakhir untuk membuka misteri di baliknya!",
+    "globalText.tryNow": "Ayo coba!",
+    "globalText.soon": "Segera",
+    "globalText.tryAgain": "Coba lagi!",
+    "globalText.langDay": "hari",
+    "globalText.noLeaderboardData": "Tidak ada data papan peringkat yang tersedia",
+    "globalText.votingHasEnded": "Pemilihan telah berakhir!",
+    "globalText.langEsports": "Esports",
+    "globalText.langShowMore": "Lihat lebih banyak",
+    "globalText.langPoll": "Jajak Pendapat",
+    "globalText.langFollowUsGeneral": "Ikuti kami!",
+    "globalText.langFollowUsEsport": "Ikuti Kanal Esports Kami",
+    "globalText.langCreators": "Kreator",
+    "globalText.langNews": "Berita",
+    "globalText.langMoreEsports": "Esports Lagi",
+    "globalText.langStopDigging": "Berhenti! Kamu sudah sampai di dasar! ",
+    "globalText.langBackToTop": "Kembali ke atas",
+    "globalText.langTryAgain": "Coba lagi!",
+    "globalText.leaderboardUpdatedEvery30Minutes": "Diperbarui setiap 30 menit",
+    "globalText.lootCollected": "Rampasan terkumpul",
+    "globalText.votingResultsInfo": "Terus pantau semua hasil dan raih hadiah berdasarkan prediksi yang tepat!",
+    "globalText.langNew": "Baru",
+    "globalText.langFollowMore": "Ikuti Lebih Banyak",
+    "globalText.langFollowUs": "Saluran Lainnya",
+    "globalText.langDayAgo": "{x} hari yang lalu",
+    "globalText.langMinutesAgo": "{x} menit yang lalu",
+    "globalText.langDaysAgo": "{x} hari yang lalu",
+    "globalText.langHoursAgo": "{x} jam yang lalu",
+    "globalText.langMinuteAgo": "{x} menit yang lalu",
+    "globalText.langHourAgo": "{x} jam yang lalu",
+    "globalText.thanksForVoting": "Terima kasih sudah memilih",
+    "globalText.langVoteResultsButtonLabel": "Tampilkan Hasil",
+    "globalText.langBy": "Oleh:",
+    "globalText.langVoteSubmitLabel": "Kirim",
+    "globalText.langVoteDefaultButtonLabel": "Pilih",
+    "globalText.close": "Tutup",
+    "globalText.langGo": "Pergi",
+    "globalText.langNewer": "Lebih Baru",
+    "globalText.langOlder": "Lebih Lama",
+    "globalText.langOutOfFeed": "Berhenti menggali!\u003Cbr\u003E\u003C/br\u003EKamu sudah sampai di dasar",
+    "globalText.langMinutesAbbreviated": "mnt",
+    "globalText.langHoursAbbreviated": "j",
+    "globalText.langLoadMore": "Muat Selengkapnya",
+    "globalText.langLiveIn": "Siaran Langsung Di",
+    "globalText.langVoteTryAgainLabel": "Ups, Coba Lagi!",
+    "globalText.langEsportLive": "Siaran Langsung",
+    "globalText.langNewBadge": "Baru",
+    "globalText.copyToClipboard": "Disalin ke papan klip!",
+    "globalText.toNews": "Ke Berita!",
+    "globalText.langVoteCheck": "Lihat suara",
+    "globalText.langEsportDay": "h",
+    "globalText.langEsportSecond": "d",
+    "globalText.langEsportMinute": "m",
+    "globalText.langRevealScore": "Menampilkan Skor",
+    "globalText.langEsportHour": "j",
+    "globalText.langYouVoted": "Pilihanmu",
+    "globalText.langReadMore": "Baca Selengkapnya",
+    "globalText.langCastYourVote": "Berikan Pilihanmu",
+    "globalText.langLoading": "Memuat...",
+    "globalText.langShare": "Bagikan",
+    "globalText.langDays": "hari",
+    "globalText.langTownHall": "Balai Kota"
+  },
+  "socialLinks": [
+    {
+      "linkUrl": "https://www.instagram.com/clashofclans/",
+      "socialLinkImage": {
+        "small": {
+          "title": "instagram.svg",
+          "path": "/lqe2co20rkhw/6f44YWmue6qRNLNJkDXgTo/df6c4c39637f45773277253c2f4b3ba2/instagram.svg?w=17&h=17&f=center&fit=fill",
+          "width": 17,
+          "height": 17
+        },
+        "smallRetina": {
+          "title": "instagram.svg",
+          "path": "/lqe2co20rkhw/6f44YWmue6qRNLNJkDXgTo/df6c4c39637f45773277253c2f4b3ba2/instagram.svg?w=35&h=35&f=center&fit=fill",
+          "width": 35,
+          "height": 35
+        },
+        "medium": {
+          "title": "instagram.svg",
+          "path": "/lqe2co20rkhw/6f44YWmue6qRNLNJkDXgTo/df6c4c39637f45773277253c2f4b3ba2/instagram.svg?w=44&h=44&f=center&fit=fill",
+          "width": 44,
+          "height": 44
+        },
+        "mediumRetina": {
+          "title": "instagram.svg",
+          "path": "/lqe2co20rkhw/6f44YWmue6qRNLNJkDXgTo/df6c4c39637f45773277253c2f4b3ba2/instagram.svg?w=52&h=52&f=center&fit=fill",
+          "width": 52,
+          "height": 52
+        },
+        "large": {
+          "title": "instagram.svg",
+          "path": "/lqe2co20rkhw/6f44YWmue6qRNLNJkDXgTo/df6c4c39637f45773277253c2f4b3ba2/instagram.svg?w=70&h=70&f=center&fit=fill",
+          "width": 70,
+          "height": 70
+        },
+        "largeRetina": {
+          "title": "instagram.svg",
+          "path": "/lqe2co20rkhw/6f44YWmue6qRNLNJkDXgTo/df6c4c39637f45773277253c2f4b3ba2/instagram.svg?w=87&h=87&f=center&fit=fill",
+          "width": 87,
+          "height": 87
+        }
+      }
+    },
+    {
+      "linkUrl": "https://www.facebook.com/clashofclans",
+      "socialLinkImage": {
+        "small": {
+          "title": "facebook.svg",
+          "path": "/lqe2co20rkhw/wZqmz4d3m64SLnHWFrkfp/5a5bbca57fd6bc3b13a01cd41364b71b/facebook.svg?w=17&h=17&f=center&fit=fill",
+          "width": 17,
+          "height": 17
+        },
+        "smallRetina": {
+          "title": "facebook.svg",
+          "path": "/lqe2co20rkhw/wZqmz4d3m64SLnHWFrkfp/5a5bbca57fd6bc3b13a01cd41364b71b/facebook.svg?w=35&h=35&f=center&fit=fill",
+          "width": 35,
+          "height": 35
+        },
+        "medium": {
+          "title": "facebook.svg",
+          "path": "/lqe2co20rkhw/wZqmz4d3m64SLnHWFrkfp/5a5bbca57fd6bc3b13a01cd41364b71b/facebook.svg?w=44&h=44&f=center&fit=fill",
+          "width": 44,
+          "height": 44
+        },
+        "mediumRetina": {
+          "title": "facebook.svg",
+          "path": "/lqe2co20rkhw/wZqmz4d3m64SLnHWFrkfp/5a5bbca57fd6bc3b13a01cd41364b71b/facebook.svg?w=52&h=52&f=center&fit=fill",
+          "width": 52,
+          "height": 52
+        },
+        "large": {
+          "title": "facebook.svg",
+          "path": "/lqe2co20rkhw/wZqmz4d3m64SLnHWFrkfp/5a5bbca57fd6bc3b13a01cd41364b71b/facebook.svg?w=70&h=70&f=center&fit=fill",
+          "width": 70,
+          "height": 70
+        },
+        "largeRetina": {
+          "title": "facebook.svg",
+          "path": "/lqe2co20rkhw/wZqmz4d3m64SLnHWFrkfp/5a5bbca57fd6bc3b13a01cd41364b71b/facebook.svg?w=87&h=87&f=center&fit=fill",
+          "width": 87,
+          "height": 87
+        }
+      }
+    },
+    {
+      "linkUrl": "https://twitter.com/ClashofClans",
+      "socialLinkImage": {
+        "small": {
+          "title": "X_logo_black.svg",
+          "path": "/lqe2co20rkhw/CsI44CIBpHY8dmCE4MqzL/71ae29d840af0d2593655e104712b4d5/X_logo_black.svg?w=10&h=10&f=center&fit=fill",
+          "width": 10,
+          "height": 10
+        },
+        "smallRetina": {
+          "title": "X_logo_black.svg",
+          "path": "/lqe2co20rkhw/CsI44CIBpHY8dmCE4MqzL/71ae29d840af0d2593655e104712b4d5/X_logo_black.svg?w=19&h=19&f=center&fit=fill",
+          "width": 19,
+          "height": 19
+        },
+        "medium": {
+          "title": "X_logo_black.svg",
+          "path": "/lqe2co20rkhw/CsI44CIBpHY8dmCE4MqzL/71ae29d840af0d2593655e104712b4d5/X_logo_black.svg?w=24&h=24&f=center&fit=fill",
+          "width": 24,
+          "height": 24
+        },
+        "mediumRetina": {
+          "title": "X_logo_black.svg",
+          "path": "/lqe2co20rkhw/CsI44CIBpHY8dmCE4MqzL/71ae29d840af0d2593655e104712b4d5/X_logo_black.svg?w=29&h=29&f=center&fit=fill",
+          "width": 29,
+          "height": 29
+        },
+        "large": {
+          "title": "X_logo_black.svg",
+          "path": "/lqe2co20rkhw/CsI44CIBpHY8dmCE4MqzL/71ae29d840af0d2593655e104712b4d5/X_logo_black.svg?w=38&h=38&f=center&fit=fill",
+          "width": 38,
+          "height": 38
+        },
+        "largeRetina": {
+          "title": "X_logo_black.svg",
+          "path": "/lqe2co20rkhw/CsI44CIBpHY8dmCE4MqzL/71ae29d840af0d2593655e104712b4d5/X_logo_black.svg?w=48&h=48&f=center&fit=fill",
+          "width": 48,
+          "height": 48
+        }
+      }
+    },
+    {
+      "linkUrl": "https://www.youtube.com/c/ClashOfClans/videos",
+      "socialLinkImage": {
+        "small": {
+          "title": "youtube.svg",
+          "path": "/lqe2co20rkhw/4re0DOV97Qvts3no3qtY53/20765ae1632af0329b4281f9f3ab31f2/youtube.svg?w=17&h=17&f=center&fit=fill",
+          "width": 17,
+          "height": 17
+        },
+        "smallRetina": {
+          "title": "youtube.svg",
+          "path": "/lqe2co20rkhw/4re0DOV97Qvts3no3qtY53/20765ae1632af0329b4281f9f3ab31f2/youtube.svg?w=35&h=35&f=center&fit=fill",
+          "width": 35,
+          "height": 35
+        },
+        "medium": {
+          "title": "youtube.svg",
+          "path": "/lqe2co20rkhw/4re0DOV97Qvts3no3qtY53/20765ae1632af0329b4281f9f3ab31f2/youtube.svg?w=44&h=44&f=center&fit=fill",
+          "width": 44,
+          "height": 44
+        },
+        "mediumRetina": {
+          "title": "youtube.svg",
+          "path": "/lqe2co20rkhw/4re0DOV97Qvts3no3qtY53/20765ae1632af0329b4281f9f3ab31f2/youtube.svg?w=52&h=52&f=center&fit=fill",
+          "width": 52,
+          "height": 52
+        },
+        "large": {
+          "title": "youtube.svg",
+          "path": "/lqe2co20rkhw/4re0DOV97Qvts3no3qtY53/20765ae1632af0329b4281f9f3ab31f2/youtube.svg?w=70&h=70&f=center&fit=fill",
+          "width": 70,
+          "height": 70
+        },
+        "largeRetina": {
+          "title": "youtube.svg",
+          "path": "/lqe2co20rkhw/4re0DOV97Qvts3no3qtY53/20765ae1632af0329b4281f9f3ab31f2/youtube.svg?w=87&h=87&f=center&fit=fill",
+          "width": 87,
+          "height": 87
+        }
+      }
+    },
+    {
+      "linkUrl": "https://www.reddit.com/r/ClashOfClans/",
+      "socialLinkImage": {
+        "small": {
+          "title": "reddit.svg",
+          "path": "/lqe2co20rkhw/6B7Aq1mCWDl6ZcCM4KsXvf/2b6447029f813bc5a5c5c284eee814f5/reddit.svg?w=17&h=17&f=center&fit=fill",
+          "width": 17,
+          "height": 17
+        },
+        "smallRetina": {
+          "title": "reddit.svg",
+          "path": "/lqe2co20rkhw/6B7Aq1mCWDl6ZcCM4KsXvf/2b6447029f813bc5a5c5c284eee814f5/reddit.svg?w=35&h=35&f=center&fit=fill",
+          "width": 35,
+          "height": 35
+        },
+        "medium": {
+          "title": "reddit.svg",
+          "path": "/lqe2co20rkhw/6B7Aq1mCWDl6ZcCM4KsXvf/2b6447029f813bc5a5c5c284eee814f5/reddit.svg?w=44&h=44&f=center&fit=fill",
+          "width": 44,
+          "height": 44
+        },
+        "mediumRetina": {
+          "title": "reddit.svg",
+          "path": "/lqe2co20rkhw/6B7Aq1mCWDl6ZcCM4KsXvf/2b6447029f813bc5a5c5c284eee814f5/reddit.svg?w=52&h=52&f=center&fit=fill",
+          "width": 52,
+          "height": 52
+        },
+        "large": {
+          "title": "reddit.svg",
+          "path": "/lqe2co20rkhw/6B7Aq1mCWDl6ZcCM4KsXvf/2b6447029f813bc5a5c5c284eee814f5/reddit.svg?w=70&h=70&f=center&fit=fill",
+          "width": 70,
+          "height": 70
+        },
+        "largeRetina": {
+          "title": "reddit.svg",
+          "path": "/lqe2co20rkhw/6B7Aq1mCWDl6ZcCM4KsXvf/2b6447029f813bc5a5c5c284eee814f5/reddit.svg?w=87&h=87&f=center&fit=fill",
+          "width": 87,
+          "height": 87
+        }
+      }
+    },
+    {
+      "linkUrl": "https://m.twitch.tv/clashofclans",
+      "socialLinkImage": {
+        "small": {
+          "title": "twitch.svg",
+          "path": "/lqe2co20rkhw/4SAjhOWvCqxH8297XUGYrq/c81b31e3b4307799d328dd86e1361c1d/twitch.svg?w=17&h=17&f=center&fit=fill",
+          "width": 17,
+          "height": 17
+        },
+        "smallRetina": {
+          "title": "twitch.svg",
+          "path": "/lqe2co20rkhw/4SAjhOWvCqxH8297XUGYrq/c81b31e3b4307799d328dd86e1361c1d/twitch.svg?w=35&h=35&f=center&fit=fill",
+          "width": 35,
+          "height": 35
+        },
+        "medium": {
+          "title": "twitch.svg",
+          "path": "/lqe2co20rkhw/4SAjhOWvCqxH8297XUGYrq/c81b31e3b4307799d328dd86e1361c1d/twitch.svg?w=44&h=44&f=center&fit=fill",
+          "width": 44,
+          "height": 44
+        },
+        "mediumRetina": {
+          "title": "twitch.svg",
+          "path": "/lqe2co20rkhw/4SAjhOWvCqxH8297XUGYrq/c81b31e3b4307799d328dd86e1361c1d/twitch.svg?w=52&h=52&f=center&fit=fill",
+          "width": 52,
+          "height": 52
+        },
+        "large": {
+          "title": "twitch.svg",
+          "path": "/lqe2co20rkhw/4SAjhOWvCqxH8297XUGYrq/c81b31e3b4307799d328dd86e1361c1d/twitch.svg?w=70&h=70&f=center&fit=fill",
+          "width": 70,
+          "height": 70
+        },
+        "largeRetina": {
+          "title": "twitch.svg",
+          "path": "/lqe2co20rkhw/4SAjhOWvCqxH8297XUGYrq/c81b31e3b4307799d328dd86e1361c1d/twitch.svg?w=87&h=87&f=center&fit=fill",
+          "width": 87,
+          "height": 87
+        }
+      }
+    },
+    {
+      "linkUrl": "https://www.tiktok.com/@clashofclans",
+      "socialLinkImage": {
+        "small": {
+          "title": "tiktok.svg",
+          "path": "/lqe2co20rkhw/62NVg2MqESfzbvsmaMdu3K/2112bccaeeffca47c5468d0723862949/tiktok.svg?w=17&h=17&f=center&fit=fill",
+          "width": 17,
+          "height": 17
+        },
+        "smallRetina": {
+          "title": "tiktok.svg",
+          "path": "/lqe2co20rkhw/62NVg2MqESfzbvsmaMdu3K/2112bccaeeffca47c5468d0723862949/tiktok.svg?w=35&h=35&f=center&fit=fill",
+          "width": 35,
+          "height": 35
+        },
+        "medium": {
+          "title": "tiktok.svg",
+          "path": "/lqe2co20rkhw/62NVg2MqESfzbvsmaMdu3K/2112bccaeeffca47c5468d0723862949/tiktok.svg?w=44&h=44&f=center&fit=fill",
+          "width": 44,
+          "height": 44
+        },
+        "mediumRetina": {
+          "title": "tiktok.svg",
+          "path": "/lqe2co20rkhw/62NVg2MqESfzbvsmaMdu3K/2112bccaeeffca47c5468d0723862949/tiktok.svg?w=52&h=52&f=center&fit=fill",
+          "width": 52,
+          "height": 52
+        },
+        "large": {
+          "title": "tiktok.svg",
+          "path": "/lqe2co20rkhw/62NVg2MqESfzbvsmaMdu3K/2112bccaeeffca47c5468d0723862949/tiktok.svg?w=70&h=70&f=center&fit=fill",
+          "width": 70,
+          "height": 70
+        },
+        "largeRetina": {
+          "title": "tiktok.svg",
+          "path": "/lqe2co20rkhw/62NVg2MqESfzbvsmaMdu3K/2112bccaeeffca47c5468d0723862949/tiktok.svg?w=87&h=87&f=center&fit=fill",
+          "width": 87,
+          "height": 87
+        }
+      }
+    },
+    {
+      "linkUrl": "https://discord.gg/clashofclans",
+      "socialLinkImage": {
+        "small": {
+          "title": "News-Discord.svg",
+          "path": "/lqe2co20rkhw/6TOYVQFOySaagU4KM6ED9n/f2c1655a041c52dc13c883ad4d69c5c2/News-Discord.svg?w=17&h=17&f=center&fit=fill",
+          "width": 17,
+          "height": 17
+        },
+        "smallRetina": {
+          "title": "News-Discord.svg",
+          "path": "/lqe2co20rkhw/6TOYVQFOySaagU4KM6ED9n/f2c1655a041c52dc13c883ad4d69c5c2/News-Discord.svg?w=35&h=35&f=center&fit=fill",
+          "width": 35,
+          "height": 35
+        },
+        "medium": {
+          "title": "News-Discord.svg",
+          "path": "/lqe2co20rkhw/6TOYVQFOySaagU4KM6ED9n/f2c1655a041c52dc13c883ad4d69c5c2/News-Discord.svg?w=44&h=44&f=center&fit=fill",
+          "width": 44,
+          "height": 44
+        },
+        "mediumRetina": {
+          "title": "News-Discord.svg",
+          "path": "/lqe2co20rkhw/6TOYVQFOySaagU4KM6ED9n/f2c1655a041c52dc13c883ad4d69c5c2/News-Discord.svg?w=52&h=52&f=center&fit=fill",
+          "width": 52,
+          "height": 52
+        },
+        "large": {
+          "title": "News-Discord.svg",
+          "path": "/lqe2co20rkhw/6TOYVQFOySaagU4KM6ED9n/f2c1655a041c52dc13c883ad4d69c5c2/News-Discord.svg?w=70&h=70&f=center&fit=fill",
+          "width": 70,
+          "height": 70
+        },
+        "largeRetina": {
+          "title": "News-Discord.svg",
+          "path": "/lqe2co20rkhw/6TOYVQFOySaagU4KM6ED9n/f2c1655a041c52dc13c883ad4d69c5c2/News-Discord.svg?w=87&h=87&f=center&fit=fill",
+          "width": 87,
+          "height": 87
+        }
+      }
+    },
+    {
+      "linkUrl": "https://whatsapp.com/channel/0029VbCE27Q6hENzsJoG0Z0c",
+      "socialLinkImage": {
+        "small": {
+          "title": "Digital_Glyph_Green.svg",
+          "path": "/lqe2co20rkhw/HKxScbsKcVW1DEW2p3L9H/000749940d84aed8fdfb9a6549a8d793/Digital_Glyph_Green.svg?w=72&h=72&f=center&fit=fill",
+          "width": 72,
+          "height": 72
+        },
+        "smallRetina": {
+          "title": "Digital_Glyph_Green.svg",
+          "path": "/lqe2co20rkhw/HKxScbsKcVW1DEW2p3L9H/000749940d84aed8fdfb9a6549a8d793/Digital_Glyph_Green.svg?w=144&h=145&f=center&fit=fill",
+          "width": 144,
+          "height": 145
+        },
+        "medium": {
+          "title": "Digital_Glyph_Green.svg",
+          "path": "/lqe2co20rkhw/HKxScbsKcVW1DEW2p3L9H/000749940d84aed8fdfb9a6549a8d793/Digital_Glyph_Green.svg?w=180&h=181&f=center&fit=fill",
+          "width": 180,
+          "height": 181
+        },
+        "mediumRetina": {
+          "title": "Digital_Glyph_Green.svg",
+          "path": "/lqe2co20rkhw/HKxScbsKcVW1DEW2p3L9H/000749940d84aed8fdfb9a6549a8d793/Digital_Glyph_Green.svg?w=216&h=217&f=center&fit=fill",
+          "width": 216,
+          "height": 217
+        },
+        "large": {
+          "title": "Digital_Glyph_Green.svg",
+          "path": "/lqe2co20rkhw/HKxScbsKcVW1DEW2p3L9H/000749940d84aed8fdfb9a6549a8d793/Digital_Glyph_Green.svg?w=288&h=290&f=center&fit=fill",
+          "width": 288,
+          "height": 290
+        },
+        "largeRetina": {
+          "title": "Digital_Glyph_Green.svg",
+          "path": "/lqe2co20rkhw/HKxScbsKcVW1DEW2p3L9H/000749940d84aed8fdfb9a6549a8d793/Digital_Glyph_Green.svg?w=360&h=362&f=center&fit=fill",
+          "width": 360,
+          "height": 362
+        }
+      }
+    }
+  ],
+  "spotlights": [
+    {
+      "id": "7kYUchCpdpas52OhdxiP7",
+      "size": "medium",
+      "video": "https://clashofclans.inbox.supercell.com/data/videos/20260409---INBOX_Skins_Video/20260409---INBOX_Skins_Video.m3u8",
+      "postDate": 1776236400000,
+      "newUntil": 1777417443166,
+      "targeting": null,
+      "relatedMedia": [],
+      "type": "spotlightBasic",
+      "title": "Kostum Gaung Clash Kini Tersedia!",
+      "background": {
+        "small": {
+          "title": "20260409 - Skins_for_inbox_thumbnail_1280x720.png",
+          "path": "/lqe2co20rkhw/HqmfMFwCeIezFYPugTbGP/c8459cfb3e03cb70a8f1f10b4466203a/20260409_-_Skins_for_inbox_thumbnail_1280x720.png?w=256&h=144&f=center&fit=fill",
+          "width": 256,
+          "height": 144
+        },
+        "smallRetina": {
+          "title": "20260409 - Skins_for_inbox_thumbnail_1280x720.png",
+          "path": "/lqe2co20rkhw/HqmfMFwCeIezFYPugTbGP/c8459cfb3e03cb70a8f1f10b4466203a/20260409_-_Skins_for_inbox_thumbnail_1280x720.png?w=512&h=288&f=center&fit=fill",
+          "width": 512,
+          "height": 288
+        },
+        "medium": {
+          "title": "20260409 - Skins_for_inbox_thumbnail_1280x720.png",
+          "path": "/lqe2co20rkhw/HqmfMFwCeIezFYPugTbGP/c8459cfb3e03cb70a8f1f10b4466203a/20260409_-_Skins_for_inbox_thumbnail_1280x720.png?w=640&h=360&f=center&fit=fill",
+          "width": 640,
+          "height": 360
+        },
+        "mediumRetina": {
+          "title": "20260409 - Skins_for_inbox_thumbnail_1280x720.png",
+          "path": "/lqe2co20rkhw/HqmfMFwCeIezFYPugTbGP/c8459cfb3e03cb70a8f1f10b4466203a/20260409_-_Skins_for_inbox_thumbnail_1280x720.png?w=768&h=432&f=center&fit=fill",
+          "width": 768,
+          "height": 432
+        },
+        "large": {
+          "title": "20260409 - Skins_for_inbox_thumbnail_1280x720.png",
+          "path": "/lqe2co20rkhw/HqmfMFwCeIezFYPugTbGP/c8459cfb3e03cb70a8f1f10b4466203a/20260409_-_Skins_for_inbox_thumbnail_1280x720.png?w=1024&h=576&f=center&fit=fill",
+          "width": 1024,
+          "height": 576
+        },
+        "largeRetina": {
+          "title": "20260409 - Skins_for_inbox_thumbnail_1280x720.png",
+          "path": "/lqe2co20rkhw/HqmfMFwCeIezFYPugTbGP/c8459cfb3e03cb70a8f1f10b4466203a/20260409_-_Skins_for_inbox_thumbnail_1280x720.png?w=1280&h=720&f=center&fit=fill",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "ctas": [
+        {
+          "title": null,
+          "type": "url",
+          "urlType": "url",
+          "id": "5yvZq3qSID03QxqqvzgUtB-id-a048e",
+          "order": "0",
+          "variant": "green",
+          "url": "clashofclans://action=OpenShop",
+          "label": "Kunjungi Toko!"
+        }
+      ]
+    }
+  ],
+  "heroes": [
+    {
+      "id": "4bPoWMKED45WNhas1Q2QcW",
+      "targeting": null,
+      "relatedMedia": [],
+      "type": "heroBasic",
+      "ctas": [
+        {
+          "title": null,
+          "type": "url",
+          "urlType": "url",
+          "id": "4DDLl41WuDGs1XNl3mNI71-id-93af9f",
+          "order": "0",
+          "variant": "green",
+          "url": "https://www.youtube.com/watch?v=fZafku3N20U",
+          "label": "Tonton Sekarang!"
+        }
+      ],
+      "background": {
+        "small": {
+          "title": "clashonapril inbox.png",
+          "path": "/lqe2co20rkhw/1oLjHBTXBJG00vD5xqx2FV/f08210c7e7fec08583c4394b755a9b38/clashonapril_inbox.png?w=384&h=144&f=center&fit=fill",
+          "width": 384,
+          "height": 144
+        },
+        "smallRetina": {
+          "title": "clashonapril inbox.png",
+          "path": "/lqe2co20rkhw/1oLjHBTXBJG00vD5xqx2FV/f08210c7e7fec08583c4394b755a9b38/clashonapril_inbox.png?w=768&h=288&f=center&fit=fill",
+          "width": 768,
+          "height": 288
+        },
+        "medium": {
+          "title": "clashonapril inbox.png",
+          "path": "/lqe2co20rkhw/1oLjHBTXBJG00vD5xqx2FV/f08210c7e7fec08583c4394b755a9b38/clashonapril_inbox.png?w=960&h=360&f=center&fit=fill",
+          "width": 960,
+          "height": 360
+        },
+        "mediumRetina": {
+          "title": "clashonapril inbox.png",
+          "path": "/lqe2co20rkhw/1oLjHBTXBJG00vD5xqx2FV/f08210c7e7fec08583c4394b755a9b38/clashonapril_inbox.png?w=1152&h=432&f=center&fit=fill",
+          "width": 1152,
+          "height": 432
+        },
+        "large": {
+          "title": "clashonapril inbox.png",
+          "path": "/lqe2co20rkhw/1oLjHBTXBJG00vD5xqx2FV/f08210c7e7fec08583c4394b755a9b38/clashonapril_inbox.png?w=1536&h=576&f=center&fit=fill",
+          "width": 1536,
+          "height": 576
+        },
+        "largeRetina": {
+          "title": "clashonapril inbox.png",
+          "path": "/lqe2co20rkhw/1oLjHBTXBJG00vD5xqx2FV/f08210c7e7fec08583c4394b755a9b38/clashonapril_inbox.png?w=1920&h=720&f=center&fit=fill",
+          "width": 1920,
+          "height": 720
+        }
+      }
+    },
+    {
+      "id": "7LECrkJLFpZ8wCZAC6bICT",
+      "targeting": null,
+      "relatedMedia": [],
+      "type": "heroEventCalendar",
+      "ctas": [
+        {
+          "title": null,
+          "type": "article",
+          "urlType": "article",
+          "id": "5r12btMDcPgvBJfzgU742D-id-fc6fe",
+          "order": "0",
+          "variant": "blue",
+          "label": "Pelajari Lebih Lanjut!",
+          "url": {
+            "id": "3Hsa8Oz6wRWbrzoivRmt4X",
+            "section": "newsEntries"
+          },
+          "article": {
+            "id": "3Hsa8Oz6wRWbrzoivRmt4X",
+            "section": "newsEntries"
+          }
+        }
+      ],
+      "events": [
+        {
+          "label": "Musim Pertahanan DIY Baru",
+          "startDate": "2026-04-01T00:00:00.000+03:00",
+          "endDate": null,
+          "image": {
+            "small": {
+              "title": "20260327 - April_Season_Calendar_1_NoBG.png",
+              "path": "/lqe2co20rkhw/7FlCWIWz7PSLanLd5YVuYf/22c557f8a432cb4747c7826155973663/20260327_-_April_Season_Calendar_1_NoBG.png?w=102&h=102&f=center",
+              "width": 102,
+              "height": 102
+            },
+            "smallRetina": {
+              "title": "20260327 - April_Season_Calendar_1_NoBG.png",
+              "path": "/lqe2co20rkhw/7FlCWIWz7PSLanLd5YVuYf/22c557f8a432cb4747c7826155973663/20260327_-_April_Season_Calendar_1_NoBG.png?w=205&h=205&f=center",
+              "width": 205,
+              "height": 205
+            },
+            "medium": {
+              "title": "20260327 - April_Season_Calendar_1_NoBG.png",
+              "path": "/lqe2co20rkhw/7FlCWIWz7PSLanLd5YVuYf/22c557f8a432cb4747c7826155973663/20260327_-_April_Season_Calendar_1_NoBG.png?w=256&h=256&f=center",
+              "width": 256,
+              "height": 256
+            },
+            "mediumRetina": {
+              "title": "20260327 - April_Season_Calendar_1_NoBG.png",
+              "path": "/lqe2co20rkhw/7FlCWIWz7PSLanLd5YVuYf/22c557f8a432cb4747c7826155973663/20260327_-_April_Season_Calendar_1_NoBG.png?w=307&h=307&f=center",
+              "width": 307,
+              "height": 307
+            },
+            "large": {
+              "title": "20260327 - April_Season_Calendar_1_NoBG.png",
+              "path": "/lqe2co20rkhw/7FlCWIWz7PSLanLd5YVuYf/22c557f8a432cb4747c7826155973663/20260327_-_April_Season_Calendar_1_NoBG.png?w=410&h=410&f=center",
+              "width": 410,
+              "height": 410
+            },
+            "largeRetina": {
+              "title": "20260327 - April_Season_Calendar_1_NoBG.png",
+              "path": "/lqe2co20rkhw/7FlCWIWz7PSLanLd5YVuYf/22c557f8a432cb4747c7826155973663/20260327_-_April_Season_Calendar_1_NoBG.png?w=512&h=512&f=center",
+              "width": 512,
+              "height": 512
+            }
+          },
+          "ctaButton": {
+            "title": null,
+            "type": "url",
+            "urlType": "url",
+            "id": "1v66SjdB8nleTLuAzLMbJg-id-47265",
+            "order": "0",
+            "variant": "gray",
+            "url": "",
+            "label": "Musim Pertahanan DIY Baru"
+          },
+          "progress": 16.6666666666667
+        },
+        {
+          "label": "LIGA PERANG KLAN",
+          "startDate": "2026-04-01T00:00:00.000+03:00",
+          "endDate": "2026-04-11T00:00:00.000+03:00",
+          "image": {
+            "small": {
+              "title": "20260327 - April_Season_Calendar_2_NoBG.png",
+              "path": "/lqe2co20rkhw/12d0TdvhVua3otIBiuUjlt/76aec192abf90b84b3bff7111114899b/20260327_-_April_Season_Calendar_2_NoBG.png?w=102&h=102&f=center",
+              "width": 102,
+              "height": 102
+            },
+            "smallRetina": {
+              "title": "20260327 - April_Season_Calendar_2_NoBG.png",
+              "path": "/lqe2co20rkhw/12d0TdvhVua3otIBiuUjlt/76aec192abf90b84b3bff7111114899b/20260327_-_April_Season_Calendar_2_NoBG.png?w=205&h=205&f=center",
+              "width": 205,
+              "height": 205
+            },
+            "medium": {
+              "title": "20260327 - April_Season_Calendar_2_NoBG.png",
+              "path": "/lqe2co20rkhw/12d0TdvhVua3otIBiuUjlt/76aec192abf90b84b3bff7111114899b/20260327_-_April_Season_Calendar_2_NoBG.png?w=256&h=256&f=center",
+              "width": 256,
+              "height": 256
+            },
+            "mediumRetina": {
+              "title": "20260327 - April_Season_Calendar_2_NoBG.png",
+              "path": "/lqe2co20rkhw/12d0TdvhVua3otIBiuUjlt/76aec192abf90b84b3bff7111114899b/20260327_-_April_Season_Calendar_2_NoBG.png?w=307&h=307&f=center",
+              "width": 307,
+              "height": 307
+            },
+            "large": {
+              "title": "20260327 - April_Season_Calendar_2_NoBG.png",
+              "path": "/lqe2co20rkhw/12d0TdvhVua3otIBiuUjlt/76aec192abf90b84b3bff7111114899b/20260327_-_April_Season_Calendar_2_NoBG.png?w=410&h=410&f=center",
+              "width": 410,
+              "height": 410
+            },
+            "largeRetina": {
+              "title": "20260327 - April_Season_Calendar_2_NoBG.png",
+              "path": "/lqe2co20rkhw/12d0TdvhVua3otIBiuUjlt/76aec192abf90b84b3bff7111114899b/20260327_-_April_Season_Calendar_2_NoBG.png?w=512&h=512&f=center",
+              "width": 512,
+              "height": 512
+            }
+          },
+          "ctaButton": {
+            "title": null,
+            "type": "url",
+            "urlType": "url",
+            "id": "4YV1j1qHvJgnnyDWTw2yiK-id-1537d",
+            "order": "1",
+            "variant": "gray",
+            "url": "clashofclans://action=OpenEvents",
+            "label": "LIGA PERANG KLAN"
+          },
+          "progress": 33.3333333333333
+        },
+        {
+          "label": "Acara Medali",
+          "startDate": "2026-04-08T00:00:00.000+03:00",
+          "endDate": "2026-04-29T00:00:00.000+03:00",
+          "image": {
+            "small": {
+              "title": "20260327 - April_Season_Calendar_3_NoBG.png",
+              "path": "/lqe2co20rkhw/75tdMm2IX5pRUd6if6IuBQ/27ebb0e305705cc9d592befe77721532/20260327_-_April_Season_Calendar_3_NoBG.png?w=102&h=102&f=center",
+              "width": 102,
+              "height": 102
+            },
+            "smallRetina": {
+              "title": "20260327 - April_Season_Calendar_3_NoBG.png",
+              "path": "/lqe2co20rkhw/75tdMm2IX5pRUd6if6IuBQ/27ebb0e305705cc9d592befe77721532/20260327_-_April_Season_Calendar_3_NoBG.png?w=205&h=205&f=center",
+              "width": 205,
+              "height": 205
+            },
+            "medium": {
+              "title": "20260327 - April_Season_Calendar_3_NoBG.png",
+              "path": "/lqe2co20rkhw/75tdMm2IX5pRUd6if6IuBQ/27ebb0e305705cc9d592befe77721532/20260327_-_April_Season_Calendar_3_NoBG.png?w=256&h=256&f=center",
+              "width": 256,
+              "height": 256
+            },
+            "mediumRetina": {
+              "title": "20260327 - April_Season_Calendar_3_NoBG.png",
+              "path": "/lqe2co20rkhw/75tdMm2IX5pRUd6if6IuBQ/27ebb0e305705cc9d592befe77721532/20260327_-_April_Season_Calendar_3_NoBG.png?w=307&h=307&f=center",
+              "width": 307,
+              "height": 307
+            },
+            "large": {
+              "title": "20260327 - April_Season_Calendar_3_NoBG.png",
+              "path": "/lqe2co20rkhw/75tdMm2IX5pRUd6if6IuBQ/27ebb0e305705cc9d592befe77721532/20260327_-_April_Season_Calendar_3_NoBG.png?w=410&h=410&f=center",
+              "width": 410,
+              "height": 410
+            },
+            "largeRetina": {
+              "title": "20260327 - April_Season_Calendar_3_NoBG.png",
+              "path": "/lqe2co20rkhw/75tdMm2IX5pRUd6if6IuBQ/27ebb0e305705cc9d592befe77721532/20260327_-_April_Season_Calendar_3_NoBG.png?w=512&h=512&f=center",
+              "width": 512,
+              "height": 512
+            }
+          },
+          "ctaButton": {
+            "title": null,
+            "type": "url",
+            "urlType": "url",
+            "id": "4r0AlqQmyStsWV9I7XkJNe-id-a7f46",
+            "order": "2",
+            "variant": "gray",
+            "url": "clashofclans://action=OpenEvents",
+            "label": "Acara Medali"
+          },
+          "progress": 50
+        },
+        {
+          "label": "Permainan Klan",
+          "startDate": "2026-04-22T00:00:00.000+03:00",
+          "endDate": "2026-04-28T00:00:00.000+03:00",
+          "image": {
+            "small": {
+              "title": "20260327 - April_Season_Calendar_4_NoBG.png",
+              "path": "/lqe2co20rkhw/5IHGafxt0vRAcJwVPEm2zC/6a6a55fb80a401b203ad3dd768dcc77d/20260327_-_April_Season_Calendar_4_NoBG.png?w=102&h=102&f=center",
+              "width": 102,
+              "height": 102
+            },
+            "smallRetina": {
+              "title": "20260327 - April_Season_Calendar_4_NoBG.png",
+              "path": "/lqe2co20rkhw/5IHGafxt0vRAcJwVPEm2zC/6a6a55fb80a401b203ad3dd768dcc77d/20260327_-_April_Season_Calendar_4_NoBG.png?w=205&h=205&f=center",
+              "width": 205,
+              "height": 205
+            },
+            "medium": {
+              "title": "20260327 - April_Season_Calendar_4_NoBG.png",
+              "path": "/lqe2co20rkhw/5IHGafxt0vRAcJwVPEm2zC/6a6a55fb80a401b203ad3dd768dcc77d/20260327_-_April_Season_Calendar_4_NoBG.png?w=256&h=256&f=center",
+              "width": 256,
+              "height": 256
+            },
+            "mediumRetina": {
+              "title": "20260327 - April_Season_Calendar_4_NoBG.png",
+              "path": "/lqe2co20rkhw/5IHGafxt0vRAcJwVPEm2zC/6a6a55fb80a401b203ad3dd768dcc77d/20260327_-_April_Season_Calendar_4_NoBG.png?w=307&h=307&f=center",
+              "width": 307,
+              "height": 307
+            },
+            "large": {
+              "title": "20260327 - April_Season_Calendar_4_NoBG.png",
+              "path": "/lqe2co20rkhw/5IHGafxt0vRAcJwVPEm2zC/6a6a55fb80a401b203ad3dd768dcc77d/20260327_-_April_Season_Calendar_4_NoBG.png?w=410&h=410&f=center",
+              "width": 410,
+              "height": 410
+            },
+            "largeRetina": {
+              "title": "20260327 - April_Season_Calendar_4_NoBG.png",
+              "path": "/lqe2co20rkhw/5IHGafxt0vRAcJwVPEm2zC/6a6a55fb80a401b203ad3dd768dcc77d/20260327_-_April_Season_Calendar_4_NoBG.png?w=512&h=512&f=center",
+              "width": 512,
+              "height": 512
+            }
+          },
+          "ctaButton": {
+            "title": null,
+            "type": "url",
+            "urlType": "url",
+            "id": "6wuey4OUoaQ1mTbeo142VC-id-cb1b2",
+            "order": "3",
+            "variant": "gray",
+            "url": "clashofclans://action=OpenClanGames",
+            "label": "Permainan Klan"
+          },
+          "progress": 66.6666666666667
+        },
+        {
+          "label": "Salam Clash",
+          "startDate": "2026-04-25T00:00:00.000+03:00",
+          "endDate": null,
+          "image": {
+            "small": {
+              "title": "20260327 - April_Season_Calendar_5_WithBG.png",
+              "path": "/lqe2co20rkhw/25U6DS1lCsQzsUU8FXOXXC/0219211139449399849c494831c98237/20260327_-_April_Season_Calendar_5_WithBG.png?w=102&h=102&f=center",
+              "width": 102,
+              "height": 102
+            },
+            "smallRetina": {
+              "title": "20260327 - April_Season_Calendar_5_WithBG.png",
+              "path": "/lqe2co20rkhw/25U6DS1lCsQzsUU8FXOXXC/0219211139449399849c494831c98237/20260327_-_April_Season_Calendar_5_WithBG.png?w=205&h=205&f=center",
+              "width": 205,
+              "height": 205
+            },
+            "medium": {
+              "title": "20260327 - April_Season_Calendar_5_WithBG.png",
+              "path": "/lqe2co20rkhw/25U6DS1lCsQzsUU8FXOXXC/0219211139449399849c494831c98237/20260327_-_April_Season_Calendar_5_WithBG.png?w=256&h=256&f=center",
+              "width": 256,
+              "height": 256
+            },
+            "mediumRetina": {
+              "title": "20260327 - April_Season_Calendar_5_WithBG.png",
+              "path": "/lqe2co20rkhw/25U6DS1lCsQzsUU8FXOXXC/0219211139449399849c494831c98237/20260327_-_April_Season_Calendar_5_WithBG.png?w=307&h=307&f=center",
+              "width": 307,
+              "height": 307
+            },
+            "large": {
+              "title": "20260327 - April_Season_Calendar_5_WithBG.png",
+              "path": "/lqe2co20rkhw/25U6DS1lCsQzsUU8FXOXXC/0219211139449399849c494831c98237/20260327_-_April_Season_Calendar_5_WithBG.png?w=410&h=410&f=center",
+              "width": 410,
+              "height": 410
+            },
+            "largeRetina": {
+              "title": "20260327 - April_Season_Calendar_5_WithBG.png",
+              "path": "/lqe2co20rkhw/25U6DS1lCsQzsUU8FXOXXC/0219211139449399849c494831c98237/20260327_-_April_Season_Calendar_5_WithBG.png?w=512&h=512&f=center",
+              "width": 512,
+              "height": 512
+            }
+          },
+          "ctaButton": null,
+          "progress": 83.3333333333333
+        },
+        {
+          "label": "Acara Perburuan Harta Karun",
+          "startDate": "2026-04-28T00:00:00.000+03:00",
+          "endDate": "2026-05-03T00:00:00.000+03:00",
+          "image": {
+            "small": {
+              "title": "20260327 - April_Season_Calendar_6_NoBG.png",
+              "path": "/lqe2co20rkhw/1KatpCXycvgWkPbh6nSaVZ/0184343eb7f8b955ae903c8ee8194856/20260327_-_April_Season_Calendar_6_NoBG.png?w=102&h=102&f=center",
+              "width": 102,
+              "height": 102
+            },
+            "smallRetina": {
+              "title": "20260327 - April_Season_Calendar_6_NoBG.png",
+              "path": "/lqe2co20rkhw/1KatpCXycvgWkPbh6nSaVZ/0184343eb7f8b955ae903c8ee8194856/20260327_-_April_Season_Calendar_6_NoBG.png?w=205&h=205&f=center",
+              "width": 205,
+              "height": 205
+            },
+            "medium": {
+              "title": "20260327 - April_Season_Calendar_6_NoBG.png",
+              "path": "/lqe2co20rkhw/1KatpCXycvgWkPbh6nSaVZ/0184343eb7f8b955ae903c8ee8194856/20260327_-_April_Season_Calendar_6_NoBG.png?w=256&h=256&f=center",
+              "width": 256,
+              "height": 256
+            },
+            "mediumRetina": {
+              "title": "20260327 - April_Season_Calendar_6_NoBG.png",
+              "path": "/lqe2co20rkhw/1KatpCXycvgWkPbh6nSaVZ/0184343eb7f8b955ae903c8ee8194856/20260327_-_April_Season_Calendar_6_NoBG.png?w=307&h=307&f=center",
+              "width": 307,
+              "height": 307
+            },
+            "large": {
+              "title": "20260327 - April_Season_Calendar_6_NoBG.png",
+              "path": "/lqe2co20rkhw/1KatpCXycvgWkPbh6nSaVZ/0184343eb7f8b955ae903c8ee8194856/20260327_-_April_Season_Calendar_6_NoBG.png?w=410&h=410&f=center",
+              "width": 410,
+              "height": 410
+            },
+            "largeRetina": {
+              "title": "20260327 - April_Season_Calendar_6_NoBG.png",
+              "path": "/lqe2co20rkhw/1KatpCXycvgWkPbh6nSaVZ/0184343eb7f8b955ae903c8ee8194856/20260327_-_April_Season_Calendar_6_NoBG.png?w=512&h=512&f=center",
+              "width": 512,
+              "height": 512
+            }
+          },
+          "ctaButton": {
+            "title": null,
+            "type": "url",
+            "urlType": "url",
+            "id": "2LcnzKZ7JztsncZ0HcLIyA-id-ae684",
+            "order": "5",
+            "variant": "gray",
+            "url": "clashofclans://action=OpenEvents",
+            "label": "Acara Perburuan Harta Karun"
+          },
+          "progress": 100
+        }
+      ],
+      "calendar": {
+        "color": "#4387df",
+        "textColor": "#7ab94e",
+        "showProgressBar": true,
+        "showEventLabels": true,
+        "dateAppearance": "regular",
+        "progress": 97,
+        "startDate": "2026-04-01T00:00:00.000+03:00",
+        "endDate": "2026-04-30T00:00:00.000+03:00"
+      },
+      "rewards": [],
+      "background": {
+        "small": {
+          "title": "INDONESIAN FIX.png",
+          "path": "/lqe2co20rkhw/4WcJhhW70OHke7x1ycf6l0/de94a5b2c86d04676467bbd90451feb0/INDONESIAN_FIX.png?w=384&h=144&f=center&fit=fill",
+          "width": 384,
+          "height": 144
+        },
+        "smallRetina": {
+          "title": "INDONESIAN FIX.png",
+          "path": "/lqe2co20rkhw/4WcJhhW70OHke7x1ycf6l0/de94a5b2c86d04676467bbd90451feb0/INDONESIAN_FIX.png?w=768&h=288&f=center&fit=fill",
+          "width": 768,
+          "height": 288
+        },
+        "medium": {
+          "title": "INDONESIAN FIX.png",
+          "path": "/lqe2co20rkhw/4WcJhhW70OHke7x1ycf6l0/de94a5b2c86d04676467bbd90451feb0/INDONESIAN_FIX.png?w=960&h=360&f=center&fit=fill",
+          "width": 960,
+          "height": 360
+        },
+        "mediumRetina": {
+          "title": "INDONESIAN FIX.png",
+          "path": "/lqe2co20rkhw/4WcJhhW70OHke7x1ycf6l0/de94a5b2c86d04676467bbd90451feb0/INDONESIAN_FIX.png?w=1152&h=432&f=center&fit=fill",
+          "width": 1152,
+          "height": 432
+        },
+        "large": {
+          "title": "INDONESIAN FIX.png",
+          "path": "/lqe2co20rkhw/4WcJhhW70OHke7x1ycf6l0/de94a5b2c86d04676467bbd90451feb0/INDONESIAN_FIX.png?w=1536&h=576&f=center&fit=fill",
+          "width": 1536,
+          "height": 576
+        },
+        "largeRetina": {
+          "title": "INDONESIAN FIX.png",
+          "path": "/lqe2co20rkhw/4WcJhhW70OHke7x1ycf6l0/de94a5b2c86d04676467bbd90451feb0/INDONESIAN_FIX.png?w=1920&h=720&f=center&fit=fill",
+          "width": 1920,
+          "height": 720
+        }
+      },
+      "title": ""
+    },
+    {
+      "id": "25b87Q6Y3RnJcXY85YCfZ7",
+      "targeting": null,
+      "relatedMedia": [],
+      "type": "heroEventCalendar",
+      "ctas": [],
+      "events": [
+        {
+          "label": "Dragon Duke Boost",
+          "startDate": "2026-03-01T00:00:00.000+02:00",
+          "endDate": "2026-03-07T00:00:00.000+02:00",
+          "image": {
+            "small": {
+              "title": "NODE-1 copy id.png",
+              "path": "/lqe2co20rkhw/59EqJFtZsIGiyPKkA0TbxP/8da37611495dc07a81913d134cd806b4/NODE-1_copy_id.png?w=102&h=102&f=center",
+              "width": 102,
+              "height": 102
+            },
+            "smallRetina": {
+              "title": "NODE-1 copy id.png",
+              "path": "/lqe2co20rkhw/59EqJFtZsIGiyPKkA0TbxP/8da37611495dc07a81913d134cd806b4/NODE-1_copy_id.png?w=205&h=205&f=center",
+              "width": 205,
+              "height": 205
+            },
+            "medium": {
+              "title": "NODE-1 copy id.png",
+              "path": "/lqe2co20rkhw/59EqJFtZsIGiyPKkA0TbxP/8da37611495dc07a81913d134cd806b4/NODE-1_copy_id.png?w=256&h=256&f=center",
+              "width": 256,
+              "height": 256
+            },
+            "mediumRetina": {
+              "title": "NODE-1 copy id.png",
+              "path": "/lqe2co20rkhw/59EqJFtZsIGiyPKkA0TbxP/8da37611495dc07a81913d134cd806b4/NODE-1_copy_id.png?w=307&h=307&f=center",
+              "width": 307,
+              "height": 307
+            },
+            "large": {
+              "title": "NODE-1 copy id.png",
+              "path": "/lqe2co20rkhw/59EqJFtZsIGiyPKkA0TbxP/8da37611495dc07a81913d134cd806b4/NODE-1_copy_id.png?w=410&h=410&f=center",
+              "width": 410,
+              "height": 410
+            },
+            "largeRetina": {
+              "title": "NODE-1 copy id.png",
+              "path": "/lqe2co20rkhw/59EqJFtZsIGiyPKkA0TbxP/8da37611495dc07a81913d134cd806b4/NODE-1_copy_id.png?w=512&h=512&f=center",
+              "width": 512,
+              "height": 512
+            }
+          },
+          "ctaButton": {
+            "title": null,
+            "type": "url",
+            "urlType": "url",
+            "id": "2WLOTU0TIbTmoYAQVdHSA3-id-66ae78",
+            "order": "0",
+            "variant": "gray",
+            "url": "clashofclans://action=OpenEvents",
+            "label": "Dragon Duke Boost"
+          },
+          "progress": 16.6666666666667
+        },
+        {
+          "label": "CWL",
+          "startDate": "2026-03-01T00:00:00.000+02:00",
+          "endDate": "2026-03-11T00:00:00.000+02:00",
+          "image": {
+            "small": {
+              "title": "NODE-1 id.png",
+              "path": "/lqe2co20rkhw/1CmNLtUcdBe1QXjIeEbvuU/a39cd0a6577cffbb2d787dfd51253722/NODE-1_id.png?w=102&h=102&f=center",
+              "width": 102,
+              "height": 102
+            },
+            "smallRetina": {
+              "title": "NODE-1 id.png",
+              "path": "/lqe2co20rkhw/1CmNLtUcdBe1QXjIeEbvuU/a39cd0a6577cffbb2d787dfd51253722/NODE-1_id.png?w=205&h=205&f=center",
+              "width": 205,
+              "height": 205
+            },
+            "medium": {
+              "title": "NODE-1 id.png",
+              "path": "/lqe2co20rkhw/1CmNLtUcdBe1QXjIeEbvuU/a39cd0a6577cffbb2d787dfd51253722/NODE-1_id.png?w=256&h=256&f=center",
+              "width": 256,
+              "height": 256
+            },
+            "mediumRetina": {
+              "title": "NODE-1 id.png",
+              "path": "/lqe2co20rkhw/1CmNLtUcdBe1QXjIeEbvuU/a39cd0a6577cffbb2d787dfd51253722/NODE-1_id.png?w=307&h=307&f=center",
+              "width": 307,
+              "height": 307
+            },
+            "large": {
+              "title": "NODE-1 id.png",
+              "path": "/lqe2co20rkhw/1CmNLtUcdBe1QXjIeEbvuU/a39cd0a6577cffbb2d787dfd51253722/NODE-1_id.png?w=410&h=410&f=center",
+              "width": 410,
+              "height": 410
+            },
+            "largeRetina": {
+              "title": "NODE-1 id.png",
+              "path": "/lqe2co20rkhw/1CmNLtUcdBe1QXjIeEbvuU/a39cd0a6577cffbb2d787dfd51253722/NODE-1_id.png?w=512&h=512&f=center",
+              "width": 512,
+              "height": 512
+            }
+          },
+          "ctaButton": {
+            "title": null,
+            "type": "url",
+            "urlType": "url",
+            "id": "70dI7jl9FefHIm6eZmS2qk-id-272aa7",
+            "order": "1",
+            "variant": "gray",
+            "url": "clashofclans://action=OpenEvents",
+            "label": "CWL"
+          },
+          "progress": 33.3333333333333
+        },
+        {
+          "label": "Challenge Level",
+          "startDate": "2026-03-01T00:00:00.000+02:00",
+          "endDate": "2026-03-31T00:00:00.000+02:00",
+          "image": {
+            "small": {
+              "title": "NODE-2.png",
+              "path": "/lqe2co20rkhw/1aRvDVef4VFYkTh1Rms60o/36a42cc9b00fe18fd488eb74dccf72ae/NODE-2.png?w=102&h=102&f=center",
+              "width": 102,
+              "height": 102
+            },
+            "smallRetina": {
+              "title": "NODE-2.png",
+              "path": "/lqe2co20rkhw/1aRvDVef4VFYkTh1Rms60o/36a42cc9b00fe18fd488eb74dccf72ae/NODE-2.png?w=205&h=205&f=center",
+              "width": 205,
+              "height": 205
+            },
+            "medium": {
+              "title": "NODE-2.png",
+              "path": "/lqe2co20rkhw/1aRvDVef4VFYkTh1Rms60o/36a42cc9b00fe18fd488eb74dccf72ae/NODE-2.png?w=256&h=256&f=center",
+              "width": 256,
+              "height": 256
+            },
+            "mediumRetina": {
+              "title": "NODE-2.png",
+              "path": "/lqe2co20rkhw/1aRvDVef4VFYkTh1Rms60o/36a42cc9b00fe18fd488eb74dccf72ae/NODE-2.png?w=307&h=307&f=center",
+              "width": 307,
+              "height": 307
+            },
+            "large": {
+              "title": "NODE-2.png",
+              "path": "/lqe2co20rkhw/1aRvDVef4VFYkTh1Rms60o/36a42cc9b00fe18fd488eb74dccf72ae/NODE-2.png?w=410&h=410&f=center",
+              "width": 410,
+              "height": 410
+            },
+            "largeRetina": {
+              "title": "NODE-2.png",
+              "path": "/lqe2co20rkhw/1aRvDVef4VFYkTh1Rms60o/36a42cc9b00fe18fd488eb74dccf72ae/NODE-2.png?w=512&h=512&f=center",
+              "width": 512,
+              "height": 512
+            }
+          },
+          "ctaButton": {
+            "title": null,
+            "type": "url",
+            "urlType": "url",
+            "id": "1cBAzGpSnFWwclDmtYOLn3-id-1cbbfc",
+            "order": "2",
+            "variant": "gray",
+            "url": "clashofclans://OpenChallengeCampaignScreen",
+            "label": "Challenge Level"
+          },
+          "progress": 50
+        },
+        {
+          "label": "Medal Event",
+          "startDate": "2026-03-07T00:00:00.000+02:00",
+          "endDate": "2026-03-14T00:00:00.000+02:00",
+          "image": {
+            "small": {
+              "title": "NODE-3.png",
+              "path": "/lqe2co20rkhw/65Uxqv3GP04Di3aN6VMgo3/9c9457f92a0e14a7e4cf5baa9bf38ed0/NODE-3.png?w=102&h=102&f=center",
+              "width": 102,
+              "height": 102
+            },
+            "smallRetina": {
+              "title": "NODE-3.png",
+              "path": "/lqe2co20rkhw/65Uxqv3GP04Di3aN6VMgo3/9c9457f92a0e14a7e4cf5baa9bf38ed0/NODE-3.png?w=205&h=205&f=center",
+              "width": 205,
+              "height": 205
+            },
+            "medium": {
+              "title": "NODE-3.png",
+              "path": "/lqe2co20rkhw/65Uxqv3GP04Di3aN6VMgo3/9c9457f92a0e14a7e4cf5baa9bf38ed0/NODE-3.png?w=256&h=256&f=center",
+              "width": 256,
+              "height": 256
+            },
+            "mediumRetina": {
+              "title": "NODE-3.png",
+              "path": "/lqe2co20rkhw/65Uxqv3GP04Di3aN6VMgo3/9c9457f92a0e14a7e4cf5baa9bf38ed0/NODE-3.png?w=307&h=307&f=center",
+              "width": 307,
+              "height": 307
+            },
+            "large": {
+              "title": "NODE-3.png",
+              "path": "/lqe2co20rkhw/65Uxqv3GP04Di3aN6VMgo3/9c9457f92a0e14a7e4cf5baa9bf38ed0/NODE-3.png?w=410&h=410&f=center",
+              "width": 410,
+              "height": 410
+            },
+            "largeRetina": {
+              "title": "NODE-3.png",
+              "path": "/lqe2co20rkhw/65Uxqv3GP04Di3aN6VMgo3/9c9457f92a0e14a7e4cf5baa9bf38ed0/NODE-3.png?w=512&h=512&f=center",
+              "width": 512,
+              "height": 512
+            }
+          },
+          "ctaButton": {
+            "title": null,
+            "type": "url",
+            "urlType": "url",
+            "id": "Jw5pyUVPTeSKXkm7a8Zcu-id-51e606",
+            "order": "3",
+            "variant": "gray",
+            "url": "clashofclans://action=OpenEvents",
+            "label": "Medal Event"
+          },
+          "progress": 66.6666666666667
+        },
+        {
+          "label": "Clan Rush",
+          "startDate": "2026-03-13T00:00:00.000+02:00",
+          "endDate": "2026-03-20T00:00:00.000+02:00",
+          "image": {
+            "small": {
+              "title": "NODE-4.png",
+              "path": "/lqe2co20rkhw/1h5sD9xv5uNFPrM5KpMyOR/35e4cb76639c274d06df1dbd88f5b25f/NODE-4.png?w=102&h=102&f=center",
+              "width": 102,
+              "height": 102
+            },
+            "smallRetina": {
+              "title": "NODE-4.png",
+              "path": "/lqe2co20rkhw/1h5sD9xv5uNFPrM5KpMyOR/35e4cb76639c274d06df1dbd88f5b25f/NODE-4.png?w=205&h=205&f=center",
+              "width": 205,
+              "height": 205
+            },
+            "medium": {
+              "title": "NODE-4.png",
+              "path": "/lqe2co20rkhw/1h5sD9xv5uNFPrM5KpMyOR/35e4cb76639c274d06df1dbd88f5b25f/NODE-4.png?w=256&h=256&f=center",
+              "width": 256,
+              "height": 256
+            },
+            "mediumRetina": {
+              "title": "NODE-4.png",
+              "path": "/lqe2co20rkhw/1h5sD9xv5uNFPrM5KpMyOR/35e4cb76639c274d06df1dbd88f5b25f/NODE-4.png?w=307&h=307&f=center",
+              "width": 307,
+              "height": 307
+            },
+            "large": {
+              "title": "NODE-4.png",
+              "path": "/lqe2co20rkhw/1h5sD9xv5uNFPrM5KpMyOR/35e4cb76639c274d06df1dbd88f5b25f/NODE-4.png?w=410&h=410&f=center",
+              "width": 410,
+              "height": 410
+            },
+            "largeRetina": {
+              "title": "NODE-4.png",
+              "path": "/lqe2co20rkhw/1h5sD9xv5uNFPrM5KpMyOR/35e4cb76639c274d06df1dbd88f5b25f/NODE-4.png?w=512&h=512&f=center",
+              "width": 512,
+              "height": 512
+            }
+          },
+          "ctaButton": {
+            "title": null,
+            "type": "url",
+            "urlType": "url",
+            "id": "66KDm9GonuP2NQn9JCqtXz-id-8a9641",
+            "order": "4",
+            "variant": "gray",
+            "url": "clashofclans://action=OpenEvents",
+            "label": "Clan Rush"
+          },
+          "progress": 83.3333333333333
+        },
+        {
+          "label": "Clan Games",
+          "startDate": "2026-03-22T00:00:00.000+02:00",
+          "endDate": "2026-03-28T00:00:00.000+02:00",
+          "image": {
+            "small": {
+              "title": "NODE-5.png",
+              "path": "/lqe2co20rkhw/2k955Y3YRSg42wJtBTctf6/1b36a74e3403f88c716c6e0a44320b1f/NODE-5.png?w=102&h=102&f=center",
+              "width": 102,
+              "height": 102
+            },
+            "smallRetina": {
+              "title": "NODE-5.png",
+              "path": "/lqe2co20rkhw/2k955Y3YRSg42wJtBTctf6/1b36a74e3403f88c716c6e0a44320b1f/NODE-5.png?w=205&h=205&f=center",
+              "width": 205,
+              "height": 205
+            },
+            "medium": {
+              "title": "NODE-5.png",
+              "path": "/lqe2co20rkhw/2k955Y3YRSg42wJtBTctf6/1b36a74e3403f88c716c6e0a44320b1f/NODE-5.png?w=256&h=256&f=center",
+              "width": 256,
+              "height": 256
+            },
+            "mediumRetina": {
+              "title": "NODE-5.png",
+              "path": "/lqe2co20rkhw/2k955Y3YRSg42wJtBTctf6/1b36a74e3403f88c716c6e0a44320b1f/NODE-5.png?w=307&h=307&f=center",
+              "width": 307,
+              "height": 307
+            },
+            "large": {
+              "title": "NODE-5.png",
+              "path": "/lqe2co20rkhw/2k955Y3YRSg42wJtBTctf6/1b36a74e3403f88c716c6e0a44320b1f/NODE-5.png?w=410&h=410&f=center",
+              "width": 410,
+              "height": 410
+            },
+            "largeRetina": {
+              "title": "NODE-5.png",
+              "path": "/lqe2co20rkhw/2k955Y3YRSg42wJtBTctf6/1b36a74e3403f88c716c6e0a44320b1f/NODE-5.png?w=512&h=512&f=center",
+              "width": 512,
+              "height": 512
+            }
+          },
+          "ctaButton": {
+            "title": null,
+            "type": "url",
+            "urlType": "url",
+            "id": "3OlALmDSjbe9znWcSCYlCP-id-716b84",
+            "order": "5",
+            "variant": "gray",
+            "url": "clashofclans://action=OpenClanGames",
+            "label": "Clan Games"
+          },
+          "progress": 100
+        }
+      ],
+      "calendar": {
+        "color": "#f2be31",
+        "textColor": "#3178F5",
+        "showProgressBar": true,
+        "showEventLabels": false,
+        "dateAppearance": "none",
+        "progress": 100,
+        "startDate": "2026-03-01T00:00:00.000+02:00",
+        "endDate": "2026-03-31T00:00:00.000+02:00"
+      },
+      "rewards": [],
+      "background": {
+        "small": {
+          "title": "SUP4340_March_Calendar_1920x720_bg.png",
+          "path": "/lqe2co20rkhw/4hLc7Kg2Cjdod9STy73KqU/5d79c8946038a8813fc61a106e853578/SUP4340_March_Calendar_1920x720_bg.png?w=384&h=144&f=center&fit=fill",
+          "width": 384,
+          "height": 144
+        },
+        "smallRetina": {
+          "title": "SUP4340_March_Calendar_1920x720_bg.png",
+          "path": "/lqe2co20rkhw/4hLc7Kg2Cjdod9STy73KqU/5d79c8946038a8813fc61a106e853578/SUP4340_March_Calendar_1920x720_bg.png?w=768&h=288&f=center&fit=fill",
+          "width": 768,
+          "height": 288
+        },
+        "medium": {
+          "title": "SUP4340_March_Calendar_1920x720_bg.png",
+          "path": "/lqe2co20rkhw/4hLc7Kg2Cjdod9STy73KqU/5d79c8946038a8813fc61a106e853578/SUP4340_March_Calendar_1920x720_bg.png?w=960&h=360&f=center&fit=fill",
+          "width": 960,
+          "height": 360
+        },
+        "mediumRetina": {
+          "title": "SUP4340_March_Calendar_1920x720_bg.png",
+          "path": "/lqe2co20rkhw/4hLc7Kg2Cjdod9STy73KqU/5d79c8946038a8813fc61a106e853578/SUP4340_March_Calendar_1920x720_bg.png?w=1152&h=432&f=center&fit=fill",
+          "width": 1152,
+          "height": 432
+        },
+        "large": {
+          "title": "SUP4340_March_Calendar_1920x720_bg.png",
+          "path": "/lqe2co20rkhw/4hLc7Kg2Cjdod9STy73KqU/5d79c8946038a8813fc61a106e853578/SUP4340_March_Calendar_1920x720_bg.png?w=1536&h=576&f=center&fit=fill",
+          "width": 1536,
+          "height": 576
+        },
+        "largeRetina": {
+          "title": "SUP4340_March_Calendar_1920x720_bg.png",
+          "path": "/lqe2co20rkhw/4hLc7Kg2Cjdod9STy73KqU/5d79c8946038a8813fc61a106e853578/SUP4340_March_Calendar_1920x720_bg.png?w=1920&h=720&f=center&fit=fill",
+          "width": 1920,
+          "height": 720
+        }
+      },
+      "title": ""
+    }
+  ]
+}
