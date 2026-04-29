@@ -141,8 +141,47 @@ export default async function MemberDetailPage({ params }: { params: Promise<{ t
     return `${player.name} adalah seorang pemain dengan level Town Hall ${player.townHallLevel} yang memiliki experience level ${player.expLevel} dan mendedikasikan diri Sebagai ${role} di AAA GANG. Di mana player ini berada di ${leagueName} dan telah membuktikan kemampuan perangnya di lapangan, dimana hal tersebut terbukti dengan meraih ${player.warStars} bintang pada perang klasik. Hero andalannya adalah ${heroInfo}. Pemain ini menunjukkan dedikasi yang konsisten terhadap permainan Clash Of Clans.`;
   };
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "name": player.name,
+      "identifier": player.tag,
+      "description": generateSummary(),
+      "image": leagueIcon,
+      "affiliation": {
+        "@type": "Organization",
+        "name": "AAA GANGS",
+        "logo": "https://3agang.pro/badge_clan.webp"
+      },
+      "knowsAbout": [
+        "Clash of Clans",
+        `Town Hall ${player.townHallLevel}`,
+        "Strategy Gaming"
+      ],
+      "stats": [
+        {
+          "@type": "Observation",
+          "name": "Trophies",
+          "value": player.trophies
+        },
+        {
+          "@type": "Observation",
+          "name": "War Stars",
+          "value": player.warStars
+        }
+      ]
+    }
+  };
+
   return (
     <main className="min-h-screen text-zinc-100 font-sans selection:bg-amber-500 selection:text-black">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />
 
       <section className="max-w-5xl mx-auto px-6 pt-24 pb-12 animate-slide-up">

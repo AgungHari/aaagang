@@ -107,8 +107,38 @@ export default async function LayoutDetailPage({
     return <ExternalLink size={16} />;
   };
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": `${title} - Town Hall ${layout.th_level} Base Layout`,
+    "description": content.slice(0, 160).replace(/[#*]/g, ''),
+    "image": String(layout.image_url),
+    "datePublished": new Date(String(layout.upload_date)).toISOString(),
+    "author": {
+      "@type": "Organization",
+      "name": "AAA GANGS",
+      "url": "https://3agang.pro"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "AAA GANGS",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://3agang.pro/badge_clan.webp"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://3agang.pro/layout/${id}`
+    }
+  };
+
   return (
     <main className="min-h-screen text-zinc-100 selection:bg-amber-500 selection:text-black overflow-x-hidden font-poppins">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />
 
       {/* Content Section */}

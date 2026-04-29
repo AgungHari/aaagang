@@ -81,8 +81,55 @@ export default async function ArticlePage({
     }
   );
 
+  const plainTextDescription = article.details?.[0]?.body
+    ? article.details[0].body
+        .replace(/<[^>]*>?/gm, '') // Hilangkan semua tag HTML
+        .slice(0, 160)
+    : "Berita terbaru seputar Clash of Clans dan AAA GANGS.";
+
+  const jsonLd: any = {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": article.title,
+    "description": plainTextDescription,
+    "image": [heroImageUrl || "https://3agang.pro/default-news-thumb.jpg"],
+    "datePublished": new Date(article.postDate).toISOString(),
+    "dateModified": new Date(article.postDate).toISOString(),
+    "author": {
+      "@type": "Organization",
+      "name": "AAA GANGS",
+      "url": "https://3agang.pro"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "AAA GANGS",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://3agang.pro/badge_clan.webp"
+      }
+    }
+  };
+
+  // ADVANCED: Jika ini berita video, kita tambahkan Schema VideoObject
+  if (youtubeId) {
+    jsonLd["video"] = {
+      "@type": "VideoObject",
+      "name": article.title,
+      "description": plainTextDescription,
+      "thumbnailUrl": [
+        `https://img.youtube.com/vi/${youtubeId}/maxresdefault.jpg`
+      ],
+      "uploadDate": new Date(article.postDate).toISOString(),
+      "embedUrl": youtubeEmbedUrl
+    };
+  }
+
   return (
     <main className="min-h-screen text-zinc-100 font-sans">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />
 
       <section className="max-w-4xl mx-auto px-6 pt-24 pb-20 animate-fade-inY">
