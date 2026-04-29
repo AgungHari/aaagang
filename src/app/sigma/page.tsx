@@ -33,9 +33,58 @@ export default async function KontakPage() {
         </div>
       );
     }
+    const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": "https://3agang.pro/sigma/#service",
+        "name": "SIGMA AI - Clash of Clans Assistant",
+        "description": "Asisten AI khusus Clan AAA GANGS. Memberikan informasi seputar strategi base, aturan klan, dan panduan bermain Clash of Clans secara real-time.",
+        "provider": { "@id": "https://3agang.pro/#organization" },
+        "serviceType": "Artificial Intelligence Assistant",
+        "areaServed": "Worldwide",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "SIGMA AI Capabilities",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Strategi Base Layout" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Informasi Rules Clan" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Panduan Upgrade Hero & Trops" } }
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Apa itu SIGMA AI?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SIGMA AI adalah asisten cerdas berbasis LLM yang dikembangkan khusus untuk komunitas AAA GANGS guna membantu pemain memahami strategi Clash of Clans dan informasi klan."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Bagaimana cara bergabung dengan AAA GANGS?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Anda bisa menanyakan langsung ke SIGMA AI mengenai slot member yang tersedia atau langsung klik link Join di homepage 3agang.pro."
+            }
+          }
+        ]
+      }
+    ]
+  };
 
   return (
     <main className="min-h-screen text-zinc-100 font-sans selection:bg-amber-500 selection:text-black">
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       
       {/* Navbar: Persis seperti di Member Page */}
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />

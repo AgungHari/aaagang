@@ -56,9 +56,32 @@ export default async function MembersPage() {
     return b.trophies - a.trophies;
   });
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://3agang.pro/members/#collection",
+    "url": "https://3agang.pro/members",
+    "name": "Direktori Anggota Clan AAA GANGS",
+    "description": "Daftar personil resmi clan AAA GANGS. Pantau statistik trophy, donasi, dan role anggota secara real-time.",
+    "publisher": { "@id": "https://3agang.pro/#organization" },
+    "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": members.length,
+      "itemListElement": members.map((m: any, index: number) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "url": `https://3agang.pro/members/${encodeURIComponent(m.tag)}`,
+        "name": m.name
+      }))
+    }
+  };
+
   return (
     <main className="min-h-screen text-zinc-100 font-sans selection:bg-amber-500 selection:text-black">
-      
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* 1. Navbar: Pakai komponen yang sama dengan Home */}
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />
 

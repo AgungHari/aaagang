@@ -67,8 +67,35 @@ export default async function WarLogPage() {
   // Calculate total experience
   const totalExpEarned = serializedWars.reduce((sum: number, w: War) => sum + (w.clan.expEarned || 0), 0);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://3agang.pro/warlog/#collection",
+    "url": "https://3agang.pro/warlog",
+    "name": "Arsip Pembantaian: War History AAA GANGS",
+    "description": "Rekam jejak pertempuran AAA GANGS di Clash of Clans. Data war log, perolehan bintang, dan total XP clan yang tercatat secara publik sejak 2020.",
+    "publisher": { "@id": "https://3agang.pro/#organization" },
+    "mainEntity": {
+      "@type": "ItemList",
+      "name": "Recent War Logs",
+      "numberOfItems": serializedWars.length,
+      "itemListElement": serializedWars.slice(0, 10).map((war: War, index: number) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "name": `${war.clan.name} vs ${war.opponent.name} (${war.result?.toUpperCase()})`,
+        "description": `Skor: ${war.clan.stars} - ${war.opponent.stars}. Destruksi: ${war.clan.destructionPercentage}%`
+      }))
+    }
+  };
+
   return (
     <main className="min-h-screen text-zinc-100 selection:bg-amber-500 selection:text-black overflow-x-hidden font-sans">
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      
       {/* Navbar */}
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />
 

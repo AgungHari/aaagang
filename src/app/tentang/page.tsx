@@ -66,8 +66,49 @@ export default async function AboutPage() {
     { year: "2025-2026", text: "AAA GANG kembali ke identitas asli: Loyalitas & Kemenangan." }
   ];
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "@id": "https://3agang.pro/tentang/#about",
+    "url": "https://3agang.pro/tentang",
+    "name": "Tentang AAA GANGS - Sejarah, Visi, dan Aturan Klan",
+    "description": "Pelajari sejarah panjang AAA GANGS sejak 2013, visi misi kami membangun komunitas Clash of Clans yang solid, serta aturan resmi menjadi anggota dan Elder.",
+    "publisher": { "@id": "https://3agang.pro/#organization" },
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "AAA GANGS",
+      "foundingDate": "2016",
+      "knowsAbout": ["Clash of Clans", "Mobile Strategy Gaming", "Community Management"],
+      "ethicsPolicy": "https://3agang.pro/tentang",
+      "slogan": "Loyalitas & Kemenangan",
+      "description": "AAA GANGS adalah komunitas Clash of Clans yang percaya bahwa kekuatan sejati ada pada loyalitas dan kekompakan tim."
+    }
+  };
+
+  // Kita tambahkan juga Schema FAQ untuk Rules agar muncul di Google Search
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": rules.map((r) => ({
+      "@type": "Question",
+      "name": r.title,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": r.description
+      }
+    }))
+  };
+
   return (
     <main className="min-h-screen text-zinc-100 font-sans">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />
 
       <section className="max-w-4xl mx-auto px-6 pt-24 pb-32">

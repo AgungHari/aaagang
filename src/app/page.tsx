@@ -67,8 +67,55 @@ export default async function Home() {
   // Use mock data if no real new members
   const displayNewMembers = newMembers.length > 0 ? newMembers : mockNewMembers;
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://3agang.pro/#website",
+        "url": "https://3agang.pro",
+        "name": "AAA GANGS",
+        "description": "Website resmi Clan AAA GANGS - Strategi, Base Layout, dan Komunitas Clash of Clans terkuat.",
+        "publisher": { "@id": "https://3agang.pro/#organization" },
+        "potentialAction": [
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://3agang.pro/layout?search={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://3agang.pro/#organization",
+        "name": "AAA GANGS",
+        "url": "https://3agang.pro",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://3agang.pro/badge_clan.webp",
+          "width": "512",
+          "height": "512"
+        },
+        "image": "https://3agang.pro/badge_clan.webp",
+        "description": "AAA GANGS adalah komunitas Clash of Clans yang berfokus pada strategi war, donasi aktif, dan pengembangan base layout.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Indonesia",
+          "addressCountry": "ID"
+        }
+      }
+    ]
+  };
+
   return (
     <main className="min-h-screen text-zinc-100 selection:bg-amber-500 selection:text-black overflow-x-hidden font-sans relative">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <DecorativeHeroes />
       
       {/* 1. Navbar Component */}

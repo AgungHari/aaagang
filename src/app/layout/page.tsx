@@ -49,8 +49,32 @@ export default async function LayoutPage() {
   // Serialize layouts ke plain objects untuk Client Component
   const serializedLayouts = JSON.parse(JSON.stringify(layouts));
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://3agang.pro/layout/#collection",
+    "url": "https://3agang.pro/layout",
+    "name": "Koleksi Base Layout Clash of Clans - AAA GANGS",
+    "description": "Kumpulan base layout COC terkuat dari TH 13 sampai TH 16. Cari desain War, Trophy, dan Farming base dengan link copy resmi.",
+    "publisher": { "@id": "https://3agang.pro/#organization" },
+    "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": serializedLayouts.length,
+      "itemListElement": serializedLayouts.slice(0, 10).map((layout: any, index: number) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "url": `https://3agang.pro/layout/${layout.id}`,
+        "name": `Base Layout TH ${layout.th_level}`
+      }))
+    }
+  };
+
   return (
     <main className="min-h-screen text-zinc-100 selection:bg-amber-500 selection:text-black overflow-x-hidden font-poppins">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />
 
       {/* Content Section */}

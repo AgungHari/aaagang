@@ -42,6 +42,36 @@ export default async function NewsPage() {
 
   const articles = parseNewsData(newsData);
   const esportArticles = parseEsportData(esportData);
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://3agang.pro/news/#collection",
+    "url": "https://3agang.pro/news",
+    "name": "Pusat Berita & Esports Clash of Clans - AAA GANGS",
+    "description": "Update terbaru seputar Clash of Clans, strategi game, dan berita turnamen Esports dunia langsung dari AAA GANGS.",
+    "publisher": { "@id": "https://3agang.pro/#organization" },
+    "mainEntity": {
+      "@type": "ItemList",
+      "name": "Latest News & Esports",
+      "itemListElement": [
+        // Ambil 6 berita umum terbaru
+        ...(articles?.slice(0, 6).map((article: any, index: number) => ({
+          "@type": "ListItem",
+          "position": index + 1,
+          "url": `https://3agang.pro/news/article/${article.id}`,
+          "name": article.title
+        })) || []),
+        // Ambil 6 berita esport terbaru
+        ...(esportArticles?.slice(0, 6).map((article: any, index: number) => ({
+          "@type": "ListItem",
+          "position": (articles?.slice(0, 6).length || 0) + index + 1,
+          "url": `https://3agang.pro/news/esports/${article.id}`,
+          "name": article.title
+        })) || [])
+      ]
+    }
+  };
   
   // Get featured articles
   const featuredArticle = articles?.[0];
@@ -49,6 +79,10 @@ export default async function NewsPage() {
 
   return (
     <main className="min-h-screen text-zinc-100 font-sans">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />
       
       {/* Hero Section */}
