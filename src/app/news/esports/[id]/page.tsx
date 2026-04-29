@@ -85,7 +85,7 @@ export default async function EsportDetailPage({
     <main className="min-h-screen text-zinc-100 font-sans">
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />
 
-      <section className="max-w-4xl mx-auto px-6 pt-24 pb-20">
+      <section className="max-w-4xl mx-auto px-6 pt-24 pb-20 animate-fade-inY">
         {/* Back Button */}
         <Link
           href="/news"

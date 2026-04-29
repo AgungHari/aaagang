@@ -112,6 +112,35 @@ export default async function MemberDetailPage({ params }: { params: Promise<{ t
   const homeHeroes = player.heroes?.filter((hero: any) => hero.name !== "Battle Machine" && hero.name !== "Battle Copter");
   const builderMachines = player.heroes?.filter((hero: any) => hero.name === "Battle Machine" || hero.name === "Battle Copter");
 
+  // Generate player summary
+  const topHero = homeHeroes?.reduce((max: any, hero: any) => (!max || hero.level > max.level) ? hero : max, null);
+  
+  // Handle clan.memberList untuk ambil info member
+  let memberInfo: any = null;
+  if (Array.isArray(clan.memberList)) {
+    memberInfo = clan.memberList.find((m: any) => m.tag === player.tag);
+  }
+  
+  const joinDate = memberInfo?.joinDate ? new Date(memberInfo.joinDate).toLocaleDateString('id-ID', { year: 'numeric', month: 'long' }) : 'Unknown';
+  
+  // Map role dengan benar sesuai API CoC
+  const getRoleName = (role: string) => {
+    switch(role) {
+      case 'leader': return 'Leader';
+      case 'coLeader': return 'Co-Leader';
+      case 'admin': return 'Elder';
+      default: return 'Member';
+    }
+  };
+  
+  const role = getRoleName(memberInfo?.role || 'member');
+  
+  const generateSummary = () => {
+    const heroInfo = topHero ? ` ${topHero.name} dengan level ${topHero.level}` : '';
+    const leagueName = player.leagueTier?.name || player.league?.name || 'Unranked';
+    return `${player.name} adalah seorang pemain dengan level Town Hall ${player.townHallLevel} yang memiliki experience level ${player.expLevel} dan mendedikasikan diri Sebagai ${role} di AAA GANG. Di mana player ini berada di ${leagueName} dan telah membuktikan kemampuan perangnya di lapangan, dimana hal tersebut terbukti dengan meraih ${player.warStars} bintang pada perang klasik. Hero andalannya adalah ${heroInfo}. Pemain ini menunjukkan dedikasi yang konsisten terhadap permainan Clash Of Clans.`;
+  };
+
   return (
     <main className="min-h-screen text-zinc-100 font-sans selection:bg-amber-500 selection:text-black">
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />
@@ -140,6 +169,13 @@ export default async function MemberDetailPage({ params }: { params: Promise<{ t
             <h1 className="text-5xl md:text-8xl font-black italic uppercase tracking-tighter leading-[0.8] mb-4">{player.name}</h1>
             <div className="text-zinc-600 font-mono text-xs bg-zinc-900 px-2 py-1 rounded border border-zinc-800 inline-block">{player.tag}</div>
           </div>
+        </div>
+
+        {/* SECTION: PLAYER SUMMARY */}
+        <div className="mb-16 p-6 bg-zinc-900/20 border border-zinc-800/50 rounded-2xl">
+          <p className="text-zinc-300 leading-relaxed text-sm md:text-base">
+            {generateSummary()}
+          </p>
         </div>
 
         {/* Statistik Utama */}

@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import NewsCard from "@/components/NewsCard";
 import { getClanData } from "@/lib/coc";
 import { fetchNewsContent, fetchEsportContent, parseNewsData, parseEsportData } from "@/lib/newsHelper";
+import { Newspaper } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export default async function NewsPage() {
@@ -53,6 +54,9 @@ export default async function NewsPage() {
       {/* Hero Section */}
       <section className="max-w-6xl mx-auto px-6 pt-24 pb-7">
         <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-amber-500/20 bg-amber-500/5 text-amber-500 text-[10px] font-black uppercase tracking-[0.3em] mb-4 animate-slide-up">
+            <Newspaper size={12} /> Game News
+          </div>
           <h1 className="text-5xl md:text-6xl uppercase leading-tight mb-4 animate-slide-up" style={{ fontFamily: "'Docallisme', sans-serif" }}>
             News & <span className="text-amber-500">Updates</span>
           </h1>

@@ -112,7 +112,7 @@ export default async function LayoutDetailPage({
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />
 
       {/* Content Section */}
-      <section className="pt-32 pb-20 px-6 md:px-16 lg:px-24 xl:px-32 animate-slide-up">
+      <section className="pt-32 pb-20 px-6 md:px-16 lg:px-24 xl:px-32 animate-fade-inY">
         <div className="max-w-4xl mx-auto">
           <Link
             href="/layout"
