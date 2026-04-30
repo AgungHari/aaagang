@@ -1,7 +1,8 @@
 import { createClient } from "@libsql/client";
 import SectionTitle from "@/components/SectionTitle";
-import { Plus, Database, Eye, ThumbsUp, Trash2, Edit3 } from "lucide-react";
-import { deleteLayout } from "@/app/admin/dashboard/action";
+import { Plus, Database, Eye, ThumbsUp, Edit3 } from "lucide-react";
+import DeleteLayoutButton from "@/components/DeleteLayoutButton";
+import PreviewButtons from "@/components/PreviewButtons";
 import Link from "next/link";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
@@ -102,6 +103,7 @@ export default async function AdminDashboard() {
                       <td className="px-6 py-4 text-sm text-gray-500 font-mono">{layout.upload_date ? new Date(String(layout.upload_date)).toLocaleDateString() : "-"}</td>
                       <td className="px-6 py-4">
                         <div className="flex justify-end items-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                          <PreviewButtons imageUrl={String(layout.image_url)} sourceUrl={String(layout.source_url)} variant="desktop" />
                           <Link 
                             href={`/admin/dashboard/edit/${layout.id}`} 
                             className="inline-flex items-center gap-1 bg-blue-600/20 hover:bg-blue-600/30 text-blue-400 px-3 py-1.5 rounded-lg transition text-sm font-semibold"
@@ -109,15 +111,7 @@ export default async function AdminDashboard() {
                             <Edit3 size={14} />
                             Edit
                           </Link>
-                          <form action={async () => { "use server"; await deleteLayout(Number(layout.id)); }}>
-                            <button 
-                              type="submit" 
-                              className="inline-flex items-center gap-1 bg-red-600/20 hover:bg-red-600/30 text-red-400 px-3 py-1.5 rounded-lg transition text-sm font-semibold"
-                            >
-                              <Trash2 size={14} />
-                              Delete
-                            </button>
-                          </form>
+                          <DeleteLayoutButton layoutId={Number(layout.id)} variant="desktop" />
                         </div>
                       </td>
                     </tr>
@@ -159,17 +153,13 @@ export default async function AdminDashboard() {
                     <p className="text-gray-500 text-xs font-mono">{layout.upload_date ? new Date(String(layout.upload_date)).toLocaleDateString() : "-"}</p>
                   </div>
 
-                  <div className="flex gap-2 pt-2 border-t border-white/5">
-                    <Link href={`/admin/dashboard/edit/${layout.id}`} className="flex-1 bg-blue-600/20 hover:bg-blue-600/30 text-blue-400 py-2 rounded-lg flex items-center justify-center gap-2 transition">
+                  <div className="grid grid-cols-2 gap-2 pt-2 border-t border-white/5">
+                    <PreviewButtons imageUrl={String(layout.image_url)} sourceUrl={String(layout.source_url)} variant="mobile" />
+                    <Link href={`/admin/dashboard/edit/${layout.id}`} className="bg-blue-600/20 hover:bg-blue-600/30 text-blue-400 py-2 rounded-lg flex items-center justify-center gap-2 transition">
                       <Edit3 size={16} />
                       <span className="text-sm font-semibold">Edit</span>
                     </Link>
-                    <form action={async () => { "use server"; await deleteLayout(Number(layout.id)); }} className="flex-1">
-                      <button type="submit" className="w-full bg-red-600/20 hover:bg-red-600/30 text-red-400 py-2 rounded-lg flex items-center justify-center gap-2 transition">
-                        <Trash2 size={16} />
-                        <span className="text-sm font-semibold">Delete</span>
-                      </button>
-                    </form>
+                    <DeleteLayoutButton layoutId={Number(layout.id)} variant="mobile" />
                   </div>
                 </div>
               ))}
