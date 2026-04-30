@@ -72,6 +72,7 @@ export default async function AdminDashboard() {
               <table className="w-full text-left">
                 <thead className="bg-black/50 border-b border-white/10 sticky top-0">
                   <tr className="text-gray-400 text-xs uppercase tracking-widest">
+                    <th className="px-6 py-4 font-bold">Image</th>
                     <th className="px-6 py-4 font-bold">TH Level</th>
                     <th className="px-6 py-4 font-bold">Description</th>
                     <th className="px-6 py-4 font-bold">Tag</th>
@@ -82,6 +83,15 @@ export default async function AdminDashboard() {
                 <tbody className="divide-y divide-white/5">
                   {layouts.map((layout) => (
                     <tr key={String(layout.id)} className="hover:bg-white/[0.03] transition group">
+                      <td className="px-6 py-4">
+                        <div className="w-20 h-20 rounded-lg overflow-hidden bg-black/50 border border-white/10">
+                          <img 
+                            src={String(layout.image_url)} 
+                            alt="Layout preview" 
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                      </td>
                       <td className="px-6 py-4">
                         <span className="inline-block bg-blue-600/20 text-blue-400 px-3 py-1 rounded-full font-bold text-sm">TH {String(layout.th_level)}</span>
                       </td>
@@ -120,6 +130,14 @@ export default async function AdminDashboard() {
             <div className="md:hidden space-y-4">
               {layouts.map((layout) => (
                 <div key={String(layout.id)} className="bg-black/50 border border-white/10 rounded-lg p-4 space-y-3 hover:border-white/20 transition">
+                  <div className="w-full h-40 rounded-lg overflow-hidden bg-black/50 border border-white/10 mb-3">
+                    <img 
+                      src={String(layout.image_url)} 
+                      alt="Layout preview" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <p className="text-gray-500 text-xs uppercase tracking-widest mb-1">Town Hall</p>

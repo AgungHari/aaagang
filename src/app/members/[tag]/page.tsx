@@ -151,9 +151,7 @@ export default async function MemberDetailPage({ params }: { params: Promise<{ t
       "description": generateSummary(),
       "image": leagueIcon,
       "affiliation": {
-        "@type": "Organization",
-        "name": "AAA GANGS",
-        "logo": "https://3agang.pro/badge_clan.webp"
+        "@id": "https://3agang.pro/#organization"
       },
       "knowsAbout": [
         "Clash of Clans",
@@ -181,7 +179,7 @@ export default async function MemberDetailPage({ params }: { params: Promise<{ t
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      
+
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />
 
       <section className="max-w-5xl mx-auto px-6 pt-24 pb-12 animate-slide-up">

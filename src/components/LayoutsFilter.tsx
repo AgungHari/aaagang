@@ -43,12 +43,13 @@ export default function LayoutsFilter({ layouts }: LayoutsFilterProps) {
     return tags.sort();
   }, [layouts]);
 
-  // Filter layouts berdasarkan selected TH dan Tag
+  // Filter layouts berdasarkan selected TH, Tag, dan is_active status
   const filteredLayouts = useMemo(() => {
     return layouts.filter(layout => {
       const matchTH = !selectedTH || layout.th_level === selectedTH;
       const matchTag = !selectedTag || layout.base_tag === selectedTag;
-      return matchTH && matchTag;
+      const isActive = layout.is_active === 1;
+      return matchTH && matchTag && isActive;
     });
   }, [layouts, selectedTH, selectedTag]);
 
