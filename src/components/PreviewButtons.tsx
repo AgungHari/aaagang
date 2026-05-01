@@ -21,14 +21,14 @@ export default function PreviewButtons({ imageUrl, sourceUrl, variant = 'desktop
       <>
         <button
           onClick={() => setShowImageModal(true)}
-          className="bg-green-600/20 hover:bg-green-600/30 text-green-400 py-2 rounded-lg flex items-center justify-center gap-2 transition text-sm font-semibold"
+          className="bg-amber-600/20 hover:bg-amber-600/30 text-amber-400 py-2 rounded-lg flex items-center justify-center gap-2 transition text-sm font-semibold"
         >
           <Eye size={16} />
           <span>Image</span>
         </button>
         <button
           onClick={handlePreviewSource}
-          className="bg-purple-600/20 hover:bg-purple-600/30 text-purple-400 py-2 rounded-lg flex items-center justify-center gap-2 transition text-sm font-semibold"
+          className="bg-amber-600/20 hover:bg-amber-600/30 text-amber-400 py-2 rounded-lg flex items-center justify-center gap-2 transition text-sm font-semibold"
         >
           <ExternalLink size={16} />
           <span>Source</span>
@@ -71,14 +71,14 @@ export default function PreviewButtons({ imageUrl, sourceUrl, variant = 'desktop
     <>
       <button
         onClick={() => setShowImageModal(true)}
-        className="inline-flex items-center gap-1 bg-green-600/20 hover:bg-green-600/30 text-green-400 px-3 py-1.5 rounded-lg transition text-sm font-semibold"
+        className="inline-flex items-center gap-1 bg-amber-600/20 hover:bg-amber-600/30 text-amber-400 px-3 py-1.5 rounded-lg transition text-sm font-semibold"
       >
         <Eye size={14} />
         Image
       </button>
       <button
         onClick={handlePreviewSource}
-        className="inline-flex items-center gap-1 bg-purple-600/20 hover:bg-purple-600/30 text-purple-400 px-3 py-1.5 rounded-lg transition text-sm font-semibold"
+        className="inline-flex items-center gap-1 bg-amber-600/20 hover:bg-amber-600/30 text-amber-400 px-3 py-1.5 rounded-lg transition text-sm font-semibold"
       >
         <ExternalLink size={14} />
         Source

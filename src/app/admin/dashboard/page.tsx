@@ -46,9 +46,10 @@ export default async function AdminDashboard() {
             text2="DASHBOARD" 
             text3="Manage AAA GANG Base Layouts" 
           />
+          <span className="text-white font-semibold">Total Views Layout: {totalViews}</span>
           <Link 
             href="/admin/dashboard/new" 
-            className="flex items-center gap-2 border-2 border-zinc-500 bg-zinc-700 text-zinc-300 px-6 py-3 rounded-xl font-semibold transition"
+            className="flex items-center gap-2 bg-zinc-900/20 border border-zinc-800/50 text-zinc-300 px-6 py-3 rounded-full font-semibold transition animate-pulse"
           >
             <Plus size={20} />
           </Link>
@@ -56,7 +57,7 @@ export default async function AdminDashboard() {
 
         {/* Stats & Table... */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <div className="bg-[#111] border border-white/10 p-6 rounded-2xl">
+            <div className="bg-zinc-900/20 border border-zinc-800/50 p-6 rounded-2xl">
               <div className="flex items-center gap-4 text-gray-400 mb-2">
                 <Database size={20} />
                 <span className="text-sm font-bold uppercase tracking-widest">Total Layouts</span>
@@ -66,7 +67,7 @@ export default async function AdminDashboard() {
             {/* ... stats lainnya ... */}
         </div>
 
-        <div className="bg-[#111] border border-white/10 rounded-2xl overflow-hidden">
+        <div className="bg-zinc-900/20 border border-zinc-800/50 rounded-2xl overflow-hidden">
           <div className="space-y-4 p-6 md:p-0">
             {/* Desktop Table */}
             <div className="hidden md:block overflow-x-auto">
@@ -106,7 +107,7 @@ export default async function AdminDashboard() {
                           <PreviewButtons imageUrl={String(layout.image_url)} sourceUrl={String(layout.source_url)} variant="desktop" />
                           <Link 
                             href={`/admin/dashboard/edit/${layout.id}`} 
-                            className="inline-flex items-center gap-1 bg-blue-600/20 hover:bg-blue-600/30 text-blue-400 px-3 py-1.5 rounded-lg transition text-sm font-semibold"
+                            className="inline-flex items-center gap-1 bg-amber-600/20 hover:bg-amber-600/30 text-amber-400 px-3 py-1.5 rounded-lg transition text-sm font-semibold"
                           >
                             <Edit3 size={14} />
                             Edit
@@ -155,7 +156,7 @@ export default async function AdminDashboard() {
 
                   <div className="grid grid-cols-2 gap-2 pt-2 border-t border-white/5">
                     <PreviewButtons imageUrl={String(layout.image_url)} sourceUrl={String(layout.source_url)} variant="mobile" />
-                    <Link href={`/admin/dashboard/edit/${layout.id}`} className="bg-blue-600/20 hover:bg-blue-600/30 text-blue-400 py-2 rounded-lg flex items-center justify-center gap-2 transition">
+                    <Link href={`/admin/dashboard/edit/${layout.id}`} className="bg-amber-600/20 hover:bg-amber-600/30 text-amber-400 py-2 rounded-lg flex items-center justify-center gap-2 transition">
                       <Edit3 size={16} />
                       <span className="text-sm font-semibold">Edit</span>
                     </Link>
