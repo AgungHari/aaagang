@@ -61,7 +61,7 @@ export default function Footer({ clan }: FooterProps) {
               >
                 <Coffee size={10} className="text-zinc-600 group-hover:text-zinc-300 transition-colors" />
                 <span className="text-[7px] font-black tracking-[0.3em] text-zinc-600 uppercase group-hover:text-zinc-300 transition-colors">
-                  Buy me a coffee
+                  Coffee
                 </span>
               </a>
 
@@ -79,13 +79,12 @@ export default function Footer({ clan }: FooterProps) {
               </a>
               <a 
                 href="/contact" 
-                target="_blank" 
                 rel="noopener noreferrer"
                 className="group flex items-center gap-2 px-3 py-1.5 border border-zinc-800/40 hover:border-zinc-500/40 hover:bg-zinc-800/50 rounded transition-all w-fit"
               >
                 <Phone size={10} className="text-zinc-600 group-hover:text-zinc-300 transition-colors" />
                 <span className="text-[7px] font-black tracking-[0.3em] text-zinc-600 uppercase group-hover:text-zinc-300 transition-colors">
-                  Contact Us
+                  Contact
                 </span>
               </a>
             </div>
@@ -105,7 +104,6 @@ export default function Footer({ clan }: FooterProps) {
             {/* Tombol Privacy Policy */}
               <a 
                 href="/privacy" 
-                target="_blank" 
                 rel="noopener noreferrer"
                 className="group flex items-center gap-2 px-3 py-1.5 border border-zinc-800/40 hover:border-zinc-500/40 hover:bg-amber-800/50 rounded transition-all w-fit"
               >
