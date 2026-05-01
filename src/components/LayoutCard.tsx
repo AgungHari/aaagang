@@ -112,7 +112,7 @@ export default function LayoutCard({
 
   return (
     <div 
-      className="bg-zinc-900/20 border border-zinc-800/20 rounded-2xl overflow-hidden hover:border-amber-500/50 transition-all group cursor-pointer"
+      className="bg-zinc-900/20 border border-zinc-800/50 rounded-2xl overflow-hidden hover:border-amber-500/50 transition-all group cursor-pointer"
       onClick={handleView}
     >
       {/* Image Section */}
@@ -123,7 +123,7 @@ export default function LayoutCard({
             alt={title}
             fill
             sizes="(max-width: 768px) 100vw, 33vw"
-            className="object-cover group-hover:scale-105 transition-transform duration-300"
+            className="object-cover group-hover:scale-105 transition-transform duration-300 opacity-85"
             loading="lazy"
             onError={() => setImageError(true)}
           />

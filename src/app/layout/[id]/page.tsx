@@ -153,7 +153,7 @@ export default async function LayoutDetailPage({
           </Link>
 
           {/* Layout Detail */}
-          <div className="bg-zinc-900/50 border border-zinc-500/20 rounded-2xl overflow-hidden mb-12">
+          <div className="bg-zinc-900/20 border border-zinc-800/50 rounded-2xl overflow-hidden mb-12">
             {/* Image */}
             {layout.image_url && (
               <div className="relative w-full aspect-video overflow-hidden bg-zinc-800">

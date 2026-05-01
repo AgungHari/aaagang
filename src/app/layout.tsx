@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ConsoleLogger from "@/components/ConsoleLogger";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -55,6 +56,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col relative bg-[#050505] text-white">
+        <GoogleAnalytics />
         <div className="absolute inset-x-0 top-0 h-full overflow-hidden pointer-events-none -z-10">
           
           {/* Lampu 1 */}

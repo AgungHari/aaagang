@@ -88,7 +88,7 @@ export default async function LayoutPage() {
           </h1>
 
           <p className="text-gray-300 leading-relaxed mb-12 max-w-4xl animate-slide-up">
-            Koleksi base layouts terbaik dari AAA GANG, Temukan inspirasi untuk pertahanan dan seranganmu di sini. Setiap layout dilengkapi dengan detail lengkap. <span className="text-sm text-amber-500/20"><br/>Data scraped from Reddit/YouTube/Twitter/etc. This process is automated, and the link may differ from the preview image. Verifying the source is recommended for accuracy. And yes I may be asleep when new layout is uploaded.</span>
+            Temukan inspirasi base layouts terbaik dari AAA GANG untuk pertahanan dan seranganmu. Data diambil otomatis dari berbagai sumber.
           </p>
 
           {/* Layouts Filter & Grid */}
