@@ -1,4 +1,4 @@
-import { Medal, Users, Sword, Coffee, Info } from "lucide-react";
+import { Medal, Users, Sword, Coffee, Info, HatGlasses, Phone } from "lucide-react";
 import { siGithub } from 'simple-icons';
 
 interface FooterProps {
@@ -57,10 +57,10 @@ export default function Footer({ clan }: FooterProps) {
                 href="https://ko-fi.com/oxy" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="group flex items-center gap-2 px-3 py-1.5 border border-zinc-800/40 hover:border-[#29abe0]/40 hover:bg-[#29abe0]/5 rounded transition-all w-fit"
+                className="group flex items-center gap-2 px-3 py-1.5 border border-zinc-800/40 hover:border-zinc-500/40 hover:bg-zinc-800/50 rounded transition-all w-fit"
               >
-                <Coffee size={10} className="text-zinc-600 group-hover:text-[#29abe0] transition-colors" />
-                <span className="text-[7px] font-black tracking-[0.3em] text-zinc-600 uppercase group-hover:text-[#29abe0] transition-colors">
+                <Coffee size={10} className="text-zinc-600 group-hover:text-zinc-300 transition-colors" />
+                <span className="text-[7px] font-black tracking-[0.3em] text-zinc-600 uppercase group-hover:text-zinc-300 transition-colors">
                   Buy me a coffee
                 </span>
               </a>
@@ -77,8 +77,20 @@ export default function Footer({ clan }: FooterProps) {
                   Github
                 </span>
               </a>
+              <a 
+                href="/contact" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group flex items-center gap-2 px-3 py-1.5 border border-zinc-800/40 hover:border-zinc-500/40 hover:bg-zinc-800/50 rounded transition-all w-fit"
+              >
+                <Phone size={10} className="text-zinc-600 group-hover:text-zinc-300 transition-colors" />
+                <span className="text-[7px] font-black tracking-[0.3em] text-zinc-600 uppercase group-hover:text-zinc-300 transition-colors">
+                  Contact Us
+                </span>
+              </a>
             </div>
             {/* Tombol Status Page */}
+            <div className="flex flex-row items-center gap-2">
               <a 
                 href="https://status.3agang.pro/" 
                 target="_blank" 
@@ -90,6 +102,19 @@ export default function Footer({ clan }: FooterProps) {
                   Maintenance Status
                 </span>
               </a>
+            {/* Tombol Privacy Policy */}
+              <a 
+                href="/privacy" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group flex items-center gap-2 px-3 py-1.5 border border-zinc-800/40 hover:border-zinc-500/40 hover:bg-amber-800/50 rounded transition-all w-fit"
+              >
+                <HatGlasses size={10} className="text-zinc-600 group-hover:text-zinc-300 transition-colors" />
+                <span className="text-[7px] font-black tracking-[0.3em] text-zinc-600 uppercase group-hover:text-zinc-300 transition-colors">
+                  Privacy Policy
+                </span>
+              </a>
+            </div>
           </div>
           
         </div>
