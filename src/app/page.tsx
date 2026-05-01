@@ -11,6 +11,7 @@ import DecorativeHeroes from "@/components/DecorativeHeroes";
 import MorphingTitle from "@/components/MorphingTitle";
 import Link from "next/link";
 import Image from "next/image";
+import CookiebotProvider from "@/components/CookiebotProvider";
 import { 
   Sigma,
   UserPlus, ChevronRightIcon
@@ -18,6 +19,7 @@ import {
 import { getClanData, getCurrentWar, getWarLog } from "@/lib/coc";
 
 export const revalidate = 60;
+
 
 export default async function Home() {
   const [clan, war, warLog] = await Promise.all([getClanData(), getCurrentWar(), getWarLog()]);
@@ -112,6 +114,7 @@ export default async function Home() {
 
   return (
     <main className="min-h-screen text-zinc-100 selection:bg-amber-500 selection:text-black overflow-x-hidden font-sans relative">
+      <CookiebotProvider />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
