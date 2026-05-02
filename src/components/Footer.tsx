@@ -1,5 +1,7 @@
-import { Medal, Users, Sword, Coffee, Info, HatGlasses, Phone } from "lucide-react";
+import { Medal, Users, Sword, Coffee, Info, HatGlasses, Phone, Scale, Copyright } from "lucide-react";
 import { siGithub } from 'simple-icons';
+import Link from "next/link";
+
 
 interface FooterProps {
   clan: any;
@@ -41,6 +43,7 @@ export default function Footer({ clan }: FooterProps) {
             <div className="text-left">
               <div className="text-[10px] font-black tracking-[0.4em] text-zinc-500 uppercase italic leading-none">{clan.name}</div>
               <div className="text-[7px] text-zinc-700 font-bold uppercase tracking-widest mt-1">Clan Tag: {clan.tag}</div>
+               <div className="text-[7px] text-zinc-700 font-bold uppercase tracking-widest mt-1">3agang.pro is unofficial and is not endorsed by Supercell. <br/>For more information see<Link href="https://supercell.com/en/fan-content-policy/" className="text-amber-600 hover:underline"> Supercell’s Fan Content Policy</Link>.</div>
             </div>
           </div>
 
@@ -94,7 +97,7 @@ export default function Footer({ clan }: FooterProps) {
                 href="https://status.3agang.pro/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="group flex items-center gap-2 px-3 py-1.5 border border-zinc-800/40 hover:border-zinc-500/40 hover:bg-amber-800/50 rounded transition-all w-fit"
+                className="group flex items-center gap-2 px-3 py-1.5 border border-zinc-800/40 hover:border-zinc-500/40 hover:bg-zinc-800/50 rounded transition-all w-fit"
               >
                 <Info size={10} className="text-zinc-600 group-hover:text-zinc-300 transition-colors" />
                 <span className="text-[7px] font-black tracking-[0.3em] text-zinc-600 uppercase group-hover:text-zinc-300 transition-colors">
@@ -105,11 +108,34 @@ export default function Footer({ clan }: FooterProps) {
               <a 
                 href="/privacy" 
                 rel="noopener noreferrer"
-                className="group flex items-center gap-2 px-3 py-1.5 border border-zinc-800/40 hover:border-zinc-500/40 hover:bg-amber-800/50 rounded transition-all w-fit"
+                className="group flex items-center gap-2 px-3 py-1.5 border border-zinc-800/40 hover:border-zinc-500/40 hover:bg-zinc-800/50 rounded transition-all w-fit"
               >
                 <HatGlasses size={10} className="text-zinc-600 group-hover:text-zinc-300 transition-colors" />
                 <span className="text-[7px] font-black tracking-[0.3em] text-zinc-600 uppercase group-hover:text-zinc-300 transition-colors">
                   Privacy Policy
+                </span>
+              </a>
+            </div>
+            <div className="flex flex-row items-center gap-2">
+              <a 
+                href="/termsofservice" 
+                rel="noopener noreferrer"
+                className="group flex items-center gap-2 px-3 py-1.5 border border-zinc-800/40 hover:border-zinc-500/40 hover:bg-zinc-800/50 rounded transition-all w-fit"
+              >
+                <Scale size={10} className="text-zinc-600 group-hover:text-zinc-300 transition-colors" />
+                <span className="text-[7px] font-black tracking-[0.3em] text-zinc-600 uppercase group-hover:text-zinc-300 transition-colors">
+                  Terms of Service
+                </span>
+              </a>
+            {/* Tombol Privacy Policy */}
+              <a 
+                href="/dmca" 
+                rel="noopener noreferrer"
+                className="group flex items-center gap-2 px-3 py-1.5 border border-zinc-800/40 hover:border-zinc-500/40 hover:bg-zinc-800/50 rounded transition-all w-fit"
+              >
+                <Copyright size={10} className="text-zinc-600 group-hover:text-zinc-300 transition-colors" />
+                <span className="text-[7px] font-black tracking-[0.3em] text-zinc-600 uppercase group-hover:text-zinc-300 transition-colors">
+                  DMCA
                 </span>
               </a>
             </div>

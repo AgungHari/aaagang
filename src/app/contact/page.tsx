@@ -35,8 +35,23 @@ export default async function ContactPage() {
     );
   }
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://3agang.pro/contact/#webpage",
+    "url": "https://3agang.pro/contact",
+    "name": "Contact - AAA GANGS Clash of Clans",
+    "description": "Hubungi kami melalui kontak berikut!",
+    "publisher": { "@id": "https://3agang.pro/#organization" }
+  };
+
+
   return (
     <div className="flex flex-col min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />
       <main className="flex-grow container mx-auto px-4 py-8 md:py-16 font-poppins">
        <ScrollReveal delay={0.1} mobileDelay={0.1}>
