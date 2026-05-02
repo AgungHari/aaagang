@@ -161,7 +161,7 @@ export default async function PrivacyPage() {
                 <li>Kami tidak memerlukan login atau akun untuk menggunakan layanan ini</li>
               </ul>
               <p className="text-zinc-300 mt-4 leading-relaxed">
-                Kami tidak menyimpan atau mengumpulkan data percakapan dari layanan SIGMA di server kami.
+                Kami tidak menyimpan atau mengumpulkan data percakapan dari layanan SIGMA di server kami. Namun "Jika Anda menggunakan layanan premium kami, kami mungkin mengumpulkan informasi pembayaran melalui penyedia pembayaran pihak ketiga yang aman. Kami tidak menyimpan informasi kartu kredit atau keuangan Anda di server kami."
               </p>
             </div>
           </ScrollReveal>

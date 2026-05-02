@@ -188,7 +188,7 @@ export default async function DMCAPage() {
                   Layanan Sigma AI Chatbot kami menyediakan jawaban dan saran berdasarkan pertanyaan seputar Clash of Clans. Konten yang dihasilkan oleh Sigma AI berdasarkan input pengguna menjadi tanggung jawab pengguna. Kami tidak bertanggung jawab atas penggunaan konten AI yang melanggar hak cipta atau aturan komunitas.
                 </p>
                 <p className="text-zinc-300 mt-4 leading-relaxed">
-                  Pengguna diharapkan untuk menggunakan Sigma AI dengan bijak dan tidak menyebarkan informasi yang melanggar hak cipta, merugikan pihak lain, atau bertentangan dengan kebijakan komunitas Clash of Clans.
+                  Pengguna diharapkan untuk menggunakan Sigma AI dengan bijak dan tidak menyebarkan informasi yang melanggar hak cipta, merugikan pihak lain, atau bertentangan dengan kebijakan komunitas Clash of Clans. Layanan Sigma AI Chatbot kami menyediakan jawaban dan saran berdasarkan pertanyaan seputar Clash of Clans. Versi gratis tersedia untuk semua pengguna, sementara layanan premium mungkin ditawarkan di masa depan sebagai bagian dari layanan coaching yang diperbolehkan oleh Kebijakan Konten Penggemar Supercell.
                 </p>
               </div>
             </ScrollReveal>

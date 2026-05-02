@@ -14,7 +14,7 @@ import Image from "next/image";
 import CookiebotProvider from "@/components/CookiebotProvider";
 import { 
   Sigma,
-  UserPlus, ChevronRightIcon
+  UserPlus, ChevronRightIcon, Baby, HandHeart, Swords
 } from "lucide-react";
 import { getClanData, getCurrentWar, getWarLog } from "@/lib/coc";
 
@@ -169,15 +169,15 @@ export default async function Home() {
         {/* Clan Stats */}
         <div className="flex flex-wrap justify-center items-center gap-4 md:gap-14">
           <div className="flex items-center gap-2 animate-slide-up">
-            <Image className="opacity-80 saturate-60 hue-rotate-100" src="/1_newb.png" alt="Newbie Friendly" width={20} height={20}/>
+            <Image className="opacity-80" src="/1.png" alt="Newbie Friendly" width={20} height={20}/>
             <span className="text-slate-400 font-medium">Newbie Friendly</span>
           </div>
           <div className="flex items-center gap-2 animate-slide-up">
-            <Image className="opacity-80 saturate-60" src="/3_war.png" alt="Always War" width={20} height={20}/>
+            <Image className="opacity-80 " src="/3.png" alt="Always War" width={20} height={20}/>
             <span className="text-slate-400 font-medium">Always War</span>
           </div>
           <div className="flex items-center gap-2 animate-slide-up">
-            <Image className="opacity-80 saturate-90 hue-rotate-260" src="/2_donat.png" alt="Donasi Lancar" width={20} height={20}/>
+            <Image className="opacity-80" src="/2.png" alt="Donasi Lancar" width={20} height={20}/>
             <span className="text-slate-400 font-medium">Donasi Lancar</span>
           </div>
         </div>
@@ -207,14 +207,14 @@ export default async function Home() {
       {/* Leaderboard Cards */}
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <ScrollReveal delay={0.1} mobileDelay={0.1}>
-          <LeaderboardCard title="Donation Kings" icon={<Image src="/Icon_HV_donate_Troops.png" alt="Donate" width={30} height={30} />} data={topDonators} dataKey="donations" suffix="Troops" />
+          <LeaderboardCard title="Donation Kings" icon={<Image src="/1dt.png" alt="Donate" width={30} height={30} />} data={topDonators} dataKey="donations" suffix="Troops" />
         </ScrollReveal>
         <ScrollReveal delay={0.2} mobileDelay={0.1}>
-          <LeaderboardCard title="Ranked Trophy" icon={<Image src="/Icon_HV_CWL_Champion_3.webp" alt="League" width={30} height={30} />} data={topLeagues} dataKey="trophies" suffix="Trophies" />
+          <LeaderboardCard title="Ranked Trophy" icon={<Image src="/2tr.png" alt="League" width={30} height={30} />} data={topLeagues} dataKey="trophies" suffix="Trophies" />
         </ScrollReveal>
         <div className="md:col-span-2 lg:col-span-1 md:w-1/2 lg:w-full md:justify-self-center">
           <ScrollReveal delay={0.3} mobileDelay={0.1}>
-            <LeaderboardCard title="Most Active" icon={<Image src="/Building_HV_Clan_Castle_level_14.webp" alt="Request" width={30} height={30} />} data={topReceived} dataKey="donationsReceived" suffix="Reqs" />
+            <LeaderboardCard title="Most Active" icon={<Image src="/3cc.png" alt="Request" width={30} height={30} />} data={topReceived} dataKey="donationsReceived" suffix="Reqs" />
           </ScrollReveal>
         </div>
       </div>

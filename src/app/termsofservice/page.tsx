@@ -107,7 +107,7 @@ export default async function TermsOfServicePage() {
                   3. Layanan yang Disediakan
                 </h2>
                 <p className="text-zinc-300 leading-relaxed">
-                  Kami menyediakan koleksi base layout Clash of Clans secara gratis, termasuk link copy untuk berbagai Town Hall level. Kami juga menyediakan fitur Sigma AI, chatbot cerdas yang dapat menjawab pertanyaan seputar Clash of Clans.
+                  Kami menyediakan koleksi base layout Clash of Clans secara gratis, termasuk link copy untuk berbagai Town Hall level. Kami juga menyediakan fitur Sigma AI, chatbot cerdas yang dapat menjawab pertanyaan seputar Clash of Clans. Beberapa layanan premium Sigma AI mungkin tersedia di masa depan sebagai bagian dari layanan coaching.
                 </p>
                 <ul className="mt-4 space-y-2 text-zinc-300">
                   <li className="flex items-start gap-2">

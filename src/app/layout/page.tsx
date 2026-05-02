@@ -4,7 +4,7 @@ import LayoutsFilter from "@/components/LayoutsFilter";
 import { getClanData } from "@/lib/coc";
 import { createClient } from "@libsql/client";
 import ScrollReveal from "@/components/ScrollReveal";
-import { Users } from "lucide-react";
+import { Hammer } from "lucide-react";
 
 const client = createClient({
   url: process.env.TURSO_DATABASE_URL!,
@@ -81,7 +81,7 @@ export default async function LayoutPage() {
       <section className="pt-32 pb-20 px-6 md:px-16 lg:px-24 xl:px-32">
         <div className="max-w-7xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-amber-500/20 bg-amber-500/5 text-amber-500 text-[10px] font-black uppercase tracking-[0.3em] mb-4 animate-slide-up">
-              <Users size={12} /> Koleksi Base
+              <Hammer size={12} /> Koleksi Base
           </div>
           <h1 className="text-4xl md:text-5xl mb-8 animate-slide-up" style={{ fontFamily: "'Docallisme', sans-serif" }}>
             BASE <span className="text-amber-500">LAYOUTS</span>
