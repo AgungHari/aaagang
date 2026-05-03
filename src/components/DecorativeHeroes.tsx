@@ -9,7 +9,7 @@ export default function DecorativeHeroes() {
       md:top-[4%] md:left-[-24%] 
       lg:top-[4.5%] lg:left-[-20%]
       xl:top-[7%] xl:left-[-28%] 
-      2xl:top-[7%] 2xl:left-[-17%] 
+      2xl:top-[7%] 2xl:left-[-21%] 
       3xl:top-[7%] 3xl:left-[-12%]
       -z-10 opacity-10 pointer-events-none animate-fade-inX"> 
         <Image 
@@ -26,7 +26,7 @@ export default function DecorativeHeroes() {
       md:top-[4%] md:right-[-21%] 
       lg:top-[4.5%] lg:right-[-21%]
       xl:top-[7%] xl:right-[-34%]
-      2xl:top-[7%] 2xl:right-[-22%]
+      2xl:top-[7%] 2xl:right-[-27%]
       3xl:top-[7%] 3xl:right-[-15%]
       -z-10 opacity-10 pointer-events-none animate-fade-inX">
         <Image 

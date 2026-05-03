@@ -46,13 +46,13 @@ export default function TiltedImage({ rotateAmplitude = 3, }) {
     }
 
     return (
-        <motion.figure ref={ref} className="relative w-full h-full perspective-midrange mt-16 max-w-4xl mx-auto flex flex-col items-center justify-center" onMouseMove={handleMouse} onMouseLeave={handleMouseLeave}
+        <motion.figure ref={ref} className="relative w-full h-full perspective-midrange mt-16 max-w-4xl xl:max-w-2xl 2xl:max-w-3xl 2xl:max-w-4xl mx-auto flex flex-col items-center justify-center" onMouseMove={handleMouse} onMouseLeave={handleMouseLeave}
             initial={{ y: 150, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ type: "spring", stiffness: 320, damping: 70, mass: 1 }}
         >
-            <motion.div className="relative transform-3d w-full max-w-4xl" style={{ rotateX, rotateY }} >
+            <motion.div className="relative transform-3d w-full max-w-5xl" style={{ rotateX, rotateY }} >
                 <motion.video src="/SMAL000.mp4"
                     className="w-full rounded-[15px] will-change-transform transform-[translateZ(0)]"
                     autoPlay
