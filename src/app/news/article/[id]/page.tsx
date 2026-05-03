@@ -117,7 +117,7 @@ export default async function ArticlePage({
       "name": article.title,
       "description": plainTextDescription,
       "thumbnailUrl": [
-        `https://img.youtube.com/vi/${youtubeId}/maxresdefault.jpg`
+        `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`
       ],
       "uploadDate": new Date(article.postDate).toISOString(),
       "embedUrl": youtubeEmbedUrl

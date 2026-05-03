@@ -1,0 +1,458 @@
+{
+    "state": "preparation",
+    "teamSize": 30,
+    "preparationStartTime": "20260503T080106.000Z",
+    "startTime": "20260504T075819.000Z",
+    "endTime": "20260505T075819.000Z",
+    "clan": {
+        "tag": "#Q9YY02J9",
+        "name": "AAA GANG",
+        "badgeUrls": {
+            "small": "https://api-assets.clashofclans.com/badges/70/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png",
+            "large": "https://api-assets.clashofclans.com/badges/512/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png",
+            "medium": "https://api-assets.clashofclans.com/badges/200/TVrEHuC0b5PwyGVu2jzd0D6vAMONK6yt6PNiXVNaSOg.png"
+        },
+        "clanLevel": 17,
+        "attacks": 0,
+        "stars": 0,
+        "destructionPercentage": 0.0,
+        "members": [
+            {
+                "tag": "#L8022YPQL",
+                "name": "Ted",
+                "townhallLevel": 11,
+                "mapPosition": 37,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#PCPLVV2R",
+                "name": "raja rayhan",
+                "townhallLevel": 17,
+                "mapPosition": 1,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#L0P0V009C",
+                "name": "Asylum\"KIANA\"",
+                "townhallLevel": 13,
+                "mapPosition": 31,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#20CGJ9RC0",
+                "name": "Dòm",
+                "townhallLevel": 14,
+                "mapPosition": 30,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#GLVRCQ2QU",
+                "name": "T N i",
+                "townhallLevel": 12,
+                "mapPosition": 36,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#GRUR8QU",
+                "name": "Oxy",
+                "townhallLevel": 17,
+                "mapPosition": 9,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#P92CLJYYP",
+                "name": "Dragon King",
+                "townhallLevel": 15,
+                "mapPosition": 27,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#QJPQYG9JG",
+                "name": "ULTRAMAN",
+                "townhallLevel": 14,
+                "mapPosition": 29,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#V2PVCV8R",
+                "name": "AKJWG",
+                "townhallLevel": 16,
+                "mapPosition": 13,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#LJCCJVCYQ",
+                "name": "DΣΠ∆ㄚ#4",
+                "townhallLevel": 16,
+                "mapPosition": 19,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#YYJ929U0J",
+                "name": "Black_Diamond",
+                "townhallLevel": 14,
+                "mapPosition": 25,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#LY0JRY0U8",
+                "name": "YogaMenceng",
+                "townhallLevel": 15,
+                "mapPosition": 15,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#LYR90LVQV",
+                "name": "☆D.B.Cooper☆",
+                "townhallLevel": 17,
+                "mapPosition": 4,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#Q28YGGGYV",
+                "name": "MALAH TURU",
+                "townhallLevel": 16,
+                "mapPosition": 11,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#QJVJ99CL8",
+                "name": "aldiyen",
+                "townhallLevel": 17,
+                "mapPosition": 6,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#GVYY0QLLR",
+                "name": "axoxo",
+                "townhallLevel": 11,
+                "mapPosition": 38,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#YQ0RC9UV0",
+                "name": "bg1979 junior",
+                "townhallLevel": 16,
+                "mapPosition": 12,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#9CPGCJQQ8",
+                "name": "WG",
+                "townhallLevel": 13,
+                "mapPosition": 35,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#Y0RULR9PL",
+                "name": "M A E N G",
+                "townhallLevel": 17,
+                "mapPosition": 3,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#GLYRCPPQ0",
+                "name": "•Wildshark•",
+                "townhallLevel": 15,
+                "mapPosition": 21,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#829VRRPQR",
+                "name": "★★RaHat★★",
+                "townhallLevel": 16,
+                "mapPosition": 8,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#G2UGV0UCV",
+                "name": "mamang",
+                "townhallLevel": 15,
+                "mapPosition": 26,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#Y2QRRGQQG",
+                "name": "dj",
+                "townhallLevel": 15,
+                "mapPosition": 16,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#GQQU2VQVY",
+                "name": "FERI S@NDRI@",
+                "townhallLevel": 15,
+                "mapPosition": 20,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#QRPPUVP88",
+                "name": "Anos voldigoad",
+                "townhallLevel": 13,
+                "mapPosition": 32,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#G9URG288J",
+                "name": "° BACUY52...",
+                "townhallLevel": 16,
+                "mapPosition": 7,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#9JUP2JRCJ",
+                "name": "irham khalid007",
+                "townhallLevel": 17,
+                "mapPosition": 22,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#G2LV8Y0P2",
+                "name": "C y n e m i k a",
+                "townhallLevel": 15,
+                "mapPosition": 17,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#2QCPJJ200",
+                "name": "shuvo",
+                "townhallLevel": 17,
+                "mapPosition": 2,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#GQ0JYU2LV",
+                "name": "แหล้",
+                "townhallLevel": 14,
+                "mapPosition": 28,
+                "opponentAttacks": 0
+            }
+        ]
+    },
+    "opponent": {
+        "tag": "#2QCYL8CR8",
+        "name": "POWER TEAM",
+        "badgeUrls": {
+            "small": "https://api-assets.clashofclans.com/badges/70/Hy256pwZFfeOwhQ965HAUSj_5owzzLM_W6Pl5CI_Gl0.png",
+            "large": "https://api-assets.clashofclans.com/badges/512/Hy256pwZFfeOwhQ965HAUSj_5owzzLM_W6Pl5CI_Gl0.png",
+            "medium": "https://api-assets.clashofclans.com/badges/200/Hy256pwZFfeOwhQ965HAUSj_5owzzLM_W6Pl5CI_Gl0.png"
+        },
+        "clanLevel": 12,
+        "attacks": 0,
+        "stars": 0,
+        "destructionPercentage": 0.0,
+        "members": [
+            {
+                "tag": "#QPPGYLQ0Y",
+                "name": "muhammet",
+                "townhallLevel": 14,
+                "mapPosition": 17,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#QRRPQQYGG",
+                "name": "『FRONDES』",
+                "townhallLevel": 14,
+                "mapPosition": 28,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#GLQJUVGYQ",
+                "name": "son hava bükücü",
+                "townhallLevel": 13,
+                "mapPosition": 48,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#9J0QQP0JC",
+                "name": "KaRaKoBrAsEdAt⚔",
+                "townhallLevel": 14,
+                "mapPosition": 11,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#2YRGU8YY8",
+                "name": "The Uz-Ka",
+                "townhallLevel": 13,
+                "mapPosition": 40,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#P9PGY92YU",
+                "name": "ismetkydr",
+                "townhallLevel": 14,
+                "mapPosition": 32,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#QRGG8C9P8",
+                "name": "THE BEST",
+                "townhallLevel": 14,
+                "mapPosition": 35,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#U90U88JC",
+                "name": "Tunahan",
+                "townhallLevel": 15,
+                "mapPosition": 7,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#9VJYPRJYC",
+                "name": "Meren",
+                "townhallLevel": 14,
+                "mapPosition": 16,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#2JVQ8L2R8",
+                "name": "¤ GunaY ¤",
+                "townhallLevel": 16,
+                "mapPosition": 4,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#QRQPGULCP",
+                "name": "Ozanم",
+                "townhallLevel": 14,
+                "mapPosition": 18,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#288YL9GJ9",
+                "name": "MANHUNTER",
+                "townhallLevel": 14,
+                "mapPosition": 13,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#GPLULLC08",
+                "name": "svs58",
+                "townhallLevel": 14,
+                "mapPosition": 29,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#GRL0Y0U",
+                "name": "< H4ncock >",
+                "townhallLevel": 13,
+                "mapPosition": 43,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#Q2GL2R9JQ",
+                "name": "NARE01",
+                "townhallLevel": 14,
+                "mapPosition": 15,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#QUR9YY0Q8",
+                "name": "Yenilmez",
+                "townhallLevel": 13,
+                "mapPosition": 46,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#QU2RJ9JC9",
+                "name": "kereste",
+                "townhallLevel": 14,
+                "mapPosition": 33,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#YCCJP20C",
+                "name": "Albus Dumbledor",
+                "townhallLevel": 17,
+                "mapPosition": 1,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#LGRG9G8GU",
+                "name": "Hairstylist196&",
+                "townhallLevel": 14,
+                "mapPosition": 27,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#9CRJ0GQC0",
+                "name": "hknsmsk",
+                "townhallLevel": 14,
+                "mapPosition": 26,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#GRL9YY892",
+                "name": "cambaz",
+                "townhallLevel": 16,
+                "mapPosition": 5,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#QLVLJG92Y",
+                "name": "tcenes",
+                "townhallLevel": 14,
+                "mapPosition": 34,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#Q9JRL9CQC",
+                "name": "mert",
+                "townhallLevel": 14,
+                "mapPosition": 8,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#YLYPPGQ8J",
+                "name": "ramsey",
+                "townhallLevel": 16,
+                "mapPosition": 3,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#PLJLVGLLR",
+                "name": "asgarov.313",
+                "townhallLevel": 13,
+                "mapPosition": 38,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#GR8QG8U0J",
+                "name": "baku",
+                "townhallLevel": 15,
+                "mapPosition": 6,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#PUJC2URJC",
+                "name": "poxus",
+                "townhallLevel": 13,
+                "mapPosition": 41,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#LC02GY8YL",
+                "name": "YDC-YUNUS®",
+                "townhallLevel": 14,
+                "mapPosition": 9,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#2GPGLR0GU",
+                "name": "axilles dange",
+                "townhallLevel": 15,
+                "mapPosition": 37,
+                "opponentAttacks": 0
+            },
+            {
+                "tag": "#LPPLJRLQ9",
+                "name": "Vuqar_16",
+                "townhallLevel": 13,
+                "mapPosition": 45,
+                "opponentAttacks": 0
+            }
+        ]
+    },
+    "warStartTime": "20260504T075819.000Z"
+}

@@ -35,3 +35,30 @@ export async function getWarLog() {
   if (!res.ok) return null;
   return res.json();
 }
+
+
+// ---FOR CWL---
+
+// export async function getCurrentCWL() {
+//   const res = await fetch(`https://cocproxy.royaleapi.dev/v1/clans/${process.env.CLAN_TAG}/currentwar/leaguegroup`, {
+//     headers: {
+//       "Authorization": `Bearer ${process.env.COC_API_KEY}`,
+//     },
+//     next: { revalidate: 60 },
+//   });
+
+//   if (!res.ok) return null;
+//   return res.json();
+// }
+
+// export async function getRoundsCWL() {
+//   const res = await fetch(`https://cocproxy.royaleapi.dev/v1/clanwarleagues/wars/{warTag}`, {
+//     headers: {
+//       "Authorization": `Bearer ${process.env.COC_API_KEY}`,
+//     },
+//     next: { revalidate: 60 },
+//   });
+
+//   if (!res.ok) return null;
+//   return res.json();
+// }

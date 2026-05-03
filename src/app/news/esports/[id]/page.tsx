@@ -117,7 +117,7 @@ export default async function EsportDetailPage({
       "@type": "VideoObject",
       "name": article.title,
       "description": plainTextDescription,
-      "thumbnailUrl": [`https://img.youtube.com/vi/${youtubeId}/maxresdefault.jpg`],
+      "thumbnailUrl": [`https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`],
       "uploadDate": new Date(article.postDate).toISOString(),
       "embedUrl": youtubeEmbedUrl
     };

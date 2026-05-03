@@ -47,7 +47,7 @@ export default function NewsCard({
           {youtubeEmbedUrl ? (
             <div className="relative w-full h-full bg-black overflow-hidden">
               <img
-                src={`https://img.youtube.com/vi/${youtubeId}/maxresdefault.jpg`}
+                src={`https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`}
                 alt={title}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
