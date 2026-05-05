@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Send, User, Trash2 } from "lucide-react";
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 const STORAGE_KEY = "aaa-gang-chat-log";
 const initialMessages = [
@@ -20,6 +21,7 @@ export default function ChatInterface() {
   const placeholderOptions = [
     "Ask Sigma",
     "Ada slot kosong ga di clan saat ini?",
+    "Lavaloon puppetku level 12 ke max butuh berapa ore?",
     "Apa rules clan ini?",
     "Apa benar Agung-R1-Distill-Llama-70B model yang bagus?",
     "Siapa leader clan ini?"
@@ -177,7 +179,40 @@ export default function ChatInterface() {
             }`}>
               {msg.role === "ai" ? (
                 <div className="prose prose-invert max-w-none prose-p:leading-relaxed prose-strong:text-amber-300 prose-strong:font-semibold">
-                  <ReactMarkdown>{msg.text}</ReactMarkdown>
+                  <ReactMarkdown
+                    remarkPlugins={[remarkGfm]}
+                    components={{
+                      ul: ({ children }) => (
+                        <ul className="list-disc list-inside my-3 ml-2 space-y-1">
+                          {children}
+                        </ul>
+                      ),
+                      ol: ({ children }) => (
+                        <ol className="list-decimal list-outside my-3 ml-6 space-y-1">
+                          {children}
+                        </ol>
+                      ),
+                      table: ({ children }: any) => (
+                        <div className="overflow-x-auto my-4">
+                          <table className="w-full border-collapse border border-white/10">
+                            {children}
+                          </table>
+                        </div>
+                      ),
+                      th: ({ children }: any) => (
+                        <th className="border border-white/10 px-3 py-2 bg-white/5 font-semibold">
+                          {children}
+                        </th>
+                      ),
+                      td: ({ children }: any) => (
+                        <td className="border border-white/10 px-3 py-2">
+                          {children}
+                        </td>
+                      )
+                    }}
+                  >
+                    {msg.text}
+                  </ReactMarkdown>
                 </div>
               ) : (
                 msg.text
