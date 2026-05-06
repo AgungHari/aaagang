@@ -1,4 +1,4 @@
-import { Medal, Users, Sword, Coffee, Info, HatGlasses, Phone, Scale, Copyright } from "lucide-react";
+import { Medal, Users, Sword, Coffee, Info, HatGlasses, Phone, Scale, Copyright, FileUser } from "lucide-react";
 import { siGithub } from 'simple-icons';
 import Link from "next/link";
 

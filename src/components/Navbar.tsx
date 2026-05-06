@@ -42,9 +42,6 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
             alt="Badge" 
             className="w-8 h-8 drop-shadow-[0_0_10px_rgba(245,158,11,0.5)]" 
           />
-          <span className="text-xl text-amber-500 tracking-tighter hidden sm:inline tracking-tighter uppercase">
-            AAA GANGS
-          </span>
         </Link>
 
         {/* Desktop Menu - Centered */}
