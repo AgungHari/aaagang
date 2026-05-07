@@ -12,9 +12,11 @@ import MorphingTitle from "@/components/MorphingTitle";
 import Link from "next/link";
 import Image from "next/image";
 import CookiebotProvider from "@/components/CookiebotProvider";
+import { MapWithMarkers } from "@/components/mapwithmarker";
 import { 
   Sigma,
-  UserPlus, ChevronRightIcon, Baby, HandHeart, Swords
+  UserPlus, ChevronRightIcon, Baby, HandHeart, Swords,
+  Scroll
 } from "lucide-react";
 import { getClanData, getCurrentWar, getWarLog } from "@/lib/coc";
 
@@ -220,7 +222,7 @@ export default async function Home() {
       </div>
 
       {/* Clan Capital & War Status */}
-      <div className="max-w-7xl mx-auto px-6 mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+      <div className="max-w-7xl mx-auto px-6 mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch mb-[200px]">
         <ClanCapitalCard
           capitalLeagueName={clan.capitalLeague?.name}
           clanCapitalPoints={clan.clanCapitalPoints}
@@ -237,13 +239,58 @@ export default async function Home() {
         />
       </div>
 
-      <WarTestimonial warLog={warLog} />
-
       {/* Hall of Fame */}
       <HallOfFame isWar={isWar} war={war} />
 
-      {/* War Testimonials - War Chronicles */}
+      <WarTestimonial warLog={warLog} />
 
+      <div className="max-w-7xl w-full px-6 mx-auto mt-12 mb-24"> 
+        <div className="mb-12">
+          <div className="text-amber-500 text-5xl md:text-5xl mb-4" style={{ fontFamily: "'Docallisme', sans-serif" }}>
+            OUR <span className="text-amber-500">GLOBAL</span><span className="text-amber-500"> PRESENCE</span>
+          </div>
+          <p className="text-zinc-400 text-sm md:text-sm font-poppins">
+            Kenapa bos? kalau mau nyenggol gausah di chat. Langsung cek posisi gas berangkat,<br/> bebas mau nyenggol siapa aja yang penting <span className="text-amber-700">ga tiba tiba masuk klan ngomong kasar abis itu cabut.</span>
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
+            {[
+              { name: "Indonesia", players: 34, code: "id" },
+              { name: "Australia", players: 4, code: "au" },
+              { name: "Pakistan", players: 2, code: "pk" },
+              { name: "Malaysia", players: 1, code: "my" }, 
+              { name: "Sri Lanka", players: 1, code: "lk" },
+              { name: "Thailand", players: 1, code: "th" }
+            ].map((location, index) => (
+              <ScrollReveal key={index} delay={index * 0.1} mobileDelay={0.1}>
+                <div className="h-full w-full flex flex-col justify-center bg-zinc-900/20 border border-zinc-800/50 rounded-xl p-4 hover:border-amber-500/30 transition-all group w-full">
+                  <div className="flex items-center gap-3 mb-1">
+                    <img 
+                      src={`https://flagcdn.com/${location.code}.svg`} 
+                      width="24" 
+                      alt={`${location.name} flag`} 
+                    />
+                      <h3 className="text-sm font-black uppercase tracking-tighter text-white">
+                        {location.name}
+                      </h3>
+                  </div>
+                  <div className="text-xl font-semibold text-zinc-300">
+                    {location.players}
+                  </div>
+                  <div className="text-[10px] text-zinc-600 font-bold uppercase tracking-wider mt-1">
+                    Active Members
+                  </div>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+          <div className="h-full w-full rounded-xl overflow-hidden relative z-0 shrink-0">
+            <MapWithMarkers />
+          </div>
+        </div>
+      </div>
 
       {/* 2. Footer Component */}
       <Footer clan={clan} />

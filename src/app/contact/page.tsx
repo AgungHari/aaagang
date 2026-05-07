@@ -3,8 +3,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { getClanData } from "@/lib/coc";
 import Link from "next/link";
-import { Mail, MapPin, Clock, ExternalLink, MessageCircle, Sigma } from "lucide-react";
+import { Mail, MapPin, Clock, ExternalLink, Phone, Sigma } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
+import { MapWithMarkers } from "@/components/mapwithmarkeroff";
 
 export default async function ContactPage() {
   const clan = await getClanData();
@@ -53,7 +54,7 @@ export default async function ContactPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />
-      <main className="flex-grow container mx-auto px-4 py-8 md:py-16 font-poppins">
+      <main className="flex-grow container mx-auto px-6 py-8 md:py-16 font-poppins">
        <ScrollReveal delay={0.1} mobileDelay={0.1}>
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl text-center tracking-wider mt-13 mb-4 text-amber-500" style={{ fontFamily: "'Docallisme', sans-serif" }}>
@@ -63,7 +64,7 @@ export default async function ContactPage() {
             Have questions or want to join our clan? Get in touch with us!
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             {/* Clan Information */}
             <div className="bg-zinc-900/30 border border-amber-500/20 rounded-2xl p-6 hover:border-amber-500/50 transition-all flex flex-col">
               <h2 className="text-xl font-bold mb-4 text-white">Clan Information</h2>
@@ -73,7 +74,7 @@ export default async function ContactPage() {
                   <MapPin className="text-amber-500 mt-1 flex-shrink-0" size={18} />
                   <div>
                     <h3 className="text-white">Location</h3>
-                    <p className="text-zinc-400 text-sm">Indonesia</p>
+                    <p className="text-zinc-400 text-sm">Markas Besar di pin</p>
                   </div>
                 </div>
 
@@ -132,8 +133,8 @@ export default async function ContactPage() {
                   href="mailto:elder@3agang.pro"
                   className="w-full flex items-center justify-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-white rounded-xl px-6 h-11 transition-all"
                 >
-                  <Mail size={16} />
-                  <span>elder (Nia : +62 881-0827-88959)</span>
+                  <Phone size={16} />
+                  <span>Nia : +62 881082788959</span>
                 </Link>
 
                 <Link
@@ -146,6 +147,9 @@ export default async function ContactPage() {
               </div>
             </div>
           </div>
+          <div className="h-full w-full">
+            <MapWithMarkers />
+        </div>
         </div>
        </ScrollReveal>
       </main>

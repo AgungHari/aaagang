@@ -12,7 +12,7 @@ interface Message {
 
 const STORAGE_KEY = "aaa-gang-chat-log";
 const MODEL_OPTIONS = [
-  { value: "plateau", label: "Plateau", description: "Peak - Nas Kleng!", disabled: true },
+  { value: "plateau", label: "Plateau", description: "Flagship - 100T Kleng!", disabled: true },
   { value: "absolute", label: "Absolute", description: "Insane - 'The All Knowing'", disabled: true },
   { value: "ultra", label: "Ultra", description: "Reasoning - Search & OCR", disabled: true },
   { value: "pro", label: "Pro", description: "Reasoning - Smart", disabled: true },

@@ -30,7 +30,7 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
   return (
     <>
       <motion.nav 
-        className="fixed top-0 z-50 flex items-center justify-between w-full py-4 px-6 md:px-16 lg:px-24 xl:px-32 backdrop-blur bg-black/20"
+        className="fixed top-0 z-[999] flex items-center justify-between w-full py-4 px-6 md:px-16 lg:px-24 xl:px-32 backdrop-blur bg-black/20"
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         viewport={{ once: true }}

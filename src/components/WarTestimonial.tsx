@@ -45,7 +45,7 @@ export default function WarTestimonial({ warLog }: WarTestimonialProps) {
 
   return (
     // Container utama section
-    <div id="war-testimonials" className="pt-10 px-4 md:px-16 lg:px-24 xl:px-32">
+    <div id="war-testimonials" className="pt-10 px-4 md:px-16 lg:px-24 xl:px-32 mb-[300px]">
 
         <ScrollReveal delay={0.2}>
         <div className="max-w-4xl mx-auto mt-11 text-center mb-8">
