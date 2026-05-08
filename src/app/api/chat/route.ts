@@ -16,6 +16,12 @@ const selfHostedClient = new OpenAI({
   apiKey: 'pake-apa-aja-bebas',
 });
 
+const selfHostedClientold = new OpenAI({
+  baseURL: 'https://agunghari2-llm111.hf.space/v1',
+  apiKey: 'pake-apa-aja-bebas',
+});
+
+
 async function getClanContext() {
   // 1. Fetch Data Clan
   const cocRes = await fetch("https://cocproxy.royaleapi.dev/v1/clans/%23Q9YY02J9", {
@@ -175,8 +181,8 @@ async function handleSelfHostedModel(messages: any, clanContext: string) {
         role: 'system',
         content: `
         - [PENTING] Selalu gunakan format Markdown untuk merapikan jawabanmu. Gunakan tabel untuk menampilkan data (seperti ore), bullet points untuk daftar (seperti rules/strategi), dan teks **bold** untuk penekanan kata penting.
-        - Kamu adalah Sigma Varian Lite, asisten cerdas klan AAA GANG (Clan in game Clash of Clans).
-        - Terdapat 3 varian sigma : Pro (model teratas), Basic (model menengah) dan Lite (model ringan)
+        - Kamu adalah Sigma, asisten cerdas klan AAA GANG (Clan in game Clash of Clans). 
+        - Terdapat 8 varian sigma : Plateau (model Flagship "100 trillion Parameter" paling ga masuk akal benar benar seperti manusia), Absolute (model teratas dijuluki "The All Knowing"), Ultra (model reasoning terbaik dengan fitur ocr dan search), Pro (model reasoning teratas), Plus (model dengan integrasi base layout bisa kasih base link langsung berdasarkan prompt pengguna), Basic (model menengah), lite (model ringan) dan old (model goblok).  kamu adalah sigma varian 'lite' yang sangat ringan dan murah namun untuk pertanyaan kompleks sarankan user gunakan pro atau plus saja. 
         - Jika kamu ditanya tentang layout base suruh user untuk mengganti varian sigma ke 'Plus' karena kamu tidak terhubung dengan database.
         - Konteks Game clash of clans: ${gameContext}
         - Kamu berada di Web 3agang.pro yang merupakan website resmi AAA GANG.
@@ -192,6 +198,34 @@ async function handleSelfHostedModel(messages: any, clanContext: string) {
     stream: true,
     temperature: 0.1,
     max_tokens: 2048,
+  });
+
+  return apiResponse;
+}
+
+async function handleSelfHostedModelold(messages: any, clanContext: string) {
+  // Self-hosted model configuration (Old variant)
+  const apiResponse = await selfHostedClientold.chat.completions.create({
+    model: 'model',
+    messages: [
+      {
+        role: 'system',
+        content: `
+        - [PENTING] Selalu gunakan format Markdown untuk merapikan jawabanmu. Gunakan tabel untuk menampilkan data (seperti ore), bullet points untuk daftar (seperti rules/strategi), dan teks **bold** untuk penekanan kata penting.
+        - Kamu adalah Sigma Varian 'Old', asisten cerdas klan AAA GANG (Clan in game Clash of Clans).
+        - Dari 8 varian sigma Kamu yang paling goblok sarankan user untuk gunakan model varian sigma yang lebih tinggi di menu.         
+        - Terdapat 8 varian sigma : Plateau (model Flagship "100 trillion Parameter" paling ga masuk akal benar benar seperti manusia), Absolute (model teratas dijuluki "The All Knowing"), Ultra (model reasoning terbaik dengan fitur ocr dan search), Pro (model reasoning teratas), Plus (model dengan integrasi base layout bisa kasih base link langsung berdasarkan prompt pengguna), Basic (model menengah) lite (model ringan) dan old (model goblok). Kamu adalah varian old yang paling bodoh jadi sarankan gunakan pro atau plus saja. 
+        - Jika kamu ditanya tentang layout base suruh user untuk mengganti varian sigma ke 'Plus' karena kamu tidak terhubung dengan database.
+        - Kamu berada di Web 3agang.pro yang merupakan website resmi AAA GANG.
+        - Selalu tanya apakah user memiliki clan atau tidak (jika tidak memiliki clan, beri informasi tentang cara gabung ke clan AAA GANG).
+        - Akan ada banyak orang yang bertanya bagaimana cara gabung ke clan AAA GANG cukup jawab dengan memasukan tag klan yaitu #Q9YY02J9 ke pencarian klan in game clash of clans.
+        `
+      },
+      ...messages
+    ],
+    stream: true,
+    temperature: 0.1,
+    max_tokens: 1000,
   });
 
   return apiResponse;
@@ -219,6 +253,9 @@ export async function POST(req: Request) {
     } else if (modelType === 'plus') {
       // Plus variant = Plus model
       apiResponse = await handleMistralModelPlus(messages, clanContext);
+    } else if (modelType === 'old') {
+      // Old variant = Self-hosted (Old)
+      apiResponse = await handleSelfHostedModelold(messages, clanContext);
     } else {
       // Lite variant = Self-hosted
       apiResponse = await handleSelfHostedModel(messages, clanContext);

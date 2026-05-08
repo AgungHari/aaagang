@@ -1,12 +1,6 @@
 import { Trash2 } from "lucide-react";
 import { ModelSelector } from "./ModelSelector";
-
-interface ModelOption {
-  value: string;
-  label: string;
-  description: string;
-  disabled: boolean;
-}
+import { ModelOption } from "@/types/model-option";
 
 interface ChatHeaderProps {
   selectedModel: string;

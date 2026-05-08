@@ -98,7 +98,7 @@ export default async function KontakPage() {
             TRIPLE <span className="text-amber-500">AI `SIGMA'</span>
           </h1>
           <p className="mt-5 text-zinc-500 font-bold uppercase tracking-[0.2em] text-[10px]">
-            Tanya info klan, rules, base terkuat, grup discord, apapun yang kamu butuhkan!
+            Tanya apapun pada sigma, tersedia berbagai varian sigma untuk semua kebutuhan! <br />Note: Kami tidak mengungut biaya sedikitpun ( gratis selamanya / Rp.0 )
           </p>
         </div>
 

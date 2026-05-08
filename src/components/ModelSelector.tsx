@@ -1,12 +1,6 @@
 import { ChevronDown } from "lucide-react";
 import { useRef, useEffect } from "react";
-
-interface ModelOption {
-  value: string;
-  label: string;
-  description: string;
-  disabled: boolean;
-}
+import { ModelOption } from "@/types/model-option";
 
 interface ModelSelectorProps {
   selectedModel: string;
@@ -54,37 +48,52 @@ export function ModelSelector({
       {showDropdown && (
         <div className="absolute left-0 mt-2 w-48 bg-zinc-900/20 backdrop-blur-md border border-zinc-800 rounded-md shadow-lg z-50">
           <div className="p-2 text-xs text-zinc-400 uppercase tracking-wider">Select AI Model</div>
-          {options.map((model) => (
-            <button
-              key={model.value}
-              onClick={() => {
-                if (!model.disabled) {
-                  onModelChange(model.value);
-                }
-              }}
-              disabled={model.disabled}
-              className={`w-full text-left px-3 py-2 text-sm flex items-center gap-2 transition-colors ${
-                model.disabled 
-                  ? 'opacity-50 cursor-not-allowed' 
-                  : 'hover:bg-zinc-800 cursor-pointer'
-              } ${
-                selectedModel === model.value ? 'bg-zinc-800 text-amber-400' : 'text-zinc-300'
-              }`}
-            >
-              <span className={`w-2 h-2 rounded-full ${model.disabled ? 'bg-zinc-600' : 'bg-amber-500'} opacity-50`}></span>
-              <div className="flex-1">
-                <div className="font-medium flex items-center gap-2">
-                  {model.label}
+          {options.map((model, index) => {
+            if (model.isSeparator) {
+              return (
+                <div key={`separator-${index}`} className="px-3 py-2">
+                  <div className="border-t border-zinc-700/50 my-2"></div>
+                  <div className="text-[10px] text-center text-amber-400/80 uppercase tracking-wider py-1 font-medium">
+                    {model.label}
+                    <br/><span className="text-[7px] text-zinc-400">3agang.pro/admin/dashboard</span>
+                  </div>
+                  <div className="border-t border-zinc-700/50 mt-2"></div>
                 </div>
-                <div className="text-xs text-zinc-400">{model.description}</div>
+              );
+            }
+
+            return (
+              <button
+                key={model.value}
+                onClick={() => {
+                  if (!model.disabled) {
+                    onModelChange(model.value);
+                  }
+                }}
+                disabled={model.disabled}
+                className={`w-full text-left px-3 py-2 text-sm flex items-center gap-2 transition-colors ${
+                  model.disabled
+                    ? 'opacity-60 cursor-not-allowed'
+                    : 'hover:bg-zinc-800 cursor-pointer'
+                } ${
+                  selectedModel === model.value ? 'bg-zinc-800 text-amber-400' : 'text-zinc-300'
+                }`}
+              >
+                <span className={`w-2 h-2 rounded-full ${model.disabled ? 'bg-zinc-600' : 'bg-amber-500'} opacity-50`}></span>
+                <div className="flex-1">
+                  <div className="font-medium flex items-center gap-2">
+                    {model.label}
+                  </div>
+                  <div className="text-xs text-zinc-400">{model.description}</div>
+                </div>
+                {selectedModel === model.value && !model.disabled && (
+                  <span className="text-amber-400 text-xs">✓</span>
+                )}
+              </button>
+            );
+          })}
+                  </div>
+                )}
               </div>
-              {selectedModel === model.value && !model.disabled && (
-                <span className="text-amber-400 text-xs">✓</span>
-              )}
-            </button>
-          ))}
-        </div>
-      )}
-    </div>
-  );
-}
+            );
+          }

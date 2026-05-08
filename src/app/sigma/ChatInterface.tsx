@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { ChatHeader } from "@/components/ChatHeader";
 import { ChatMessages } from "@/components/ChatMessages";
 import { ChatInput } from "@/components/ChatInput";
+import { ModelOption } from "@/types/model-option";
 
 interface Message {
   role: "ai" | "user";
@@ -14,17 +15,19 @@ interface Message {
 const STORAGE_KEY = "aaa-gang-chat-log";
 const MODEL_OPTIONS = [
   { value: "plateau", label: "Plateau", description: "Flagship - 100T Kleng!", disabled: true },
+  { value: "co-leader-separator", label: "Co Leader Only", isSeparator: true },
   { value: "absolute", label: "Absolute", description: "Insane - 'The All Knowing'", disabled: true },
-  { value: "ultra", label: "Ultra", description: "Reasoning - Search & OCR", disabled: true },
+  { value: "ultra", label: "Ultra", description: "Complex - OCR & Search", disabled: true },
+  { value: "clan-member-separator", label: "Clan Member Only", isSeparator: true },
   { value: "pro", label: "Pro", description: "Reasoning - Smart", disabled: false },
   { value: "plus", label: "Plus", description: "More - Base Search", disabled: false },
   { value: "basic", label: "Basic", description: "Default - Fast", disabled: false },
   { value: "lite", label: "Lite", description: "Legacy - Selfhosted", disabled: false },
-  { value: "old", label: "Old", description: "Legacy - Slow & Yapping", disabled: true },
+  { value: "old", label: "Old", description: "Legacy - Slow & Yapping", disabled: false },
 ];
 
 const initialMessages: Message[] = [
-  { role: "ai", text: "Aku Sigma yang jaga klan ini, kamu siapa?" }
+  { role: "ai", text: "Aku sigma yang jaga klan ini, silahkan tanyakan apapun!" }
 ];
 
 const placeholderOptions = [
