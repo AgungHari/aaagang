@@ -8,6 +8,7 @@ import { ChatInput } from "@/components/ChatInput";
 interface Message {
   role: "ai" | "user";
   text: string;
+  thinking?: string; // Optional untuk teks "mikir"
 }
 
 const STORAGE_KEY = "aaa-gang-chat-log";
@@ -15,8 +16,8 @@ const MODEL_OPTIONS = [
   { value: "plateau", label: "Plateau", description: "Flagship - 100T Kleng!", disabled: true },
   { value: "absolute", label: "Absolute", description: "Insane - 'The All Knowing'", disabled: true },
   { value: "ultra", label: "Ultra", description: "Reasoning - Search & OCR", disabled: true },
-  { value: "pro", label: "Pro", description: "Reasoning - Smart", disabled: true },
-  { value: "plus", label: "Plus", description: "More - For Base Search", disabled: true },
+  { value: "pro", label: "Pro", description: "Reasoning - Smart", disabled: false },
+  { value: "plus", label: "Plus", description: "More - Base Search", disabled: false },
   { value: "basic", label: "Basic", description: "Default - Fast", disabled: false },
   { value: "lite", label: "Lite", description: "Legacy - Selfhosted", disabled: false },
   { value: "old", label: "Old", description: "Legacy - Slow & Yapping", disabled: true },
@@ -28,10 +29,14 @@ const initialMessages: Message[] = [
 
 const placeholderOptions = [
   "Ask Sigma",
+  "Base TH 17 buat legends league?",
   "Ada slot kosong ga di clan saat ini?",
-  "Lavaloon puppetku level 12 ke max butuh berapa ore?",
+  "Lavaloon puppetku level 12",
+  "ke max butuh berapa ore?",
   "Apa rules clan ini?",
-  "Apa benar Agung-R1-Distill-Llama-70B model yang bagus?",
+  "Apa benar Agung-R1-Distill",
+  "Llama-70B model yang bagus?",
+  "Base TH 18 siap CWL",
   "Siapa leader clan ini?"
 ];
 
@@ -112,30 +117,74 @@ export default function ChatInterface() {
       if (!response.body) throw new Error("Gak ada body stream");
 
       const reader = response.body.getReader();
+      const decoder = new TextDecoder("utf-8");
+      
       let accumulatedText = "";
+      let accumulatedThinking = "";
 
       // Loop untuk membaca stream per chunk
       while (true) {
         const { done, value } = await reader.read();
         if (done) break;
 
-        const chunk = new TextDecoder().decode(value);
-        accumulatedText += chunk;
+        const chunk = decoder.decode(value, { stream: true });
+        const lines = chunk.split("\n");
 
-        // Update pesan terakhir (pesan AI) secara real-time
+        for (const line of lines) {
+          // Lewati baris kosong atau sinyal [DONE]
+          if (line.trim() === "" || line.includes("[DONE]")) continue;
+
+          if (line.startsWith("data: ")) {
+            try {
+              const jsonString = line.replace(/^data: /, "");
+              const parsed = JSON.parse(jsonString);
+              
+              const delta = parsed.choices?.[0]?.delta || {};
+
+              if (delta.content) {
+                if (Array.isArray(delta.content)) {
+                  // Kalau bentuknya Array, berarti dia lagi "Mikir" (Format Magistral)
+                  for (const item of delta.content) {
+                    if (item.type === "thinking" && Array.isArray(item.thinking)) {
+                      for (const thinkItem of item.thinking) {
+                        if (thinkItem.type === "text" && thinkItem.text) {
+                          accumulatedThinking += thinkItem.text;
+                        }
+                      }
+                    }
+                  }
+                } else if (typeof delta.content === "string") {
+                  // Kalau bentuknya String, berarti dia lagi "Bicara" jawaban akhir
+                  accumulatedText += delta.content;
+                }
+              }
+
+              // 2. Ambil teks "mikir" (Support format Mistral & model lain)
+              // Mistral pakai delta.reasoning
+              // DeepSeek/lainnya pakai delta.reasoning_content
+              const thinkingPart = delta.reasoning || delta.reasoning_content;
+              if (thinkingPart) {
+                accumulatedThinking += thinkingPart;
+              }
+
+            } catch (e) {
+              console.warn("Skip chunk error (bukan JSON):", line);
+            }
+          }
+        }
+
+        // Langsung tembak ke UI biar animasinya mulus
         setMessages((prev) => {
           const updated = [...prev];
-          updated[updated.length - 1].text = accumulatedText;
+          const lastIndex = updated.length - 1;
+          updated[lastIndex] = {
+            ...updated[lastIndex],
+            text: accumulatedText,
+            thinking: accumulatedThinking
+          };
           return updated;
         });
       }
-    } catch (error) {
-      console.error("Stream error:", error);
-      setMessages((prev) => {
-        const updated = [...prev];
-        updated[updated.length - 1].text = "Otak gue lagi korslet, ntar balik lagi!";
-        return updated;
-      });
     } finally {
       setIsLoading(false);
     }
