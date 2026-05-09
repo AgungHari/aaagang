@@ -1,12 +1,46 @@
-import { User } from "lucide-react";
+import { User, Copy, Check } from "lucide-react";
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import { useState } from 'react';
+
+interface GalleryItem {
+  id: string;
+  name: string;
+  thLevel: number;
+  imageUrl: string;
+  baseUrl: string;
+}
 
 interface MessageItemProps {
   role: "user" | "ai";
   text: string;
   thinking?: string;
 }
+
+// Fungsi untuk parse [GALLERY_DATA] dari pesan
+function parseGalleryData(text: string): { textContent: string; galleries: GalleryItem[] } {
+  // Regex yang lebih fleksibel: match [GALLERY_DATA] diikuti JSON array
+  const galleryRegex = /\[GALLERY_DATA\]\s*(\[[\s\S]*?\])\s*(?:\[\/GALLERY_DATA\])?/;
+  const match = text.match(galleryRegex);
+
+  let galleries: GalleryItem[] = [];
+  let textContent = text;
+
+  if (match && match[1]) {
+    try {
+      const jsonStr = match[1].trim();
+      galleries = JSON.parse(jsonStr);
+      // Hapus tag [GALLERY_DATA] dan JSON-nya dari teks
+      textContent = text.replace(galleryRegex, '').trim();
+    } catch (e) {
+      console.error('Error parsing GALLERY_DATA:', e);
+      textContent = text;
+    }
+  }
+
+  return { textContent, galleries };
+}
+
 const markdownComponents = {
   ul: ({ children }: any) => (
     <ul className="list-disc list-inside my-3 ml-2 space-y-1">{children}</ul>
@@ -27,7 +61,88 @@ const markdownComponents = {
   ),
 };
 
+// Komponen untuk menampilkan satu kartu gallery
+function GalleryCard({ item }: { item: GalleryItem }) {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(item.baseUrl);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+  return (
+    <a href={item.baseUrl} target="_blank" rel="noopener noreferrer">
+      <div className="group relative overflow-hidden rounded-lg border border-amber-500/20 bg-zinc-900/50 backdrop-blur-sm transition-all duration-300 hover:border-amber-500/40 hover:shadow-lg hover:shadow-amber-500/10">
+        {/* Image Container */}
+        <div className="relative h-40 w-full overflow-hidden bg-zinc-950">
+          <img
+            src={item.imageUrl}
+            alt={item.name}
+            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+          />
+          {/* Overlay Gradient */}
+          <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300" />
+        </div>
+
+        {/* Content */}
+        <div className="relative p-4">
+          <h3 className="mb-2 line-clamp-2 text-sm font-semibold text-amber-100 group-hover:text-amber-300 transition-colors">
+            {item.name}
+          </h3>
+          <div className="mb-3 flex items-center gap-2">
+            <span className="inline-block rounded-full bg-amber-500/20 px-2.5 py-1 text-xs font-medium text-amber-300">
+              TH {item.thLevel}
+            </span>
+          </div>
+
+          {/* Copy Button */}
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              handleCopy();
+            }}
+            className="w-full flex items-center justify-center gap-2 rounded-md bg-amber-500/10 px-3 py-2 text-xs font-medium text-amber-300 transition-all duration-200 border border-amber-500/20 hover:bg-amber-500/20 hover:border-amber-500/40"
+          >
+            {copied ? (
+              <>
+                <Check size={14} />
+                <span>Copied!</span>
+              </>
+            ) : (
+              <>
+                <Copy size={14} />
+                <span>Copy Layout</span>
+              </>
+            )}
+          </button>
+        </div>
+      </div>
+    </a>
+  );
+}
+
+// Komponen untuk menampilkan grid gallery
+function GalleryGrid({ items }: { items: GalleryItem[] }) {
+  if (!items || items.length === 0) return null;
+
+  return (
+    <div className="my-5 rounded-lg border border-amber-500/15 bg-black/30 p-4 backdrop-blur-sm">
+      <p className="mb-4 text-xs font-semibold text-amber-300/70 uppercase tracking-widest">
+        🔗 Recommended Layouts
+      </p>
+      <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        {items.map((item) => (
+          <GalleryCard key={item.id} item={item} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export function MessageItem({ role, text, thinking }: MessageItemProps) {
+  const { textContent, galleries } = parseGalleryData(text);
+
   return (
     <div
       className={`flex items-end gap-3 ${role === "user" ? "justify-end" : "justify-start"}`}
@@ -64,12 +179,16 @@ export function MessageItem({ role, text, thinking }: MessageItemProps) {
               </div>
             )}
 
-            <ReactMarkdown
-              remarkPlugins={[remarkGfm]}
-              components={markdownComponents}
-            >
-              {text}
-            </ReactMarkdown>
+            {textContent && (
+              <ReactMarkdown
+                remarkPlugins={[remarkGfm]}
+                components={markdownComponents}
+              >
+                {textContent}
+              </ReactMarkdown>
+            )}
+
+            {galleries.length > 0 && <GalleryGrid items={galleries} />}
             
           </div>
         ) : (

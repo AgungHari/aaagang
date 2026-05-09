@@ -15,12 +15,13 @@ interface Message {
 const STORAGE_KEY = "aaa-gang-chat-log";
 const MODEL_OPTIONS = [
   { value: "plateau", label: "Plateau", description: "Flagship - 100T Kleng!", disabled: true },
-  { value: "co-leader-separator", label: "Co Leader Only", isSeparator: true },
+  { value: "co-leader-separator", label: "Co Leader Only", isSeparator: true, dashboardOnly: true },
   { value: "absolute", label: "Absolute", description: "Insane - 'The All Knowing'", disabled: true },
-  { value: "ultra", label: "Ultra", description: "Complex - OCR & Search", disabled: true },
-  { value: "clan-member-separator", label: "Clan Member Only", isSeparator: true },
+  { value: "ultra", label: "Ultra", description: "Complex - Reddit Scraper", disabled: true },
+  { value: "clan-member-separator", label: "Clan Member Only", isSeparator: true, dashboardOnly: true },
   { value: "pro", label: "Pro", description: "Reasoning - Smart", disabled: false },
   { value: "plus", label: "Plus", description: "More - Base Search", disabled: false },
+  { value: "base-search-separator", label: "Base Search", isSeparator: true },
   { value: "basic", label: "Basic", description: "Default - Fast", disabled: false },
   { value: "lite", label: "Lite", description: "Legacy - Selfhosted", disabled: false },
   { value: "old", label: "Old", description: "Legacy - Slow & Yapping", disabled: false },
@@ -47,7 +48,7 @@ export default function ChatInterface() {
   const [messages, setMessages] = useState(initialMessages);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [selectedModel, setSelectedModel] = useState("basic");
+  const [selectedModel, setSelectedModel] = useState("plus");
   const [showModelDropdown, setShowModelDropdown] = useState(false);
 
   // Load chat dari localStorage

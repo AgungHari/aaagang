@@ -39,19 +39,25 @@ export async function getLayoutBaseContext(): Promise<LayoutBaseContextType> {
     // Fetch data dari database
     const result = await client.execute("SELECT * FROM layouts ORDER BY view_count DESC LIMIT 50");
 
-    const layouts: LayoutBase[] = result.rows.map(row => ({
-      id: String(row.id),
-      name: row.name ? String(row.name) : "Unnamed Layout",
-      thLevel: row.th_level ? Number(row.th_level) : 0,
-      description: row.description ? String(row.description) : "No description available",
-      recommendedFor: getRecommendedForTags(String(row.base_tag || "")),
-      imageUrl: row.image_url ? String(row.image_url) : "",
-      baseUrl: `https://www.3agang.pro/layout/${row.id}`,
-      tags: getTagsFromBaseTag(String(row.base_tag || "")),
-      baseTag: row.base_tag ? String(row.base_tag) : "general",
-      viewCount: row.view_count ? Number(row.view_count) : 0,
-      uploadDate: row.upload_date ? String(row.upload_date) : ""
-    }));
+    const layouts: LayoutBase[] = result.rows.map(row => {
+      const description = row.description ? String(row.description) : "No description available";
+      const baseTag = String(row.base_tag || "");
+      const thLevel = row.th_level ? Number(row.th_level) : 0;
+      
+      return {
+        id: String(row.id),
+        name: extractNameFromDescription(description, baseTag, thLevel),
+        thLevel: thLevel,
+        description: description,
+        recommendedFor: getRecommendedForTags(baseTag),
+        imageUrl: row.image_url ? String(row.image_url) : "",
+        baseUrl: `https://www.3agang.pro/layout/${row.id}`,
+        tags: getTagsFromBaseTag(baseTag),
+        baseTag: baseTag,
+        viewCount: row.view_count ? Number(row.view_count) : 0,
+        uploadDate: row.upload_date ? String(row.upload_date) : ""
+      };
+    });
 
     return {
       recommendedLayouts: layouts,
@@ -85,6 +91,57 @@ export async function getLayoutBaseContext(): Promise<LayoutBaseContextType> {
       getRecommendedLayouts: () => []
     };
   }
+}
+
+// Helper function untuk extract nama dari markdown description
+function extractNameFromDescription(description: string, baseTag: string, thLevel: number): string {
+  if (!description || description === "No description available") {
+    return generateNameFromTag(baseTag, thLevel);
+  }
+
+  // Coba extract judul dari markdown format: "# Title" atau "## Title"
+  const headingMatch = description.match(/^#{1,2}\s+(.+?)(?:\n|$)/m);
+  if (headingMatch && headingMatch[1]) {
+    return headingMatch[1].trim();
+  }
+
+  // Fallback: ambil kata pertama yang meaningful dari description
+  const firstLine = description.split('\n')[0];
+  if (firstLine && firstLine.length > 0 && firstLine.length < 60) {
+    // Bersihkan markdown syntax
+    const cleaned = firstLine
+      .replace(/[#*_`\[\]()]/g, '')
+      .replace(/^\*\*/, '')
+      .replace(/\*\*$/, '')
+      .trim();
+    
+    if (cleaned && cleaned.length > 3) {
+      return cleaned;
+    }
+  }
+
+  // Last resort: generate dari base_tag
+  return generateNameFromTag(baseTag, thLevel);
+}
+
+// Helper function untuk generate nama dari base_tag dan thLevel
+function generateNameFromTag(baseTag: string, thLevel: number): string {
+  if (!baseTag || baseTag === "general") {
+    return `TH ${thLevel} Base`;
+  }
+
+  // Format: "anti-electro-th18" → "Anti Electro TH18"
+  const words = baseTag
+    .split(/[-_\s]+/)
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(' ');
+
+  // Add TH level jika belum ada
+  if (!words.toLowerCase().includes('th')) {
+    return `${words} TH${thLevel}`;
+  }
+
+  return words;
 }
 
 // Helper function untuk mengkonversi base_tag menjadi recommendedFor

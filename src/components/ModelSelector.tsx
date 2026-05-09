@@ -54,10 +54,16 @@ export function ModelSelector({
               return (
                 <div key={`separator-${index}`} className="px-3 py-2">
                   <div className="border-t border-zinc-700/50 my-2"></div>
-                  <div className="text-[10px] text-center text-amber-400/80 uppercase tracking-wider py-1 font-medium">
-                    {model.label}
-                    <br/><span className="text-[7px] text-zinc-400">3agang.pro/admin/dashboard</span>
-                  </div>
+                    <div className="text-[10px] text-center text-amber-400/80 uppercase tracking-wider py-1 font-medium">
+                      {model.label}
+                      {model.dashboardOnly && (
+                        <>
+                          <br />
+                          <span className="text-[7px] text-zinc-400">3agang.pro/admin/dashboard</span>
+                        </>
+                      )}
+                      <br/>
+                    </div>
                   <div className="border-t border-zinc-700/50 mt-2"></div>
                 </div>
               );

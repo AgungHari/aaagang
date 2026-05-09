@@ -4,4 +4,5 @@ export interface ModelOption {
   description?: string;
   disabled?: boolean;
   isSeparator?: boolean;
+  dashboardOnly?: boolean;
 }
