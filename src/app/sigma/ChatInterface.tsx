@@ -194,7 +194,7 @@ export default function ChatInterface() {
   };
 
   return (
-    <div className="ring-1 ring-white/10 flex flex-col h-[min(88vh,740px)] max-h-[calc(100vh-3rem)] overflow-hidden shadow-[0_35px_80px_rgba(0,0,0,0.35)]">
+    <div className="ring-1 ring-white/10 flex flex-col h-[min(88vh,740px)] max-h-[calc(100vh-3rem)] overflow-visible shadow-[0_35px_80px_rgba(0,0,0,0.35)]">
       <ChatHeader
         selectedModel={selectedModel}
         showModelDropdown={showModelDropdown}

@@ -33,8 +33,9 @@ export function ModelSelector({
   }, [showDropdown, onToggleDropdown]);
 
   return (
-    <div className="relative" ref={dropdownRef}>
+    <div className="relative z-10" ref={dropdownRef}>
       <button
+        type="button"
         onClick={onToggleDropdown}
         className="flex items-center gap-1 text-lg font-semibold text-zinc-200"
       >
@@ -46,7 +47,7 @@ export function ModelSelector({
       </button>
 
       {showDropdown && (
-        <div className="absolute left-0 mt-2 w-48 bg-zinc-900/20 backdrop-blur-md border border-zinc-800 rounded-md shadow-lg z-50">
+        <div className="absolute left-0 mt-2 w-full min-w-[12rem] sm:w-48 bg-zinc-900/20 backdrop-blur-md border border-zinc-800/50 rounded-md shadow-2xl z-[9999] pointer-events-auto">
           <div className="p-2 text-xs text-zinc-400 uppercase tracking-wider">Select AI Model</div>
           {options.map((model, index) => {
             if (model.isSeparator) {
