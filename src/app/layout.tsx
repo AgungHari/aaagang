@@ -89,6 +89,15 @@ export default function RootLayout({
             className="absolute top-[60%] -left-[10%] w-[30vw] h-[30vw] rounded-full blur-[100px] opacity-15"
             style={{ background: 'radial-gradient(circle, #d97706 0%, transparent 70%)' }}
           />
+
+          <div 
+            className="absolute top-[30%] left-[10%] w-[30vw] h-[30vw] rounded-full blur-[100px] opacity-15"
+            style={{ background: 'radial-gradient(circle, #d97706 0%, transparent 70%)' }}
+          />
+          <div 
+            className="absolute top-[47%] right-[20%] w-[20vw] h-[20vw] rounded-full blur-[100px] opacity-15"
+            style={{ background: 'radial-gradient(circle, #d97706 0%, transparent 70%)' }}
+          />
           
         </div>
         {/* -------------------------------------------- */}

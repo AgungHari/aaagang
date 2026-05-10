@@ -27,14 +27,15 @@ function parseGalleryData(text: string): { textContent: string; galleries: Galle
   let textContent = text;
 
   if (match && match[1]) {
+    const jsonStr = match[1].trim();
     try {
-      const jsonStr = match[1].trim();
       galleries = JSON.parse(jsonStr);
       // Hapus tag [GALLERY_DATA] dan JSON-nya dari teks
       textContent = text.replace(galleryRegex, '').trim();
     } catch (e) {
-      console.error('Error parsing GALLERY_DATA:', e);
-      textContent = text;
+      console.warn('Invalid GALLERY_DATA JSON, ignoring gallery block:', jsonStr, e);
+      textContent = text.replace(galleryRegex, '').trim();
+      galleries = [];
     }
   }
 

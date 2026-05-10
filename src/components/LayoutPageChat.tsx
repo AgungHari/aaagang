@@ -14,12 +14,13 @@ interface Message {
 
 interface LayoutPageChatProps {
   clanName: string;
+  initialMessage?: string;
 }
 
 const STORAGE_KEY = "aaa-gang-layout-chat-log";
 
 const initialMessages: Message[] = [
-  { role: "ai", text: "Selamat datang di base layout, ketik untuk mencari!" }
+  { role: "ai", text: "Selamat datang di base layout, ketik untuk mencari base!" }
 ];
 
 const placeholderOptions = [
@@ -35,8 +36,12 @@ const placeholderOptions = [
   "Siapa leader clan ini?"
 ];
 
-export default function LayoutPageChat({ clanName }: LayoutPageChatProps) {
-  const [messages, setMessages] = useState(initialMessages);
+export default function LayoutPageChat({ clanName, initialMessage }: LayoutPageChatProps) {
+  const defaultMessages: Message[] = initialMessage
+    ? [{ role: "ai", text: initialMessage }]
+    : initialMessages;
+
+  const [messages, setMessages] = useState(defaultMessages);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
@@ -67,6 +72,8 @@ export default function LayoutPageChat({ clanName }: LayoutPageChatProps) {
 
   const sendMessage = async () => {
     if (!input.trim() || isLoading) return;
+
+    setIsExpanded(true);
 
     const userMsg: Message = { role: "user", text: input };
     const newMessages = [...messages, userMsg];
@@ -168,7 +175,7 @@ export default function LayoutPageChat({ clanName }: LayoutPageChatProps) {
     <div 
       className={`transition-all duration-300 ease-out ${
         isExpanded 
-          ? "fixed inset-0 z-[9999] p-4 bg-black/50 backdrop-blur-sm" 
+          ? "fixed inset-0 z-[9999] p-4 bg-black/40 backdrop-blur-lg" 
           : "relative mb-12"
       }`}
     >
@@ -195,7 +202,7 @@ export default function LayoutPageChat({ clanName }: LayoutPageChatProps) {
             </button>
             <button
               onClick={() => setIsExpanded(!isExpanded)}
-              className="p-2 hover:bg-white/10 rounded transition-colors text-white"
+              className="p-2 hover:bg-white/10 rounded transition-colors text-white animate-pulse"
               title={isExpanded ? "Minimize" : "Expand"}
             >
               {isExpanded ? (

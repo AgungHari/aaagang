@@ -22,7 +22,7 @@ const renderSI = (icon: any, className = "text-white", size = "w-4 h-4") => {
 
 export default function Footer({ clan }: FooterProps) {
   return (
-    <footer className="mt-32 border z-[999] border-zinc-900/50 bg-[#030303] relative overflow-hidden">
+    <footer className="mt-32 border z-[200] border-zinc-900/50 bg-[#030303] relative overflow-hidden">
       <img 
         src="/badge_clan_medium.webp"
         alt="" 

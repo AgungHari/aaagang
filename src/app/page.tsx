@@ -9,6 +9,7 @@ import WarStatusCard from "@/components/WarStatusCard";
 import WarTestimonial from "@/components/WarTestimonial";
 import DecorativeHeroes from "@/components/DecorativeHeroes";
 import MorphingTitle from "@/components/MorphingTitle";
+import LayoutPageChat from "@/components/LayoutPageChat";
 import Link from "next/link";
 import Image from "next/image";
 import CookiebotProvider from "@/components/CookiebotProvider";
@@ -185,8 +186,20 @@ export default async function Home() {
         <TiltedImage />
       </section>
 
+      <div className="mb-[200px] animate-slide-up max-w-4xl mx-auto px-6">
+        <div className="text-white mx-auto text-center text-5xl md:text-5xl mb-4" style={{ fontFamily: "'Docallisme', sans-serif" }}>
+          ASK <span className="text-amber-500">SIGMA</span>
+        </div>
+        <p className="text-zinc-400 text-sm md:text-sm font-poppins text-center mb-8">
+          Bingung aturan clan, base layout dll? SIGMA siap bantu langsung aja ketik.
+        </p>
+        <LayoutPageChat 
+          clanName={clan.name} 
+          initialMessage="Sigma siap bantu. Mau tanya apa hari ini?"/>
+      </div>
+
       {/* --- WELCOME NEW MEMBER SECTION --- */}
-      {newMembers.length > 0 && (
+      {/* {newMembers.length > 0 && (
         <div className="max-w-7xl mx-auto px-6 mt-12 mb-12 animate-in fade-in slide-in-from-bottom-4 duration-700 animate-slide-up">
             <span className="text-zinc-600 text-center text-[9px] font-black tracking-[0.5em] uppercase mb-4 block">Welcome Our Newest Member</span>
             <div className="flex flex-wrap justify-center gap-4">
@@ -201,7 +214,7 @@ export default async function Home() {
               ))}
             </div>
           </div>
-        )}
+        )} */}
 
       {/* Leaderboard Cards */}
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

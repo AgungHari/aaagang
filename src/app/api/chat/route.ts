@@ -127,8 +127,14 @@ async function handleMistralModelPlus(messages: any, clanContext: string) {
                "baseUrl": "https://www.3agang.pro/layout/th18-anti-rc-charge-1"
              }
            ]
-        5. WRAP DALAM TAG: [GALLERY_DATA] dan ARRAY di dalamnya (jangan [/GALLERY_DATA] karena frontend otomatis parse)
-        6. SERTAKAN DETAIL LENGKAP SETELAH JSON:
+        5. TAG [GALLERY_DATA] HANYA BOLEH BERISI JSON ARRAY VALID:
+           - Gunakan tanda kutip ganda untuk semua string.
+           - Jangan gunakan kutip tunggal, komentar, atau trailing comma.
+           - Jangan sertakan teks lain atau label tambahan di dalam tag.
+           - Tag harus berisi satu array JSON saja.
+           - Jika kamu tidak bisa membuat JSON valid, jangan sertakan [GALLERY_DATA] sama sekali.
+        6. WRAP DALAM TAG: [GALLERY_DATA] dan ARRAY di dalamnya (jangan [/GALLERY_DATA] karena frontend otomatis parse)
+        7. SERTAKAN DETAIL LENGKAP SETELAH JSON:
            - Nama base dan TH level
            - Tag/strategi defense (dari field "tags" atau "recommendedFor")
            - Rekomendasi penggunaan (dari field "recommendedFor")
@@ -197,8 +203,14 @@ async function handleMistralModelReasoning(messages: any, clanContext: string) {
                "baseUrl": "https://www.3agang.pro/layout/th18-anti-rc-charge-1"
              }
            ]
-        5. WRAP DALAM TAG: [GALLERY_DATA] dan ARRAY di dalamnya (jangan [/GALLERY_DATA] karena frontend otomatis parse)
-        6. SERTAKAN DETAIL LENGKAP SETELAH JSON:
+        5. TAG [GALLERY_DATA] HANYA BOLEH BERISI JSON ARRAY VALID:
+           - Gunakan tanda kutip ganda untuk semua string.
+           - Jangan gunakan kutip tunggal, komentar, atau trailing comma.
+           - Jangan sertakan teks lain atau label tambahan di dalam tag.
+           - Tag harus berisi satu array JSON saja.
+           - Jika kamu tidak bisa membuat JSON valid, jangan sertakan [GALLERY_DATA] sama sekali.
+        6. WRAP DALAM TAG: [GALLERY_DATA] dan ARRAY di dalamnya (jangan [/GALLERY_DATA] karena frontend otomatis parse)
+        7. SERTAKAN DETAIL LENGKAP SETELAH JSON:
            - Nama base dan TH level
            - Tag/strategi defense (dari field "tags" atau "recommendedFor")
            - Rekomendasi penggunaan (dari field "recommendedFor")

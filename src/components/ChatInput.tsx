@@ -42,7 +42,7 @@ export function ChatInput({
   }, [input, isLoading, placeholderOptions]);
 
   return (
-    <div className="px-4 pb-4 pt-3 sm:px-6 bg-zinc-950/90">
+    <div className="px-4 pb-4 pt-3 sm:px-6 ">
       <div className="flex gap-3">
         <div className="relative flex-1">
           <input
