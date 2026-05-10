@@ -7,7 +7,7 @@ export async function getPlayerData(playerTag: string) {
     headers: {
       "Authorization": `Bearer ${process.env.COC_API_KEY}`,
     },
-    next: { revalidate: 60 }, // Cache 1 menit
+    next: { revalidate: 300 }, // Cache 5 menit
   });
 
   if (!res.ok) return null;

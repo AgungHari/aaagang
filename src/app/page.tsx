@@ -20,9 +20,6 @@ import {
 } from "lucide-react";
 import { getClanData, getCurrentWar, getWarLog } from "@/lib/coc";
 
-export const revalidate = 60;
-
-
 export default async function Home() {
   const [clan, war, warLog] = await Promise.all([getClanData(), getCurrentWar(), getWarLog()]);
 
