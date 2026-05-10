@@ -3,6 +3,8 @@ import Footer from '@/components/Footer';
 import { fetchNewsContent, parseNewsData, extractYouTubeId } from '@/lib/newsHelper';
 import { getClanData } from '@/lib/coc';
 import Link from 'next/link';
+
+export const runtime = 'edge';
 import { ChevronLeft } from 'lucide-react';
 
 export default async function ArticlePage({

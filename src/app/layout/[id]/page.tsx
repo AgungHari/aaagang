@@ -3,6 +3,8 @@ import Footer from "@/components/Footer";
 import LayoutMetaInfo from "@/components/LayoutMetaInfo";
 import LayoutDescription from "@/components/LayoutDescription";
 import CopyLinkBox from "@/components/CopyLinkBox";
+
+export const runtime = 'edge';
 import SourceSection from "@/components/SourceSection";
 import LayoutStats from "@/components/LayoutStats";
 import RelatedLayoutsList from "@/components/RelatedLayoutsList";

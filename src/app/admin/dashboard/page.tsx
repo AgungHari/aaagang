@@ -4,6 +4,8 @@ import { Plus, Database, Eye, ThumbsUp, Edit3 } from "lucide-react";
 import DeleteLayoutButton from "@/components/DeleteLayoutButton";
 import PreviewButtons from "@/components/PreviewButtons";
 import Link from "next/link";
+
+export const runtime = 'edge';
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { jwtVerify } from "jose";

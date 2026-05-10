@@ -4,6 +4,8 @@ import { createLayout } from "@/app/admin/dashboard/new/action";
 import Link from "next/link";
 import { ArrowLeft, Save } from "lucide-react";
 import { cookies } from "next/headers";
+
+export const runtime = 'edge';
 import { redirect } from "next/navigation";
 import { jwtVerify } from "jose";
 

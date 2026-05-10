@@ -3,6 +3,8 @@ import { NextResponse } from "next/server";
 import { cookies } from "next/headers";
 import { jwtVerify } from "jose"; 
 
+export const runtime = 'edge';
+
 export async function POST(req: Request) {
 
     const cookieStore = await cookies();
