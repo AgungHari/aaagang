@@ -37,7 +37,7 @@ export function ModelSelector({
       <button
         type="button"
         onClick={onToggleDropdown}
-        className="flex items-center gap-1 text-lg font-semibold text-zinc-200"
+        className="flex items-center gap-1 text-lg font-semibold text-zinc-200 font-poppins"
       >
         Sigma
         <span className="text-[9px] text-amber-500 flex items-center gap-1 self-end translate-y-[-3px]">

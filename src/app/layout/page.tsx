@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import LayoutsFilter from "@/components/LayoutsFilter";
+import LayoutPageChat from "@/components/LayoutPageChat";
 import { getClanData } from "@/lib/coc";
 import { createClient } from "@libsql/client";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -80,16 +81,23 @@ export default async function LayoutPage() {
       {/* Content Section */}
       <section className="pt-32 pb-20 px-6 md:px-16 lg:px-24 xl:px-32">
         <div className="max-w-7xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-amber-500/20 bg-amber-500/5 text-amber-500 text-[10px] font-black uppercase tracking-[0.3em] mb-4 animate-slide-up">
+          <div className="flex justify-center mb-4 animate-slide-up">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-amber-500/20 bg-amber-500/5 text-amber-500 text-[10px] font-black uppercase tracking-[0.3em]">
               <Hammer size={12} /> Koleksi Base
+            </div>
           </div>
-          <h1 className="text-4xl md:text-5xl mb-8 animate-slide-up" style={{ fontFamily: "'Docallisme', sans-serif" }}>
+          <h1 className="text-4xl md:text-5xl mb-8 animate-slide-up mx-auto text-center" style={{ fontFamily: "'Docallisme', sans-serif" }}>
             BASE <span className="text-amber-500">LAYOUTS</span>
           </h1>
 
-          <p className="text-gray-300 leading-relaxed mb-12 max-w-4xl animate-slide-up">
-            Temukan inspirasi base layouts terbaik dari AAA GANG untuk pertahanan dan seranganmu. Data diambil otomatis dari berbagai sumber.
+          <p className="text-gray-300 leading-relaxed mb-12 max-w-4xl animate-slide-up mx-auto text-center">
+            Temukan inspirasi base layouts terbaik dari AAA GANG, Data di scrap otomatis!
           </p>
+
+          {/* Chat Interface */}
+          <div className="mb-8 animate-slide-up max-w-5xl mx-auto">
+            <LayoutPageChat clanName={clan.name} />
+          </div>
 
           {/* Layouts Filter & Grid */}
           {serializedLayouts.length > 0 ? (
