@@ -4,7 +4,6 @@ import { fetchEsportContent, parseEsportData, extractYouTubeId } from '@/lib/new
 import { getClanData } from '@/lib/coc';
 import Link from 'next/link';
 
-export const runtime = 'edge';
 import { ChevronLeft } from 'lucide-react';
 
 export default async function EsportDetailPage({

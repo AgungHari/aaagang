@@ -2,9 +2,6 @@ import OpenAI from 'openai';
 import { gameContext, importantContext, datadiriContext, strategiContext, equipmentOreContext, listEquipmentContext, oreFarmContext } from '../../../context/clash';
 import { getLayoutBaseContext } from '@/context/layout';
 
-export const runtime = 'edge';
-
-
 const mistralClient = new OpenAI({
   baseURL: 'https://api.mistral.ai/v1',
   apiKey: process.env.MISTRAL_API_KEY,

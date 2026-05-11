@@ -4,7 +4,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Trophy, Star, Shield, Sword, ArrowLeft, Building2, Zap } from "lucide-react";
 
-export const runtime = 'edge';
 import Link from "next/link";
 
 // --- MAPPING ASSETS (DI LUAR FUNCTION AGAR RAPI) ---
