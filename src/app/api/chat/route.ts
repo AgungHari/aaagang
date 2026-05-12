@@ -2,20 +2,20 @@ import OpenAI from 'openai';
 import { gameContext, importantContext, datadiriContext, strategiContext, equipmentOreContext, listEquipmentContext, oreFarmContext } from '../../../context/clash';
 import { getLayoutBaseContext } from '@/context/layout';
 
-const mistralClient = new OpenAI({
-  baseURL: 'https://api.mistral.ai/v1',
-  apiKey: process.env.MISTRAL_API_KEY,
+const selfHostedBasic = new OpenAI({
+  baseURL: process.env.BASIC_BASE_URL,
+  apiKey: process.env.BASIC_API_KEY,
 });
 
 
 const selfHostedClient = new OpenAI({
-  baseURL: 'https://agunghari2-llm-sigma.hf.space/v1',
-  apiKey: 'pake-apa-aja-bebas',
+  baseURL: process.env.SELF_HOSTED_BASE_URL,
+  apiKey: process.env.SELF_HOSTED_API_KEY,
 });
 
 const selfHostedClientold = new OpenAI({
-  baseURL: 'https://agunghari2-llm111.hf.space/v1',
-  apiKey: 'pake-apa-aja-bebas',
+  baseURL: process.env.SELF_HOSTED_OLD_BASE_URL,
+  apiKey: process.env.SELF_HOSTED_OLD_API_KEY,
 });
 
 
@@ -25,7 +25,7 @@ async function getClanContext() {
     headers: {
       "Authorization": `Bearer ${process.env.COC_API_KEY}`
     },
-    next: { revalidate: 120 } // Cache 2 menit biar hemat kuota proxy
+    next: { revalidate: 3600 } // Cache 1 jam biar hemat kuota proxy
   });
 
   const rawClanData = await cocRes.json();
@@ -51,7 +51,7 @@ async function getClanContext() {
 }
 
 async function handleMistralModel(messages: any, clanContext: string) {
-  const apiResponse = await mistralClient.chat.completions.create({
+  const apiResponse = await selfHostedBasic.chat.completions.create({
     model: 'mistral-medium-2505',
     messages: [
       {
@@ -91,7 +91,7 @@ async function handleMistralModel(messages: any, clanContext: string) {
 async function handleMistralModelPlus(messages: any, clanContext: string) {
   const layoutContext = await getLayoutBaseContext();
   
-  const apiResponse = await mistralClient.chat.completions.create({
+  const apiResponse = await selfHostedBasic.chat.completions.create({
     model: 'mistral-medium-2508',
     messages: [
       {
@@ -167,7 +167,7 @@ async function handleMistralModelPlus(messages: any, clanContext: string) {
 
 async function handleMistralModelReasoning(messages: any, clanContext: string) {
   const layoutContext = await getLayoutBaseContext();
-  const apiResponse = await mistralClient.chat.completions.create({
+  const apiResponse = await selfHostedBasic.chat.completions.create({
     model: 'magistral-medium-2509',
     messages: [
       {
