@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ProfitableAdUnit from "@/components/ProfitableAdUnit";
 import { getClanData } from "@/lib/coc";
 import { Zap } from "lucide-react";
 import ChatInterface from "./ChatInterface"; // Import client component tadi
@@ -104,7 +105,9 @@ export default async function KontakPage() {
 
         {/* Masukkan Client Component Chat di sini */}
         <ChatInterface />
-        
+
+        {/* Ad Unit di bawah chat interface */}
+        <ProfitableAdUnit />
       </section>
 
       {/* Footer: Persis seperti di Member Page */}

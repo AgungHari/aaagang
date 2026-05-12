@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import LayoutMetaInfo from "@/components/LayoutMetaInfo";
 import LayoutDescription from "@/components/LayoutDescription";
 import CopyLinkBox from "@/components/CopyLinkBox";
+import ProfitableAdUnit from "@/components/ProfitableAdUnit";
 
 import SourceSection from "@/components/SourceSection";
 import LayoutStats from "@/components/LayoutStats";
@@ -179,6 +180,9 @@ export default async function LayoutDetailPage({
               <div className="space-y-8">
                 {/* Description */}
                 <LayoutDescription content={content} />
+
+                {/* Iklan Ad Unit */}
+                <ProfitableAdUnit />
 
                 {/* Copy Link */}
                 <CopyLinkBox copyLink={String(layout.copy_link)} />

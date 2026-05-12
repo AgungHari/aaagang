@@ -2,6 +2,7 @@ import { getPlayerData } from "@/lib/player";
 import { getClanData } from "@/lib/coc";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ProfitableAdUnit from "@/components/ProfitableAdUnit";
 import { Trophy, Star, Shield, Sword, ArrowLeft, Building2, Zap } from "lucide-react";
 
 import Link from "next/link";
@@ -215,6 +216,9 @@ export default async function MemberDetailPage({ params }: { params: Promise<{ t
             {generateSummary()}
           </p>
         </div>
+
+        {/* Ad Unit */}
+        <ProfitableAdUnit />
 
         {/* Statistik Utama */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">

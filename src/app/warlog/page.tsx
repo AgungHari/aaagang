@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ProfitableAdUnit from "@/components/ProfitableAdUnit";
 import WarLogFilter from "@/components/WarLogFilter";
 import { getWarLog, getClanData } from "@/lib/coc";
 import { Users, Skull } from "lucide-react";
@@ -123,6 +124,8 @@ export default async function WarLogPage() {
             {totalExpEarned.toLocaleString()} XP
           </div>
         </div>
+
+        <ProfitableAdUnit />
 
         {serializedWars.length > 0 ? (
           <div className="animate-slide-up">
