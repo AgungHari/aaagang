@@ -64,5 +64,8 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+          build-args: |
+            TURSO_DATABASE_URL=${{ secrets.TURSO_DATABASE_URL }}
+            TURSO_AUTH_TOKEN=${{ secrets.TURSO_AUTH_TOKEN }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
