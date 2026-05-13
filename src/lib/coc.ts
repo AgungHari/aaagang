@@ -4,7 +4,7 @@ export async function getClanData() {
     headers: {
       "Authorization": `Bearer ${process.env.COC_API_KEY}`,
     },
-    next: { revalidate: 300 },
+    next: { revalidate: 60 },
   });
 
   if (!res.ok) return null;
@@ -17,7 +17,7 @@ export async function getCurrentWar() {
     headers: {
       "Authorization": `Bearer ${process.env.COC_API_KEY}`,
     },
-    next: { revalidate: 120 },
+    next: { revalidate: 60 },
   });
 
   if (!res.ok) return null;
@@ -29,7 +29,7 @@ export async function getWarLog() {
     headers: {
       "Authorization": `Bearer ${process.env.COC_API_KEY}`,
     },
-    next: { revalidate: 43200 },
+    next: { revalidate: 7200 },
   });
 
   if (!res.ok) return null;

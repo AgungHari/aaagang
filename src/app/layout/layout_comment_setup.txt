@@ -1,0 +1,15 @@
+CREATE TABLE layout_comments (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  layout_id INTEGER NOT NULL,          -- Merujuk ke ID di databasesetup.txt
+  content TEXT NOT NULL,               -- Isi komentar
+  author_name TEXT DEFAULT 'Anonim',   -- Nama samaran
+  like_count INTEGER DEFAULT 0,        -- Jumlah like
+  dislike_count INTEGER DEFAULT 0,     -- Jumlah dislike
+  report_count INTEGER DEFAULT 0,      -- Jika report > 5, set is_visible dibawah ini menjadi false
+  is_visible BOOLEAN DEFAULT TRUE,     -- Kontrol moderasi utama
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (layout_id) REFERENCES layouts(id) ON DELETE CASCADE
+);
+
+-- Indexing biar loading komentar per halaman tetep "sat-set"
+CREATE INDEX idx_layout_comments_id ON layout_comments(layout_id);

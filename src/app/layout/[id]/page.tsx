@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import LayoutMetaInfo from "@/components/LayoutMetaInfo";
@@ -8,6 +10,9 @@ import ProfitableAdUnit from "@/components/ProfitableAdUnit";
 import SourceSection from "@/components/SourceSection";
 import LayoutStats from "@/components/LayoutStats";
 import RelatedLayoutsList from "@/components/RelatedLayoutsList";
+import CommentInput from "@/components/CommentInput";
+import CommentList from "@/components/CommentList";
+import LayoutCommentsWrapper from "@/components/LayoutCommentsWrapper";
 import { getClanData } from "@/lib/coc";
 import Link from "next/link";
 import Image from "next/image";
@@ -177,7 +182,7 @@ export default async function LayoutDetailPage({
               </h1>
 
               {/* Full Description */}
-              <div className="space-y-8">
+              <div className="space-y-8 text-justify">
                 {/* Description */}
                 <LayoutDescription content={content} />
 
@@ -202,6 +207,11 @@ export default async function LayoutDetailPage({
                 />
               </div>
             </div>
+          </div>
+
+          {/* Comments Section */}
+          <div className="mb-16">
+            <LayoutCommentsWrapper layoutId={Number(layout.id)} />
           </div>
 
           {/* Related Layouts */}

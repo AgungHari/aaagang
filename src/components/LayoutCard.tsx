@@ -6,7 +6,7 @@ import { useState } from "react";
 import ReactMarkdown from "react-markdown";
 import { siYoutube, siReddit} from 'simple-icons';
 import { Eye, ThumbsUp, Copy, Play, MessageSquare, ExternalLink } from "lucide-react";
-import { incrementViewCount, incrementLikeCount } from "@/app/layout/action";
+import { incrementLikeCount } from "@/app/layout/action";
 
 interface LayoutCardProps {
   id: number;
@@ -59,15 +59,6 @@ export default function LayoutCard({
     }
   };
 
-  // Handle view count
-  const handleView = async (e: React.MouseEvent) => {
-    e.stopPropagation();
-    const result = await incrementViewCount(id);
-    if (result.success) {
-      setViews(views + 1);
-    }
-  };
-
   // Handle like count
   const handleLike = async (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -113,7 +104,6 @@ export default function LayoutCard({
   return (
     <div 
       className="bg-zinc-900/20 border border-zinc-800/50 rounded-2xl overflow-hidden hover:border-amber-500/50 transition-all group cursor-pointer"
-      onClick={handleView}
     >
       {/* Image Section */}
       {image_url && !imageError && (

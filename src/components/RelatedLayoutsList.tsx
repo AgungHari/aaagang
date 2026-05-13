@@ -44,7 +44,7 @@ export default function RelatedLayoutsList({
   if (layouts.length === 0) return null;
 
   return (
-    <div>
+    <div className='border-t border-zinc-800/50 pt-8'>
       <h2 className="text-2xl font-bold mb-6 text-white">
         Layouts TH {thLevel} Lainnya
       </h2>
