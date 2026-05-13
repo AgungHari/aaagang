@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import OpenAI from 'openai';
 import { gameContext, importantContext, datadiriContext, strategiContext, equipmentOreContext, listEquipmentContext, oreFarmContext } from '../../../context/clash';
 import { getLayoutBaseContext } from '@/context/layout';
