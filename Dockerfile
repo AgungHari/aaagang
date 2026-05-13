@@ -24,9 +24,21 @@ COPY . .
 
 ARG TURSO_DATABASE_URL
 ARG TURSO_AUTH_TOKEN
+ARG OPENAI_API_KEY
 
-ENV TURSO_DATABASE_URL=$TURSO_DATABASE_URL
-ENV TURSO_AUTH_TOKEN=$TURSO_AUTH_TOKEN
+# Setting ENV boongan buat test aja, anjing next js 16 sama vercel kikir banget isr write kontol cuma dikasih 200 ribu
+ENV BASIC_API_KEY="awhfioawhfioawhfiohwaioawhoifawo" \
+    BASIC_BASE_URL="https://api.mistral.ai/v1" \
+    SELF_HOSTED_API_KEY="pake-apa-aja-bebas" \
+    SELF_HOSTED_BASE_URL="https://agunghari2-llm-sigma.hf.space/v1" \
+    # Gunakan variabel asli jika tersedia, kalau tidak pakai dummy
+    TURSO_DATABASE_URL=${TURSO_DATABASE_URL:-"https://aaa-clash-dummy.turso.io"} \
+    TURSO_AUTH_TOKEN=${TURSO_AUTH_TOKEN:-"dummy_token"} \
+    OPENAI_API_KEY=${OPENAI_API_KEY:-"sk-dummy-key"} \
+    COC_API_KEY="dummy_coc_key" \
+    JWT_SECRET="dummy_jwt_secret" \
+    ADMIN_USERNAME="AgungHari" \
+    ADMIN_PASSWORD="dummy_password"
 
 RUN npm run build
 
