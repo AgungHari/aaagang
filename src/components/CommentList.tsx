@@ -203,7 +203,7 @@ export default function CommentList({
       {comments.map((comment) => (
         <div
           key={comment.id}
-          className="bg-zinc-900/20 border border-zinc-800/50 rounded-lg p-4 hover:border-zinc-700/50 transition"
+          className="border-b border-zinc-800/50 p-4 hover:border-zinc-700/50 transition"
         >
           {/* Header */}
           <div className="flex justify-between items-start mb-2">
