@@ -179,7 +179,7 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
             </Link>
           ))}
         </div>
-
+        {/* apasih openai */}
         {/* Features Section - Grid 2 Kolom */}
         <div className="flex flex-col w-full px-4 flex-1">
           <div className="flex items-center justify-center mb-5">
