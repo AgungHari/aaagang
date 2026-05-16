@@ -256,8 +256,8 @@ export default async function Home() {
 
       <div className="max-w-7xl w-full px-6 mx-auto mt-12 mb-24"> 
         <div className="mb-12">
-          <div className="text-amber-500 text-5xl md:text-5xl mb-4" style={{ fontFamily: "'Docallisme', sans-serif" }}>
-            OUR <span className="text-amber-500">GLOBAL</span><span className="text-amber-500"> PRESENCE</span>
+          <div className="text-amber-white text-5xl md:text-5xl mb-4" style={{ fontFamily: "'Docallisme', sans-serif" }}>
+            OUR <span className="text-amber-500">GLOBAL</span><span className="text-amber-700"> PRESENCE</span>
           </div>
           <p className="text-zinc-400 text-sm md:text-sm font-poppins">
             Kenapa bos? kalau mau nyenggol gausah di chat. Langsung cek posisi gas berangkat,<br/> bebas mau nyenggol siapa aja yang penting <span className="text-amber-700">ga tiba tiba masuk klan ngomong kasar abis itu cabut.</span>
