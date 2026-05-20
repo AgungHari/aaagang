@@ -1,4 +1,4 @@
-import { Medal, Users, Sword, Coffee, Info, HatGlasses, Phone, Scale, Copyright, FileUser } from "lucide-react";
+import { Medal, Users, Sword, Coffee, Info, HatGlasses, Phone, Scale, Copyright,MessageCircleQuestionMark } from "lucide-react";
 import { siGithub } from 'simple-icons';
 import Link from "next/link";
 
@@ -117,6 +117,7 @@ export default function Footer({ clan }: FooterProps) {
               </a>
             </div>
             <div className="flex flex-row items-center gap-2">
+              {/* Tombol Terms of Service */}
               <a 
                 href="/termsofservice" 
                 rel="noopener noreferrer"
@@ -124,10 +125,21 @@ export default function Footer({ clan }: FooterProps) {
               >
                 <Scale size={10} className="text-zinc-600 group-hover:text-zinc-300 transition-colors" />
                 <span className="text-[7px] font-black tracking-[0.3em] text-zinc-600 uppercase group-hover:text-zinc-300 transition-colors">
-                  Terms of Service
+                  ToS
                 </span>
               </a>
-            {/* Tombol Privacy Policy */}
+            {/* Tombol FAQ */}
+              <a 
+                href="/faq" 
+                rel="noopener noreferrer"
+                className="group flex items-center gap-2 px-3 py-1.5 border border-zinc-800/40 hover:border-zinc-500/40 hover:bg-zinc-800/50 rounded transition-all w-fit"
+              >
+                <MessageCircleQuestionMark size={10} className="text-zinc-600 group-hover:text-zinc-300 transition-colors" />
+                <span className="text-[7px] font-black tracking-[0.3em] text-zinc-600 uppercase group-hover:text-zinc-300 transition-colors">
+                  FAQ
+                </span>
+              </a>
+            {/* Tombol DMCA */}
               <a 
                 href="/dmca" 
                 rel="noopener noreferrer"

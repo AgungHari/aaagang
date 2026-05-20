@@ -28,12 +28,12 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
   const featureLinks = [
     { name: "Base Layouts", href: "/layout", disabled: false, icon: Import, description: "Explore & Import base layouts", image: "/BattleCopter_Boat_Pose01_NoShadow.webp" },
     { name: "Player Search", href: "/search", disabled: false, icon: User, description: "Cari & Stalk players", image: "/GW_DarkDays_f22_2k_V2.webp" },
-    { name: "Clan Search", href: "/clansearch", disabled: true, icon: Users, description: "Cari & Stalk clans", image: "/BK_DE_Pose02_NoShadows.webp" },
-    { name: "Attack Coaching", href: "/coaching", disabled: true, icon: Brain, description: "Attack Pathing Berbasis AI", image: "/Hero_Equipment_BK_Barbarian_Puppet.webp" },
-    { name: "Deffend Analysis", href: "/deffendanalysis", disabled: true, icon: Shield, description: "Analisa Defffense Berbasis AI", image: "/Building_HV_Clan_Castle_level_14.webp" },
+    { name: "Clan Search", href: "/clansearch", disabled: false, icon: Users, description: "Cari & Stalk clans", image: "/BK_DE_Pose02_NoShadows.webp" },
+    { name: "Attack Coaching", href: "/coaching", disabled: true, icon: Brain, description: "Attack Pathing Berbasis AI", image: "/Super_Troop_Super_Wizard_2.webp" },
+    { name: "Deffend Analysis", href: "/deffendanalysis", disabled: true, icon: Shield, description: "Analisa Defffense Berbasis AI", image: "/Hero_Pet_HV_Angry_Jelly_05.webp" },
     { name: "CWL Live Reports", href: "/cwlsearch", disabled: true, icon: Trophy, description: "Live Report CWL", image: "/Icon_HV_CWL_Champion_3.webp" },
-    { name: "Friendly Wars", href: "/friendlywars", disabled: true, icon: Handshake, description: "Tantangan Friendly Wars", image: "/Hero_Equipment_AQ_WWEActionFigure.webp" },
-    { name: "More Feature..", href: "/comingsoon", disabled: true, icon: Timer, description: "Tantangan Friendly Wars", image: "/Hero_Pet_HV_Mighty_Yak_1_grass.webp" },
+    { name: "Friendly Wars", href: "/friendlywars", disabled: true, icon: Handshake, description: "Tantangan Friendly Wars", image: "/Troop_BB_Raged_Barbarian_no_grass.webp" },
+    { name: "More Feature..", href: "/comingsoon", disabled: true, icon: Timer, description: "Masih Mager Bang", image: "/Hero_Pet_HV_Mighty_Yak_1_grass.webp" },
   ];
 
   return (
@@ -111,7 +111,7 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
                       className={`group relative p-4 rounded-xl transition-all drop-shadow duration-300 overflow-hidden ${link.disabled ? 'bg-zinc-900/30 opacity-50 cursor-not-allowed' : pathname === link.href ? 'bg-amber-500/20 border border-amber-500/50 hover:bg-amber-500/30' : 'bg-zinc-900/50 border border-zinc-800/30 hover:bg-zinc-800/70 hover:border-amber-500/30'}`}
                     >
                       {link.image && (
-                        <img src={link.image} alt={link.name} className="absolute -right-6 -bottom-6 size-40 opacity-10 grayscale group-hover:grayscale-0 group-hover:opacity-20 group-hover:scale-110 transition-all duration-700 -rotate-12 pointer-events-none" />
+                        <img src={link.image} alt={link.name} className="absolute -right-6 -bottom-8 size-40 opacity-10 grayscale group-hover:grayscale-0 group-hover:opacity-20 group-hover:scale-110 transition-all duration-700 pointer-events-none" />
                       )}
                       <div className="flex items-start gap-3 relative z-10">
                         <div className={`p-2.5 rounded-lg transition-all duration-300 flex-shrink-0 ${link.disabled ? 'bg-zinc-800/30' : pathname === link.href ? 'bg-amber-500/20 text-amber-500' : 'bg-zinc-800/50 text-zinc-400 group-hover:bg-amber-500/20 group-hover:text-amber-500'}`}>
@@ -158,7 +158,6 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
             onClick={() => setIsOpen(false)} 
             className="active:ring-2 active:ring-amber-500 aspect-square size-10 p-1 flex items-center justify-center bg-zinc-800/80 hover:bg-amber-600 transition text-white rounded-xl"
           >
-            <X size={24} />
           </button>
         </div>
 

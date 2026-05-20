@@ -11,6 +11,22 @@ export async function getClanData() {
   return res.json();
 }
 
+// Fetch clan data dengan dynamic tag (untuk clan search)
+export async function getClanDataByTag(clanTag: string) {
+  const cleanTag = clanTag.replace("#", "");
+  const formattedTag = `%23${cleanTag}`;
+
+  const res = await fetch(`https://cocproxy.royaleapi.dev/v1/clans/${formattedTag}`, {
+    headers: {
+      "Authorization": `Bearer ${process.env.COC_API_KEY}`,
+    },
+    next: { revalidate: 120 },
+  });
+
+  if (!res.ok) return null;
+  return res.json();
+}
+
 // TAMBAHKAN INI: Untuk cek status war real-time
 export async function getCurrentWar() {
   const res = await fetch(`https://cocproxy.royaleapi.dev/v1/clans/${process.env.CLAN_TAG}/currentwar`, {

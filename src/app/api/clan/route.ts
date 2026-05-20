@@ -1,10 +1,20 @@
-import { getClanData } from "@/lib/coc";
+import { getClanData, getClanDataByTag } from "@/lib/coc";
 import { NextResponse } from "next/server";
 
-export async function GET() {
+export async function GET(request: Request) {
   try {
-    const clan = await getClanData();
-    
+    const { searchParams } = new URL(request.url);
+    const tag = searchParams.get("tag");
+
+    let clan;
+    if (tag) {
+      // Jika ada parameter tag, fetch clan dengan tag tersebut
+      clan = await getClanDataByTag(tag);
+    } else {
+      // Jika tidak ada parameter tag, fetch main clan (AAA GANG)
+      clan = await getClanData();
+    }
+
     if (!clan) {
       return NextResponse.json({ error: "Clan data not found" }, { status: 404 });
     }
