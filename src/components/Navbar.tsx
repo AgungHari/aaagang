@@ -153,12 +153,12 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
       `}>
         
         {/* Tombol Close di Atas Kanan */}
-        <div className="w-full flex justify-end px-6 mb-6">
-          <button 
+        <div className="w-full flex justify-end px-6 mb-20">
+          {/* <button 
             onClick={() => setIsOpen(false)} 
             className="active:ring-2 active:ring-amber-500 aspect-square size-10 p-1 flex items-center justify-center bg-zinc-800/80 hover:bg-amber-600 transition text-white rounded-xl"
           >
-          </button>
+          </button> */}
         </div>
 
         {/* Nav Links - Dijadikan tombol pil jejer */}

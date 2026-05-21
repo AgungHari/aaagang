@@ -1,7 +1,7 @@
 export const dynamic = 'force-dynamic';
 import OpenAI from 'openai';
 import { gameContext, importantContext, datadiriContext, strategiContext, equipmentOreContext, listEquipmentContext, oreFarmContext } from '../../../context/clash';
-import { getLayoutBaseContext } from '@/context/layout';
+import { getLayoutBaseContext, detectUserIntent } from '@/context/layout';
 
 const selfHostedBasic = new OpenAI({
   baseURL: process.env.BASIC_BASE_URL,
@@ -90,7 +90,21 @@ async function handleMistralModel(messages: any, clanContext: string) {
 }
 
 async function handleMistralModelPlus(messages: any, clanContext: string) {
-  const layoutContext = await getLayoutBaseContext();
+  // Smart filtering: detect user intent dari latest message
+  const latestUserMessage = messages[messages.length - 1]?.content || '';
+  const userIntent = detectUserIntent(latestUserMessage);
+  
+  // Fetch layouts dengan smart filtering
+  const layoutContext = await getLayoutBaseContext(userIntent.thLevel, userIntent.strategy);
+  
+  // Slim JSON: extract only 5 fields needed for gallery
+  const slimmedLayouts = layoutContext.recommendedLayouts.map(layout => ({
+    id: layout.id,
+    name: layout.name,
+    thLevel: layout.thLevel,
+    imageUrl: layout.imageUrl,
+    baseUrl: layout.baseUrl
+  }));
   
   const apiResponse = await selfHostedBasic.chat.completions.create({
     model: 'mistral-medium-2508',
@@ -106,16 +120,15 @@ async function handleMistralModelPlus(messages: any, clanContext: string) {
         - JANGAN pernah skip tag [GALLERY_DATA] jika user minta base/layout.
         
         ## CARA GENERATE JSON GALLERY YANG BENAR:
-        1. PARSE REQUEST USER: cari TH level (TH13-TH16) dan strategi (anti electro, anti hybrid, anti rc charge, dll)
-        2. FILTER DATABASE: dari database berikut gunakan field: id, name, thLevel, imageUrl, baseUrl, tags, recommendedFor
-          ${JSON.stringify(layoutContext.recommendedLayouts, null, 2)}
-        3. EXTRACT FIELD YANG TEPAT - gunakan HANYA 5 field untuk JSON gallery:
+        1. GUNAKAN DATABASE BERIKUT - Data sudah pre-filtered sesuai TH level & strategi user:
+          ${JSON.stringify(slimmedLayouts, null, 2)}
+        2. EXTRACT FIELD YANG TEPAT - gunakan HANYA 5 field untuk JSON gallery:
            - "id": langsung dari database (jangan modifikasi)
            - "name": langsung dari database
            - "thLevel": langsung dari database (harus number, bukan string)
            - "imageUrl": langsung dari database
-           - "baseUrl": SUDAH DISEDIAKAN DI DATABASE, JANGAN DIRUBAH! (format: https://www.3agang.pro/layout/{id})
-        4. FORMAT JSON HARUS BENAR - contoh:
+           - "baseUrl": SUDAH DISEDIAKAN DI DATABASE, JANGAN DIRUBAH!
+        3. FORMAT JSON HARUS BENAR - contoh:
            [
              {
                "id": "th18-anti-rc-charge-1",
@@ -125,18 +138,16 @@ async function handleMistralModelPlus(messages: any, clanContext: string) {
                "baseUrl": "https://www.3agang.pro/layout/th18-anti-rc-charge-1"
              }
            ]
-        5. TAG [GALLERY_DATA] HANYA BOLEH BERISI JSON ARRAY VALID:
+        4. TAG [GALLERY_DATA] HANYA BOLEH BERISI JSON ARRAY VALID:
            - Gunakan tanda kutip ganda untuk semua string.
            - Jangan gunakan kutip tunggal, komentar, atau trailing comma.
            - Jangan sertakan teks lain atau label tambahan di dalam tag.
            - Tag harus berisi satu array JSON saja.
            - Jika kamu tidak bisa membuat JSON valid, jangan sertakan [GALLERY_DATA] sama sekali.
-        6. WRAP DALAM TAG: [GALLERY_DATA] dan ARRAY di dalamnya (jangan [/GALLERY_DATA] karena frontend otomatis parse)
-        7. SERTAKAN DETAIL LENGKAP SETELAH JSON:
+        5. WRAP DALAM TAG: [GALLERY_DATA] dan ARRAY di dalamnya (jangan [/GALLERY_DATA] karena frontend otomatis parse)
+        6. SERTAKAN DETAIL LENGKAP SETELAH JSON:
            - Nama base dan TH level
-           - Tag/strategi defense (dari field "tags" atau "recommendedFor")
-           - Rekomendasi penggunaan (dari field "recommendedFor")
-           - View count (dari field "viewCount")
+           - Rekomendasi penggunaan
            - Link dengan emoji 🔗 (https://www.3agang.pro/layout/{id})
         
         ## INSTRUKSI PENTING LAINNYA:
@@ -167,7 +178,22 @@ async function handleMistralModelPlus(messages: any, clanContext: string) {
 }
 
 async function handleMistralModelReasoning(messages: any, clanContext: string) {
-  const layoutContext = await getLayoutBaseContext();
+  // Smart filtering: detect user intent dari latest message
+  const latestUserMessage = messages[messages.length - 1]?.content || '';
+  const userIntent = detectUserIntent(latestUserMessage);
+  
+  // Fetch layouts dengan smart filtering
+  const layoutContext = await getLayoutBaseContext(userIntent.thLevel, userIntent.strategy);
+  
+  // Slim JSON: extract only 5 fields needed for gallery
+  const slimmedLayouts = layoutContext.recommendedLayouts.map(layout => ({
+    id: layout.id,
+    name: layout.name,
+    thLevel: layout.thLevel,
+    imageUrl: layout.imageUrl,
+    baseUrl: layout.baseUrl
+  }));
+
   const apiResponse = await selfHostedBasic.chat.completions.create({
     model: 'magistral-medium-2509',
     messages: [
@@ -182,16 +208,15 @@ async function handleMistralModelReasoning(messages: any, clanContext: string) {
         - JANGAN pernah skip tag [GALLERY_DATA] jika user minta base/layout.
         
         ## CARA GENERATE JSON GALLERY YANG BENAR:
-        1. PARSE REQUEST USER: cari TH level (TH13-TH16) dan strategi (anti electro, anti hybrid, anti rc charge, dll)
-        2. FILTER DATABASE: dari database berikut gunakan field: id, name, thLevel, imageUrl, baseUrl, tags, recommendedFor
-          ${JSON.stringify(layoutContext.recommendedLayouts, null, 2)}
-        3. EXTRACT FIELD YANG TEPAT - gunakan HANYA 5 field untuk JSON gallery:
+        1. GUNAKAN DATABASE BERIKUT - Data sudah pre-filtered sesuai TH level & strategi user:
+          ${JSON.stringify(slimmedLayouts, null, 2)}
+        2. EXTRACT FIELD YANG TEPAT - gunakan HANYA 5 field untuk JSON gallery:
            - "id": langsung dari database (jangan modifikasi)
            - "name": langsung dari database
            - "thLevel": langsung dari database (harus number, bukan string)
            - "imageUrl": langsung dari database
-           - "baseUrl": SUDAH DISEDIAKAN DI DATABASE, JANGAN DIRUBAH! (format: https://www.3agang.pro/layout/{id})
-        4. FORMAT JSON HARUS BENAR - contoh:
+           - "baseUrl": SUDAH DISEDIAKAN DI DATABASE, JANGAN DIRUBAH!
+        3. FORMAT JSON HARUS BENAR - contoh:
            [
              {
                "id": "th18-anti-rc-charge-1",
@@ -201,18 +226,16 @@ async function handleMistralModelReasoning(messages: any, clanContext: string) {
                "baseUrl": "https://www.3agang.pro/layout/th18-anti-rc-charge-1"
              }
            ]
-        5. TAG [GALLERY_DATA] HANYA BOLEH BERISI JSON ARRAY VALID:
+        4. TAG [GALLERY_DATA] HANYA BOLEH BERISI JSON ARRAY VALID:
            - Gunakan tanda kutip ganda untuk semua string.
            - Jangan gunakan kutip tunggal, komentar, atau trailing comma.
            - Jangan sertakan teks lain atau label tambahan di dalam tag.
            - Tag harus berisi satu array JSON saja.
            - Jika kamu tidak bisa membuat JSON valid, jangan sertakan [GALLERY_DATA] sama sekali.
-        6. WRAP DALAM TAG: [GALLERY_DATA] dan ARRAY di dalamnya (jangan [/GALLERY_DATA] karena frontend otomatis parse)
-        7. SERTAKAN DETAIL LENGKAP SETELAH JSON:
+        5. WRAP DALAM TAG: [GALLERY_DATA] dan ARRAY di dalamnya (jangan [/GALLERY_DATA] karena frontend otomatis parse)
+        6. SERTAKAN DETAIL LENGKAP SETELAH JSON:
            - Nama base dan TH level
-           - Tag/strategi defense (dari field "tags" atau "recommendedFor")
-           - Rekomendasi penggunaan (dari field "recommendedFor")
-           - View count (dari field "viewCount")
+           - Rekomendasi penggunaan
            - Link dengan emoji 🔗 (https://www.3agang.pro/layout/{id})
         
         ## INSTRUKSI PENTING LAINNYA:

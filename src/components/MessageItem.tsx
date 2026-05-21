@@ -2,6 +2,7 @@ import { User, Copy, Check } from "lucide-react";
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { useState } from 'react';
+import { LoadingAnimation } from './LoadingAnimation';
 
 interface GalleryItem {
   id: string;
@@ -188,6 +189,8 @@ export function MessageItem({ role, text, thinking }: MessageItemProps) {
                 {textContent}
               </ReactMarkdown>
             )}
+
+            {!textContent && !thinking && <LoadingAnimation />}
 
             {galleries.length > 0 && <GalleryGrid items={galleries} />}
             
