@@ -111,19 +111,40 @@ export default async function AboutPage() {
       />
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />
 
-      <section className="max-w-4xl mx-auto px-6 pt-24 pb-32">
-        {/* Header Tetap Manual Karena Unik */}
-        <div className="text-center mb-20 animate-slide-up">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-amber-500/20 bg-amber-500/5 text-amber-500 text-[10px] font-black uppercase tracking-[0.3em] mb-6">
-            <Shield size={12} /> About Us
-          </div>
-          <h1 className="text-6xl md:text-8xl uppercase italic leading-none mb-6" style={{ fontFamily: "'Docallisme', sans-serif" }}>
-            MENCARI <br /> YANG <span className="text-amber-500">TERTAWA</span>
-          </h1>
-          <p className="text-zinc-500 text-sm md:text-base leading-relaxed max-w-2xl mx-auto italic font-medium">
-            Di AAA GANG, kami percaya bahwa kekuatan sejati bukan hanya soal jumlah bintang atau kemenangan, tapi juga tentang loyalitas, kekompakan, dan tentu saja, kemampuan untuk tertawa bersama saat menghadapi kekalahan.
-          </p>
+      {/* Video Hero Section */}
+      <section className="relative w-full h-screen md:h-96 mt-[50px] mb-20 overflow-hidden rounded-2xl">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/mantap.mp4" type="video/mp4" />
+        </video>
+
+        {/* Dark Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
+
+        {/* Content Overlay */}
+        <div className="absolute inset-0 flex flex-col justify-center items-center px-6 md:px-12">
+          <ScrollReveal delay={0.1}>
+            <div className="max-w-2xl text-center">
+              <h2 className="text-5xl md:text-7xl uppercase font-black italic leading-tight mb-4" style={{ fontFamily: "'Docallisme', sans-serif" }}>
+                MENCARI <br /> YANG <span className="text-amber-500">TERTAWA</span>
+              </h2>
+              <p className="text-zinc-300 text-sm md:text-base leading-relaxed mb-8 max-w-xl">
+                Di AAA GANG, kekuatan sejati adalah loyalitas, kekompakan, dan kemampuan untuk tertawa bersama saat menghadapi kekalahan.
+              </p>
+              <div className="flex gap-4">
+              </div>
+            </div>
+          </ScrollReveal>
         </div>
+      </section>
+
+      <section className="max-w-4xl mx-auto px-6 pb-32" id="about-us">
+        {/* Vision Grid Section */}
 
         {/* Vision Grid - Pakai Map */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
