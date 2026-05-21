@@ -20,22 +20,68 @@ interface MessageItemProps {
 
 // Fungsi untuk parse [GALLERY_DATA] dari pesan
 function parseGalleryData(text: string): { textContent: string; galleries: GalleryItem[] } {
-  // Regex yang lebih fleksibel: match [GALLERY_DATA] diikuti JSON array
-  const galleryRegex = /\[GALLERY_DATA\]\s*(\[[\s\S]*?\])\s*(?:\[\/GALLERY_DATA\])?/;
-  const match = text.match(galleryRegex);
-
   let galleries: GalleryItem[] = [];
   let textContent = text;
 
-  if (match && match[1]) {
-    const jsonStr = match[1].trim();
+  // Cari posisi [GALLERY_DATA]
+  const startTag = '[GALLERY_DATA]';
+  const endTag = '[/GALLERY_DATA]';
+  const startIndex = text.indexOf(startTag);
+  
+  if (startIndex === -1) {
+    return { textContent, galleries };
+  }
+
+  // Cari posisi [/GALLERY_DATA] atau gunakan bracket matching
+  let endIndex = text.indexOf(endTag, startIndex);
+  let jsonStr = '';
+
+  if (endIndex !== -1) {
+    // Ada closing tag, ambil string diantara keduanya
+    jsonStr = text.substring(startIndex + startTag.length, endIndex).trim();
+  } else {
+    // Tidak ada closing tag, gunakan bracket matching untuk menemukan array JSON
+    let bracketCount = 0;
+    let jsonStart = -1;
+    let jsonEnd = -1;
+
+    for (let i = startIndex + startTag.length; i < text.length; i++) {
+      const char = text[i];
+      
+      if (char === '[') {
+        if (jsonStart === -1) jsonStart = i;
+        bracketCount++;
+      } else if (char === ']') {
+        bracketCount--;
+        if (bracketCount === 0 && jsonStart !== -1) {
+          jsonEnd = i + 1;
+          break;
+        }
+      }
+    }
+
+    if (jsonStart !== -1 && jsonEnd !== -1) {
+      jsonStr = text.substring(jsonStart, jsonEnd).trim();
+      endIndex = jsonEnd;
+    }
+  }
+
+  // Coba parse JSON
+  if (jsonStr) {
     try {
       galleries = JSON.parse(jsonStr);
-      // Hapus tag [GALLERY_DATA] dan JSON-nya dari teks
-      textContent = text.replace(galleryRegex, '').trim();
+      // Hapus tag [GALLERY_DATA] sampai [/GALLERY_DATA] atau sampai akhir array JSON
+      if (endIndex !== -1) {
+        textContent = (text.substring(0, startIndex) + text.substring(endIndex + endTag.length)).trim();
+      } else {
+        // Jika tidak ada end tag, cari posisi akhir dari JSON
+        const jsonMatch = text.substring(startIndex).match(/\[GALLERY_DATA\]\s*\[[\s\S]*?\]/);
+        if (jsonMatch) {
+          textContent = text.replace(jsonMatch[0], '').trim();
+        }
+      }
     } catch (e) {
-      console.warn('Invalid GALLERY_DATA JSON, ignoring gallery block:', jsonStr, e);
-      textContent = text.replace(galleryRegex, '').trim();
+      console.warn('Invalid GALLERY_DATA JSON:', jsonStr, e);
       galleries = [];
     }
   }

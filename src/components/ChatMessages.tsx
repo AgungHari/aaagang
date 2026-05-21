@@ -15,8 +15,13 @@ export function ChatMessages({ messages }: ChatMessagesProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
+    if (!scrollRef.current) return;
+    
+    const { scrollTop, scrollHeight, clientHeight } = scrollRef.current;
+    const isNearBottom = scrollHeight - scrollTop - clientHeight < 100; // 100px tolerance
+    
+    if (isNearBottom) {
+      scrollRef.current.scrollTop = scrollHeight;
     }
   }, [messages]);
 

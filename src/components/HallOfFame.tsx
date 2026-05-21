@@ -1,4 +1,4 @@
-import { Medal, Star, StarHalf, StarOff, Timer, ChessQueen, CrownIcon, Zap } from "lucide-react";
+import { Medal, Star, StarHalf, StarOff, Timer, ChessQueen, CrownIcon, Zap, ChessKnight, ChessKing} from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 import { mockWarHighlights, mockIsWar } from "@/lib/mockData";  // untuk testing
 
@@ -15,6 +15,19 @@ interface HallOfFameProps {
 }
 
 export default function HallOfFame({ isWar, war }: HallOfFameProps) {
+  const getAchievementImage = (type: string): string | null => {
+    switch (type) {
+      case "King Slayer":
+        return "/king_of_spades2.png";
+      case "Queen Slayer":
+        return "/queen_of_spades2.png";
+      case "Knight Slayer":
+        return "/jack_of_spades2.png";
+      default:
+        return null;
+    }
+  };
+
   const getWarHighlights = (): WarHighlight[] => {
     if (!isWar || !war?.clan?.members) return [];
     const highlights: WarHighlight[] = [];
@@ -32,39 +45,53 @@ export default function HallOfFame({ isWar, war }: HallOfFameProps) {
             priority: 1,
             desc: `ELIMINATED THE ENEMY KING 1. ${opponentName}! `,
           });
+        } else if (atk.stars === 3 && opponent?.mapPosition === 2) {
+          highlights.push({
+            name: m.name,
+            type: "Queen Slayer",
+            priority: 2,
+            desc: `ELIMINATED THE ENEMY QUEEN 2. ${opponentName}!`,
+          });
+        } else if (atk.stars === 3 && opponent?.mapPosition === 3) {
+          highlights.push({
+            name: m.name,
+            type: "Knight Slayer",
+            priority: 3,
+            desc: `ELIMINATED THE ENEMY KNIGHT 3. ${opponentName}!`,
+          });
         } else if (atk.stars === 3 && opponent && opponent.townhallLevel > m.townhallLevel) {
           highlights.push({
             name: m.name,
             type: "Giant Slayer",
-            priority: 2,
+            priority: 4,
             desc: `Destroy ${opponent.mapPosition}. ${opponentName} (TH ${opponent.townhallLevel}) as TH ${m.townhallLevel}!`,
           });
         } else if (atk.stars === 3 && atk.duration < 100) {
           highlights.push({
             name: m.name,
             type: "Blitzkrieg",
-            priority: 3,
+            priority: 5,
             desc: `3-Starred ${opponent.mapPosition}. ${opponentName} in just ${atk.duration}s!`,
           });
         } else if (atk.stars === 3) {
           highlights.push({
             name: m.name,
             type: "Perfect 3 Star Attack",
-            priority: 4,
+            priority: 6,
             desc: `Flawless 100% vs ${opponent.mapPosition}. ${opponentName}!`,
           });
         } else if (atk.stars === 2) {
           highlights.push({
             name: m.name,
             type: "Nice Attack 2 Star",
-            priority: 5,
+            priority: 7,
             desc: `${atk.destructionPercentage}% vs ${opponent.mapPosition}. ${opponentName} - Nice try!`,
           });
         } else if (atk.stars === 1) {
           highlights.push({
             name: m.name,
             type: "Unlucky 1 Star",
-            priority: 6,
+            priority: 8,
             desc: `${atk.destructionPercentage}% vs ${opponent.mapPosition}. ${opponentName} - So close!`,
           });
         }
@@ -88,7 +115,7 @@ export default function HallOfFame({ isWar, war }: HallOfFameProps) {
             {highlights.map((h, i) => (
               <ScrollReveal key={i} delay={i * 0.02}>
                 <div
-                  className={`p-5 bg-zinc-950/40 border rounded-2xl group transition-all ${
+                  className={`relative p-5 bg-zinc-950/40 border rounded-2xl group transition-all overflow-hidden ${
                     h.type === "Unlucky 1 Star"
                       ? "border-zinc-800/50 grayscale opacity-60"
                       : h.type === "Nice Attack 2 Star"
@@ -96,7 +123,14 @@ export default function HallOfFame({ isWar, war }: HallOfFameProps) {
                         : "border-amber-500/10 hover:border-amber-500/30"
                   }`}
                 >
-                  <div className="flex items-center gap-3 mb-2">
+                  {getAchievementImage(h.type) && (
+                    <img
+                      src={getAchievementImage(h.type)!}
+                      alt={h.type}
+                      className="absolute -bottom-6 -right-8 w-28 h-28 opacity-10 rotate-12 pointer-events-none object-contain"
+                    />
+                  )}
+                  <div className="flex items-center gap-3 mb-2 relative z-10">
                     <div
                       className={`p-1.5 rounded-lg ${
                         h.type.includes("Unlucky")
@@ -109,7 +143,11 @@ export default function HallOfFame({ isWar, war }: HallOfFameProps) {
                       {h.type.includes("Unlucky") ? (
                         <StarOff size={14} />
                       ) : h.type === "King Slayer" ? (
+                        <ChessKing size={14} />
+                      ) : h.type === "Queen Slayer" ? (
                         <ChessQueen size={14} />
+                      ) : h.type === "Knight Slayer" ? (
+                        <ChessKnight size={14} />
                       ) : h.type === "Giant Slayer" ? (
                         <CrownIcon size={14} />
                       ) : h.type === "Blitzkrieg" ? (
@@ -125,13 +163,13 @@ export default function HallOfFame({ isWar, war }: HallOfFameProps) {
                     <div className="text-xs font-black uppercase italic tracking-tight">{h.name}</div>
                   </div>
                   <div
-                    className={`text-[9px] font-bold uppercase tracking-tighter leading-tight ${
+                    className={`text-[9px] font-bold uppercase tracking-tighter leading-tight relative z-10 ${
                       h.type.includes("Unlucky") ? "text-zinc-500" : "text-amber-500/70"
                     }`}
                   >
                     {h.type}
                   </div>
-                  <div className="text-[10px] text-zinc-500 font-medium italic mt-1 line-clamp-1">
+                  <div className="text-[10px] text-zinc-500 font-medium italic mt-1 line-clamp-1 relative z-10">
                     {h.desc}
                   </div>
                 </div>

@@ -267,30 +267,35 @@ export default async function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
             {[
-              { name: "Indonesia", players: 34, code: "id" },
-              { name: "Australia", players: 4, code: "au" },
-              { name: "Pakistan", players: 2, code: "pk" },
-              { name: "Malaysia", players: 1, code: "my" }, 
-              { name: "Sri Lanka", players: 1, code: "lk" },
-              { name: "Thailand", players: 1, code: "th" }
+              { name: "Indonesia", players: 34, code: "id", emblem: "/Emblem_of_Indonesia-1024x1106.png" },
+              { name: "Australia", players: 4, code: "au", emblem: "/Emblem_of_Australia-1024x791.png" },
+              { name: "Pakistan", players: 2, code: "pk", emblem: "/Emblem_of_Pakistan-1024x1176.png" },
+              { name: "Malaysia", players: 1, code: "my", emblem: "/Emblem_of_Malaysia-1024x767.png" }, 
+              { name: "Sri Lanka", players: 1, code: "lk", emblem: "/Emblem_of_Sri_Lanka-1024x1451.png" },
+              { name: "Thailand", players: 1, code: "th", emblem: "/Emblem_of_Thailand-1024x1091.png" }
             ].map((location, index) => (
               <ScrollReveal key={index} delay={index * 0.1} mobileDelay={0.1}>
-                <div className="h-full w-full flex flex-col justify-center bg-zinc-900/20 border border-zinc-800/50 rounded-xl p-4 hover:border-amber-500/30 transition-all group w-full">
-                  <div className="flex items-center gap-3 mb-1">
-                    <img 
-                      src={`https://flagcdn.com/${location.code}.svg`} 
-                      width="24" 
-                      alt={`${location.name} flag`} 
-                    />
+                <div className="h-full w-full flex flex-col justify-center bg-zinc-900/20 border border-zinc-800/50 rounded-xl p-4 hover:border-amber-500/30 transition-all group w-full relative overflow-hidden">
+                  {/* Emblem Background */}
+                  <img 
+                    src={location.emblem}
+                    alt={`${location.name} emblem`}
+                    className="absolute -bottom-5 -right-2 w-28 h-28 object-contain opacity-20 pointer-events-none"
+                  />
+                  
+                  {/* Content */}
+                  <div className="relative z-10">
+                    <div className="flex items-center gap-3 mb-1">
                       <h3 className="text-sm font-black uppercase tracking-tighter text-white">
                         {location.name}
                       </h3>
-                  </div>
-                  <div className="text-xl font-semibold text-zinc-300">
-                    {location.players}
-                  </div>
-                  <div className="text-[10px] text-zinc-600 font-bold uppercase tracking-wider mt-1">
-                    Active Members
+                    </div>
+                    <div className="text-xl font-semibold text-zinc-300">
+                      {location.players}
+                    </div>
+                    <div className="text-[10px] text-zinc-600 font-bold uppercase tracking-wider mt-1">
+                      Active Members
+                    </div>
                   </div>
                 </div>
               </ScrollReveal>

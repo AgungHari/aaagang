@@ -34,21 +34,112 @@ export interface LayoutBaseContextType {
   getRecommendedLayouts: (strategy: string) => LayoutBase[];
 }
 
-export async function getLayoutBaseContext(): Promise<LayoutBaseContextType> {
+export interface UserIntent {
+  thLevel?: number;
+  strategy?: string;
+}
 
+/**
+ * Detect user intent dari message untuk smart filtering
+ * Extract TH level dan strategy keywords
+ */
+export function detectUserIntent(message: string): UserIntent {
+  const lowerMsg = message.toLowerCase();
+  const intent: UserIntent = {};
+
+  // Regex patterns untuk detect TH level
+  const thPatterns = [
+    /th\s*(\d+)/gi,  // "TH18", "TH 18", "th18"
+    /town\s*hall\s*(\d+)/gi,  // "Town Hall 18"
+    /townhall\s*(\d+)/gi,  // "Townhall18"
+  ];
+
+  let detectedTh = 0;
+  for (const pattern of thPatterns) {
+    const match = pattern.exec(lowerMsg);
+    if (match) {
+      detectedTh = parseInt(match[1]);
+      break;
+    }
+  }
+
+  // Strategy keywords mapping
+  const strategyKeywords: Record<string, string> = {
+    // Defense anti-strategies
+    'electro': 'anti-electro',
+    'electro dragon': 'anti-electro',
+    'edrag': 'anti-electro',
+    'hybrid': 'anti-hybrid',
+    'rc charge': 'anti-rc-charge',
+    'rc': 'anti-rc-charge',
+    'super minion': 'anti-super-minion',
+    'super wall breaker': 'anti-super-wall-breaker',
+    'swb': 'anti-super-wall-breaker',
+    'super giant': 'anti-super-giant',
+    
+    // Game modes
+    'war': 'war',
+    'cwl': 'cwl',
+    'clan war league': 'cwl',
+    'legends': 'legends-league',
+    'legends league': 'legends-league',
+    'ranked': 'ranked',
+    'esports': 'esports',
+    'troll': 'troll',
+  };
+
+  let detectedStrategy: string | undefined;
+  for (const [keyword, strategy] of Object.entries(strategyKeywords)) {
+    if (lowerMsg.includes(keyword)) {
+      detectedStrategy = strategy;
+      break;
+    }
+  }
+
+  if (detectedTh > 0 && detectedTh <= 16) {
+    intent.thLevel = detectedTh;
+  }
+  
+  if (detectedStrategy) {
+    intent.strategy = detectedStrategy;
+  }
+
+  // Fallback ke TH18 jika ambiguous (most popular)
+  if (!intent.thLevel && (lowerMsg.includes('base') || lowerMsg.includes('layout'))) {
+    intent.thLevel = 18;
+  }
+
+  return intent;
+}
+
+export async function getLayoutBaseContext(thLevel?: number, strategy?: string): Promise<LayoutBaseContextType> {
   try {
-    // Fetch data dari database
-    const result = await client.execute("SELECT * FROM layouts ORDER BY view_count DESC LIMIT 50");
+    // Build smart query dengan filtering
+    let query = "SELECT * FROM layouts WHERE is_active = 1";
+    
+    // Apply TH level filter jika specified
+    if (thLevel && thLevel > 0) {
+      query += ` AND th_level = ${thLevel}`;
+    }
+    
+    // Apply strategy filter jika specified (search dalam base_tag)
+    if (strategy) {
+      query += ` AND base_tag LIKE '%${strategy}%'`;
+    }
+    
+    query += " ORDER BY view_count DESC LIMIT 20";
+
+    const result = await client.execute(query);
 
     const layouts: LayoutBase[] = result.rows.map(row => {
       const description = row.description ? String(row.description) : "No description available";
       const baseTag = String(row.base_tag || "");
-      const thLevel = row.th_level ? Number(row.th_level) : 0;
+      const thLevelFromDb = row.th_level ? Number(row.th_level) : 0;
 
       return {
         id: String(row.id),
-        name: extractNameFromDescription(description, baseTag, thLevel),
-        thLevel: thLevel,
+        name: extractNameFromDescription(description, baseTag, thLevelFromDb),
+        thLevel: thLevelFromDb,
         description: description,
         recommendedFor: getRecommendedForTags(baseTag),
         imageUrl: row.image_url ? String(row.image_url) : "",
@@ -60,6 +151,53 @@ export async function getLayoutBaseContext(): Promise<LayoutBaseContextType> {
       };
     });
 
+    // Fallback: jika query dengan strategy tidak return hasil, coba ulang tanpa strategy
+    if (layouts.length === 0 && strategy) {
+      const fallbackQuery = `SELECT * FROM layouts WHERE is_active = 1${thLevel ? ` AND th_level = ${thLevel}` : ""} ORDER BY view_count DESC LIMIT 20`;
+      const fallbackResult = await client.execute(fallbackQuery);
+      
+      const fallbackLayouts: LayoutBase[] = fallbackResult.rows.map(row => {
+        const description = row.description ? String(row.description) : "No description available";
+        const baseTag = String(row.base_tag || "");
+        const thLevelFromDb = row.th_level ? Number(row.th_level) : 0;
+        
+        return {
+          id: String(row.id),
+          name: extractNameFromDescription(description, baseTag, thLevelFromDb),
+          thLevel: thLevelFromDb,
+          description: description,
+          recommendedFor: getRecommendedForTags(baseTag),
+          imageUrl: row.image_url ? String(row.image_url) : "",
+          baseUrl: `https://www.3agang.pro/layout/${row.id}`,
+          tags: getTagsFromBaseTag(baseTag),
+          baseTag: baseTag,
+          viewCount: row.view_count ? Number(row.view_count) : 0,
+          uploadDate: row.upload_date ? String(row.upload_date) : ""
+        };
+      });
+
+      return {
+        recommendedLayouts: fallbackLayouts,
+        getLayoutById: (id: string) => fallbackLayouts.find(layout => layout.id === id),
+        getLayoutsByTag: (tag: string) =>
+          fallbackLayouts.filter(layout =>
+            layout.tags.some(t => t.toLowerCase().includes(tag.toLowerCase())) ||
+            layout.baseTag.toLowerCase().includes(tag.toLowerCase())
+          ),
+        getLayoutsByThLevel: (thLv: number) =>
+          fallbackLayouts.filter(layout => layout.thLevel === thLv),
+        getRecommendedLayouts: (strat: string) =>
+          fallbackLayouts.filter(layout =>
+            layout.recommendedFor.some(rf =>
+              rf.toLowerCase().includes(strat.toLowerCase())
+            ) ||
+            layout.tags.some(t =>
+              t.toLowerCase().includes(strat.toLowerCase())
+            )
+          )
+      };
+    }
+
     return {
       recommendedLayouts: layouts,
       getLayoutById: (id: string) => layouts.find(layout => layout.id === id),
@@ -68,15 +206,15 @@ export async function getLayoutBaseContext(): Promise<LayoutBaseContextType> {
           layout.tags.some(t => t.toLowerCase().includes(tag.toLowerCase())) ||
           layout.baseTag.toLowerCase().includes(tag.toLowerCase())
         ),
-      getLayoutsByThLevel: (thLevel: number) =>
-        layouts.filter(layout => layout.thLevel === thLevel),
-      getRecommendedLayouts: (strategy: string) =>
+      getLayoutsByThLevel: (thLv: number) =>
+        layouts.filter(layout => layout.thLevel === thLv),
+      getRecommendedLayouts: (strat: string) =>
         layouts.filter(layout =>
           layout.recommendedFor.some(rf =>
-            rf.toLowerCase().includes(strategy.toLowerCase())
+            rf.toLowerCase().includes(strat.toLowerCase())
           ) ||
           layout.tags.some(t =>
-            t.toLowerCase().includes(strategy.toLowerCase())
+            t.toLowerCase().includes(strat.toLowerCase())
           )
         )
     };
@@ -115,7 +253,7 @@ function extractNameFromDescription(description: string, baseTag: string, thLeve
       .replace(/^\*\*/, '')
       .replace(/\*\*$/, '')
       .trim();
-    
+
     if (cleaned && cleaned.length > 3) {
       return cleaned;
     }
