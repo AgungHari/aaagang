@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, ChevronDown, Timer, Handshake, Shield, Brain, Sigma, Search, User, Users, Import, Trophy } from "lucide-react";
+import { Menu, X, ChevronDown, Timer, Handshake, Shield, Brain, Sigma, Search, User, Users, Import, Trophy, Sword } from "lucide-react";
 import { motion } from "framer-motion";
 import { Poppins } from "next/font/google";
 
@@ -29,11 +29,11 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
     { name: "Base Layouts", href: "/layout", disabled: false, icon: Import, description: "Explore & Import base layouts", image: "/BattleCopter_Boat_Pose01_NoShadow.webp" },
     { name: "Player Search", href: "/search", disabled: false, icon: User, description: "Cari & Stalk players", image: "/GW_DarkDays_f22_2k_V2.webp" },
     { name: "Clan Search", href: "/clansearch", disabled: false, icon: Users, description: "Cari & Stalk clans", image: "/BK_DE_Pose02_NoShadows.webp" },
+    { name: "Live War Status", href: "/livewarstatus", disabled: false, icon: Sword, description: "Statistik War Live", image: "/Hero_Pet_HV_Mighty_Yak_1_grass.webp" },
     { name: "Attack Coaching", href: "/coaching", disabled: true, icon: Brain, description: "Attack Pathing Berbasis AI", image: "/Super_Troop_Super_Wizard_2.webp" },
     { name: "Deffend Analysis", href: "/deffendanalysis", disabled: true, icon: Shield, description: "Analisa Defffense Berbasis AI", image: "/Hero_Pet_HV_Angry_Jelly_05.webp" },
     { name: "CWL Live Reports", href: "/cwlsearch", disabled: true, icon: Trophy, description: "Live Report CWL", image: "/Icon_HV_CWL_Champion_3.webp" },
     { name: "Friendly Wars", href: "/friendlywars", disabled: true, icon: Handshake, description: "Tantangan Friendly Wars", image: "/Troop_BB_Raged_Barbarian_no_grass.webp" },
-    { name: "More Feature..", href: "/comingsoon", disabled: true, icon: Timer, description: "Masih Mager Bang", image: "/Hero_Pet_HV_Mighty_Yak_1_grass.webp" },
   ];
 
   return (
