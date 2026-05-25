@@ -197,8 +197,8 @@ export default async function ArticlePage({
                 <div
                   className="prose prose-invert max-w-none prose-headings:text-amber-500 prose-a:text-amber-500 prose-a:hover:text-amber-400 prose-strong:text-zinc-100 prose-em:text-zinc-200 prose-p:text-zinc-300 prose-li:text-zinc-300"
                   dangerouslySetInnerHTML={{
-                    __html: detail.body
-                      ?.replace(/&lt;/g, '<')
+                    __html: (detail.body || '')
+                      .replace(/&lt;/g, '<')
                       .replace(/&gt;/g, '>')
                       .replace(/&quot;/g, '"')
                       .replace(/&#039;/g, "'")

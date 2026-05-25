@@ -112,7 +112,7 @@ export default async function AboutPage() {
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />
 
       {/* Video Hero Section */}
-      <section className="relative w-full h-screen md:h-96 mt-[50px] mb-20 overflow-hidden rounded-2xl">
+      <section className="relative w-full h-screen md:h-96 mt-[50px] mb-20 overflow-hidden">
         <video
           autoPlay
           muted

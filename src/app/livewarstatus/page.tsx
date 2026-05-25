@@ -168,16 +168,14 @@ export default function LiveWarStatusPage() {
               Buka profil clan di dalam game. Tag unik clan kamu tertera tepat di bawah nama besar clan. Cukup salin kode tersebut lalu tempel di kolom pencarian di atas.
             </p>
           </div>
-          <div className="col-span-2 mx-auto w-1/2">
-            <div className="p-6 bg-zinc-900/20 border border-zinc-900/60 rounded-2xl backdrop-blur-sm hover:border-zinc-800 transition-colors duration-300">
-             <div className="w-8 h-8 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-500 mb-4 font-bold text-sm select-none">
-               #
-             </div>
-             <h3 className="font-bold text-zinc-200 text-base mb-2">Format Tag Clan</h3>
-             <p className="text-xs text-zinc-400 leading-relaxed">
-               Tag clan Clash of Clans selalu dimulai dengan karakter # diikuti kombinasi unik huruf dan angka. Kamu bisa mengetikkan dengan atau tanpa tanda tagar.
-             </p>
-           </div>
+          <div className="p-6 bg-zinc-900/20 border border-zinc-900/60 rounded-2xl backdrop-blur-sm hover:border-zinc-800 transition-colors duration-300 md:col-span-2 md:max-w-md md:mx-auto">
+            <div className="w-8 h-8 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-500 mb-4 font-bold text-sm select-none">
+              #
+            </div>
+            <h3 className="font-bold text-zinc-200 text-base mb-2">Format Tag Clan</h3>
+            <p className="text-xs text-zinc-400 leading-relaxed">
+              Tag clan Clash of Clans selalu dimulai dengan karakter # diikuti kombinasi unik huruf dan angka. Kamu bisa mengetikkan dengan atau tanpa tanda tagar.
+            </p>
           </div>
 
         </div>
