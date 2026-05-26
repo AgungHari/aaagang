@@ -5,7 +5,8 @@ import { ArrowLeft, Shield, Trophy, Swords, Users, TrendingUp } from "lucide-rea
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WarStatusCard from "@/components/WarStatusCard";
-import HallOfFame from "@/components/HallOfFame";
+import HallOfFame from "@/components/HOFForSearch";
+import NonAttackingPlayers from "@/components/NonAttackingPlayers";
 import WarLogCard from "@/components/WarLogCard";
 import ScrollReveal from "@/components/ScrollReveal";
 
@@ -99,6 +100,9 @@ export default async function WarDetailPage({ params }: WarDetailPageProps) {
 
             {/* Hall of Fame */}
             <HallOfFame isWar={true} war={warData} />
+
+            {/* Non-Attacking Players */}
+            <NonAttackingPlayers isWar={true} war={warData} />
           </>
         ) : (
           <ScrollReveal delay={0.1} mobileDelay={0.1}>

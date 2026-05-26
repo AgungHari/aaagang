@@ -111,7 +111,7 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
                       className={`group relative p-4 rounded-xl transition-all drop-shadow duration-300 overflow-hidden ${link.disabled ? 'bg-zinc-900/30 opacity-50 cursor-not-allowed' : pathname === link.href ? 'bg-amber-500/20 border border-amber-500/50 hover:bg-amber-500/30' : 'bg-zinc-900/50 border border-zinc-800/30 hover:bg-zinc-800/70 hover:border-amber-500/30'}`}
                     >
                       {link.image && (
-                        <img src={link.image} alt={link.name} className="absolute -right-6 -bottom-8 size-40 opacity-10 grayscale group-hover:grayscale-0 group-hover:opacity-20 group-hover:scale-110 transition-all duration-700 pointer-events-none" />
+                        <img src={link.image} alt={link.name} className="absolute -right-6 -top-2 size-30 opacity-10 grayscale group-hover:grayscale-0 group-hover:opacity-20 group-hover:scale-110 transition-all duration-700 pointer-events-none" />
                       )}
                       <div className="flex items-start gap-3 relative z-10">
                         <div className={`p-2.5 rounded-lg transition-all duration-300 flex-shrink-0 ${link.disabled ? 'bg-zinc-800/30' : pathname === link.href ? 'bg-amber-500/20 text-amber-500' : 'bg-zinc-800/50 text-zinc-400 group-hover:bg-amber-500/20 group-hover:text-amber-500'}`}>
