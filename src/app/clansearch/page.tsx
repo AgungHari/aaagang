@@ -59,7 +59,7 @@ export default function ClanSearchPage() {
 
   if (!clanData) {
     return (
-      <main className="min-h-screen bg-zinc-950 text-zinc-100 font-poppins selection:bg-amber-500 selection:text-black">
+      <main className="min-h-screen text-zinc-100 font-poppins selection:bg-amber-500 selection:text-black">
         <section className="max-w-4xl mx-auto px-6 pt-32 pb-16">
           <div className="animate-pulse space-y-8">
             <div className="h-6 w-32 rounded-full bg-zinc-900/80 border border-zinc-800/50" />

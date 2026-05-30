@@ -1,0 +1,12 @@
+# Requirements for Clash of Clans Base Layout Scraper
+# Generated based on imports in main.py
+
+requests==2.33.1
+libsql_client==0.3.1
+cloudinary==1.40.0
+google-api-python-client==2.196.0
+# Note: The following are Python standard library modules and don't need to be installed:
+# - re (regular expressions)
+# - json (JSON handling)
+# - time (time functions)
+# - urllib.parse (URL parsing)
