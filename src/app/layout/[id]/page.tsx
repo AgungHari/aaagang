@@ -187,7 +187,7 @@ export default async function LayoutDetailPage({
                 <LayoutDescription content={content} />
 
                 {/* Iklan Ad Unit */}
-                <ProfitableAdUnit />
+                {/* <ProfitableAdUnit /> */}
 
                 {/* Copy Link */}
                 <CopyLinkBox copyLink={String(layout.copy_link)} />

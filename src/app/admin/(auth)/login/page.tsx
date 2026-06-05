@@ -1,4 +1,4 @@
-// src/app/admin/login/page.tsx
+// src/app/admin/(auth)/login/page.tsx
 'use client'
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
@@ -17,7 +17,7 @@ export default function AdminLogin() {
     if (result.success) {
       setError('')
       setIsRateLimited(false)
-      router.push('/admin/dashboard')
+      router.push(result.redirectUrl || '/admin/home')
     } else {
       setError(result.message || 'Login failed')
       setIsRateLimited(result.isRateLimited || false)

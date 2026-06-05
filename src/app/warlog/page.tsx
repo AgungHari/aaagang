@@ -125,7 +125,7 @@ export default async function WarLogPage() {
           </div>
         </div>
 
-        <ProfitableAdUnit />
+        {/* <ProfitableAdUnit /> */}
 
         {serializedWars.length > 0 ? (
           <div className="animate-slide-up">

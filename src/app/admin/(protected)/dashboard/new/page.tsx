@@ -1,30 +1,12 @@
-
 import SectionTitle from "@/components/SectionTitle";
-import { createLayout } from "@/app/admin/dashboard/new/action";
+import { createLayout } from "./action";
 import Link from "next/link";
 import { ArrowLeft, Save } from "lucide-react";
-import { cookies } from "next/headers";
-
-import { redirect } from "next/navigation";
-import { jwtVerify } from "jose";
 
 export default async function NewLayoutPage() {
-    // 1. AUTH GATE (Gembok Server)
-  const cookieStore = await cookies();
-  const token = cookieStore.get("admin_token")?.value;
-
-  if (!token) {
-    redirect("/admin/login");
-  }
-
-  try {
-    const secret = new TextEncoder().encode(process.env.JWT_SECRET);
-    await jwtVerify(token, secret);
-  } catch (error) {
-    redirect("/admin/login");
-  }
+  // Auth already verified in shared layout
   return (
-    <main className="min-h-screen bg-[#0a0a0a] text-white p-6 lg:p-12 font-urban">
+    <main className="min-h-screen bg-[#0a0a0a] text-white p-6 lg:p-12 font-poppins">
       <div className="max-w-3xl mx-auto">
         <Link 
           href="/admin/dashboard" 

@@ -2,8 +2,8 @@
 import { createClient } from "@libsql/client";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
-import { cookies } from "next/headers"; // Tambahkan ini
-import { jwtVerify } from "jose"; // Tambahkan ini
+import { cookies } from "next/headers";
+import { jwtVerify } from "jose";
 
 
 const client = createClient({
@@ -12,7 +12,7 @@ const client = createClient({
 });
 
 export async function updateLayout(id: number, formData: FormData) {
-  // Tambahkan Auth Check juga di updateLayout biar makin aman
+  // Auth Check (server action security layer)
   const cookieStore = await cookies();
   const token = cookieStore.get("admin_token")?.value;
   if (!token) throw new Error("Unauthorized");
@@ -55,5 +55,4 @@ export async function deleteLayout(id: number) {
   });
 
   revalidatePath("/admin/dashboard");
-  // Untuk delete tidak perlu redirect, cukup revalidate biar tabelnya refresh
 }
