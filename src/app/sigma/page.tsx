@@ -107,7 +107,7 @@ export default async function KontakPage() {
         <ChatInterface />
 
         {/* Ad Unit di bawah chat interface */}
-        <ProfitableAdUnit />
+        {/* <ProfitableAdUnit /> */}
       </section>
 
       {/* Footer: Persis seperti di Member Page */}

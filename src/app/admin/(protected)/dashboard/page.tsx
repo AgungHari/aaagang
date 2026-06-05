@@ -1,13 +1,9 @@
 import { createClient } from "@libsql/client";
-import SectionTitle from "@/components/SectionTitle";
-import { Plus, Database, Eye, ThumbsUp, Edit3 } from "lucide-react";
+import { Plus, Database, Eye, Edit3 } from "lucide-react";
 import DeleteLayoutButton from "@/components/DeleteLayoutButton";
 import PreviewButtons from "@/components/PreviewButtons";
 import Link from "next/link";
-
-import { cookies } from "next/headers";
-import { redirect } from "next/navigation";
-import { jwtVerify } from "jose";
+import SectionTitle from "@/components/SectionTitle";
 
 const client = createClient({
   url: process.env.TURSO_DATABASE_URL!,
@@ -15,48 +11,30 @@ const client = createClient({
 });
 
 export default async function AdminDashboard() {
-  // 1. CEK SESI (AUTH GATE)
-  const cookieStore = await cookies();
-  const token = cookieStore.get("admin_token")?.value;
-
-  if (!token) {
-    redirect("/admin/login");
-  }
-
-  try {
-    const secret = new TextEncoder().encode(process.env.JWT_SECRET);
-    await jwtVerify(token, secret);
-  } catch (error) {
-
-    redirect("/admin/login");
-  }
-
-  // 2. FETCH DATA (Hanya jalan jika lolos cek di atas)
+  // FETCH DATA (Auth already verified in shared layout)
   const result = await client.execute("SELECT * FROM layouts ORDER BY upload_date DESC");
   const layouts = result.rows;
 
   const totalLayouts = layouts.length;
-  const totalViews = layouts.reduce((acc, curr) => acc + Number(curr.view_count || 0), 0);
+
+  // Get total views from all layouts
+  const viewsResult = await client.execute("SELECT SUM(view_count) as total_views FROM layouts");
+  const totalViewsAll = Number(viewsResult.rows[0]?.total_views || 0);
 
   return (
     <main className="min-h-screen text-white p-6 lg:p-12 font-poppins">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 gap-4 text-amber-500">
+        {/* Header */}
+        <div className="mb-12 gap-4 text-amber-500">
           <SectionTitle 
-            text1="ADMIN" 
+            text1="Base Layouts" 
             text2="DASHBOARD" 
-            text3="Manage AAA GANG Base Layouts" 
+            text3="Manage your base layouts, view stats, and keep the gang strong!" 
           />
-          <span className="text-white font-semibold">Total Views Layout: {totalViews}</span>
-          <Link 
-            href="/admin/dashboard/new" 
-            className="flex items-center gap-2 bg-zinc-900/20 border border-zinc-800/50 text-zinc-300 px-6 py-3 rounded-full font-semibold transition animate-pulse"
-          >
-            <Plus size={20} />
-          </Link>
         </div>
 
-        {/* Stats & Table... */}
+
+        {/* Stats Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             <div className="bg-zinc-900/20 border border-zinc-800/50 p-6 rounded-2xl">
               <div className="flex items-center gap-4 text-gray-400 mb-2">
@@ -65,7 +43,23 @@ export default async function AdminDashboard() {
               </div>
               <p className="text-3xl">{totalLayouts}</p>
             </div>
-            {/* ... stats lainnya ... */}
+            <div className="bg-zinc-900/20 border border-zinc-800/50 p-6 rounded-2xl">
+              <div className="flex items-center gap-4 text-gray-400 mb-2">
+                <Eye size={20} />
+                <span className="text-sm font-bold uppercase tracking-widest">Total Views</span>
+              </div>
+              <p className="text-3xl">{totalViewsAll.toLocaleString()}</p>
+            </div>
+            <Link 
+              href="/admin/dashboard/new" 
+              className="bg-zinc-900/20 border border-zinc-800/50 p-6 rounded-2xl hover:border-amber-500/50 hover:bg-amber-600/10 transition group cursor-pointer animate-pulse"
+            >
+              <div className="flex items-center gap-4 text-gray-400 mb-2 group-hover:text-amber-400 ">
+                <Plus size={20} />
+                <span className="text-sm font-bold uppercase tracking-widest">Upload Base</span>
+              </div>
+              <p className="text-gray-500 text-sm group-hover:text-gray-300">Add new layout</p>
+            </Link>
         </div>
 
         <div className="bg-zinc-900/20 border border-zinc-800/50 rounded-2xl overflow-hidden">

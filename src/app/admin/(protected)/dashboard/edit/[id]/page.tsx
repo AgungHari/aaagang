@@ -1,32 +1,15 @@
 import SectionTitle from "@/components/SectionTitle";
 import { createClient } from "@libsql/client";
-import { updateLayout } from "@/app/admin/dashboard/action"; 
+import { updateLayout } from "@/app/admin/(protected)/dashboard/action"; 
 import Link from "next/link";
 import { ArrowLeft, Save } from "lucide-react";
-
-import { cookies } from "next/headers"; 
-import { redirect } from "next/navigation"; 
-import { jwtVerify } from "jose"; 
 
 export default async function EditLayoutPage({ 
   params 
 }: { 
   params: Promise<{ id: string }> 
 }) {
-    // 1. CEK SESI (AUTH GATE)
-  const cookieStore = await cookies();
-  const token = cookieStore.get("admin_token")?.value;
-
-  if (!token) {
-    redirect("/admin/login");
-  }
-
-  try {
-    const secret = new TextEncoder().encode(process.env.JWT_SECRET);
-    await jwtVerify(token, secret);
-  } catch (error) {
-    redirect("/admin/login");
-  }
+  // Auth already verified in shared layout
   const { id } = await params;
 
   const client = createClient({
@@ -41,12 +24,12 @@ export default async function EditLayoutPage({
   
   const data = result.rows[0];
 
-  if (!data) return <div className="p-10 text-white font-urban">Data tidak ditemukan</div>;
+  if (!data) return <div className="p-10 text-white font-poppins">Data tidak ditemukan</div>;
 
   const updateLayoutWithId = updateLayout.bind(null, Number(id));
 
   return (
-    <main className="min-h-screen bg-[#0a0a0a] text-white p-6 lg:p-12 font-urban">
+    <main className="min-h-screen bg-[#0a0a0a] text-white p-6 lg:p-12 font-poppins">
       <div className="max-w-3xl mx-auto">
         <Link href="/admin/dashboard" className="flex items-center gap-2 text-gray-500 hover:text-white mb-8 group">
           <ArrowLeft size={20} className="group-hover:-translate-x-1 transition" />

@@ -56,7 +56,7 @@ export async function loginAction(formData: FormData) {
       maxAge: 60 * 60 * 24 // 1 hari
     })
 
-    return { success: true }
+    return { success: true, redirectUrl: '/admin/home' }
   }
 
   // Invalid credentials - return remaining attempts info
