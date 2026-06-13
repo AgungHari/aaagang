@@ -218,7 +218,7 @@ export default async function MemberDetailPage({ params }: { params: Promise<{ t
         </div>
 
         {/* Ad Unit */}
-        <ProfitableAdUnit />
+        {/* <ProfitableAdUnit /> */}
 
         {/* Statistik Utama */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
