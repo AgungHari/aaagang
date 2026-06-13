@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import WarStatusCard from "@/components/WarStatusCard";
 import HallOfFame from "@/components/HOFForSearch";
 import NonAttackingPlayers from "@/components/NonAttackingPlayers";
-import WarLogCard from "@/components/WarLogCard";
+import WarLogCardLive from "@/components/WarLogCardLive";
 import ScrollReveal from "@/components/ScrollReveal";
 
 interface WarDetailPageProps {
@@ -128,7 +128,7 @@ export default async function WarDetailPage({ params }: WarDetailPageProps) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {warLog.items.map((war: any, idx: number) => (
                 <ScrollReveal key={idx} delay={idx * 0.05} mobileDelay={0.1}>
-                  <WarLogCard war={war} index={idx} />
+                  <WarLogCardLive war={war} index={idx} />
                 </ScrollReveal>
               ))}
             </div>
