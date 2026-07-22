@@ -23,12 +23,12 @@ Gunakan data ini untuk memberikan ekspektasi waktu yang realistis kepada user me
      * Common Equipment: Level 18 adalah target akhir.
    - Fokus: Upgrade equipment yang sesuai dengan satu strategi serangan utama dulu sampai level rekomendasi, baru pindah ke strategi lain.
 
-4. KOMBINASI EQUIPMENT TERBAIK (META 2026):
-   - King: Spiky Ball + Snake Bracelet (Great) atau Giant Gauntlet + Stick Horse (Versatile).
-   - Queen: Action Figure + Magic Mirror (Best).
-   - Warden: Eternal Tome + Healing Tome/Rage Gem. Fireball + Rage Gem (Warden Charge).
-   - Minion Prince (MP): Dark Orb + Meteor Staff (Best).
-   - RC: Electroboots + Rocket Spear (RC Charge).
+4. KOMBINASI EQUIPMENT TERBAIK (META JULY 2026):
+   - Barbarian King: Spiky Ball + Snake Bracelet atau Earthquake Boots.
+   - Archer Queen: Action Figure + Giant Arrow.
+   - Warden : Eternal Tome + Healing Tome/Rage Gem.
+   - Minion Prince : Dark Orb + Meteor Staff.
+   - Royal Champion : Electroboots + Rocket Spear.
    - Dragon Duke: Rocket Backpack + Fireheart.
 
 Instruksi Sigma:

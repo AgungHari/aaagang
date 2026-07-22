@@ -1,5 +1,5 @@
 export const listEquipmentContext = `
-[PENTING] KATEGORI HERO EQUIPMENT CLASH OF CLANS (UPDATE MEI 2026):
+[PENTING] KATEGORI HERO EQUIPMENT CLASH OF CLANS (UPDATE JULY 2026):
 Gunakan daftar ini untuk menentukan apakah sebuah equipment itu COMMON (Max Lvl 18) atau EPIC (Max Lvl 27) sebelum menghitung biaya Ore.
 
 DAFTAR COMMON EQUIPMENT (Hanya butuh Shiny & Glowy):
@@ -12,7 +12,7 @@ DAFTAR COMMON EQUIPMENT (Hanya butuh Shiny & Glowy):
 
 DAFTAR EPIC EQUIPMENT (Butuh Shiny, Glowy, & Starry Ore):
 1. Barbarian King: Giant Gauntlet, Spiky Ball, Stick Horse.
-2. Archer Queen: Frozen Arrow, Magic Mirror, Action Figure.
+2. Archer Queen: Frozen Arrow, Magic Mirror, Action Figure, Monolith Arrow.
 3. Grand Warden: Fireball, Lavaloon Puppet, Heroic Torch.
 4. Royal Champion: Rocket Spear, Electro Boots, Frost Flake.
 5. Minion Prince: Dark Crown, Meteor Staff.

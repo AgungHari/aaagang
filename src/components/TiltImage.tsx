@@ -53,7 +53,7 @@ export default function TiltedImage({ rotateAmplitude = 3, }) {
             transition={{ type: "spring", stiffness: 320, damping: 70, mass: 1 }}
         >
             <motion.div className="relative transform-3d w-full max-w-5xl" style={{ rotateX, rotateY }} >
-                <motion.video src="/fix.mp4"
+                <motion.video src="/baru.mp4"
                     className="w-full rounded-[15px] will-change-transform transform-[translateZ(0)]"
                     autoPlay
                     loop

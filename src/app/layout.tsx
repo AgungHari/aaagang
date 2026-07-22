@@ -85,10 +85,10 @@ export default function RootLayout({
           />
           
           {/* Lampu 2 */}
-          <div 
+          {/* <div 
             className="absolute top-[60%] -left-[10%] w-[30vw] h-[30vw] rounded-full blur-[100px] opacity-15"
             style={{ background: 'radial-gradient(circle, #d97706 0%, transparent 70%)' }}
-          />
+          /> */}
 
           <div 
             className="absolute top-[30%] left-[10%] w-[30vw] h-[30vw] rounded-full blur-[100px] opacity-15"
