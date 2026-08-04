@@ -5,7 +5,7 @@ export function MapWithMarkers() {
     const CITIES = [
         {
             name: "Kantor",
-            coordinates: [ -6.279070,106.755809] satisfies LatLngExpression,
+            coordinates: [ -8.672139,115.234250] satisfies LatLngExpression,
         },
     ]
 

@@ -59,8 +59,14 @@ export default async function ArticlePage({
     );
   }
 
-  const heroImageUrl = article.heroImage?.medium?.path
-    ? `https://clashofclans.inbox.supercell.com${article.heroImage.medium.path}`
+  const heroImagePath =
+    article.heroImage?.medium?.path ||
+    article.thumbnail?.large?.path ||
+    article.thumbnail?.medium?.path ||
+    null;
+
+  const heroImageUrl = heroImagePath
+    ? `https://clashofclans.inbox.supercell.com${heroImagePath}`
     : null;
 
   const videoUrl =

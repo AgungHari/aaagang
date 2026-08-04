@@ -35,11 +35,9 @@ const placeholderOptions = [
   "Ask Sigma",
   "Base TH 17 buat legends league?",
   "Ada slot kosong ga di clan saat ini?",
-  "Lavaloon puppetku level 12",
-  "ke max butuh berapa ore?",
+  "Berapa Ore untuk max Equipment?",
   "Apa rules clan ini?",
-  "Apa benar Agung-R1-Distill",
-  "Llama-70B model yang bagus?",
+  "Apakah 3agang.pro aman?",
   "Base TH 18 siap CWL",
   "Siapa leader clan ini?"
 ];

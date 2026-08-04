@@ -74,7 +74,7 @@ export default async function ContactPage() {
                   <MapPin className="text-amber-500 mt-1 flex-shrink-0" size={18} />
                   <div>
                     <h3 className="text-white">Location</h3>
-                    <p className="text-zinc-400 text-sm">Markas Besar di pin</p>
+                    <p className="text-zinc-400 text-sm">Denpasar, Bali</p>
                   </div>
                 </div>
 
