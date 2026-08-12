@@ -129,7 +129,10 @@ export default async function Home() {
         <div className="absolute top-30 -z-10 left-1/4 size-72 bg-amber-600/10 blur-[300px]"></div>
         
         {/* Clan Badge */}
-        <div className="flex items-center gap-2 rounded-full p-1 pr-3 mt-23 font-poppins text-amber-100 bg-amber-200/15 border border-amber-500/20  animate-slide-up">
+        <Link
+          href="/members"
+          className="flex items-center gap-2 rounded-full p-1 pr-3 mt-23 font-poppins text-amber-100 bg-amber-200/15 border border-amber-500/20 animate-slide-up transition hover:border-amber-500/40 hover:bg-amber-500/10"
+        >
           <span className="bg-amber-800 text-white text-xs px-3.5 py-1 rounded-full font-black">
             {clan.memberList?.length < 50 ? "OPEN" : "CLOSED"}
           </span>
@@ -137,7 +140,7 @@ export default async function Home() {
             <span>{clan.memberList?.length} Gangstas on deck</span>
             <ChevronRightIcon size={16} />
           </p>
-        </div>
+        </Link>
         
         {/* Main Title */}
         <MorphingTitle />

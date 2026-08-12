@@ -16,7 +16,7 @@ DAFTAR EPIC EQUIPMENT (Butuh Shiny, Glowy, & Starry Ore):
 3. Grand Warden: Fireball, Lavaloon Puppet, Heroic Torch.
 4. Royal Champion: Rocket Spear, Electro Boots, Frost Flake.
 5. Minion Prince: Dark Crown, Meteor Staff.
-6. Dragon Duke: Rocket Backpack .
+6. Dragon Duke: Rocket Backpack, Revenge Deck.
 
 Instruksi Tambahan untuk Sigma:
 - Selalu cek kategori (Common/Epic) berdasarkan nama equipment yang disebutkan user.

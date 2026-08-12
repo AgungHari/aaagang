@@ -21,6 +21,7 @@ interface LayoutCardProps {
   view_count: number;
   like_count: number;
   is_active: number;
+  isNewest?: boolean;
 }
 
 export default function LayoutCard({
@@ -36,6 +37,7 @@ export default function LayoutCard({
   view_count,
   like_count,
   is_active,
+  isNewest = false,
 }: LayoutCardProps) {
   const [views, setViews] = useState(view_count);
   const [likes, setLikes] = useState(like_count);
@@ -103,8 +105,22 @@ export default function LayoutCard({
 
   return (
     <div 
-      className="bg-zinc-900/20 border border-zinc-800/50 rounded-2xl overflow-hidden hover:border-amber-500/50 transition-all group cursor-pointer"
+      className={[
+        "rounded-2xl overflow-hidden transition-all group cursor-pointer relative",
+        isNewest
+          ? "border border-amber-500/70 bg-gradient-to-b from-amber-600/10 via-zinc-900/20 to-zinc-900/60 shadow-[0_0_0_1px_rgba(245,158,11,0.35),0_0_22px_rgba(245,158,11,0.22),0_0_40px_rgba(217,119,6,0.14)]"
+          : "bg-gradient-to-b from-amber-600/10 via-zinc-900/20 to-zinc-900/60 border border-zinc-800/50 hover:border-amber-500/50"
+      ].join(" ")}
     >
+      {isNewest && (
+        <div className="absolute inset-x-0 top-0 z-20 flex justify-center pointer-events-none">
+          <div className="mt-3 inline-flex items-center gap-2 rounded-full border border-amber-500/60 bg-amber-500/10 px-3 py-1 text-[10px] font-black uppercase tracking-[0.28em] text-amber-400 shadow-[0_0_14px_rgba(245,158,11,0.28)] animate-pulse">
+            <span className="h-2 w-2 rounded-full bg-amber-500 shadow-[0_0_12px_rgba(245,158,11,0.8)]" />
+            Newest
+          </div>
+        </div>
+      )}
+
       {/* Image Section */}
       {image_url && !imageError && (
         <div className="relative w-full aspect-video overflow-hidden bg-zinc-800">
@@ -141,13 +157,25 @@ export default function LayoutCard({
         {/* Title and Tag */}
         <div className="flex items-start justify-between gap-3">
           <div className="flex-1">
-            <h3 className="text-lg font-bold text-white mb-2 line-clamp-2">
+            <h3
+              className={[
+                "text-lg font-bold mb-2 line-clamp-2 transition-all",
+                isNewest
+                  ? "text-amber-400 drop-shadow-[0_0_10px_rgba(245,158,11,0.6)] animate-pulse"
+                  : "text-white"
+              ].join(" ")}
+            >
               {title}
             </h3>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 flex-wrap">
               <span className="inline-block bg-zinc-700/40 text-zinc-300 px-3 py-1 rounded-lg font-semibold text-xs">
                 {base_tag}
               </span>
+              {isNewest && (
+                <span className="inline-flex items-center gap-1 rounded-full border border-amber-500/40 bg-amber-500/10 px-2 py-1 text-[9px] font-bold uppercase tracking-[0.25em] text-amber-400 animate-pulse">
+                  New
+                </span>
+              )}
               <span className="text-xs text-gray-500">{formattedDate}</span>
             </div>
           </div>
