@@ -18,7 +18,7 @@ export default function TiltedImage({ rotateAmplitude = 3, }) {
 
     const [lastY, setLastY] = useState(0);
 
-    function handleMouse(e: any) {
+    function handlePointerMove(e: React.PointerEvent<HTMLDivElement>) {
         if (!ref.current) return;
 
         const rect = ref.current.getBoundingClientRect();
@@ -39,14 +39,14 @@ export default function TiltedImage({ rotateAmplitude = 3, }) {
         setLastY(offsetY);
     }
 
-    function handleMouseLeave() {
+    function handlePointerLeave() {
         rotateX.set(0);
         rotateY.set(0);
         rotateFigcaption.set(0);
     }
 
     return (
-        <motion.figure ref={ref} className="relative w-full h-full perspective-midrange mt-16 max-w-4xl xl:max-w-2xl 2xl:max-w-3xl 2xl:max-w-4xl mx-auto flex flex-col items-center justify-center mb-[200px]" onMouseMove={handleMouse} onMouseLeave={handleMouseLeave}
+        <motion.figure ref={ref} className="relative w-full h-full perspective-midrange mt-16 max-w-4xl xl:max-w-2xl 2xl:max-w-3xl 2xl:max-w-4xl mx-auto flex flex-col items-center justify-center mb-[200px]" onPointerMove={handlePointerMove} onPointerLeave={handlePointerLeave}
             initial={{ y: 150, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}

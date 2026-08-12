@@ -19,54 +19,63 @@ interface LayoutPageChatProps {
 
 const STORAGE_KEY = "aaa-gang-layout-chat-log";
 
+const defaultLayoutPrompt = "Selamat datang di base layout, ketik untuk mencari base!";
+
 const initialMessages: Message[] = [
-  { role: "ai", text: "Selamat datang di base layout, ketik untuk mencari base!" }
+  { role: "ai", text: defaultLayoutPrompt }
 ];
 
 const placeholderOptions = [
   "Ask Sigma",
   "Base TH 17 buat legends league?",
   "Ada slot kosong ga di clan saat ini?",
-  "Lavaloon puppetku level 12",
-  "ke max butuh berapa ore?",
+  "Berapa Ore untuk max Equipment?",
   "Apa rules clan ini?",
-  "Apa benar Agung-R1-Distill",
-  "Llama-70B model yang bagus?",
+  "Apakah 3agang.pro aman?",
   "Base TH 18 siap CWL",
   "Siapa leader clan ini?"
 ];
 
 export default function LayoutPageChat({ clanName, initialMessage }: LayoutPageChatProps) {
+  const pageStorageKey = initialMessage
+    ? "aaa-gang-home-chat-log"
+    : "aaa-gang-layout-chat-log";
+
   const defaultMessages: Message[] = initialMessage
     ? [{ role: "ai", text: initialMessage }]
     : initialMessages;
 
-  const [messages, setMessages] = useState(defaultMessages);
+  const [messages, setMessages] = useState<Message[]>(defaultMessages);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
   const chatContainerRef = useRef<HTMLDivElement>(null);
 
-  // Load chat dari localStorage
   useEffect(() => {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if (saved) {
-      try {
+    try {
+      const saved = localStorage.getItem(pageStorageKey);
+      if (saved) {
         const parsed = JSON.parse(saved) as Message[];
-        if (Array.isArray(parsed) && parsed.length > 0) setMessages(parsed);
-      } catch (e) { console.warn(e); }
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          setMessages(parsed);
+          return;
+        }
+      }
+      setMessages(defaultMessages);
+    } catch (e) {
+      console.warn(e);
+      setMessages(defaultMessages);
     }
-  }, []);
+  }, [pageStorageKey, initialMessage]);
 
-  // Simpan ke localStorage
   useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(messages));
-  }, [messages]);
+    localStorage.setItem(pageStorageKey, JSON.stringify(messages));
+  }, [messages, pageStorageKey]);
 
   const clearChat = () => {
     if (confirm("Hapus semua memori Sigma?")) {
-      setMessages(initialMessages);
-      localStorage.removeItem(STORAGE_KEY);
+      setMessages(defaultMessages);
+      localStorage.removeItem(pageStorageKey);
     }
   };
 

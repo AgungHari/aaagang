@@ -1,3 +1,4 @@
+import Link from "next/link";
 import WarTestimonialCard from "@/components/WarTestimonialCard";
 import SectionTitle from "@/components/SectionTitle";
 import Marquee from "react-fast-marquee";
@@ -53,7 +54,7 @@ export default function WarTestimonial({ warLog }: WarTestimonialProps) {
                 MAINKAN <span className="text-amber-500">DAN</span> <span className="text-amber-800">HABISI</span>
             </h2>
             <p className="text-zinc-400 text-sm md:text-sm font-poppins">
-                Rasakan pengalaman perang paling berkelas dalam sejarah Clash Of Clans intip <span className="text-amber-500">Warlog</span> kami untuk full detail perang.
+                Rasakan pengalaman perang paling berkelas dalam sejarah Clash Of Clans intip <Link href="/warlog" className="text-amber-500 underline decoration-amber-500/50 underline-offset-4 hover:text-amber-400 transition-colors">Warlog</Link> kami untuk full detail perang.
             </p>
         </div>
         </ScrollReveal>
