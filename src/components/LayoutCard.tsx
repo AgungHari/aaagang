@@ -159,7 +159,7 @@ export default function LayoutCard({
           <div className="flex-1">
             <h3
               className={[
-                "text-lg font-bold mb-2 line-clamp-2 transition-all",
+                "text-lg font-bold mb-2 line-clamp-1 transition-all",
                 isNewest
                   ? "text-amber-400 drop-shadow-[0_0_10px_rgba(245,158,11,0.6)] animate-pulse"
                   : "text-white"

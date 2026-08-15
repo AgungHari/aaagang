@@ -1,8 +1,8 @@
 
-[![web-banner](thumbnail2.webp)](https://www.3agang.pro/)
+[![web-banner](Read_Export_Hero_1.webp)](https://www.3agang.pro/)
 
 
-[![web-banner2](thumbnail223.webp)](https://www.3agang.pro/)
+[![web-banner2](Read_Export_Logo_1.webp)](https://www.3agang.pro/)
 <table border="0">
   <tr>
     <td align="left" valign="middle">

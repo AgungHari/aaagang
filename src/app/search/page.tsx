@@ -140,7 +140,7 @@ export default function SearchPage() {
               
               <div className="relative aspect-video rounded-2xl overflow-hidden border border-zinc-800/80 bg-zinc-950 shadow-inner">
                 <video
-                  src="/playersearchs.mp4" 
+                  src="/Feature_PlayerSearch.webm" 
                   autoPlay
                   loop
                   muted
