@@ -120,7 +120,7 @@ export default async function AboutPage() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/mantap.mp4" type="video/mp4" />
+          <source src="/About_Main.webm" type="video/webm" />
         </video>
 
         {/* Dark Gradient Overlay */}

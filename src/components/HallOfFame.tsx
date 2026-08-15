@@ -1,4 +1,6 @@
-import { Medal, Star, StarHalf, StarOff, Timer, ChessQueen, CrownIcon, Zap, ChessKnight, ChessKing} from "lucide-react";
+"use client";
+import { useState } from "react";
+import { Medal, Star, StarHalf, StarOff, Timer, ChessQueen, CrownIcon, Zap, ChessKnight, ChessKing, ChevronDown, ChevronUp } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 import { mockWarHighlights, mockIsWar } from "@/lib/mockData";  // untuk testing
 
@@ -18,11 +20,11 @@ export default function HallOfFame({ isWar, war }: HallOfFameProps) {
   const getAchievementImage = (type: string): string | null => {
     switch (type) {
       case "King Slayer":
-        return "/king_of_spades2.png";
+        return "/king_of_spades2.webp";
       case "Queen Slayer":
-        return "/queen_of_spades2.png";
+        return "/queen_of_spades2.webp";
       case "Knight Slayer":
-        return "/jack_of_spades2.png";
+        return "/jack_of_spades2.webp";
       default:
         return null;
     }
@@ -104,6 +106,10 @@ export default function HallOfFame({ isWar, war }: HallOfFameProps) {
   const highlights = getWarHighlights();
   if (!isWar || highlights.length === 0) return null;
 
+  const INITIAL_COUNT = 8;
+  const [visibleCount, setVisibleCount] = useState<number>(Math.min(INITIAL_COUNT, highlights.length));
+  const displayedHighlights = highlights.slice(0, visibleCount);
+
   return (
     <ScrollReveal delay={0.1} mobileDelay={0.1}>
       <div className="max-w-7xl mx-auto px-6 mt-12 mb-24">
@@ -112,7 +118,7 @@ export default function HallOfFame({ isWar, war }: HallOfFameProps) {
             <Medal size={14} className="text-amber-500" /> Live War Hall of Fame
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {highlights.map((h, i) => (
+            {displayedHighlights.map((h, i) => (
               <ScrollReveal key={i} delay={i * 0.02}>
                 <div
                   className={`relative p-5 bg-zinc-950/40 border rounded-2xl group transition-all overflow-hidden ${
@@ -176,6 +182,26 @@ export default function HallOfFame({ isWar, war }: HallOfFameProps) {
               </ScrollReveal>
             ))}
           </div>
+          {highlights.length > INITIAL_COUNT && (
+            <div className="flex justify-center mt-4">
+              <button
+                type="button"
+                onClick={() =>
+                  setVisibleCount((prev) =>
+                    prev >= highlights.length ? Math.min(INITIAL_COUNT, highlights.length) : Math.min(prev + INITIAL_COUNT, highlights.length)
+                  )
+                }
+                className="inline-flex items-center gap-2 px-3 py-2 rounded-md border border-zinc-800/40 bg-zinc-950/20 text-amber-500 hover:bg-zinc-900/30"
+                aria-label={visibleCount >= highlights.length ? "Show less" : "Load more"}
+              >
+                {visibleCount >= highlights.length ? (
+                  <ChevronUp size={16} />
+                ) : (
+                  <ChevronDown size={16} className="animate-bounce motion-reduce:animate-none transition-transform" />
+                )}
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </ScrollReveal>

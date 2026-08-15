@@ -18,11 +18,11 @@ export default function HallOfFame({ isWar, war }: HallOfFameProps) {
   const getAchievementImage = (type: string): string | null => {
     switch (type) {
       case "King Slayer":
-        return "/king_of_spades2.png";
+        return "/king_of_spades2.webp";
       case "Queen Slayer":
-        return "/queen_of_spades2.png";
+        return "/queen_of_spades2.webp";
       case "Knight Slayer":
-        return "/jack_of_spades2.png";
+        return "/jack_of_spades2.webp";
       default:
         return null;
     }

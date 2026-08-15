@@ -133,7 +133,7 @@ export default function LiveCWLStatusPage() {
                       
             <div className="relative aspect-video rounded-2xl overflow-hidden border border-zinc-800/80 bg-zinc-950 shadow-inner">
               <video
-                src="/war.mp4"
+                src="/Feature_War.webm"
                 autoPlay
                 loop
                 muted

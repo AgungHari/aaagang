@@ -172,15 +172,15 @@ export default async function Home() {
         {/* Clan Stats */}
         <div className="flex flex-wrap justify-center items-center gap-4 md:gap-14">
           <div className="flex items-center gap-2 animate-slide-up">
-            <Image className="opacity-80" src="/1.png" alt="Newbie Friendly" width={20} height={20}/>
+            <Image className="opacity-80" src="/1.webp" alt="Newbie Friendly" width={20} height={20}/>
             <span className="text-slate-400 font-medium">Newbie Friendly</span>
           </div>
           <div className="flex items-center gap-2 animate-slide-up">
-            <Image className="opacity-80 " src="/3.png" alt="Always War" width={20} height={20}/>
+            <Image className="opacity-80 " src="/3.webp" alt="Always War" width={20} height={20}/>
             <span className="text-slate-400 font-medium">Always War</span>
           </div>
           <div className="flex items-center gap-2 animate-slide-up">
-            <Image className="opacity-80" src="/2.png" alt="Donasi Lancar" width={20} height={20}/>
+            <Image className="opacity-80" src="/2.webp" alt="Donasi Lancar" width={20} height={20}/>
             <span className="text-slate-400 font-medium">Donasi Lancar</span>
           </div>
         </div>
@@ -270,12 +270,12 @@ export default async function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
             {[
-              { name: "Indonesia", players: 34, code: "id", emblem: "/Emblem_of_Indonesia-1024x1106.png" },
-              { name: "Australia", players: 4, code: "au", emblem: "/Emblem_of_Australia-1024x791.png" },
-              { name: "Pakistan", players: 2, code: "pk", emblem: "/Emblem_of_Pakistan-1024x1176.png" },
-              { name: "Malaysia", players: 1, code: "my", emblem: "/Emblem_of_Malaysia-1024x767.png" }, 
-              { name: "Sri Lanka", players: 1, code: "lk", emblem: "/Emblem_of_Sri_Lanka-1024x1451.png" },
-              { name: "Thailand", players: 1, code: "th", emblem: "/Emblem_of_Thailand-1024x1091.png" }
+              { name: "Indonesia", players: 34, code: "id", emblem: "/Emblem_of_Indonesia-1024x1106.webp" },
+              { name: "Australia", players: 4, code: "au", emblem: "/Emblem_of_Australia-1024x791.webp" },
+              { name: "Pakistan", players: 2, code: "pk", emblem: "/Emblem_of_Pakistan-1024x1176.webp" },
+              { name: "Malaysia", players: 1, code: "my", emblem: "/Emblem_of_Malaysia-1024x767.webp" }, 
+              { name: "Sri Lanka", players: 1, code: "lk", emblem: "/Emblem_of_Sri_Lanka-1024x1451.webp" },
+              { name: "Thailand", players: 1, code: "th", emblem: "/Emblem_of_Thailand-1024x1091.webp" }
             ].map((location, index) => (
               <ScrollReveal key={index} delay={index * 0.1} mobileDelay={0.1}>
                 <div className="h-full w-full flex flex-col justify-center bg-zinc-900/20 border border-zinc-800/50 rounded-xl p-4 hover:border-amber-500/30 transition-all group w-full relative overflow-hidden">
