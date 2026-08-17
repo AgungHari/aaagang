@@ -1,5 +1,5 @@
 import { getPlayerData } from "@/lib/player";
-import { getClanData } from "@/lib/coc";
+import { getClanData, getAliansiData } from "@/lib/coc";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ProfitableAdUnit from "@/components/ProfitableAdUnit";
@@ -97,12 +97,13 @@ export default async function MemberDetailPage({ params }: { params: Promise<{ t
   const resolvedParams = await params; 
   const playerTag = decodeURIComponent(resolvedParams.tag);
 
-  const [player, clan] = await Promise.all([
+  const [player, clan, aliansi] = await Promise.all([
     getPlayerData(playerTag),
-    getClanData()
+    getClanData(),
+    getAliansiData()
   ]);
 
-  if (!player || !clan) {
+  if (!player || (!clan && !aliansi)) {
     return (
       <div className="min-h-screen bg-[#050505] flex items-center justify-center text-white font-black italic uppercase">
         DATABASE ERROR / PLAYER NOT FOUND
@@ -117,10 +118,17 @@ export default async function MemberDetailPage({ params }: { params: Promise<{ t
   // Generate player summary
   const topHero = homeHeroes?.reduce((max: any, hero: any) => (!max || hero.level > max.level) ? hero : max, null);
   
-  // Handle clan.memberList untuk ambil info member
+  // Handle memberInfo dari clan utama maupun aliansi
   let memberInfo: any = null;
-  if (Array.isArray(clan.memberList)) {
+  let memberClan: any = clan ?? aliansi;
+
+  if (Array.isArray(clan?.memberList)) {
     memberInfo = clan.memberList.find((m: any) => m.tag === player.tag);
+  }
+
+  if (!memberInfo && Array.isArray(aliansi?.memberList)) {
+    memberInfo = aliansi.memberList.find((m: any) => m.tag === player.tag);
+    memberClan = aliansi;
   }
   
   const joinDate = memberInfo?.joinDate ? new Date(memberInfo.joinDate).toLocaleDateString('id-ID', { year: 'numeric', month: 'long' }) : 'Unknown';
@@ -136,11 +144,12 @@ export default async function MemberDetailPage({ params }: { params: Promise<{ t
   };
   
   const role = getRoleName(memberInfo?.role || 'member');
+  const clanNameForSummary = memberClan?.name || clan?.name || aliansi?.name || "AAA GANG";
   
   const generateSummary = () => {
     const heroInfo = topHero ? ` ${topHero.name} dengan level ${topHero.level}` : '';
     const leagueName = player.leagueTier?.name || player.league?.name || 'Unranked';
-    return `${player.name} adalah seorang pemain dengan level Town Hall ${player.townHallLevel} yang memiliki experience level ${player.expLevel} dan mendedikasikan diri Sebagai ${role} di AAA GANG. Di mana player ini berada di ${leagueName} dan telah membuktikan kemampuan perangnya di lapangan, dimana hal tersebut terbukti dengan meraih ${player.warStars} bintang pada perang klasik. Hero andalannya adalah ${heroInfo}. Pemain ini menunjukkan dedikasi yang konsisten terhadap permainan Clash Of Clans.`;
+    return `${player.name} adalah seorang pemain dengan level Town Hall ${player.townHallLevel} yang memiliki experience level ${player.expLevel} dan mendedikasikan diri Sebagai ${role} di ${clanNameForSummary}. Di mana player ini berada di ${leagueName} dan telah membuktikan kemampuan perangnya di lapangan, dimana hal tersebut terbukti dengan meraih ${player.warStars} bintang pada perang klasik. Hero andalannya adalah ${heroInfo}. Pemain ini menunjukkan dedikasi yang konsisten terhadap permainan Clash Of Clans.`;
   };
 
   const jsonLd = {
@@ -182,7 +191,7 @@ export default async function MemberDetailPage({ params }: { params: Promise<{ t
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <Navbar clanName={clan.name} badge="/badge_clan.webp" />
+      <Navbar clanName={memberClan?.name || clan?.name || aliansi?.name || "AAA GANGS"} badge="/badge_clan.webp" />
 
       <section className="max-w-5xl mx-auto px-6 pt-24 pb-12 animate-slide-up">
         {/* Tombol Back */}

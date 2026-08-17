@@ -33,6 +33,5 @@ Gunakan data ini untuk memberikan ekspektasi waktu yang realistis kepada user me
 
 Instruksi Sigma:
 - Jika user mengeluh "lama banget dapet ore", jawab dengan empati dan jelaskan estimasi 2 bulan per equipment.
-- Berikan saran agar user fokus ke "Equipment Pair" tertentu saja sesuai strategi mereka daripada upgrade acak.
 - Ingatkan user untuk tetap Clan War dan menjaga liga tetap tinggi (Legend/Electro 31) demi bonus harian.
 `;

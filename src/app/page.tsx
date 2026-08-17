@@ -19,10 +19,15 @@ import {
   UserPlus, ChevronRightIcon, Baby, HandHeart, Swords,
   Scroll
 } from "lucide-react";
-import { getClanData, getCurrentWar, getWarLog } from "@/lib/coc";
+import { getClanData, getCurrentWar, getWarLog, getAliansiData } from "@/lib/coc";
 
 export default async function Home() {
-  const [clan, war, warLog] = await Promise.all([getClanData(), getCurrentWar(), getWarLog()]);
+  const [clan, war, warLog, aliansi] = await Promise.all([
+    getClanData(),
+    getCurrentWar(),
+    getWarLog(),
+    getAliansiData(),
+  ]);
 
   if (!clan) {
       return (
@@ -52,6 +57,7 @@ export default async function Home() {
     }
 
   // --- LOGIC DATA ---
+  const totalMemberCount = (clan.memberList?.length || 0) + (aliansi?.memberList?.length || 0);
   const members = [...clan.memberList];
   const newMembers = members.filter(m => m.previousClanRank === 0);
   const topDonators = [...members].sort((a, b) => b.donations - a.donations).slice(0, 3);
@@ -137,7 +143,7 @@ export default async function Home() {
             {clan.memberList?.length < 50 ? "OPEN" : "CLOSED"}
           </span>
           <p className="flex items-center gap-1 text-sm">
-            <span>{clan.memberList?.length} Gangstas on deck</span>
+            <span>{totalMemberCount} / 100 Gangstas on deck</span>
             <ChevronRightIcon size={16} />
           </p>
         </Link>

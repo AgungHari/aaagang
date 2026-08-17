@@ -11,6 +11,19 @@ export async function getClanData() {
   return res.json();
 }
 
+// Fetch Aliansi Clan Data
+export async function getAliansiData() {
+  const res = await fetch(`https://cocproxy.royaleapi.dev/v1/clans/${process.env.ALIANSI_CLAN_TAG}`, {
+    headers: {
+      "Authorization": `Bearer ${process.env.COC_API_KEY}`,
+    },
+    next: { revalidate: 365 },
+  });
+
+  if (!res.ok) return null;
+  return res.json();
+}
+
 // Fetch clan data dengan dynamic tag (untuk clan search)
 export async function getClanDataByTag(clanTag: string) {
   const cleanTag = clanTag.replace("#", "");
