@@ -118,14 +118,14 @@ export default async function MembersPage() {
         </div>
 
         {/* Clan Cards Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16 animate-slide-up">
           {/* Main Clan Card */}
           <div className="group relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-amber-900/30 to-zinc-900/50 border border-amber-500/30 p-6 hover:border-amber-500/60 transition-all">
             <div className="absolute -right-8 -top-8 w-32 h-32 bg-amber-500/10 blur-3xl rounded-full group-hover:bg-amber-500/20 transition-colors"></div>
             
             <div className="relative z-10">
               {/* Top Section: Badge & Info */}
-              <div className="flex gap-6 items-start mb-6">
+              <div className="flex flex-wrap gap-6 items-start mb-6">
                 {/* Badge Container */}
                 <div className="relative">
                   {clan.badgeUrls?.small && (
@@ -146,7 +146,7 @@ export default async function MembersPage() {
                 </div>
                 
                 {/* Clan Info */}
-                <div className="flex-1">
+                <div className="flex-1 min-w-0">
                   <h3 className="text-xl font-black uppercase italic text-white tracking-tight leading-none mb-1">
                     {clan.name}
                   </h3>
@@ -159,37 +159,38 @@ export default async function MembersPage() {
                     </div>
                   )}
                 </div>
-              </div>
 
-              {/* Stats Grid */}
-              <div className="grid grid-cols-3 gap-2 mb-6 border-t border-b border-amber-500/20 py-4">
-                <StatCard label="Clan Points" value={clan.clanPoints} icon={<Trophy size={10}/>} color="text-amber-500" />
-                <StatCard label="War Wins" value={clan.warWins} icon={<Sword size={10}/>} color="text-rose-500" />
-                <StatCard label="Members" value={clan.members} icon={<Users size={10}/>} color="text-cyan-500" />
-              </div>
-
-              {/* Member Progress Bar */}
-              <div className="mb-4">
-                <div className="flex justify-between items-center mb-2">
-                  <span className="text-[9px] text-zinc-500 font-bold uppercase tracking-widest">Members</span>
-                  <span className="text-[10px] font-black text-amber-500">{clan.members}/50</span>
-                </div>
-                <div className="w-full h-2 bg-zinc-800/50 rounded-full overflow-hidden border border-amber-500/20">
-                  <div 
-                    className="h-full bg-gradient-to-r from-amber-500 to-amber-400 transition-all duration-500"
-                    style={{ width: `${(clan.members / 50) * 100}%` }}
-                  ></div>
+                <div className="grid w-full grid-cols-3 gap-2 md:flex md:w-auto md:shrink-0">
+                  <StatCard label="Clan Points" value={clan.clanPoints} icon={<Trophy size={10}/>} color="text-amber-500" />
+                  <StatCard label="War Wins" value={clan.warWins} icon={<Sword size={10}/>} color="text-rose-500" />
+                  <StatCard label="Members" value={clan.members} icon={<Users size={10}/>} color="text-cyan-500" />
                 </div>
               </div>
 
-              {/* Leader Info */}
-              <div className="border-t border-amber-500/20 pt-4">
+              <div className="flex items-end gap-6 mb-4">
+                {/* Leader Info */}
+                <div className="shrink-0">
                 <div className="text-[10px] text-zinc-500 font-bold uppercase tracking-widest mb-2">Leader</div>
                 <div className="text-sm font-black text-amber-500">
                   {(() => {
                     const leader = clan.memberList.find((m: any) => m.role === 'leader');
                     return leader ? leader.name : 'N/A';
                   })()}
+                </div>
+                </div>
+
+                {/* Member Progress Bar */}
+                <div className="flex-1 min-w-0">
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="text-[9px] text-zinc-500 font-bold uppercase tracking-widest">Members</span>
+                    <span className="text-[10px] font-black text-amber-500">{clan.members}/50</span>
+                  </div>
+                  <div className="w-full h-2 bg-zinc-800/50 rounded-full overflow-hidden border border-amber-500/20">
+                    <div 
+                      className="h-full bg-gradient-to-r from-amber-500 to-amber-400 transition-all duration-500"
+                      style={{ width: `${(clan.members / 50) * 100}%` }}
+                    ></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -202,7 +203,7 @@ export default async function MembersPage() {
               
               <div className="relative z-10">
                 {/* Top Section: Badge & Info */}
-                <div className="flex gap-6 items-start mb-6">
+                <div className="flex flex-wrap gap-6 items-start mb-6">
                   {/* Badge Container */}
                   <div className="relative">
                     {aliansi.badgeUrls?.small && (
@@ -223,7 +224,7 @@ export default async function MembersPage() {
                   </div>
                   
                   {/* Clan Info */}
-                  <div className="flex-1">
+                  <div className="flex-1 min-w-0">
                     <h3 className="text-xl font-black uppercase italic text-white tracking-tight leading-none mb-1">
                       {aliansi.name}
                     </h3>
@@ -236,37 +237,38 @@ export default async function MembersPage() {
                       </div>
                     )}
                   </div>
-                </div>
 
-                {/* Stats Grid */}
-                <div className="grid grid-cols-3 gap-2 mb-6 border-t border-b border-purple-500/20 py-4">
-                  <StatCard label="Clan Points" value={aliansi.clanPoints} icon={<Trophy size={10}/>} color="text-purple-500" />
-                  <StatCard label="War Wins" value={aliansi.warWins} icon={<Sword size={10}/>} color="text-rose-500" />
-                  <StatCard label="Members" value={aliansi.members} icon={<Users size={10}/>} color="text-cyan-500" />
-                </div>
-
-                {/* Member Progress Bar */}
-                <div className="mb-4">
-                  <div className="flex justify-between items-center mb-2">
-                    <span className="text-[9px] text-zinc-500 font-bold uppercase tracking-widest">Members</span>
-                    <span className="text-[10px] font-black text-purple-500">{aliansi.members}/50</span>
-                  </div>
-                  <div className="w-full h-2 bg-zinc-800/50 rounded-full overflow-hidden border border-purple-500/20">
-                    <div 
-                      className="h-full bg-gradient-to-r from-purple-500 to-purple-400 transition-all duration-500"
-                      style={{ width: `${(aliansi.members / 50) * 100}%` }}
-                    ></div>
+                  <div className="grid w-full grid-cols-3 gap-2 md:flex md:w-auto md:shrink-0">
+                    <StatCard label="Clan Points" value={aliansi.clanPoints} icon={<Trophy size={10}/>} color="text-purple-500" />
+                    <StatCard label="War Wins" value={aliansi.warWins} icon={<Sword size={10}/>} color="text-rose-500" />
+                    <StatCard label="Members" value={aliansi.members} icon={<Users size={10}/>} color="text-cyan-500" />
                   </div>
                 </div>
 
-                {/* Leader Info */}
-                <div className="border-t border-purple-500/20 pt-4">
+                <div className="flex items-end gap-6 mb-4">
+                  {/* Leader Info */}
+                  <div className="shrink-0">
                   <div className="text-[10px] text-zinc-500 font-bold uppercase tracking-widest mb-2">Leader</div>
                   <div className="text-sm font-black text-purple-500">
                     {(() => {
                       const leader = aliansi.memberList.find((m: any) => m.role === 'leader');
                       return leader ? leader.name : 'N/A';
                     })()}
+                  </div>
+                  </div>
+
+                  {/* Member Progress Bar */}
+                  <div className="flex-1 min-w-0">
+                    <div className="flex justify-between items-center mb-2">
+                      <span className="text-[9px] text-zinc-500 font-bold uppercase tracking-widest">Members</span>
+                      <span className="text-[10px] font-black text-purple-500">{aliansi.members}/50</span>
+                    </div>
+                    <div className="w-full h-2 bg-zinc-800/50 rounded-full overflow-hidden border border-purple-500/20">
+                      <div 
+                        className="h-full bg-gradient-to-r from-purple-500 to-purple-400 transition-all duration-500"
+                        style={{ width: `${(aliansi.members / 50) * 100}%` }}
+                      ></div>
+                    </div>
                   </div>
                 </div>
               </div>

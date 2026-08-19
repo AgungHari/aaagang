@@ -140,7 +140,7 @@ export default async function Home() {
           className="flex items-center gap-2 rounded-full p-1 pr-3 mt-23 font-poppins text-amber-100 bg-amber-200/15 border border-amber-500/20 animate-slide-up transition hover:border-amber-500/40 hover:bg-amber-500/10"
         >
           <span className="bg-amber-800 text-white text-xs px-3.5 py-1 rounded-full font-black">
-            {clan.memberList?.length < 50 ? "OPEN" : "CLOSED"}
+            {totalMemberCount < 100 ? "OPEN" : "CLOSED"}
           </span>
           <p className="flex items-center gap-1 text-sm">
             <span>{totalMemberCount} / 100 Gangstas on deck</span>
@@ -162,9 +162,10 @@ export default async function Home() {
             href="https://link.clashofclans.com/en/?action=OpenClanProfile&tag=Q9YY02J9"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-amber-700 font-poppins hover:bg-amber-900 text-white rounded-xl px-7 h-11 font-400 transition-all flex items-center justify-center animate-slide-up"
+            className="bg-slate-900 font-poppins hover:bg-slate-700 text-white rounded-xl px-7 h-11 font-400 transition-all flex items-center justify-center gap-2 animate-slide-up"
           >
-            Join Now
+            <Image src="/badge_clan.webp" alt="AAA GANGS badge" width={18} height={18} className="object-contain drop-shadow-[0_0_10px_rgba(245,158,11,0.5)]" />
+            <span>Join Now</span>
           </a>
           <Link 
             href="/sigma"

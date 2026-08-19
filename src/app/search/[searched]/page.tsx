@@ -59,6 +59,8 @@ const EQ_ASSETS: Record<string, string> = {
   "Heroic Torch": "HeroGear_GW_Olympic_Torch_hh0000.webp",
   "Frost Flake": "Hero_Equipment_rc_frost_flake.webp",
   "Frozen Arrow": "Hero_Equipment_AQ_Frozen_Arrow.webp",
+  "Monolith Arrow": "Hero_Equipment_AQ_MonolithArrow.webp",
+  "Revenge Deck": "HG_DD_reverse_card.webp"
 };
 
 const PET_ASSETS: Record<string, string> = {
