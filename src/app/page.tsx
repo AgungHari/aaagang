@@ -162,10 +162,10 @@ export default async function Home() {
             href="https://link.clashofclans.com/en/?action=OpenClanProfile&tag=Q9YY02J9"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-slate-900 font-poppins hover:bg-slate-700 text-white rounded-xl px-7 h-11 font-400 transition-all flex items-center justify-center gap-2 animate-slide-up"
+            className="group relative isolate overflow-hidden bg-amber-800 font-poppins text-white rounded-xl px-7 h-11 font-400 transition-all flex items-center justify-center gap-2 animate-slide-up drop-shadow-[0_0_10px_rgba(245,158,11,0.5)] before:absolute before:inset-0 before:-z-10 before:translate-x-[-105%] before:bg-gradient-to-r before:from-slate-700 before:via-slate-600 before:to-amber-800 before:transition-transform before:duration-500 before:ease-out hover:before:translate-x-0"
           >
-            <Image src="/badge_clan.webp" alt="AAA GANGS badge" width={18} height={18} className="object-contain drop-shadow-[0_0_10px_rgba(245,158,11,0.5)]" />
-            <span>Join Now</span>
+            <Image src="/badge_clan.webp" alt="AAA GANGS badge" width={18} height={18} className="relative z-10 object-contain drop-shadow-[0_0_10px_rgba(245,158,11,0.5)]" />
+            <span className="relative z-10">Join Now</span>
           </a>
           <Link 
             href="/sigma"
