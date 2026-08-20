@@ -256,11 +256,11 @@ export default function LayoutsFilter({ layouts }: LayoutsFilterProps) {
       {/* Layouts Grid */}
       {filteredLayouts.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredLayouts.map((layout) => {
+          {filteredLayouts.map((layout, index) => {
             const isNewest = newestLayoutIds.has(Number(layout.id));
 
             return (
-              <ScrollReveal key={layout.id} delay={filteredLayouts.indexOf(layout) * 0.02}>
+                <ScrollReveal key={layout.id} delay={index * 0.002}>
                 <Link 
                   href={`/layout/${Number(layout.id)}`}
                   className="hover:opacity-90 transition-opacity"
@@ -279,6 +279,7 @@ export default function LayoutsFilter({ layouts }: LayoutsFilterProps) {
                     like_count={Number(layout.like_count || 0)}
                     is_active={Number(layout.is_active || 1)}
                     isNewest={isNewest}
+                    isPriority={index === 0}
                   />
                 </Link>
               </ScrollReveal>

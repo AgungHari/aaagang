@@ -50,7 +50,7 @@ export default function WarTestimonial({ warLog }: WarTestimonialProps) {
 
         <ScrollReveal delay={0.2}>
         <div className="max-w-4xl mx-auto mt-11 text-center mb-8">
-            <h2 className="text-5xl md:text-5xl mb-4" style={{ fontFamily: "'Docallisme', sans-serif" }}>
+            <h2 className="text-5xl md:text-5xl mb-4 drop-shadow-[0_0_10px_rgba(245,158,11,0.5)]" style={{ fontFamily: "'Docallisme', sans-serif" }}>
                 MAINKAN <span className="text-amber-500">DAN</span> <span className="text-amber-800">HABISI</span>
             </h2>
             <p className="text-zinc-400 text-sm md:text-sm font-poppins">

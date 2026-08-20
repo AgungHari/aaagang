@@ -33,6 +33,7 @@ interface LayoutCardProps {
   like_count: number;
   is_active: number;
   isNewest?: boolean;
+  isPriority?: boolean;
 }
 
 export default function LayoutCard({
@@ -49,6 +50,7 @@ export default function LayoutCard({
   like_count,
   is_active,
   isNewest = false,
+  isPriority = false,
 }: LayoutCardProps) {
   const [views, setViews] = useState(view_count);
   const [likes, setLikes] = useState(like_count);
@@ -141,7 +143,9 @@ export default function LayoutCard({
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover group-hover:scale-105 transition-transform duration-300 opacity-85"
-            loading="lazy"
+            loading={isPriority ? "eager" : "lazy"}
+            preload={isPriority}
+            fetchPriority={isPriority ? "high" : "auto"}
             onError={() => setImageError(true)}
           />
           {/* TH Level Badge */}

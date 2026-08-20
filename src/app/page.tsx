@@ -197,7 +197,7 @@ export default async function Home() {
       </section>
 
       <div className="mb-[200px] animate-slide-up max-w-4xl mx-auto px-6">
-        <div className="text-white mx-auto text-center text-5xl md:text-5xl mb-4" style={{ fontFamily: "'Docallisme', sans-serif" }}>
+        <div className="text-white mx-auto text-center text-5xl md:text-5xl mb-4 drop-shadow-[0_0_10px_rgba(245,158,11,0.5)]" style={{ fontFamily: "'Docallisme', sans-serif" }}>
           ASK <span className="text-amber-500">SIGMA</span>
         </div>
         <p className="text-zinc-400 text-sm md:text-sm font-poppins text-center mb-8">
@@ -266,7 +266,7 @@ export default async function Home() {
 
       <div className="max-w-7xl w-full px-6 mx-auto mt-12 mb-24"> 
         <div className="mb-12">
-          <div className="text-amber-white text-5xl md:text-5xl mb-4" style={{ fontFamily: "'Docallisme', sans-serif" }}>
+          <div className="text-amber-white text-5xl md:text-5xl mb-4 drop-shadow-[0_0_10px_rgba(245,158,11,0.5)]" style={{ fontFamily: "'Docallisme', sans-serif" }}>
             OUR <span className="text-amber-500">GLOBAL</span><span className="text-amber-700"> PRESENCE</span>
           </div>
           <p className="text-zinc-400 text-sm md:text-sm font-poppins">
