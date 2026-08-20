@@ -1,5 +1,5 @@
 'use client';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { motion, useMotionValue, useSpring } from 'motion/react';
 
 const springValues = {
@@ -10,6 +10,7 @@ const springValues = {
 
 export default function TiltedImage({ rotateAmplitude = 3, }) {
     const ref = useRef<HTMLDivElement>(null);
+    const [videoSrc, setVideoSrc] = useState<string | null>(null);
     const x = useMotionValue(0);
     const y = useMotionValue(0);
     const rotateX = useSpring(useMotionValue(0), springValues);
@@ -17,6 +18,14 @@ export default function TiltedImage({ rotateAmplitude = 3, }) {
     const rotateFigcaption = useSpring(0, { stiffness: 350, damping: 30, mass: 1 });
 
     const [lastY, setLastY] = useState(0);
+
+    useEffect(() => {
+        const userAgent = navigator.userAgent;
+        const isSafari = /Safari/i.test(userAgent) &&
+            !/Chrome|CriOS|FxiOS|Edg/i.test(userAgent);
+
+        setVideoSrc(isSafari ? '/Safari_Main.mov' : '/Hero_Main.webm');
+    }, []);
 
     function handlePointerMove(e: React.PointerEvent<HTMLDivElement>) {
         if (!ref.current) return;
@@ -53,7 +62,7 @@ export default function TiltedImage({ rotateAmplitude = 3, }) {
             transition={{ type: "spring", stiffness: 320, damping: 70, mass: 1 }}
         >
             <motion.div className="relative transform-3d w-full max-w-5xl" style={{ rotateX, rotateY }} >
-                <motion.video src="/Hero_Main.webm"
+                <motion.video src={videoSrc ?? undefined}
                     className="w-full rounded-[15px] will-change-transform transform-[translateZ(0)]"
                     autoPlay
                     loop

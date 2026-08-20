@@ -8,6 +8,17 @@ import { siYoutube, siReddit} from 'simple-icons';
 import { Eye, ThumbsUp, Copy, Play, MessageSquare, ExternalLink } from "lucide-react";
 import { incrementLikeCount } from "@/app/layout/action";
 
+function getCloudinaryUrl(url: string, width = 800) {
+  if (!url || !url.includes("res.cloudinary.com")) return url;
+  if (!url.includes("/upload/")) return url;
+  if (url.includes("/f_auto") || url.includes("/q_auto")) return url;
+
+  return url.replace(
+    "/upload/",
+    `/upload/f_auto,q_auto,w_${width},c_limit/`
+  );
+}
+
 interface LayoutCardProps {
   id: number;
   th_level: number;
@@ -125,10 +136,10 @@ export default function LayoutCard({
       {image_url && !imageError && (
         <div className="relative w-full aspect-video overflow-hidden bg-zinc-800">
           <Image
-            src={image_url}
+            src={getCloudinaryUrl(image_url, 800)}
             alt={title}
             fill
-            sizes="(max-width: 768px) 100vw, 33vw"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover group-hover:scale-105 transition-transform duration-300 opacity-85"
             loading="lazy"
             onError={() => setImageError(true)}

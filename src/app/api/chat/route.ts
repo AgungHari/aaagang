@@ -82,8 +82,8 @@ async function handleMistralModel(messages: any, clanContext: string) {
       ...messages
     ],
     stream: true,
-    temperature: 0.2,
-    max_tokens: 5060,
+    temperature: 0.1,
+    max_tokens: 3072,
   });
 
   return apiResponse;
@@ -173,8 +173,8 @@ async function handleMistralModelPlus(messages: any, clanContext: string) {
       ...messages
     ],
     stream: true,
-    temperature: 0.2,
-    max_tokens: 5060,
+    temperature: 0.1,
+    max_tokens: 3072,
   });
 
   return apiResponse;
@@ -194,7 +194,8 @@ async function handleMistralModelReasoning(messages: any, clanContext: string) {
   }));
 
   const apiResponse = await selfHostedBasic.chat.completions.create({
-    model: 'magistral-medium-2509',
+    model: 'mistral-medium-3-5',
+    reasoning_effort: "high",
     messages: [
       {
         role: 'system',
@@ -263,8 +264,8 @@ async function handleMistralModelReasoning(messages: any, clanContext: string) {
       ...messages
     ],
     stream: true,
-    temperature: 0.2,
-    max_tokens: 7060,
+    temperature: 0.1,
+    max_tokens: 3072,
   });
 
   return apiResponse;

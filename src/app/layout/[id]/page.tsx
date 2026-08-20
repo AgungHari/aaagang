@@ -24,6 +24,17 @@ const client = createClient({
   authToken: process.env.TURSO_AUTH_TOKEN!,
 });
 
+function getCloudinaryUrl(url: string, width = 800) {
+  if (!url || !url.includes("res.cloudinary.com")) return url;
+  if (!url.includes("/upload/")) return url;
+  if (url.includes("/f_auto") || url.includes("/q_auto")) return url;
+
+  return url.replace(
+    "/upload/",
+    `/upload/f_auto,q_auto,w_${width},c_limit/`
+  );
+}
+
 function parseDescription(markdown: string): { title: string; content: string } {
   if (!markdown) {
     return { title: "Base Layout", content: "" };
@@ -153,12 +164,12 @@ export default async function LayoutDetailPage({
           </Link>
 
           {/* Layout Detail */}
-          <div className="bg-zinc-900/20 border border-zinc-800/50 rounded-2xl overflow-hidden mb-12">
+          <div className="bg-zinc-900/20 border border-zinc-800/50 rounded-2xl overflow-hidden mb-12 ">
             {/* Image */}
             {layout.image_url && (
               <div className="relative w-full aspect-video overflow-hidden bg-zinc-800">
                 <Image
-                  src={String(layout.image_url)}
+                  src={getCloudinaryUrl(String(layout.image_url), 1600)}
                   alt={String(title)}
                   fill
                   sizes="(max-width: 768px) 100vw, 70vw"
