@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BrowserVideo from "@/components/BrowserVideo";
 import { SectionDivider } from "@/components/SectionDivider";
 import { getClanData } from "@/lib/coc";
 import { AboutCard } from "@/components/AboutCard";
@@ -113,15 +114,9 @@ export default async function AboutPage() {
 
       {/* Video Hero Section */}
       <section className="relative w-full h-screen md:h-96 mt-[50px] mb-20 overflow-hidden">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
+        <BrowserVideo
           className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src="/About_Main.webm" type="video/webm" />
-        </video>
+        />
 
         {/* Dark Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />

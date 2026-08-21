@@ -5,3 +5,7 @@ export { equipmentOreContext } from './equipmentOreContext';
 export { datadiriContext } from './datadiriContext';
 export { listEquipmentContext } from './ListEquipment';
 export { oreFarmContext } from './FarmingOreContext';
+export { cocEquipmentContext } from './EquipmentDetailContext';
+export { cocEquipmentImages } from './EquipmentImageContext';
+export { troopsContext } from './troopsContext';
+export { spellsContext } from './spellContext';

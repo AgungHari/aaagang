@@ -1,6 +1,6 @@
 export const dynamic = 'force-dynamic';
 import OpenAI from 'openai';
-import { gameContext, importantContext, datadiriContext, strategiContext, equipmentOreContext, listEquipmentContext, oreFarmContext } from '../../../context/clash';
+import { gameContext, importantContext, datadiriContext, strategiContext, equipmentOreContext, listEquipmentContext, oreFarmContext, cocEquipmentContext, cocEquipmentImages, troopsContext, spellsContext } from '../../../context/clash';
 import { getLayoutBaseContext } from '@/context/layout';
 
 const selfHostedBasic = new OpenAI({
@@ -154,6 +154,8 @@ async function handleMistralModelPlus(messages: any, clanContext: string) {
         
         ## INSTRUKSI PENTING LAINNYA:
         - Konteks Game clash of clans: ${gameContext}
+        - Troops yang dapat dilatih dan digunakan untuk menyerang base lawan : ${troopsContext}
+        - Spells yang dapat diracik dan digunakan untuk menyerang base lawan : ${spellsContext}
         - Kamu berada di Web 3agang.pro yang merupakan website resmi AAA GANG.
         - Selalu tanya apakah user memiliki clan atau tidak (jika tidak memiliki clan, beri informasi tentang cara gabung ke clan AAA GANG).
         - Akan ada banyak orang yang bertanya bagaimana cara gabung ke clan AAA GANG cukup jawab dengan memasukan tag klan yaitu #Q9YY02J9 ke pencarian klan in game clash of clans.
@@ -167,7 +169,9 @@ async function handleMistralModelPlus(messages: any, clanContext: string) {
         - Kalau kamu kebingungan dalam menjawab pertanyaan user atau jika pertanyaan keluar dari konteks yang kamu tidak pahami, suruh mereka untuk menggunakan Google Search saja.
         - Apabila ada yang bertanya Grup Whatsapp AAA Gang atau sosial media lainnya, bilang saat ini AAA Gang belum memiliki sosial media official hanya memiliki web 3agang.pro (selain dari itu bukan milik kami). Namun jika ingin menghubungi leader, co leader dan elder bisa dengan meng email ke leader@3agang.pro, coleader@3agang.pro, dan elder@3agang.pro. Atau untuk page full kontak dapat mengunjungi https://3agang.pro/contact . dan untuk whatsapp elder dapat menghubungi nomer Nia : +62 881-0827-88959
         - Terdapat 8 varian sigma : Plateau, Absolute, Ultra, Pro, Plus (kamu), Basic, Lite dan Old. Semua khusus Clash of Clans.
-        - Jika ada yang bertanya tentang equipment dan berapa jumlah ore yang dibutuhkan kamu cek dulu ${listEquipmentContext} untuk tahu apakah equipment yang disebut user equipment epic atau common, lalu kamu bisa gunakan data berikut untuk menjawab : ${equipmentOreContext}. Lakukan perhitungan dengan benar jika user bertanya tentang jumlah ore yang dibutuhkan untuk upgrade equipment dari level X ke level Y, pastikan kamu menjumlahkan semua biaya dari level (X+1) sampai level Y berdasarkan tabel yang sudah diberikan. Jangan lupa untuk memastikan apakah equipment tersebut COMMON atau EPIC sebelum melakukan perhitungan.
+        - Jika ada yang bertanya tentang equipment dan berapa jumlah ore yang dibutuhkan kamu cek dulu ${listEquipmentContext} untuk tahu apakah equipment yang disebut user equipment epic atau common, lalu kamu bisa gunakan data berikut untuk menjawab : ${equipmentOreContext}, ${cocEquipmentContext}, dan ${JSON.stringify(cocEquipmentImages)}. Lakukan perhitungan dengan benar jika user bertanya tentang jumlah ore yang dibutuhkan untuk upgrade equipment dari level X ke level Y, pastikan kamu menjumlahkan semua biaya dari level (X+1) sampai level Y berdasarkan tabel yang sudah diberikan. Jangan lupa untuk memastikan apakah equipment tersebut COMMON atau EPIC sebelum melakukan perhitungan.
+        - Jika menjelaskan equipment, tampilkan gambar terkait menggunakan tag [IMAGE] dengan JSON array valid. Gunakan hanya gambar yang cocok dari daftar URL equipment berikut: ${JSON.stringify(cocEquipmentImages, null, 2)}.
+        - Format tag gambar wajib: [IMAGE][{"id":"giant-gauntlet","name":"Giant Gauntlet","imageUrl":"https://..."}]. Jangan gunakan field lain, jangan mengarang URL, dan jangan gunakan [GALLERY_DATA] untuk equipment. Setelah tag JSON, lanjutkan penjelasan dalam Markdown.
         `
       },
       ...messages

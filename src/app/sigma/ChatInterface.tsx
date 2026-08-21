@@ -19,7 +19,7 @@ const MODEL_OPTIONS = [
   { value: "absolute", label: "Absolute", description: "Insane - 'The All Knowing'", disabled: true },
   { value: "ultra", label: "Ultra", description: "Complex - Reddit Scraper", disabled: true },
   { value: "clan-member-separator", label: "Clan Member Only", isSeparator: true, dashboardOnly: true },
-  { value: "pro", label: "Pro", description: "Reasoning - Smart", disabled: false },
+  { value: "pro", label: "Pro", description: "Reasoning - Smart", disabled: true },
   { value: "plus", label: "Plus", description: "More - Base Search", disabled: false },
   { value: "base-search-separator", label: "Base Search", isSeparator: true },
   { value: "basic", label: "Basic", description: "Default - Fast", disabled: false },
@@ -33,6 +33,8 @@ const initialMessages: Message[] = [
 
 const placeholderOptions = [
   "Ask Sigma",
+  "Sup Gangsta",
+  "Revenge Deck bagus ga?",
   "Base TH 17 buat legends league?",
   "Ada slot kosong ga di clan saat ini?",
   "Berapa Ore untuk max Equipment?",

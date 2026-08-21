@@ -179,15 +179,15 @@ export default async function Home() {
         {/* Clan Stats */}
         <div className="flex flex-wrap justify-center items-center gap-4 md:gap-14">
           <div className="flex items-center gap-2 animate-slide-up">
-            <Image className="opacity-80" src="/1.webp" alt="Newbie Friendly" width={20} height={20}/>
+            <Image className="opacity-80" src="/1_Beginner_Friendly.webp" alt="Newbie Friendly" width={20} height={20}/>
             <span className="text-slate-400 font-medium">Newbie Friendly</span>
           </div>
           <div className="flex items-center gap-2 animate-slide-up">
-            <Image className="opacity-80 " src="/3.webp" alt="Always War" width={20} height={20}/>
+            <Image className="opacity-80 " src="/2_Always_War.webp" alt="Always War" width={20} height={20}/>
             <span className="text-slate-400 font-medium">Always War</span>
           </div>
           <div className="flex items-center gap-2 animate-slide-up">
-            <Image className="opacity-80" src="/2.webp" alt="Donasi Lancar" width={20} height={20}/>
+            <Image className="opacity-80" src="/3_Donasi_Lancar.webp" alt="Donasi Lancar" width={20} height={20}/>
             <span className="text-slate-400 font-medium">Donasi Lancar</span>
           </div>
         </div>
@@ -229,14 +229,14 @@ export default async function Home() {
       {/* Leaderboard Cards */}
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <ScrollReveal delay={0.1} mobileDelay={0.1}>
-          <LeaderboardCard title="Donation Kings" icon={<Image src="/1dt.png" alt="Donate" width={30} height={30} />} data={topDonators} dataKey="donations" suffix="Troops" />
+          <LeaderboardCard title="Donation Kings" icon={<Image src="/4_Donation_Kings.webp" alt="Donate" width={30} height={30} />} data={topDonators} dataKey="donations" suffix="Troops" />
         </ScrollReveal>
         <ScrollReveal delay={0.2} mobileDelay={0.1}>
-          <LeaderboardCard title="Ranked Trophy" icon={<Image src="/2tr.png" alt="League" width={30} height={30} />} data={topLeagues} dataKey="trophies" suffix="Trophies" />
+          <LeaderboardCard title="Ranked Trophy" icon={<Image src="/5_Ranked_Trophy.webp" alt="League" width={30} height={30} />} data={topLeagues} dataKey="trophies" suffix="Trophies" />
         </ScrollReveal>
         <div className="md:col-span-2 lg:col-span-1 md:w-1/2 lg:w-full md:justify-self-center">
           <ScrollReveal delay={0.3} mobileDelay={0.1}>
-            <LeaderboardCard title="Most Active" icon={<Image src="/3cc.png" alt="Request" width={30} height={30} />} data={topReceived} dataKey="donationsReceived" suffix="Reqs" />
+            <LeaderboardCard title="Most Active" icon={<Image src="/6_Most_Active.webp" alt="Request" width={30} height={30} />} data={topReceived} dataKey="donationsReceived" suffix="Reqs" />
           </ScrollReveal>
         </div>
       </div>

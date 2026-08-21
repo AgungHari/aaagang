@@ -12,6 +12,12 @@ interface GalleryItem {
   baseUrl: string;
 }
 
+interface ImageItem {
+  id: string;
+  name: string;
+  imageUrl: string;
+}
+
 interface MessageItemProps {
   role: "user" | "ai";
   text: string;
@@ -87,6 +93,67 @@ function parseGalleryData(text: string): { textContent: string; galleries: Galle
   }
 
   return { textContent, galleries };
+}
+
+function parseImageData(text: string): { textContent: string; images: ImageItem[] } {
+  let images: ImageItem[] = [];
+  let textContent = text;
+  const startTag = '[IMAGE]';
+  const endTag = '[/IMAGE]';
+  const startIndex = text.indexOf(startTag);
+
+  if (startIndex === -1) {
+    return { textContent, images };
+  }
+
+  let endIndex = text.indexOf(endTag, startIndex);
+  let jsonStr = '';
+
+  if (endIndex !== -1) {
+    jsonStr = text.substring(startIndex + startTag.length, endIndex).trim();
+  } else {
+    let bracketCount = 0;
+    let jsonStart = -1;
+    let jsonEnd = -1;
+
+    for (let i = startIndex + startTag.length; i < text.length; i++) {
+      const char = text[i];
+
+      if (char === '[') {
+        if (jsonStart === -1) jsonStart = i;
+        bracketCount++;
+      } else if (char === ']') {
+        bracketCount--;
+        if (bracketCount === 0 && jsonStart !== -1) {
+          jsonEnd = i + 1;
+          break;
+        }
+      }
+    }
+
+    if (jsonStart !== -1 && jsonEnd !== -1) {
+      jsonStr = text.substring(jsonStart, jsonEnd).trim();
+      endIndex = jsonEnd;
+    }
+  }
+
+  if (jsonStr) {
+    try {
+      const parsed = JSON.parse(jsonStr);
+      images = Array.isArray(parsed) ? parsed : [];
+
+      if (endIndex !== -1) {
+        const removalEnd = text.indexOf(endTag, endIndex) === endIndex
+          ? endIndex + endTag.length
+          : endIndex;
+        textContent = (text.substring(0, startIndex) + text.substring(removalEnd)).trim();
+      }
+    } catch (e) {
+      console.warn('Invalid IMAGE JSON:', jsonStr, e);
+    }
+  }
+
+  return { textContent, images };
 }
 
 const markdownComponents = {
@@ -188,8 +255,45 @@ function GalleryGrid({ items }: { items: GalleryItem[] }) {
   );
 }
 
+function ImageCard({ item }: { item: ImageItem }) {
+  return (
+    <div className="group overflow-hidden rounded-lg border border-amber-500/20 bg-zinc-900/50 backdrop-blur-sm transition-all duration-300 hover:border-amber-500/40 hover:shadow-lg hover:shadow-amber-500/10">
+      <div className="relative h-40 w-full overflow-hidden bg-zinc-950">
+        <img
+          src={item.imageUrl}
+          alt={item.name}
+          className="h-full w-full object-contain p-3 transition-transform duration-300 group-hover:scale-110"
+        />
+      </div>
+      <div className="p-4">
+        <h3 className="line-clamp-2 text-sm font-semibold text-amber-100 transition-colors group-hover:text-amber-300">
+          {item.name}
+        </h3>
+      </div>
+    </div>
+  );
+}
+
+function ImageGrid({ items }: { items: ImageItem[] }) {
+  if (!items || items.length === 0) return null;
+
+  return (
+    <div className="my-5 rounded-lg border border-amber-500/15 bg-black/30 p-4 backdrop-blur-sm">
+      <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-amber-300/70">
+        Equipment Images
+      </p>
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+        {items.map((item) => (
+          <ImageCard key={item.id} item={item} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export function MessageItem({ role, text, thinking }: MessageItemProps) {
   const { textContent, galleries } = parseGalleryData(text);
+  const { textContent: textWithoutImages, images } = parseImageData(textContent);
 
   return (
     <div
@@ -227,18 +331,19 @@ export function MessageItem({ role, text, thinking }: MessageItemProps) {
               </div>
             )}
 
-            {textContent && (
+            {textWithoutImages && (
               <ReactMarkdown
                 remarkPlugins={[remarkGfm]}
                 components={markdownComponents}
               >
-                {textContent}
+                {textWithoutImages}
               </ReactMarkdown>
             )}
 
-            {!textContent && !thinking && <LoadingAnimation />}
+            {!textWithoutImages && !thinking && <LoadingAnimation />}
 
             {galleries.length > 0 && <GalleryGrid items={galleries} />}
+            {images.length > 0 && <ImageGrid items={images} />}
             
           </div>
         ) : (

@@ -21,4 +21,7 @@ Kamus Game Clash of Clans:
 - Clan War adalah pertempuran antar klan. Dimana Klan dengan jumlah bintang terbanyak yang menang dan apabila bintang sama maka akan draw
 - Urutan rank ranked league dari yang tertinggi ke rendah yaitu : legend, electro, dragon, titan, p.e.k.k.a, golem, witch, valkyrie, wizard, archer, barbarian, dan yang terkecil skeleton.
 - Apabila player tidak join ranked league maka tidak akan memiliki rank / "unranked"
+- 1 Hero hanya dapat menggunakan 2 equipment saat menyerang base lawan.
+- Di TH 18 maksimal kapasitas troops adalah 352 housing space, dan 11 kapasitas spell.
+- Clan Castle: Menambah kapasitas pasukan bala bantuan hingga 55 housing space dan 4 kapasitas spell. Sehingga th 18 bisa membawa total 407 pasukan dan 15 spell.
 `;

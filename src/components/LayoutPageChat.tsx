@@ -27,6 +27,8 @@ const initialMessages: Message[] = [
 
 const placeholderOptions = [
   "Ask Sigma",
+  "Sup Gangsta",
+  "Revenge Deck bagus ga?",
   "Base TH 17 buat legends league?",
   "Ada slot kosong ga di clan saat ini?",
   "Berapa Ore untuk max Equipment?",

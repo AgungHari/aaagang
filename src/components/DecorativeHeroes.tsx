@@ -13,7 +13,7 @@ export default function DecorativeHeroes() {
       3xl:top-[7%] 3xl:left-[-12%]
       -z-10 opacity-10 pointer-events-none animate-fade-inX"> 
         <Image 
-          src="/12.webp" 
+          src="/Minion_Archer.webp" 
           alt="Archer Queen" 
           width={500}
           height={500}
@@ -30,7 +30,7 @@ export default function DecorativeHeroes() {
       3xl:top-[7%] 3xl:right-[-15%]
       -z-10 opacity-10 pointer-events-none animate-fade-inX">
         <Image 
-          src="/11.webp" 
+          src="/Duke_Warden.webp" 
           alt="Warden" 
           width={500}
           height={500}
