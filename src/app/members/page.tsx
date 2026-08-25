@@ -120,7 +120,7 @@ export default async function MembersPage() {
         {/* Clan Cards Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16 animate-slide-up">
           {/* Main Clan Card */}
-          <div className="group relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-amber-900/30 to-zinc-900/50 border border-amber-500/30 p-6 hover:border-amber-500/60 transition-all">
+          <div className="group relative overflow-hidden rounded-[2rem] bg-zinc-900/20 border border-amber-500/30 p-6 hover:border-amber-500/60 transition-all">
             <div className="absolute -right-8 -top-8 w-32 h-32 bg-amber-500/10 blur-3xl rounded-full group-hover:bg-amber-500/20 transition-colors"></div>
             
             <div className="relative z-10">
@@ -198,7 +198,7 @@ export default async function MembersPage() {
 
           {/* Aliansi Clan Card */}
           {aliansi && (
-            <div className="group relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-purple-900/30 to-zinc-900/50 border border-purple-500/30 p-6 hover:border-purple-500/60 transition-all">
+            <div className="group relative overflow-hidden rounded-[2rem] bg-zinc-900/20 border border-purple-500/30 p-6 hover:border-purple-500/60 transition-all">
               <div className="absolute -right-8 -top-8 w-32 h-32 bg-purple-500/10 blur-3xl rounded-full group-hover:bg-purple-500/20 transition-colors"></div>
               
               <div className="relative z-10">

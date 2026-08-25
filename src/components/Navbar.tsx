@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, ChevronDown, Timer, Handshake, Shield, Brain, Sigma, Search, User, Users, Import, Trophy, Sword, ClipboardPenLine } from "lucide-react";
+import { Menu, X, ChevronDown, Handshake, Shield, Sigma, User, Users, Import, Trophy, Sword, ClipboardPenLine, Newspaper, BookOpen } from "lucide-react";
 import { motion } from "framer-motion";
 import { Poppins } from "next/font/google";
 
@@ -15,14 +15,13 @@ const poppins = Poppins({
 export default function Navbar({ clanName, badge }: { clanName: string, badge: string }) {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<"features" | "news" | null>(null);
 
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "Personel", href: "/members" },
     { name: "About Us", href: "/tentang" },
     { name: "War Log", href: "/warlog" },
-    { name: "News", href: "/news" },
   ];
 
   const featureLinks = [
@@ -36,12 +35,17 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
     { name: "Friendly Wars", href: "/friendlywars", disabled: true, icon: Handshake, description: "Tantangan Friendly Wars", image: "/Troop_BB_Raged_Barbarian_no_grass.webp" },
   ];
 
+  const newsLinks = [
+    { name: "Latest News", href: "/news", disabled: false, icon: Newspaper, description: "Berita terbaru Clash of Clans", image: "/Decoration_BB_Ancient_Barbarian_Statue.webp" },
+    { name: "Clash Wiki", href: "#", disabled: true, icon: BookOpen, description: "Panduan dan informasi Clash of Clans", image: "/quest_bookofcards.webp" },
+  ];
+
   return (
     <>
       {/* 1. HEADER UTAMA DESKTOP */}
       <motion.header 
         className={`fixed top-0 left-0 right-0 z-[999] w-full backdrop-blur-xl transition-colors duration-300 ${
-          isDropdownOpen ? 'border-b border-zinc-800/50 bg-black/10' : 'border-transparent bg-transparent'
+          openDropdown ? 'border-b border-zinc-800/50 bg-black/10' : 'border-transparent bg-transparent'
         }`}
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -63,11 +67,21 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
 
             <div className="relative">
               <button
-                onClick={() => setIsDropdownOpen((prev) => !prev)}
+                onClick={() => setOpenDropdown((prev) => prev === "news" ? null : "news")}
+                className={`flex items-center gap-1 text-xs font-semibold tracking-[0.1em] transition-all hover:text-amber-500 ${pathname === "/news" ? 'text-amber-500' : 'text-zinc-400'}`}
+              >
+                News
+                <ChevronDown size={14} className={`transition-transform duration-300 ${openDropdown === "news" ? 'rotate-180' : ''}`} />
+              </button>
+            </div>
+
+            <div className="relative">
+              <button
+                onClick={() => setOpenDropdown((prev) => prev === "features" ? null : "features")}
                 className={`flex items-center gap-1 text-xs font-semibold tracking-[0.1em] transition-all hover:text-amber-500 ${featureLinks.some(link => pathname === link.href) ? 'text-amber-500' : 'text-zinc-400'}`}
               >
                 Features
-                <ChevronDown size={14} className={`transition-transform duration-300 ${isDropdownOpen ? 'rotate-180' : ''}`} />
+                <ChevronDown size={14} className={`transition-transform duration-300 ${openDropdown === "features" ? 'rotate-180' : ''}`} />
               </button>
             </div>
           </div>
@@ -88,7 +102,7 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
 
         {/* 2. MEGA MENU DESKTOP */}
         <div className={`w-full transition-all duration-300 ease-in-out grid ${
-          isDropdownOpen ? 'grid-rows-[1fr] opacity-100 visible pointer-events-auto' : 'grid-rows-[0fr] opacity-0 invisible pointer-events-none'
+          openDropdown === "features" ? 'grid-rows-[1fr] opacity-100 visible pointer-events-auto' : 'grid-rows-[0fr] opacity-0 invisible pointer-events-none'
         }`}>
           <div className="overflow-hidden">
             <div className="max-w-full px-6 md:px-16 lg:px-24 xl:px-32 pb-8 pt-4">
@@ -106,7 +120,7 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
                       href={link.disabled ? "#" : link.href}
                       onClick={(e) => {
                         if (link.disabled) e.preventDefault();
-                        else setIsDropdownOpen(false);
+                        else setOpenDropdown(null);
                       }}
                       className={`group relative p-4 rounded-xl transition-all drop-shadow duration-300 overflow-hidden ${link.disabled ? 'bg-zinc-900/30 opacity-50 cursor-not-allowed' : pathname === link.href ? 'bg-amber-500/20 border border-amber-500/50 hover:bg-amber-500/30' : 'bg-zinc-900/50 border border-zinc-800/30 hover:bg-zinc-800/70 hover:border-amber-500/30'}`}
                     >
@@ -120,6 +134,57 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
                         <div className="flex-1">
                           <h4 className={`font-bold text-sm transition-colors ${link.disabled ? 'text-zinc-600' : pathname === link.href ? 'text-amber-500' : 'text-white group-hover:text-amber-500'}`}>{link.name}</h4>
                           <p className={`text-xs mt-0.5 transition-colors ${link.disabled ? 'text-zinc-700' : 'text-zinc-500 group-hover:text-zinc-400'}`}>{link.description}</p>
+                          {link.disabled && <span className="text-xs text-zinc-600 font-medium mt-1.5 inline-block">Coming Soon</span>}
+                        </div>
+                      </div>
+                    </Link>
+                  );
+                })}
+              </div>
+
+              <div className="mt-6 pt-6 border-t border-zinc-800/50">
+                <p className="text-xs text-zinc-500">
+                  Need help? <Link href="/contact" className="text-amber-500 hover:text-amber-400 transition">Contact us</Link> or check the <Link href="/faq" className="text-amber-500 hover:text-amber-400 transition">FAQ</Link>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* NEWS MENU DESKTOP */}
+        <div className={`w-full transition-all duration-300 ease-in-out grid ${
+          openDropdown === "news" ? 'grid-rows-[1fr] opacity-100 visible pointer-events-auto' : 'grid-rows-[0fr] opacity-0 invisible pointer-events-none'
+        }`}>
+          <div className="overflow-hidden">
+            <div className="max-w-full px-6 md:px-16 lg:px-24 xl:px-32 pb-8 pt-4">
+              <div className="mb-8 pb-6 border-b border-zinc-800/50">
+                <h3 className="text-lg font-bold text-white mb-1">News & Wiki</h3>
+                <p className="text-zinc-400 text-sm">Berita dan pengetahuan Clash of Clans</p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-2xl">
+                {newsLinks.map((link) => {
+                  const IconComponent = link.icon;
+                  return (
+                    <Link
+                      key={link.name}
+                      href={link.disabled ? "#" : link.href}
+                      onClick={(event) => {
+                        if (link.disabled) event.preventDefault();
+                        else setOpenDropdown(null);
+                      }}
+                      className={`group relative p-4 rounded-xl transition-all duration-300 overflow-hidden ${link.disabled ? 'bg-zinc-900/30 opacity-50 cursor-not-allowed' : pathname === link.href ? 'bg-amber-500/20 border border-amber-500/50 hover:bg-amber-500/30' : 'bg-zinc-900/50 border border-zinc-800/30 hover:bg-zinc-800/70 hover:border-amber-500/30'}`}
+                    >
+                      {link.image && (
+                        <img src={link.image} alt={link.name} className="absolute -right-6 -top-2 size-30 opacity-10 grayscale group-hover:grayscale-0 group-hover:opacity-20 group-hover:scale-110 transition-all duration-700 pointer-events-none" />
+                      )}
+                      <div className="flex items-start gap-3">
+                        <div className={`p-2.5 rounded-lg flex-shrink-0 ${link.disabled ? 'bg-zinc-800/30' : 'bg-zinc-800/50 text-zinc-400 group-hover:bg-amber-500/20 group-hover:text-amber-500'}`}>
+                          <IconComponent size={20} />
+                        </div>
+                        <div>
+                          <h4 className={`font-bold text-sm ${link.disabled ? 'text-zinc-600' : 'text-white group-hover:text-amber-500'}`}>{link.name}</h4>
+                          <p className={`text-xs mt-0.5 ${link.disabled ? 'text-zinc-700' : 'text-zinc-500 group-hover:text-zinc-400'}`}>{link.description}</p>
                           {link.disabled && <span className="text-xs text-zinc-600 font-medium mt-1.5 inline-block">Coming Soon</span>}
                         </div>
                       </div>
@@ -178,7 +243,43 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
             </Link>
           ))}
         </div>
-        {/* apasih openai */}
+        {/* News Section */}
+        <div className="flex flex-col w-full px-4 mb-8">
+          <div className="flex items-center justify-center mb-5">
+            <span className="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-500">
+              News & Wiki
+            </span>
+          </div>
+
+          <div className="grid grid-cols-2 gap-3">
+            {newsLinks.map((link) => {
+              const IconComponent = link.icon;
+              return (
+                <Link
+                  key={link.name}
+                  href={link.disabled ? "#" : link.href}
+                  onClick={(event) => {
+                    if (link.disabled) event.preventDefault();
+                    else setIsOpen(false);
+                  }}
+                  className={`w-full p-4 rounded-2xl transition-all flex flex-col items-center justify-center gap-3 text-center ${
+                    link.disabled
+                      ? 'text-zinc-600 opacity-50 cursor-not-allowed bg-zinc-900/40 border border-zinc-800/50'
+                      : pathname === link.href
+                      ? 'text-amber-500 bg-amber-500/10 border border-amber-500/30'
+                      : 'text-zinc-400 bg-zinc-900/40 border border-zinc-800/50 hover:text-amber-500 hover:border-amber-500/30'
+                  }`}
+                >
+                  <div className={`p-3 rounded-xl ${link.disabled ? 'bg-zinc-800/30' : 'bg-zinc-800/60 text-zinc-300'}`}>
+                    <IconComponent size={22} />
+                  </div>
+                  <span className="font-semibold text-xs leading-tight">{link.name}</span>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+
         {/* Features Section - Grid 2 Kolom */}
         <div className="flex flex-col w-full px-4 flex-1">
           <div className="flex items-center justify-center mb-5">

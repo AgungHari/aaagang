@@ -17,7 +17,7 @@ export async function getAliansiData() {
     headers: {
       "Authorization": `Bearer ${process.env.COC_API_KEY}`,
     },
-    next: { revalidate: 365 },
+    next: { revalidate: 60 },
   });
 
   if (!res.ok) return null;
