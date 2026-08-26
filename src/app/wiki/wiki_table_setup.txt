@@ -1,0 +1,18 @@
+CREATE TABLE wiki (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,           -- Unique ID utama untuk setiap artikel wiki
+  title TEXT NOT NULL,                            -- Judul utama artikel wiki
+  slug TEXT UNIQUE NOT NULL,                      -- URL-friendly identifier untuk routing (contoh: panduan-war-th15)
+  category TEXT NOT NULL,                         -- Kategori artikel untuk keperluan filtering (contoh: Troops, Hero, TownHall, Strategy, Tricks, Bug, Guide)
+  thumbnail_url TEXT,                             -- URL gambar sampul/cover untuk ditampilkan di card halaman depan
+  short_description TEXT,                         -- Ringkasan singkat/cuplikan teks untuk ditampilkan di card halaman depan
+  description_json TEXT NOT NULL,                 -- Data fleksibel berupa JSON string yang berisi array blok konten rich text (teks, gambar, video YouTube)
+  view_count INTEGER DEFAULT 0,                   -- Jumlah total views yang didapat artikel slug wiki
+  like_count INTEGER DEFAULT 0,                   -- Jumlah total like yang didapat artikel slug wiki
+  is_active BOOLEAN DEFAULT TRUE,                 -- Status publikasi (TRUE = aktif/tampil, FALSE = draft/disembunyikan)
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP   -- Timestamp kapan artikel pertama kali dibuat
+);
+
+-- Indexing untuk mempercepat pencarian berdasarkan URL (slug), kategori, dan status aktif
+CREATE INDEX idx_wiki_slug ON wiki(slug);
+CREATE INDEX idx_wiki_category ON wiki(category);
+CREATE INDEX idx_wiki_active ON wiki(is_active);

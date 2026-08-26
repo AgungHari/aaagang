@@ -122,59 +122,63 @@ export default function ChatInterface() {
 
       const reader = response.body.getReader();
       const decoder = new TextDecoder("utf-8");
-      
+
       let accumulatedText = "";
       let accumulatedThinking = "";
+      let pendingLine = "";
+
+      const processLine = (line: string) => {
+        if (line.trim() === "" || line.includes("[DONE]")) return;
+
+        if (line.startsWith("data: ")) {
+          try {
+            const jsonString = line.replace(/^data: /, "");
+            const parsed = JSON.parse(jsonString);
+
+            const delta = parsed.choices?.[0]?.delta || {};
+
+            if (delta.content) {
+              if (Array.isArray(delta.content)) {
+                // Kalau bentuknya Array, berarti dia lagi "Mikir" (Format Magistral)
+                for (const item of delta.content) {
+                  if (item.type === "thinking" && Array.isArray(item.thinking)) {
+                    for (const thinkItem of item.thinking) {
+                      if (thinkItem.type === "text" && thinkItem.text) {
+                        accumulatedThinking += thinkItem.text;
+                      }
+                    }
+                  }
+                }
+              } else if (typeof delta.content === "string") {
+                // Kalau bentuknya String, berarti dia lagi "Bicara" jawaban akhir
+                accumulatedText += delta.content;
+              }
+            }
+
+            // 2. Ambil teks "mikir" (Support format Mistral & model lain)
+            // Mistral pakai delta.reasoning
+            // DeepSeek/lainnya pakai delta.reasoning_content
+            const thinkingPart = delta.reasoning || delta.reasoning_content;
+            if (thinkingPart) {
+              accumulatedThinking += thinkingPart;
+            }
+          } catch (e) {
+            console.warn("Skip chunk error (bukan JSON):", line);
+          }
+        }
+      };
 
       // Loop untuk membaca stream per chunk
       while (true) {
         const { done, value } = await reader.read();
         if (done) break;
 
-        const chunk = decoder.decode(value, { stream: true });
-        const lines = chunk.split("\n");
+        pendingLine += decoder.decode(value, { stream: true });
+        const lines = pendingLine.split(/\r?\n/);
+        pendingLine = lines.pop() || "";
 
         for (const line of lines) {
-          // Lewati baris kosong atau sinyal [DONE]
-          if (line.trim() === "" || line.includes("[DONE]")) continue;
-
-          if (line.startsWith("data: ")) {
-            try {
-              const jsonString = line.replace(/^data: /, "");
-              const parsed = JSON.parse(jsonString);
-              
-              const delta = parsed.choices?.[0]?.delta || {};
-
-              if (delta.content) {
-                if (Array.isArray(delta.content)) {
-                  // Kalau bentuknya Array, berarti dia lagi "Mikir" (Format Magistral)
-                  for (const item of delta.content) {
-                    if (item.type === "thinking" && Array.isArray(item.thinking)) {
-                      for (const thinkItem of item.thinking) {
-                        if (thinkItem.type === "text" && thinkItem.text) {
-                          accumulatedThinking += thinkItem.text;
-                        }
-                      }
-                    }
-                  }
-                } else if (typeof delta.content === "string") {
-                  // Kalau bentuknya String, berarti dia lagi "Bicara" jawaban akhir
-                  accumulatedText += delta.content;
-                }
-              }
-
-              // 2. Ambil teks "mikir" (Support format Mistral & model lain)
-              // Mistral pakai delta.reasoning
-              // DeepSeek/lainnya pakai delta.reasoning_content
-              const thinkingPart = delta.reasoning || delta.reasoning_content;
-              if (thinkingPart) {
-                accumulatedThinking += thinkingPart;
-              }
-
-            } catch (e) {
-              console.warn("Skip chunk error (bukan JSON):", line);
-            }
-          }
+          processLine(line);
         }
 
         // Langsung tembak ke UI biar animasinya mulus
@@ -189,6 +193,19 @@ export default function ChatInterface() {
           return updated;
         });
       }
+
+      pendingLine += decoder.decode();
+      processLine(pendingLine);
+      setMessages((prev) => {
+        const updated = [...prev];
+        const lastIndex = updated.length - 1;
+        updated[lastIndex] = {
+          ...updated[lastIndex],
+          text: accumulatedText,
+          thinking: accumulatedThinking
+        };
+        return updated;
+      });
     } finally {
       setIsLoading(false);
     }

@@ -24,6 +24,32 @@ interface MessageItemProps {
   thinking?: string;
 }
 
+function parseGalleryJson(jsonStr: string): GalleryItem[] {
+  const parse = (value: string) => {
+    const parsed: unknown = JSON.parse(value);
+    return Array.isArray(parsed) ? parsed as GalleryItem[] : [];
+  };
+
+  try {
+    return parse(jsonStr);
+  } catch {
+    // Some models omit quotes around a URL even though the rest is valid JSON.
+    const repairedJson = jsonStr.replace(
+      /("(?:imageUrl|baseUrl)"\s*:\s*)(\[https?:\/\/[^\]]+\]\(https?:\/\/[^)]+\)|https?:\/\/[^\s,}\]]+)/g,
+      '$1"$2"',
+    );
+    return parse(repairedJson);
+  }
+}
+
+function normalizeGalleryItems(items: GalleryItem[]): GalleryItem[] {
+  return items.map((item) => ({
+    ...item,
+    imageUrl: item.imageUrl.replace(/^\[([^\]]+)\]\(\1\)$/, '$1'),
+    baseUrl: item.baseUrl.replace(/^\[([^\]]+)\]\(\1\)$/, '$1'),
+  }));
+}
+
 // Fungsi untuk parse [GALLERY_DATA] dari pesan
 function parseGalleryData(text: string): { textContent: string; galleries: GalleryItem[] } {
   let galleries: GalleryItem[] = [];
@@ -39,7 +65,8 @@ function parseGalleryData(text: string): { textContent: string; galleries: Galle
   }
 
   // Cari posisi [/GALLERY_DATA] atau gunakan bracket matching
-  let endIndex = text.indexOf(endTag, startIndex);
+  const closingTagIndex = text.indexOf(endTag, startIndex);
+  let endIndex = closingTagIndex;
   let jsonStr = '';
 
   if (endIndex !== -1) {
@@ -75,10 +102,13 @@ function parseGalleryData(text: string): { textContent: string; galleries: Galle
   // Coba parse JSON
   if (jsonStr) {
     try {
-      galleries = JSON.parse(jsonStr);
+      galleries = normalizeGalleryItems(parseGalleryJson(jsonStr));
       // Hapus tag [GALLERY_DATA] sampai [/GALLERY_DATA] atau sampai akhir array JSON
       if (endIndex !== -1) {
-        textContent = (text.substring(0, startIndex) + text.substring(endIndex + endTag.length)).trim();
+        const removalEnd = closingTagIndex !== -1
+          ? endIndex + endTag.length
+          : endIndex;
+        textContent = (text.substring(0, startIndex) + text.substring(removalEnd)).trim();
       } else {
         // Jika tidak ada end tag, cari posisi akhir dari JSON
         const jsonMatch = text.substring(startIndex).match(/\[GALLERY_DATA\]\s*\[[\s\S]*?\]/);

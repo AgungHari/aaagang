@@ -118,52 +118,57 @@ export default function LayoutPageChat({ clanName, initialMessage }: LayoutPageC
 
       const reader = response.body.getReader();
       const decoder = new TextDecoder("utf-8");
-      
+
       let accumulatedText = "";
       let accumulatedThinking = "";
+      let pendingLine = "";
+
+      const processLine = (line: string) => {
+        if (line.trim() === "" || line.includes("[DONE]")) return;
+
+        if (line.startsWith("data: ")) {
+          try {
+            const jsonString = line.replace(/^data: /, "");
+            const parsed = JSON.parse(jsonString);
+
+            const delta = parsed.choices?.[0]?.delta || {};
+
+            if (delta.content) {
+              if (Array.isArray(delta.content)) {
+                for (const item of delta.content) {
+                  if (item.type === "thinking" && Array.isArray(item.thinking)) {
+                    for (const thinkItem of item.thinking) {
+                      if (thinkItem.type === "text" && thinkItem.text) {
+                        accumulatedThinking += thinkItem.text;
+                      }
+                    }
+                  }
+                }
+              } else if (typeof delta.content === "string") {
+                accumulatedText += delta.content;
+              }
+            }
+
+            const thinkingPart = delta.reasoning || delta.reasoning_content;
+            if (thinkingPart) {
+              accumulatedThinking += thinkingPart;
+            }
+          } catch (e) {
+            console.warn("Skip chunk error:", line);
+          }
+        }
+      };
 
       while (true) {
         const { done, value } = await reader.read();
         if (done) break;
 
-        const chunk = decoder.decode(value, { stream: true });
-        const lines = chunk.split("\n");
+        pendingLine += decoder.decode(value, { stream: true });
+        const lines = pendingLine.split(/\r?\n/);
+        pendingLine = lines.pop() || "";
 
         for (const line of lines) {
-          if (line.trim() === "" || line.includes("[DONE]")) continue;
-
-          if (line.startsWith("data: ")) {
-            try {
-              const jsonString = line.replace(/^data: /, "");
-              const parsed = JSON.parse(jsonString);
-              
-              const delta = parsed.choices?.[0]?.delta || {};
-
-              if (delta.content) {
-                if (Array.isArray(delta.content)) {
-                  for (const item of delta.content) {
-                    if (item.type === "thinking" && Array.isArray(item.thinking)) {
-                      for (const thinkItem of item.thinking) {
-                        if (thinkItem.type === "text" && thinkItem.text) {
-                          accumulatedThinking += thinkItem.text;
-                        }
-                      }
-                    }
-                  }
-                } else if (typeof delta.content === "string") {
-                  accumulatedText += delta.content;
-                }
-              }
-
-              const thinkingPart = delta.reasoning || delta.reasoning_content;
-              if (thinkingPart) {
-                accumulatedThinking += thinkingPart;
-              }
-
-            } catch (e) {
-              console.warn("Skip chunk error:", line);
-            }
-          }
+          processLine(line);
         }
 
         setMessages((prev) => {
@@ -177,6 +182,19 @@ export default function LayoutPageChat({ clanName, initialMessage }: LayoutPageC
           return updated;
         });
       }
+
+      pendingLine += decoder.decode();
+      processLine(pendingLine);
+      setMessages((prev) => {
+        const updated = [...prev];
+        const lastIndex = updated.length - 1;
+        updated[lastIndex] = {
+          ...updated[lastIndex],
+          text: accumulatedText,
+          thinking: accumulatedThinking
+        };
+        return updated;
+      });
     } finally {
       setIsLoading(false);
     }

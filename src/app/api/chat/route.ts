@@ -137,6 +137,7 @@ async function handleMistralModelPlus(messages: any, clanContext: string) {
         
         RULE 4 - JSON HARUS VALID:
         - Gunakan tanda kutip GANDA ("id" bukan 'id')
+        - URL pada "imageUrl" dan "baseUrl" harus berupa string URL biasa, tanpa format Markdown seperti [URL](URL)
         - Tidak ada trailing comma
         - Format harus array of objects: [{...}, {...}]
         - Jika JSON invalid, jangan sertakan [GALLERY_DATA]
@@ -233,6 +234,7 @@ async function handleMistralModelReasoning(messages: any, clanContext: string) {
         
         RULE 4 - JSON HARUS VALID:
         - Gunakan tanda kutip GANDA ("id" bukan 'id')
+        - URL pada "imageUrl" dan "baseUrl" harus berupa string URL biasa, tanpa format Markdown seperti [URL](URL)
         - Tidak ada trailing comma
         - Format harus array of objects: [{...}, {...}]
         - Jika JSON invalid, jangan sertakan [GALLERY_DATA]
