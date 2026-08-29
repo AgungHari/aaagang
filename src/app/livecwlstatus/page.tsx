@@ -6,6 +6,7 @@ import { Search, ArrowRight, Eye } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollReveal from '@/components/ScrollReveal';
+import BrowserVideo from '@/components/BrowserVideo';
 import Link from 'next/link';
 
 export default function LiveCWLStatusPage() {
@@ -132,13 +133,9 @@ export default function LiveCWLStatusPage() {
             </div>
                       
             <div className="relative aspect-video rounded-2xl overflow-hidden border border-zinc-800/80 bg-zinc-950 shadow-inner">
-              <video
+              <BrowserVideo
                 src="/Feature_War.webm"
-                autoPlay
-                loop
-                muted
-                playsInline
-                preload="metadata"
+                safariSrc="/Feature_War_Safari.mov"
                 className="w-full h-full object-cover"
               />
             </div>

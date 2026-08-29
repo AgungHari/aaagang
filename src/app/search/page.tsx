@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BrowserVideo from "@/components/BrowserVideo";
 import Link from "next/link";
 import { Search, Trophy, Heart, Zap, Shield, ArrowRight, Play } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -139,13 +140,9 @@ export default function SearchPage() {
               </div>
               
               <div className="relative aspect-video rounded-2xl overflow-hidden border border-zinc-800/80 bg-zinc-950 shadow-inner">
-                <video
-                  src="/Feature_PlayerSearch.webm" 
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  preload="metadata"
+                <BrowserVideo
+                  src="/Feature_PlayerSearch.webm"
+                  safariSrc="/Feature_PlayerSearch_Safari.mov"
                   className="w-full h-full object-cover"
                 />
               </div>

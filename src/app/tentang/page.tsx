@@ -115,6 +115,8 @@ export default async function AboutPage() {
       {/* Video Hero Section */}
       <section className="relative w-full h-screen md:h-96 mt-[50px] mb-20 overflow-hidden">
         <BrowserVideo
+          src="/About_Main.webm"
+          safariSrc="/About_Safari.mov"
           className="absolute inset-0 w-full h-full object-cover"
         />
 

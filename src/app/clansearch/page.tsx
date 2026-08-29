@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 import { Search, Users, Trophy, Sword, ArrowRight, Shield } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
+import BrowserVideo from "@/components/BrowserVideo";
 
 export default function ClanSearchPage() {
   const [searchTag, setSearchTag] = useState("");
@@ -230,13 +231,9 @@ export default function ClanSearchPage() {
               </div>
                       
               <div className="relative aspect-video rounded-2xl overflow-hidden border border-zinc-800/80 bg-zinc-950 shadow-inner">
-                <video
-                  src="/Feature_ClanSearch.webm" // Taruh file video di folder /public/videos/tutorial_tag.mp4
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  preload="metadata"
+                <BrowserVideo
+                  src="/Feature_ClanSearch.webm"
+                  safariSrc="/Feature_ClanSearch_Safari.mov"
                   className="w-full h-full object-cover"
                 />
               </div>

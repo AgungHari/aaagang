@@ -240,6 +240,17 @@ function useMapLayersContext() {
     return useContext(MapLayersContext)
 }
 
+function withCartoKey(baseUrl: string) {
+    const cartoApiKey =
+        process.env.NEXT_PUBLIC_CARTO_BASEMAP_API_KEY ??
+        process.env.CARTO_BASEMAP_API_KEY
+
+    if (!cartoApiKey) return baseUrl
+
+    const separator = baseUrl.includes("?") ? "&" : "?"
+    return `${baseUrl}${separator}key=${encodeURIComponent(cartoApiKey)}`
+}
+
 function MapTileLayer({
     name = "Default",
     url,
@@ -259,16 +270,18 @@ function MapTileLayer({
     }
 
     const context = useContext(MapLayersContext)
-    const DEFAULT_URL =
-        "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"
-    const DEFAULT_DARK_URL =
-        "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png"
+    const DEFAULT_URL = withCartoKey(
+        "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+    )
+    const DEFAULT_DARK_URL = withCartoKey(
+        "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
+    )
 
     const { resolvedTheme } = useTheme()
     const resolvedUrl =
         resolvedTheme === "dark"
-            ? (darkUrl ?? url ?? DEFAULT_DARK_URL)
-            : (url ?? DEFAULT_URL)
+            ? withCartoKey(darkUrl ?? url ?? DEFAULT_DARK_URL)
+            : withCartoKey(url ?? DEFAULT_URL)
     const resolvedAttribution =
         resolvedTheme === "dark" && darkAttribution
             ? darkAttribution

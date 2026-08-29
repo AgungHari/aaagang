@@ -4,9 +4,15 @@ import { useEffect, useState } from 'react';
 
 type BrowserVideoProps = {
     className?: string;
+    src: string;
+    safariSrc: string;
 };
 
-export default function BrowserVideo({ className }: BrowserVideoProps) {
+export default function BrowserVideo({
+    className,
+    src,
+    safariSrc,
+}: BrowserVideoProps) {
     const [videoSrc, setVideoSrc] = useState<string | null>(null);
 
     useEffect(() => {
@@ -14,8 +20,8 @@ export default function BrowserVideo({ className }: BrowserVideoProps) {
         const isSafari = /Safari/i.test(userAgent) &&
             !/Chrome|CriOS|FxiOS|Edg/i.test(userAgent);
 
-        setVideoSrc(isSafari ? '/About_Safari.mov' : '/About_Main.webm');
-    }, []);
+        setVideoSrc(isSafari ? safariSrc : src);
+    }, [safariSrc, src]);
 
     return (
         <video
