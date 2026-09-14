@@ -25,11 +25,11 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
   ];
 
   const featureLinks = [
-    { name: "Base Layouts", href: "/layout", disabled: false, icon: Import, description: "Explore & Import base layouts", image: "/BattleCopter_Boat_Pose01_NoShadow.webp" },
+    { name: "Base Layouts", href: "/layout", disabled: false, icon: Import, description: "Explore & Import base layouts", image: "/Scenery_XL_AnimeFury_Shrink.webp" },
     { name: "Player Search", href: "/search", disabled: false, icon: User, description: "Cari & Stalk players", image: "/GW_DarkDays_f22_2k_V2.webp" },
     { name: "Clan Search", href: "/clansearch", disabled: false, icon: Users, description: "Cari & Stalk clans", image: "/BK_DE_Pose02_NoShadows.webp" },
-    { name: "Live War Status", href: "/livewarstatus", disabled: false, icon: Sword, description: "Statistik War Live", image: "/Icon_HV_CWL_Silver_13.webp" },
-    { name: "CWL Live Reports", href: "/livecwlstatus", disabled: false, icon: ClipboardPenLine, description: "Live Report CWL", image: "/Icon_HV_CWL_Champion_3.webp" }, 
+    { name: "Live War Status", href: "/livewarstatus", disabled: false, icon: Sword, description: "Statistik War Live", image: "/Icon_HV_CWL_Silver_13_Shrink.webp" },
+    { name: "CWL Live Reports", href: "/livecwlstatus", disabled: false, icon: ClipboardPenLine, description: "Live Report CWL", image: "/Icon_HV_CWL_Champion_3_Shrink.webp" }, 
     { name: "Deffend Analysis", href: "/deffendanalysis", disabled: true, icon: Shield, description: "Analisa Defffense Berbasis AI", image: "/Hero_Pet_HV_Angry_Jelly_05.webp" },
     { name: "Attack Coaching", href: "/cwlsearch", disabled: true, icon: Trophy, description: "Attack Pathing Berbasis AI", image: "/Super_Troop_Super_Wizard_2.webp" },
     { name: "Friendly Wars", href: "/friendlywars", disabled: true, icon: Handshake, description: "Tantangan Friendly Wars", image: "/Troop_BB_Raged_Barbarian_no_grass.webp" },
@@ -253,7 +253,6 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
 
           <div className="grid grid-cols-2 gap-3">
             {newsLinks.map((link) => {
-              const IconComponent = link.icon;
               return (
                 <Link
                   key={link.name}
@@ -262,18 +261,24 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
                     if (link.disabled) event.preventDefault();
                     else setIsOpen(false);
                   }}
-                  className={`w-full p-4 rounded-2xl transition-all flex flex-col items-center justify-center gap-3 text-center ${
+                  className={`relative w-full min-h-32 p-4 rounded-2xl flex flex-col items-center justify-end pb-5 text-center overflow-hidden ${
                     link.disabled
                       ? 'text-zinc-600 opacity-50 cursor-not-allowed bg-zinc-900/40 border border-zinc-800/50'
                       : pathname === link.href
                       ? 'text-amber-500 bg-amber-500/10 border border-amber-500/30'
-                      : 'text-zinc-400 bg-zinc-900/40 border border-zinc-800/50 hover:text-amber-500 hover:border-amber-500/30'
+                      : 'text-zinc-400 bg-zinc-900/40 border border-zinc-800/50'
                   }`}
                 >
-                  <div className={`p-3 rounded-xl ${link.disabled ? 'bg-zinc-800/30' : 'bg-zinc-800/60 text-zinc-300'}`}>
-                    <IconComponent size={22} />
-                  </div>
-                  <span className="font-semibold text-xs leading-tight">{link.name}</span>
+                  {link.image && (
+                    /* TUNING MOBILE NEWS IMAGE: object-contain menjaga rasio gambar di semua ukuran layar. */
+                    <img
+                      src={link.image}
+                      alt=""
+                      aria-hidden="true"
+                      className="pointer-events-none absolute inset-0 h-full w-full object-contain opacity-10"
+                    />
+                  )}
+                  <span className="relative z-10 font-semibold text-xs leading-tight">{link.name}</span>
                 </Link>
               );
             })}
@@ -290,7 +295,6 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
           
           <div className="grid grid-cols-2 gap-3 pb-8">
             {featureLinks.map((link) => {
-              const IconComponent = link.icon;
               return (
                 <Link
                   key={link.href}
@@ -299,24 +303,24 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
                     if (link.disabled) e.preventDefault();
                     else setIsOpen(false);
                   }}
-                  className={`w-full p-4 rounded-2xl transition-all flex flex-col items-center justify-center gap-3 text-center ${
+                  className={`relative w-full min-h-32 p-4 rounded-2xl flex flex-col items-center justify-end pb-5 text-center overflow-hidden ${
                     link.disabled
                       ? 'text-zinc-600 opacity-50 cursor-not-allowed bg-zinc-900/40 border border-zinc-800/50'
                       : pathname === link.href
                       ? 'text-amber-500 bg-amber-500/10 border border-amber-500/30 shadow-[0_0_15px_rgba(245,158,11,0.1)]'
-                      : 'text-zinc-400 bg-zinc-900/40 border border-zinc-800/50 hover:text-amber-500 hover:border-amber-500/30'
+                      : 'text-zinc-400 bg-zinc-900/40 border border-zinc-800/50'
                   }`}
                 >
-                  <div className={`p-3 rounded-xl ${
-                    link.disabled 
-                      ? 'bg-zinc-800/30' 
-                      : pathname === link.href 
-                      ? 'bg-amber-500/20 text-amber-500' 
-                      : 'bg-zinc-800/60 text-zinc-300'
-                  }`}>
-                    <IconComponent size={22} />
-                  </div>
-                  <div className="flex flex-col items-center">
+                  {link.image && (
+                    /* TUNING MOBILE FEATURE IMAGE: object-contain menjaga rasio gambar di semua ukuran layar. */
+                    <img
+                      src={link.image}
+                      alt=""
+                      aria-hidden="true"
+                      className="pointer-events-none absolute inset-0 h-full w-full object-contain opacity-10"
+                    />
+                  )}
+                  <div className="relative z-10 flex flex-col items-center">
                     <span className="font-semibold text-xs leading-tight mb-1">{link.name}</span>
                   </div>
                 </Link>
