@@ -14,9 +14,10 @@ interface WarHighlight {
 interface HallOfFameProps {
   isWar: boolean;
   war?: any;
+  initialCount?: number;
 }
 
-export default function HallOfFame({ isWar, war }: HallOfFameProps) {
+export default function HallOfFame({ isWar, war, initialCount = 8 }: HallOfFameProps) {
   const getAchievementImage = (type: string): string | null => {
     switch (type) {
       case "King Slayer":
@@ -104,24 +105,23 @@ export default function HallOfFame({ isWar, war }: HallOfFameProps) {
   };
 
   const highlights = getWarHighlights();
+  const [visibleCount, setVisibleCount] = useState<number>(Math.min(initialCount, highlights.length));
   if (!isWar || highlights.length === 0) return null;
 
-  const INITIAL_COUNT = 8;
-  const [visibleCount, setVisibleCount] = useState<number>(Math.min(INITIAL_COUNT, highlights.length));
   const displayedHighlights = highlights.slice(0, visibleCount);
 
   return (
     <ScrollReveal delay={0.1} mobileDelay={0.1}>
-      <div className="max-w-7xl mx-auto px-6 mt-12 mb-24">
-        <div className="p-8 bg-zinc-900/10 border border-zinc-800/50 rounded-[2.5rem]">
-          <div className="flex items-center gap-2 text-zinc-500 text-[10px] font-black uppercase tracking-[0.4em] mb-8 animate-pulse">
+      <div className="max-w-7xl mx-auto px-2 sm:px-6 mt-12 mb-24">
+        <div className="p-4 sm:p-8 bg-zinc-900/10 border border-zinc-800/50 rounded-[2.5rem]">
+          <div className="flex items-center gap-2 text-zinc-500 text-[9px] sm:text-[10px] font-black uppercase tracking-[0.2em] sm:tracking-[0.4em] mb-5 sm:mb-8 animate-pulse">
             <Medal size={14} className="text-amber-500" /> Live War Hall of Fame
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4">
             {displayedHighlights.map((h, i) => (
               <ScrollReveal key={i} delay={i * 0.02}>
                 <div
-                  className={`relative p-5 bg-zinc-950/40 border rounded-2xl group transition-all overflow-hidden ${
+                  className={`relative p-3 sm:p-5 bg-zinc-950/40 border rounded-2xl group transition-all overflow-hidden ${
                     h.type === "Unlucky 1 Star"
                       ? "border-zinc-800/50 grayscale opacity-60"
                       : h.type === "Nice Attack 2 Star"
@@ -136,7 +136,7 @@ export default function HallOfFame({ isWar, war }: HallOfFameProps) {
                       className="absolute -bottom-6 -right-8 w-28 h-28 opacity-10 rotate-12 pointer-events-none object-contain"
                     />
                   )}
-                  <div className="flex items-center gap-3 mb-2 relative z-10">
+                  <div className="flex items-center gap-2 sm:gap-3 mb-2 relative z-10">
                     <div
                       className={`p-1.5 rounded-lg ${
                         h.type.includes("Unlucky")
@@ -166,29 +166,29 @@ export default function HallOfFame({ isWar, war }: HallOfFameProps) {
                         <Zap size={14} />
                       )}
                     </div>
-                    <div className="text-xs font-black uppercase italic tracking-tight">{h.name}</div>
+                    <div className="min-w-0 flex-1 truncate text-[11px] sm:text-xs font-black uppercase italic tracking-tight">{h.name}</div>
                   </div>
                   <div
-                    className={`text-[9px] font-bold uppercase tracking-tighter leading-tight relative z-10 ${
+                    className={`text-[8px] sm:text-[9px] font-bold uppercase tracking-tighter leading-tight relative z-10 ${
                       h.type.includes("Unlucky") ? "text-zinc-500" : "text-amber-500/70"
                     }`}
                   >
                     {h.type}
                   </div>
-                  <div className="text-[10px] text-zinc-500 font-medium italic mt-1 line-clamp-1 relative z-10">
+                  <div className="text-[9px] sm:text-[10px] text-zinc-500 font-medium italic mt-1 line-clamp-1 relative z-10">
                     {h.desc}
                   </div>
                 </div>
               </ScrollReveal>
             ))}
           </div>
-          {highlights.length > INITIAL_COUNT && (
+          {highlights.length > initialCount && (
             <div className="flex justify-center mt-4">
               <button
                 type="button"
                 onClick={() =>
                   setVisibleCount((prev) =>
-                    prev >= highlights.length ? Math.min(INITIAL_COUNT, highlights.length) : Math.min(prev + INITIAL_COUNT, highlights.length)
+                    prev >= highlights.length ? Math.min(initialCount, highlights.length) : Math.min(prev + initialCount, highlights.length)
                   )
                 }
                 className="inline-flex items-center gap-2 px-3 py-2 rounded-md border border-zinc-800/40 bg-zinc-950/20 text-amber-500 hover:bg-zinc-900/30"

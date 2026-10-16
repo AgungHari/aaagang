@@ -61,7 +61,8 @@ const EQ_ASSETS: Record<string, string> = {
   "Frost Flake": "Hero_Equipment_rc_frost_flake.webp",
   "Frozen Arrow": "Hero_Equipment_AQ_Frozen_Arrow.webp",
   "Monolith Arrow": "Hero_Equipment_AQ_MonolithArrow.webp",
-  "Revenge Deck": "HG_DD_reverse_card.webp"
+  "Revenge Deck": "HG_DD_reverse_card.webp",
+  "Portal Pendant" : "Portal_Pendant.webp"
   // Heroic Torch, Stick Horse, Noble Iron, and Flame Blower do not have matching public art yet.
 };
 

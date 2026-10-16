@@ -68,7 +68,7 @@ const faqItems: FAQItem[] = [
   {
     id: 12,
     title: "Apakah AAA GANG merupakan aliansi atau jaringan dari banyak klan?",
-    description: "Saat ini AAA GANG beroperasi sebagai entitas klan tunggal (*single clan*) dan tidak terikat dalam serikat, aliansi, atau sistem klan keluarga besar mana pun. Keputusan ekspansi atau pembentukan klan cabang di masa depan hanya akan dilakukan jika disetujui melalui forum musyawarah pengurus."
+    description: "Saat ini AAA GANG menjalin aliansi dengan klan Goblin Slayer. Meski bekerja sama, AAA GANG dan Goblin Slayer tetap merupakan klan dan entitas yang terpisah, dengan kepengurusan masing-masing. Detail kerja sama dan rencana ke depannya dibahas bersama oleh pengurus kedua klan."
   },
   {
     id: 13,

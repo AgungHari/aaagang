@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Trophy } from 'lucide-react';
-import HallOfFame from './HOFForSearch';
+import HallOfFame from './HallOfFame';
 
 interface CWLHallOfFameProps {
   war: any;
@@ -59,7 +59,7 @@ export default function CWLHallOfFame({ war, isWar }: CWLHallOfFameProps) {
       </div>
 
       {/* Hall of Fame Display */}
-      <HallOfFame isWar={isWar} war={displayWar} />
+      <HallOfFame isWar={isWar} war={displayWar} initialCount={4} />
     </div>
   );
 }

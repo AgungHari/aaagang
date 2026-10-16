@@ -54,4 +54,5 @@ Data Lengkap Seluruh Hero Equipment Clash of Clans (Klasik hingga Update 21 Agus
 - Metal Pants (Common): Memberikan perlindungan damage reduction khusus bagi Minion Prince agar tidak langsung tereliminasi saat terkena jebakan udara berat seperti Seeking Air Mine.
 - Henchman Puppet (Common): Memanggil kawanan minion pembantu untuk membersihkan bangunan sekitar (Sangat ramah bagi pemula).
 - Noble Iron (Common): Memberikan peningkatan kecepatan serangan pasif yang konstan, berguna untuk taktik surgical strike di akhir serangan.
+- Portal Pendant (Epic): Minion Prince akan membuka portal untuk menarik pasukan, Hero lain, dan Pet aliansi di sekitarnya kembali ke bilah penempatan (deployment bar) pemain sehingga dapat dideploy kembali di posisi lain.
 `;
