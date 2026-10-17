@@ -1,7 +1,7 @@
 'use client';
 
-import { useState, useMemo } from 'react';
-import { Filter, X } from 'lucide-react';
+import { useMemo, useState } from 'react';
+import { ListBullets, ShieldCheck, Skull, Sword, Trophy } from '@phosphor-icons/react';
 import WarLogCard from '@/components/WarLogCard';
 
 interface War {
@@ -26,136 +26,88 @@ interface WarLogFilterProps {
   wars: War[];
 }
 
+const filters = [
+  { value: null, label: "All wars", icon: ListBullets },
+  { value: "win", label: "Victories", icon: Trophy },
+  { value: "lose", label: "Defeats", icon: Skull },
+  { value: "tie", label: "Draws", icon: Sword },
+] as const;
+
 export default function WarLogFilter({ wars }: WarLogFilterProps) {
   const [selectedResult, setSelectedResult] = useState<"win" | "lose" | "tie" | null>(null);
-  const [isOpen, setIsOpen] = useState(false);
 
-  // Filter wars berdasarkan selected result
-  const filteredWars = useMemo(() => {
-    if (!selectedResult) return wars;
-    return wars.filter(war => war.result === selectedResult);
-  }, [wars, selectedResult]);
+  const counts = useMemo(() => ({
+    all: wars.length,
+    win: wars.filter((war) => war.result === "win").length,
+    lose: wars.filter((war) => war.result === "lose").length,
+    tie: wars.filter((war) => war.result === "tie").length,
+  }), [wars]);
 
-  // Calculate stats untuk filtered wars
-  const wins = filteredWars.filter(w => w.result === "win").length;
-  const losses = filteredWars.filter(w => w.result === "lose").length;
-  const ties = filteredWars.filter(w => w.result === "tie").length;
-  const winRate = filteredWars.length > 0 ? ((wins / filteredWars.length) * 100).toFixed(1) : "0";
+  const filteredWars = useMemo(
+    () => selectedResult ? wars.filter((war) => war.result === selectedResult) : wars,
+    [wars, selectedResult],
+  );
+  const wins = filteredWars.filter((war) => war.result === "win").length;
+  const winRate = filteredWars.length ? Math.round((wins / filteredWars.length) * 100) : 0;
 
   return (
-    <>
-      {/* Filter Button & Dropdown */}
-      <div className="flex flex-wrap items-center gap-3 mb-8">
-        <div className="relative">
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="flex items-center gap-2 px-4 py-2 bg-amber-500/10 border border-amber-500/30 hover:border-amber-500/50 rounded-lg transition text-amber-500 font-semibold text-sm"
-          >
-            <Filter size={16} />
-            <span>
-              {selectedResult === "win" 
-                ? "Victories" 
-                : selectedResult === "lose" 
-                ? "Defeats" 
-                : selectedResult === "tie" 
-                ? "Draws" 
-                : "All Wars"}
-            </span>
-          </button>
-
-          {/* Dropdown Menu */}
-          {isOpen && (
-            <div className="absolute top-full left-0 mt-2 bg-zinc-900 border border-white/10 rounded-lg shadow-lg z-50 min-w-48">
-              {/* Show All */}
-              <button
-                onClick={() => {
-                  setSelectedResult(null);
-                  setIsOpen(false);
-                }}
-                className="w-full text-left px-4 py-2 hover:bg-white/5 transition text-sm text-gray-300 border-b border-white/5 flex items-center gap-2"
-              >
-                <X size={14} />
-                All Wars
-              </button>
-
-              {/* Victories */}
-              <button
-                onClick={() => {
-                  setSelectedResult("win");
-                  setIsOpen(false);
-                }}
-                className={`w-full text-left px-4 py-2 hover:bg-white/5 transition text-sm flex items-center gap-2 ${
-                  selectedResult === "win"
-                    ? 'bg-green-500/20 text-green-400 font-semibold'
-                    : 'text-gray-300'
-                }`}
-              >
-                Victories
-              </button>
-
-              {/* Defeats */}
-              <button
-                onClick={() => {
-                  setSelectedResult("lose");
-                  setIsOpen(false);
-                }}
-                className={`w-full text-left px-4 py-2 hover:bg-white/5 transition text-sm flex items-center gap-2 ${
-                  selectedResult === "lose"
-                    ? 'bg-red-500/20 text-red-400 font-semibold'
-                    : 'text-gray-300'
-                }`}
-              >
-                Defeats
-              </button>
-
-              {/* Draws */}
-              <button
-                onClick={() => {
-                  setSelectedResult("tie");
-                  setIsOpen(false);
-                }}
-                className={`w-full text-left px-4 py-2 hover:bg-white/5 transition text-sm flex items-center gap-2 ${
-                  selectedResult === "tie"
-                    ? 'bg-blue-500/20 text-blue-400 font-semibold'
-                    : 'text-gray-300'
-                }`}
-              >
-                Draws
-              </button>
-            </div>
-          )}
+    <div>
+      <div className="mb-7 flex flex-col gap-4 rounded-2xl border border-zinc-800/70 bg-transparent p-4 sm:flex-row sm:items-center sm:justify-between sm:p-5">
+        <div>
+          <p className="mb-1 text-[9px] font-black uppercase tracking-[0.2em] text-zinc-600">Browse the archive</p>
+          <p className="text-sm font-bold text-zinc-200">
+            Showing <span className="text-amber-300">{filteredWars.length}</span> of {wars.length} wars
+          </p>
         </div>
+        <div className="flex max-w-full gap-2 overflow-x-auto pb-1 sm:pb-0" aria-label="Filter war results">
+          {filters.map(({ value, label, icon: Icon }) => {
+            const active = selectedResult === value;
+            const count = value === null ? counts.all : counts[value];
 
-        {/* Stats Badge */}
-        <div className="flex items-center gap-4 text-sm">
-          <span className="text-gray-400">
-            {filteredWars.length} war{filteredWars.length !== 1 ? 's' : ''}
-          </span>
-          {!selectedResult && filteredWars.length > 0 && (
-            <span className="text-amber-400 font-semibold">
-              Win Rate: {winRate}%
-            </span>
-          )}
+            return (
+              <button
+                key={label}
+                type="button"
+                aria-pressed={active}
+                onClick={() => setSelectedResult(value)}
+                className={`inline-flex shrink-0 items-center gap-2 rounded-full border px-3.5 py-2 text-[9px] font-black uppercase tracking-[0.12em] transition-colors ${
+                  active
+                    ? "border-amber-400/35 bg-amber-400/10 text-amber-200"
+                    : "border-zinc-800 bg-transparent text-zinc-500 hover:border-zinc-700 hover:text-zinc-200"
+                }`}
+              >
+                <Icon size={14} weight="duotone" />
+                {label}
+                <span className={`tabular-nums ${active ? "text-amber-300" : "text-zinc-700"}`}>{count}</span>
+              </button>
+            );
+          })}
         </div>
       </div>
 
-      {/* War Log Grid */}
       {filteredWars.length > 0 ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {filteredWars.map((war, index) => (
-            <WarLogCard key={index} war={war} index={index} />
-          ))}
-        </div>
+        <>
+          {!selectedResult && (
+            <div className="mb-5 flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.14em] text-zinc-600">
+              <ShieldCheck size={15} className="text-amber-500/70" />
+              Overall win rate <span className="text-amber-300">{winRate}%</span>
+            </div>
+          )}
+          <div className="grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3">
+            {filteredWars.map((war, index) => (
+              <WarLogCard key={`${war.endTime}-${war.opponent.name}-${index}`} war={war} index={index} />
+            ))}
+          </div>
+        </>
       ) : (
-        <div className="text-center py-20">
-          <p className="text-zinc-500 font-bold">
-            {selectedResult 
+        <div className="rounded-2xl border border-zinc-800/60 px-5 py-16 text-center">
+          <p className="text-sm font-bold text-zinc-400">
+            {selectedResult
               ? `No ${selectedResult === "win" ? "victories" : selectedResult === "lose" ? "defeats" : "draws"} found`
-              : "No war log data available"
-            }
+              : "No war log data available"}
           </p>
         </div>
       )}
-    </>
+    </div>
   );
 }

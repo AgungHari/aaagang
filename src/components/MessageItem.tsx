@@ -2,6 +2,7 @@ import { User, Copy, Check } from "lucide-react";
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { useState } from 'react';
+import Image from 'next/image';
 import { LoadingAnimation } from './LoadingAnimation';
 
 interface GalleryItem {
@@ -22,6 +23,7 @@ interface MessageItemProps {
   role: "user" | "ai";
   text: string;
   thinking?: string;
+  sigmaMood?: "happy" | "thinking" | "explaining";
 }
 
 function parseGalleryJson(jsonStr: string): GalleryItem[] {
@@ -321,7 +323,12 @@ function ImageGrid({ items }: { items: ImageItem[] }) {
   );
 }
 
-export function MessageItem({ role, text, thinking }: MessageItemProps) {
+export function MessageItem({
+  role,
+  text,
+  thinking,
+  sigmaMood = "happy",
+}: MessageItemProps) {
   const { textContent, galleries } = parseGalleryData(text);
   const { textContent: textWithoutImages, images } = parseImageData(textContent);
 
@@ -330,8 +337,14 @@ export function MessageItem({ role, text, thinking }: MessageItemProps) {
       className={`flex items-end gap-3 ${role === "user" ? "justify-end" : "justify-start"}`}
     >
       {role === "ai" && (
-        <div className="h-10 w-10 rounded-full border border-amber-400/15 bg-amber-500/10 flex items-center justify-center text-amber-300">
-          Σ
+        <div className="relative h-14 w-10 shrink-0 self-end sm:h-16 sm:w-12">
+          <Image
+            src={`/Villager_${sigmaMood === "happy" ? "Happy" : sigmaMood === "thinking" ? "Thinking" : "Explaining"}.webp`}
+            alt={`Sigma ${sigmaMood}`}
+            fill
+            sizes="(max-width: 640px) 40px, 48px"
+            className="object-contain object-bottom"
+          />
         </div>
       )}
 

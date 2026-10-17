@@ -5,6 +5,7 @@ interface Message {
   role: "ai" | "user";
   text: string;
   thinking?: string;
+  sigmaMood?: "happy" | "thinking" | "explaining";
 }
 
 interface ChatMessagesProps {
@@ -28,10 +29,16 @@ export function ChatMessages({ messages }: ChatMessagesProps) {
   return (
     <div
       ref={scrollRef}
-      className="flex-1 overflow-y-auto px-4 py-5 sm:px-6 space-y-4 hide-scrollbar"
+      className="min-h-0 flex-1 space-y-4 overflow-y-auto px-4 py-5 sm:px-6 hide-scrollbar"
     >
       {messages.map((msg, index) => (
-        <MessageItem key={index} role={msg.role} text={msg.text} thinking={msg.thinking} />
+        <MessageItem
+          key={index}
+          role={msg.role}
+          text={msg.text}
+          thinking={msg.thinking}
+          sigmaMood={msg.sigmaMood}
+        />
       ))}
     </div>
   );

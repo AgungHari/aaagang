@@ -4,6 +4,7 @@ import ProfitableAdUnit from "@/components/ProfitableAdUnit";
 import { getClanData } from "@/lib/coc";
 import { Zap } from "lucide-react";
 import ChatInterface from "./ChatInterface"; // Import client component tadi
+import Image from "next/image";
 
 export default async function KontakPage() {
   const clan = await getClanData();
@@ -80,7 +81,7 @@ export default async function KontakPage() {
   };
 
   return (
-    <main className="min-h-screen text-zinc-100 font-sans selection:bg-amber-500 selection:text-black">
+    <main className="min-h-screen overflow-hidden bg-[#050505] text-zinc-100 font-sans selection:bg-amber-500 selection:text-black">
 
       <script
         type="application/ld+json"
@@ -90,24 +91,38 @@ export default async function KontakPage() {
       {/* Navbar: Persis seperti di Member Page */}
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />
 
-      <section className="max-w-5xl mx-auto px-6 pt-24 pb-20 animate-slide-up">
-        <div className="mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-amber-500/20 bg-amber-500/5 text-amber-500 text-[10px] font-black uppercase tracking-[0.3em] mb-4">
-            <Zap size={12} /> Let's Talk
+      <section className="relative isolate flex min-h-[55svh] items-end overflow-hidden bg-[#050505] pb-20 pt-32 sm:min-h-[62svh] sm:pb-24">
+        <Image
+          src="/Clashiversary14_ONLY_BG.webp"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="absolute inset-0 -z-20 object-cover object-center"
+        />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-black/85 via-black/45 to-black/15" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-t from-[#050505] via-black/25 to-black/15" />
+
+        <div className="mx-auto w-full max-w-6xl px-5 sm:px-8">
+          <div className="max-w-3xl animate-slide-up">
+            <div className="mb-4 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.3em] text-amber-300">
+              <Zap size={12} /> Your Clash companion
+            </div>
+            <h1
+              className="text-5xl font-black uppercase italic leading-[0.9] tracking-tight text-white drop-shadow-[0_4px_28px_rgba(0,0,0,0.75)] sm:text-6xl md:text-8xl"
+              style={{ fontFamily: "'Docallisme', sans-serif" }}
+            >
+              Ask <span className="text-amber-400">Sigma</span>
+            </h1>
+            <p className="mt-5 max-w-lg text-sm leading-6 text-zinc-200/85 sm:text-base">
+              Strategy, clan info, and Clash questions. Let&apos;s figure it out together.
+            </p>
           </div>
-          <h1 className="text-4xl md:text-7xl font-black tracking-widest uppercase italic leading-[0.8]" style={{ fontFamily: "'Docallisme', sans-serif" }}>
-            TRIPLE <span className="text-amber-500">AI `SIGMA'</span>
-          </h1>
-          <p className="mt-5 text-zinc-500 font-bold uppercase tracking-[0.2em] text-[10px]">
-            Ask anything to Sigma. Built for every kind of CoC need.
-          </p>
         </div>
+      </section>
 
-        {/* Masukkan Client Component Chat di sini */}
+      <section className="relative z-10 mx-auto -mt-12 w-full max-w-5xl px-4 pb-20 sm:-mt-16 sm:px-8">
         <ChatInterface />
-
-        {/* Ad Unit di bawah chat interface */}
-        {/* <ProfitableAdUnit /> */}
       </section>
 
       {/* Footer: Persis seperti di Member Page */}

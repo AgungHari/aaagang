@@ -4,6 +4,8 @@ import { ModelOption } from "@/types/model-option";
 
 interface ChatHeaderProps {
   selectedModel: string;
+  sigmaMood: "happy" | "thinking" | "explaining";
+  isLoading: boolean;
   showModelDropdown: boolean;
   onToggleModelDropdown: () => void;
   onModelChange: (modelValue: string) => void;
@@ -13,6 +15,8 @@ interface ChatHeaderProps {
 
 export function ChatHeader({
   selectedModel,
+  sigmaMood,
+  isLoading,
   showModelDropdown,
   onToggleModelDropdown,
   onModelChange,
@@ -20,20 +24,33 @@ export function ChatHeader({
   modelOptions
 }: ChatHeaderProps) {
   return (
-    <div className="flex items-center justify-between gap-4 px-5 py-4 bg-zinc-950/95">
-      <div>
-        <p className="text-[5px] uppercase tracking-[0.36em] text-zinc-600">We do not store your chat logs.</p>
-        <ModelSelector
-          selectedModel={selectedModel}
-          showDropdown={showModelDropdown}
-          onToggleDropdown={onToggleModelDropdown}
-          onModelChange={onModelChange}
-          options={modelOptions}
-        />
+    <div className="relative z-20 flex items-center justify-between gap-3 rounded-t-2xl border-b border-white/[0.06] bg-zinc-950/80 px-4 py-3 sm:px-5">
+      <div className="min-w-0">
+        <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5">
+          <ModelSelector
+            selectedModel={selectedModel}
+            showDropdown={showModelDropdown}
+            onToggleDropdown={onToggleModelDropdown}
+            onModelChange={onModelChange}
+            options={modelOptions}
+          />
+          {isLoading && (
+            <>
+              <span className="text-[10px] text-zinc-600">·</span>
+              <span className="text-[10px] font-medium text-zinc-500">
+                {sigmaMood === "thinking" ? "Thinking..." : "Writing a reply..."}
+              </span>
+            </>
+          )}
+        </div>
+        <p className="mt-0.5 text-[10px] text-zinc-600">
+          Your chat stays on this device
+        </p>
       </div>
       <button
+        type="button"
         onClick={onClearChat}
-        className="inline-flex items-center gap-2 rounded-full px-3 py-2 text-[11px] font-semibold text-zinc-400 transition hover:text-white"
+        className="inline-flex shrink-0 items-center gap-2 rounded-lg px-3 py-2 text-[11px] font-medium text-zinc-500 transition hover:bg-white/5 hover:text-zinc-200"
       >
         <Trash2 size={14} /> Clear
       </button>

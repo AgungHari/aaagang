@@ -45,7 +45,7 @@ export default function SourceSection({
         href={sourceUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex text-sm items-center gap-2 bg-zinc-600/20 hover:bg-zinc-600/30 text-zinc-400 px-4 py-3 rounded-lg transition"
+        className="inline-flex min-h-10 items-center gap-2 px-1 text-sm font-medium text-zinc-400 transition-colors hover:text-amber-200 focus-visible:outline-none focus-visible:text-amber-200"
       >
         {getSourceIcon(sourceType)}
         <span>{sourceType || 'External Link'}</span>

@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from 'react';
 import { ThumbsUp, ThumbsDown, MessageCircleWarning, Loader2 } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 interface Comment {
   id: number;
@@ -225,9 +227,11 @@ export default function CommentList({
           </div>
 
           {/* Content */}
-          <p className="text-zinc-200 text-sm mb-4 leading-relaxed">
-            {comment.content}
-          </p>
+          <div className="mb-4 text-sm leading-relaxed text-zinc-200 [&_a]:text-amber-400 [&_a]:underline [&_blockquote]:border-l-2 [&_blockquote]:border-zinc-700 [&_blockquote]:pl-3 [&_code]:rounded [&_code]:bg-zinc-800 [&_code]:px-1 [&_code]:py-0.5 [&_li]:ml-4 [&_ol]:list-decimal [&_p]:mb-2 [&_pre]:overflow-x-auto [&_pre]:rounded [&_pre]:bg-zinc-800 [&_pre]:p-3 [&_ul]:list-disc">
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>
+              {comment.content}
+            </ReactMarkdown>
+          </div>
 
           {/* Actions */}
           <div className="flex gap-4 items-center">

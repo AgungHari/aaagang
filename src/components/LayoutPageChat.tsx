@@ -10,6 +10,7 @@ interface Message {
   role: "ai" | "user";
   text: string;
   thinking?: string;
+  sigmaMood?: "happy" | "thinking" | "explaining";
 }
 
 interface LayoutPageChatProps {
@@ -22,7 +23,7 @@ const STORAGE_KEY = "aaa-gang-layout-chat-log";
 const defaultLayoutPrompt = "Selamat datang di base layout, ketik untuk mencari base!";
 
 const initialMessages: Message[] = [
-  { role: "ai", text: defaultLayoutPrompt }
+  { role: "ai", text: defaultLayoutPrompt, sigmaMood: "happy" }
 ];
 
 const placeholderOptions = [
@@ -44,7 +45,7 @@ export default function LayoutPageChat({ clanName, initialMessage }: LayoutPageC
     : "aaa-gang-layout-chat-log";
 
   const defaultMessages: Message[] = initialMessage
-    ? [{ role: "ai", text: initialMessage }]
+    ? [{ role: "ai", text: initialMessage, sigmaMood: "happy" }]
     : initialMessages;
 
   const [messages, setMessages] = useState<Message[]>(defaultMessages);
@@ -92,7 +93,10 @@ export default function LayoutPageChat({ clanName, initialMessage }: LayoutPageC
     setMessages(newMessages);
     setInput("");
     setIsLoading(true);
-    setMessages((prev) => [...prev, { role: "ai", text: "" } as Message]);
+    setMessages((prev) => [
+      ...prev,
+      { role: "ai", text: "", sigmaMood: "thinking" },
+    ]);
 
     try {
       const formattedHistory = newMessages.map(msg => ({
@@ -177,7 +181,8 @@ export default function LayoutPageChat({ clanName, initialMessage }: LayoutPageC
           updated[lastIndex] = {
             ...updated[lastIndex],
             text: accumulatedText,
-            thinking: accumulatedThinking
+            thinking: accumulatedThinking,
+            sigmaMood: accumulatedText.trim() ? "explaining" : "thinking",
           };
           return updated;
         });
@@ -191,7 +196,20 @@ export default function LayoutPageChat({ clanName, initialMessage }: LayoutPageC
         updated[lastIndex] = {
           ...updated[lastIndex],
           text: accumulatedText,
-          thinking: accumulatedThinking
+          thinking: accumulatedThinking,
+          sigmaMood: accumulatedText.trim() ? "explaining" : "thinking",
+        };
+        return updated;
+      });
+    } catch (error) {
+      console.error("Sigma page chat failed:", error);
+      setMessages((prev) => {
+        const updated = [...prev];
+        const lastIndex = updated.length - 1;
+        updated[lastIndex] = {
+          ...updated[lastIndex],
+          text: "Maaf, Sigma gagal menjawab. Coba kirim pesanmu lagi sebentar.",
+          sigmaMood: "explaining",
         };
         return updated;
       });

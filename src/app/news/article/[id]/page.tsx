@@ -1,10 +1,11 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import MonetagVignette from '@/components/MonetagVignette';
 import { fetchNewsContent, parseNewsData, extractYouTubeId } from '@/lib/newsHelper';
 import { getClanData } from '@/lib/coc';
 import Link from 'next/link';
 
-import { ChevronLeft } from 'lucide-react';
+import { CalendarDays, ChevronLeft, Newspaper } from 'lucide-react';
 
 export default async function ArticlePage({
   params,
@@ -138,70 +139,87 @@ export default async function ArticlePage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />
+      <MonetagVignette />
 
-      <section className="max-w-4xl mx-auto px-6 pt-24 pb-20 animate-fade-inY">
+      <section className="mx-auto max-w-5xl px-4 pb-20 pt-24 animate-fade-inY sm:px-6">
         {/* Back Button */}
         <Link
           href="/news"
-          className="inline-flex items-center gap-2 text-amber-500 hover:text-amber-400 transition-colors mb-8 group"
+          className="group mb-7 inline-flex items-center gap-2 rounded-full border border-zinc-800/70 bg-zinc-900/40 px-4 py-2 text-sm font-semibold text-zinc-300 transition-all hover:border-amber-500/30 hover:text-amber-400"
         >
-          <ChevronLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
-          Back to News
+          <ChevronLeft size={17} className="transition-transform group-hover:-translate-x-1" />
+          <span>Kembali ke berita</span>
         </Link>
 
-        {/* Article Header */}
-        <div className="mb-8">
-          {/* Category */}
-          {article.categories && article.categories[0] && (
-            <div
-              className="inline-block px-3 py-1 rounded text-xs font-bold text-white mb-4"
-              style={{
-                backgroundColor: `${article.categories[0].color}cc`,
-              }}
-            >
-              {article.categories[0].title}
+        {/* Article title and hero media */}
+        <div className="relative mb-10 overflow-hidden rounded-[2rem] border border-zinc-800/70 bg-gradient-to-br from-zinc-900/80 via-zinc-950/90 to-amber-950/20 shadow-2xl sm:mb-12">
+          <div className="pointer-events-none absolute -right-20 -top-24 size-72 rounded-full bg-amber-500/[0.07] blur-3xl" />
+          <header className="relative p-6 sm:p-8 md:p-10">
+            <div className="mb-6 flex flex-wrap items-center gap-2">
+              <span className="inline-flex items-center gap-2 rounded-full border border-amber-500/20 bg-amber-500/10 px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.2em] text-amber-300">
+                <Newspaper size={13} /> Berita
+              </span>
+              {article.categories && article.categories[0] && (
+                <span
+                  className="rounded-full border border-white/10 px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-white"
+                  style={{
+                    backgroundColor: `${article.categories[0].color || '#f97316'}99`,
+                  }}
+                >
+                  {article.categories[0].title}
+                </span>
+              )}
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-zinc-800 bg-black/20 px-3 py-1.5 text-[10px] font-medium text-zinc-400">
+                <CalendarDays size={13} className="text-amber-500" />
+                {formattedDate}
+              </span>
             </div>
-          )}
 
-          {/* Title */}
-          <h1
-            className="text-4xl md:text-5xl lg:text-6xl leading-tight mb-4 uppercase text-amber-500 italic"
-            style={{ fontFamily: "'Docallisme', sans-serif" }}
-          >
-            {article.title}
-          </h1>
+            <h1
+              className="max-w-4xl text-3xl uppercase leading-[1.08] text-amber-500 sm:text-4xl md:text-5xl lg:text-6xl"
+              style={{ fontFamily: "'Docallisme', sans-serif" }}
+            >
+              {article.title}
+            </h1>
+            <div className="mt-6 h-px w-24 bg-gradient-to-r from-amber-500 to-transparent" />
+          </header>
 
-          {/* Date */}
-          <p className="text-zinc-500 text-sm md:text-base">{formattedDate}</p>
-        </div>
-
-        {/* Hero Image or Video */}
-        <div className="w-full mb-12 rounded-lg overflow-hidden bg-zinc-900/50 border border-zinc-800/50">
-          {youtubeEmbedUrl ? (
-            <iframe
-              src={youtubeEmbedUrl}
-              title={article.title}
-              className="w-full aspect-video"
-              allowFullScreen
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            />
-          ) : heroImageUrl ? (
-            <img src={heroImageUrl} alt={article.title} className="w-full h-auto" />
-          ) : (
-            <div className="aspect-video w-full bg-gradient-to-br from-zinc-800 to-zinc-900" />
-          )}
+          <div className="relative px-3 pb-3 sm:px-4 sm:pb-4">
+            <div className="relative aspect-video w-full overflow-hidden rounded-[1.5rem] border border-zinc-800/70 bg-gradient-to-br from-zinc-800 to-zinc-950">
+            {youtubeEmbedUrl ? (
+              <iframe
+                src={youtubeEmbedUrl}
+                title={article.title}
+                className="absolute inset-0 h-full w-full"
+                allowFullScreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              />
+            ) : heroImageUrl ? (
+              <img src={heroImageUrl} alt={article.title} className="h-full w-full object-cover" />
+            ) : (
+              <div className="absolute inset-0 bg-gradient-to-br from-zinc-800 to-zinc-950" />
+            )}
+            </div>
+          </div>
         </div>
 
         {/* Content */}
         {article.details && article.details.length > 0 && (
-          <div className="text-zinc-300 space-y-6">
+          <article className="rounded-[2rem] border border-zinc-800/60 bg-zinc-900/20 p-5 shadow-xl sm:p-8 md:p-10">
+            <div className="mb-7 flex items-center gap-3 border-b border-zinc-800/70 pb-5">
+              <span className="h-7 w-1 rounded-full bg-amber-500" />
+              <h2 className="text-xs font-black uppercase tracking-[0.25em] text-zinc-400">
+                Isi Berita
+              </h2>
+            </div>
+            <div className="space-y-8 text-zinc-300">
             {article.details.map((detail: any, index: number) => (
               <div
                 key={index}
                 className="leading-relaxed text-sm md:text-base"
               >
                 <div
-                  className="prose prose-invert max-w-none prose-headings:text-amber-500 prose-a:text-amber-500 prose-a:hover:text-amber-400 prose-strong:text-zinc-100 prose-em:text-zinc-200 prose-p:text-zinc-300 prose-li:text-zinc-300"
+                  className="prose prose-invert max-w-none prose-headings:font-bold prose-headings:tracking-wide prose-headings:text-amber-400 prose-a:text-amber-400 prose-a:underline-offset-4 hover:prose-a:text-amber-300 prose-strong:text-zinc-100 prose-em:text-zinc-200 prose-p:leading-8 prose-p:text-zinc-300 prose-li:text-zinc-300 prose-hr:border-zinc-800"
                   dangerouslySetInnerHTML={{
                     __html: (detail.body || '')
                       .replace(/&lt;/g, '<')
@@ -228,7 +246,8 @@ export default async function ArticlePage({
                 />
               </div>
             ))}
-          </div>
+            </div>
+          </article>
         )}
       </section>
 

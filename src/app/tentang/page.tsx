@@ -6,7 +6,19 @@ import { getClanData } from "@/lib/coc";
 import { AboutCard } from "@/components/AboutCard";
 import { TimelineItem } from "@/components/TimelineItem";
 import ScrollReveal from "@/components/ScrollReveal";
-import { Shield, Target, Zap, Users, Heart, Clock, ShieldCheck, HandHeart, Swords, Medal, MessageCircle, Repeat } from "lucide-react";
+import {
+  ArrowClockwise,
+  ChatCircleText,
+  Clock,
+  HandHeart,
+  Heart,
+  Lightning,
+  Medal,
+  ShieldCheck,
+  Sword,
+  Target,
+  UsersThree,
+} from "@phosphor-icons/react/ssr";
 
 export default async function AboutPage() {
   const clan = await getClanData();
@@ -39,22 +51,22 @@ export default async function AboutPage() {
 
   const visions = [
     { icon: Target, title: "Visi Kami", description: "Membangun komunitas Clash of Clans yang solid, kompetitif, namun tetap santai. Kekalahan di War hanyalah bahan evaluasi (dan candaan) untuk kemenangan hari esok." },
-    { icon: Users, title: "Komunitas", description: "Bukan sekadar clan biasa, AAA GANG adalah tempat berkumpulnya para pemain yang menghargai loyalitas dan respect satu sama lain." }
+    { icon: UsersThree, title: "Komunitas", description: "Bukan sekadar clan biasa, AAA GANG adalah tempat berkumpulnya para pemain yang menghargai loyalitas dan respect satu sama lain." }
   ];
 
   const rules = [
-    { icon: Heart, title: "Rule 1", description: "Respect satu sama lain (jangan hina ras suku maupun agama kepada pribadi lain)" },
-    { icon: Zap, title: "Rule 2", description: "Wajib on minimal seminggu sekali (kalau berhalangan bisa izin)" },
-    { icon: Clock, title: "Rule 3", description: "Tidak ada aturan nomer saat war bebas serang siapa cepat dia dapat!" },
-    { icon: ShieldCheck, title: "Rule 4", description: "Memasuki clan artinya bersedia berkomitment kuat terhadap nilai-nilai dan komunitas clan" }
+    { icon: Heart, title: "Saling Menghormati", description: "Respect satu sama lain. Hindari hinaan terkait ras, suku, maupun agama." },
+    { icon: Lightning, title: "Tetap Aktif", description: "Wajib aktif minimal seminggu sekali. Kalau berhalangan, cukup beri kabar." },
+    { icon: Clock, title: "Bebas Menyerang", description: "Tidak ada aturan nomor saat war—bebas serang, siapa cepat dia dapat!" },
+    { icon: ShieldCheck, title: "Jaga Komitmen", description: "Bergabung berarti bersedia berkomitmen pada nilai dan komunitas clan." }
   ];
 
   const elder = [
-    { icon: HandHeart, title: "Rule 1", description: "Donasi dan Request tinggi." },
-    { icon: Swords, title: "Rule 2", description: "Sering login dan aktif dalam war." },
-    { icon: Medal, title: "Rule 3", description: "Sering mendapatkan gelar Giant Slayer, Blitzkrieg dan Perfect attack." },
-    { icon: MessageCircle, title: "Rule 4", description: "Sering berinteraksi dengan member lain" },
-    { icon: Repeat, title: "Rule 5", description: "CWL full attack 7 hari berturut-turut" }
+    { icon: HandHeart, title: "Ringan Tangan", description: "Aktif membantu clan melalui donasi dan memenuhi request." },
+    { icon: Sword, title: "Siap Berperang", description: "Sering login dan aktif berpartisipasi dalam war." },
+    { icon: Medal, title: "Berprestasi", description: "Rutin menunjukkan performa kuat dan meraih gelar seperti Giant Slayer, Blitzkrieg, atau Perfect Attack." },
+    { icon: ChatCircleText, title: "Komunikatif", description: "Sering berinteraksi dan menjaga suasana positif bersama member lain." },
+    { icon: ArrowClockwise, title: "Konsisten di CWL", description: "Menyelesaikan semua serangan CWL selama tujuh hari berturut-turut." }
   ];
 
   const timeline = [
@@ -113,7 +125,7 @@ export default async function AboutPage() {
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />
 
       {/* Video Hero Section */}
-      <section className="relative w-full h-screen md:h-96 mt-[50px] mb-20 overflow-hidden">
+      <section className="relative isolate min-h-[100svh] w-full mb-20 overflow-hidden bg-[#050505]">
         <BrowserVideo
           src="/About_Main.webm"
           safariSrc="/About_Safari.mov"
@@ -122,9 +134,11 @@ export default async function AboutPage() {
 
         {/* Dark Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-black/20" />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-56 bg-gradient-to-b from-transparent via-[#050505]/75 to-[#050505] sm:h-72" />
 
         {/* Content Overlay */}
-        <div className="absolute inset-0 flex flex-col justify-center items-center px-6 md:px-12">
+        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-6 md:px-12">
           <ScrollReveal delay={0.1}>
             <div className="max-w-2xl text-center">
               <h2 className="text-5xl md:text-7xl uppercase font-black italic leading-tight mb-4" style={{ fontFamily: "'Docallisme', sans-serif" }}>
@@ -140,44 +154,48 @@ export default async function AboutPage() {
         </div>
       </section>
 
-      <section className="max-w-4xl mx-auto px-6 pb-32" id="about-us">
-        {/* Vision Grid Section */}
+      <section className="mx-auto max-w-4xl px-5 pb-28 sm:px-8" id="about-us">
+        <div className="mb-8 max-w-2xl">
+          <p className="mb-3 text-[10px] font-black uppercase tracking-[0.25em] text-amber-500">Yang menyatukan kami</p>
+          <h2 className="text-3xl uppercase leading-tight text-zinc-100 sm:text-4xl" style={{ fontFamily: "'Docallisme', sans-serif" }}>
+            Bukan sekadar <span className="text-amber-500">clan</span>
+          </h2>
+        </div>
 
-        {/* Vision Grid - Pakai Map */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-          {visions.map((v, i) => <AboutCard key={i} {...v} />)}
+        <div className="mb-6 grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">
+          {visions.map((v, i) => (
+            <ScrollReveal key={v.title} delay={i * 0.06}>
+              <AboutCard {...v} />
+            </ScrollReveal>
+          ))}
         </div>
 
         <SectionDivider label="Timeline 2013–2026" />
 
-        {/* Timeline - Pakai Map */}
-        <div className="mb-20">
-           <div className="space-y-10">
+        <div className="relative mb-8 space-y-4 before:absolute before:bottom-2 before:left-3 before:top-2 before:w-px before:bg-gradient-to-b before:from-transparent before:via-amber-500/50 before:to-transparent before:content-[''] md:space-y-7 md:before:left-1/2 md:before:-translate-x-1/2">
               {timeline.map((t, i) => (
-                <ScrollReveal key={i} delay={i * 0.1}>
-                  <TimelineItem key={i} {...t} />
+                <ScrollReveal key={t.year} delay={Math.min(i * 0.04, 0.2)}>
+                  <TimelineItem {...t} index={i} />
                 </ScrollReveal>
               ))}
-           </div>
         </div>
 
         <SectionDivider label="RULES" />
 
-        {/* Rules Grid - Pakai Map */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">
           {rules.map((r, i) => (
-            <ScrollReveal key={i} delay={i * 0.05}>
-              <AboutCard key={i} {...r} />
+            <ScrollReveal key={r.title} delay={i * 0.04}>
+              <AboutCard {...r} />
             </ScrollReveal>
           ))}
         </div>
 
         <SectionDivider label="Syarat Jadi Elder" />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">
           {elder.map((r, i) => (
-            <ScrollReveal key={i} delay={i * 0.05}>
-              <AboutCard key={i} {...r} />
+            <ScrollReveal key={r.title} delay={i * 0.04}>
+              <AboutCard {...r} />
             </ScrollReveal>
           ))}
         </div>

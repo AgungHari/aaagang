@@ -1,8 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
 import { Eye, ExternalLink } from 'lucide-react';
+import Link from 'next/link';
 import LikeButton from './LikeButton';
 import { incrementViewCount } from '@/app/layout/action';
 
@@ -47,19 +47,17 @@ export default function LayoutStats({
   }, [layoutId]);
 
   return (
-    <div className="flex items-center gap-6 pt-4 border-t border-white/10">
-      <div className="flex items-center gap-2 text-gray-400">
-        <Eye size={18} />
-        <span className="text-sm">
-          {currentViews} <span className="hidden md:inline">Views</span>
-        </span>
+    <div className="flex flex-wrap items-center gap-x-7 gap-y-2">
+      <div className="inline-flex min-h-10 items-center gap-2 px-1 text-sm text-zinc-500">
+        <Eye size={16} />
+        <span>{currentViews} views</span>
       </div>
       <LikeButton layoutId={layoutId} initialCount={likeCount} />
       <Link
         href={copyLink}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 bg-amber-600 hover:bg-amber-900 text-white px-4 py-2 rounded-lg transition font-semibold text-sm shrink-0 animate-pulse"
+        className="inline-flex min-h-10 shrink-0 items-center gap-2 px-1 text-sm font-medium text-amber-400 transition-colors hover:text-amber-200 focus-visible:outline-none focus-visible:text-amber-200"
       >
         <ExternalLink size={16} />
         Import

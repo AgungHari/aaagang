@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import { Filter, X, Tags, ArrowUpDown } from 'lucide-react';
+import { Check, ChevronDown, Filter, RotateCcw, Tags, ArrowUpDown } from 'lucide-react';
 import Link from 'next/link';
 import ScrollReveal from '@/components/ScrollReveal';
 import LayoutCard from '@/components/LayoutCard';
@@ -29,9 +29,21 @@ export default function LayoutsFilter({ layouts }: LayoutsFilterProps) {
   const [selectedTH, setSelectedTH] = useState<number | null>(null);
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
   const [sortMode, setSortMode] = useState<'newest' | 'views'>('newest');
-  const [isOpenTH, setIsOpenTH] = useState(false);
-  const [isOpenTag, setIsOpenTag] = useState(false);
-  const [isOpenSort, setIsOpenSort] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<'townHall' | 'tag' | 'sort' | null>(null);
+
+  const toggleDropdown = (dropdown: 'townHall' | 'tag' | 'sort') => {
+    setOpenDropdown((current) => current === dropdown ? null : dropdown);
+  };
+
+  const optionClass = (selected: boolean) =>
+    `flex w-full items-center justify-between gap-4 rounded-lg px-3 py-2.5 text-left text-sm transition-colors ${
+      selected
+        ? 'bg-amber-500/10 font-semibold text-amber-300'
+        : 'text-zinc-300 hover:bg-white/[0.05] hover:text-white'
+    }`;
+
+  const dropdownClass =
+    'absolute left-0 top-full z-50 mt-2 min-w-48 overflow-hidden rounded-xl border border-zinc-700/80 bg-zinc-950/95 p-1.5 shadow-[0_16px_45px_-20px_rgba(0,0,0,0.9)] backdrop-blur-xl';
 
   // Get unique TH levels dari layouts, sorted
   const thLevels = useMemo(() => {
@@ -111,48 +123,77 @@ export default function LayoutsFilter({ layouts }: LayoutsFilterProps) {
 
   return (
     <>
-      {/* Filter Buttons & Dropdowns */}
-      <div className="flex flex-wrap items-center gap-3 mb-8">
+      <div className="mb-8 rounded-2xl border border-zinc-800/70 bg-zinc-950/55 p-3 sm:p-4">
+        <div className="mb-3 flex items-center justify-between gap-3">
+          <div className="flex items-center gap-2 text-[9px] font-black uppercase tracking-[0.2em] text-zinc-500">
+            <Filter size={13} className="text-amber-400" />
+            Refine layouts
+          </div>
+          {(selectedTH !== null || selectedTag !== null) && (
+            <button
+              type="button"
+              onClick={() => {
+                setSelectedTH(null);
+                setSelectedTag(null);
+                setOpenDropdown(null);
+              }}
+              className="inline-flex items-center gap-1.5 rounded-md px-2 py-1 text-[9px] font-bold uppercase tracking-wider text-zinc-500 transition-colors hover:bg-white/5 hover:text-amber-300"
+            >
+              <RotateCcw size={12} />
+              Reset filters
+            </button>
+          )}
+        </div>
+
+        <div className="flex flex-wrap items-center gap-2.5">
         {/* TH Level Filter */}
         <div className="relative">
           <button
-            onClick={() => setIsOpenTH(!isOpenTH)}
-            className="flex items-center gap-2 px-3 py-2 bg-zinc-900/80 border border-amber-500/30 hover:border-amber-500/60 rounded-xl transition text-amber-400 font-semibold text-sm shadow-[0_0_0_1px_rgba(251,191,36,0.08)]"
+            type="button"
+            aria-expanded={openDropdown === 'townHall'}
+            aria-haspopup="menu"
+            onClick={() => toggleDropdown('townHall')}
+            className={`inline-flex h-10 items-center gap-2 rounded-xl border px-3.5 text-xs font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 ${
+              selectedTH !== null || openDropdown === 'townHall'
+                ? 'border-amber-400/50 bg-amber-400/10 text-amber-200'
+                : 'border-zinc-700/80 bg-zinc-900/70 text-zinc-300 hover:border-amber-400/35 hover:text-amber-200'
+            }`}
           >
-            <Filter size={14} className="opacity-90" />
-            <span className="hidden sm:inline">TH {selectedTH ? selectedTH : 'Level'}</span>
+            <Filter size={14} />
+            <span>TH {selectedTH ?? 'Level'}</span>
+            <ChevronDown size={13} className={`text-zinc-500 transition-transform ${openDropdown === 'townHall' ? 'rotate-180' : ''}`} />
           </button>
 
-          {/* TH Dropdown Menu */}
-          {isOpenTH && (
-            <div className="absolute top-full left-0 mt-2 bg-zinc-900 border border-white/10 rounded-lg shadow-lg z-50 min-w-40">
-              {/* Reset Filter */}
+          {openDropdown === 'townHall' && (
+            <div className={dropdownClass} role="menu" aria-label="Filter by Town Hall">
+              <p className="px-3 pb-2 pt-1 text-[9px] font-black uppercase tracking-[0.16em] text-zinc-600">Town Hall level</p>
               <button
+                type="button"
+                role="menuitemradio"
+                aria-checked={selectedTH === null}
                 onClick={() => {
                   setSelectedTH(null);
-                  setIsOpenTH(false);
+                  setOpenDropdown(null);
                 }}
-                className="w-full text-left px-4 py-2 hover:bg-white/5 transition text-sm text-gray-300 border-b border-white/5 flex items-center gap-2"
+                className={optionClass(selectedTH === null)}
               >
-                <X size={14} />
-                Clear
+                All Town Halls
+                {selectedTH === null && <Check size={14} className="text-amber-400" />}
               </button>
-
-              {/* TH Level Options */}
               {thLevels.map(th => (
                 <button
                   key={th}
+                  type="button"
+                  role="menuitemradio"
+                  aria-checked={selectedTH === th}
                   onClick={() => {
                     setSelectedTH(th);
-                    setIsOpenTH(false);
+                    setOpenDropdown(null);
                   }}
-                  className={`w-full text-left px-4 py-2 hover:bg-white/5 transition text-sm ${
-                    selectedTH === th
-                      ? 'bg-amber-500/20 text-amber-400 font-semibold'
-                      : 'text-gray-300'
-                  }`}
+                  className={optionClass(selectedTH === th)}
                 >
                   TH {th}
+                  {selectedTH === th && <Check size={14} className="text-amber-400" />}
                 </button>
               ))}
             </div>
@@ -162,43 +203,51 @@ export default function LayoutsFilter({ layouts }: LayoutsFilterProps) {
         {/* Base Tag Filter */}
         <div className="relative">
           <button
-            onClick={() => setIsOpenTag(!isOpenTag)}
-            className="flex items-center gap-2 px-3 py-2 bg-zinc-900/80 border border-blue-500/30 hover:border-blue-500/60 rounded-xl transition text-blue-400 font-semibold text-sm shadow-[0_0_0_1px_rgba(96,165,250,0.08)]"
+            type="button"
+            aria-expanded={openDropdown === 'tag'}
+            aria-haspopup="menu"
+            onClick={() => toggleDropdown('tag')}
+            className={`inline-flex h-10 max-w-56 items-center gap-2 rounded-xl border px-3.5 text-xs font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 ${
+              selectedTag !== null || openDropdown === 'tag'
+                ? 'border-amber-400/50 bg-amber-400/10 text-amber-200'
+                : 'border-zinc-700/80 bg-zinc-900/70 text-zinc-300 hover:border-amber-400/35 hover:text-amber-200'
+            }`}
           >
-            <Tags size={14} className="opacity-90" />
-            <span className="hidden sm:inline">{selectedTag ? selectedTag : 'Base Tag'}</span>
+            <Tags size={14} className="shrink-0" />
+            <span className="truncate">{selectedTag ?? 'Base tag'}</span>
+            <ChevronDown size={13} className={`shrink-0 text-zinc-500 transition-transform ${openDropdown === 'tag' ? 'rotate-180' : ''}`} />
           </button>
 
-          {/* Tag Dropdown Menu */}
-          {isOpenTag && (
-            <div className="absolute top-full left-0 mt-2 bg-zinc-900 border border-white/10 rounded-lg shadow-lg z-50 min-w-40">
-              {/* Reset Filter */}
+          {openDropdown === 'tag' && (
+            <div className={dropdownClass} role="menu" aria-label="Filter by base tag">
+              <p className="px-3 pb-2 pt-1 text-[9px] font-black uppercase tracking-[0.16em] text-zinc-600">Base type</p>
               <button
+                type="button"
+                role="menuitemradio"
+                aria-checked={selectedTag === null}
                 onClick={() => {
                   setSelectedTag(null);
-                  setIsOpenTag(false);
+                  setOpenDropdown(null);
                 }}
-                className="w-full text-left px-4 py-2 hover:bg-white/5 transition text-sm text-gray-300 border-b border-white/5 flex items-center gap-2"
+                className={optionClass(selectedTag === null)}
               >
-                <X size={14} />
-                Clear
+                All base types
+                {selectedTag === null && <Check size={14} className="text-amber-400" />}
               </button>
-
-              {/* Tag Options */}
               {baseTags.map(tag => (
                 <button
                   key={tag}
+                  type="button"
+                  role="menuitemradio"
+                  aria-checked={selectedTag === tag}
                   onClick={() => {
                     setSelectedTag(tag);
-                    setIsOpenTag(false);
+                    setOpenDropdown(null);
                   }}
-                  className={`w-full text-left px-4 py-2 hover:bg-white/5 transition text-sm ${
-                    selectedTag === tag
-                      ? 'bg-blue-500/20 text-blue-400 font-semibold'
-                      : 'text-gray-300'
-                  }`}
+                  className={optionClass(selectedTag === tag)}
                 >
                   {tag}
+                  {selectedTag === tag && <Check size={14} className="text-amber-400" />}
                 </button>
               ))}
             </div>
@@ -208,40 +257,49 @@ export default function LayoutsFilter({ layouts }: LayoutsFilterProps) {
         {/* Sort Filter */}
         <div className="relative">
           <button
-            onClick={() => setIsOpenSort(!isOpenSort)}
-            className="flex items-center gap-2 px-3 py-2 bg-zinc-900/80 border border-violet-500/30 hover:border-violet-500/60 rounded-xl transition text-violet-400 font-semibold text-sm shadow-[0_0_0_1px_rgba(167,139,250,0.08)]"
+            type="button"
+            aria-expanded={openDropdown === 'sort'}
+            aria-haspopup="menu"
+            onClick={() => toggleDropdown('sort')}
+            className={`inline-flex h-10 items-center gap-2 rounded-xl border px-3.5 text-xs font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 ${
+              openDropdown === 'sort'
+                ? 'border-amber-400/50 bg-amber-400/10 text-amber-200'
+                : 'border-zinc-700/80 bg-zinc-900/70 text-zinc-300 hover:border-amber-400/35 hover:text-amber-200'
+            }`}
           >
-            <ArrowUpDown size={14} className="opacity-90" />
-            <span className="hidden sm:inline">{sortMode === 'views' ? 'Most Viewed' : 'Newest'}</span>
+            <ArrowUpDown size={14} />
+            <span>{sortMode === 'views' ? 'Most viewed' : 'Newest'}</span>
+            <ChevronDown size={13} className={`text-zinc-500 transition-transform ${openDropdown === 'sort' ? 'rotate-180' : ''}`} />
           </button>
 
-          {isOpenSort && (
-            <div className="absolute top-full left-0 mt-2 bg-zinc-900 border border-white/10 rounded-lg shadow-lg z-50 min-w-44">
+          {openDropdown === 'sort' && (
+            <div className={dropdownClass} role="menu" aria-label="Sort layouts">
+              <p className="px-3 pb-2 pt-1 text-[9px] font-black uppercase tracking-[0.16em] text-zinc-600">Sort by</p>
               <button
+                type="button"
+                role="menuitemradio"
+                aria-checked={sortMode === 'newest'}
                 onClick={() => {
                   setSortMode('newest');
-                  setIsOpenSort(false);
+                  setOpenDropdown(null);
                 }}
-                className={`w-full text-left px-4 py-2 hover:bg-white/5 transition text-sm ${
-                  sortMode === 'newest'
-                    ? 'bg-violet-500/20 text-violet-400 font-semibold'
-                    : 'text-gray-300'
-                }`}
+                className={optionClass(sortMode === 'newest')}
               >
                 Newest
+                {sortMode === 'newest' && <Check size={14} className="text-amber-400" />}
               </button>
               <button
+                type="button"
+                role="menuitemradio"
+                aria-checked={sortMode === 'views'}
                 onClick={() => {
                   setSortMode('views');
-                  setIsOpenSort(false);
+                  setOpenDropdown(null);
                 }}
-                className={`w-full text-left px-4 py-2 hover:bg-white/5 transition text-sm ${
-                  sortMode === 'views'
-                    ? 'bg-violet-500/20 text-violet-400 font-semibold'
-                    : 'text-gray-300'
-                }`}
+                className={optionClass(sortMode === 'views')}
               >
                 Most Viewed
+                {sortMode === 'views' && <Check size={14} className="text-amber-400" />}
               </button>
             </div>
           )}
@@ -251,6 +309,7 @@ export default function LayoutsFilter({ layouts }: LayoutsFilterProps) {
         <span className="text-sm text-gray-400 ml-auto md:ml-0">
           {filteredLayouts.length} layout{filteredLayouts.length !== 1 ? 's' : ''}
         </span>
+        </div>
       </div>
 
       {/* Layouts Grid */}

@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import { ArrowUpRight } from 'lucide-react';
 
 interface RelatedLayout {
   id: number | string;
@@ -44,38 +45,57 @@ export default function RelatedLayoutsList({
   if (layouts.length === 0) return null;
 
   return (
-    <div className='border-t border-zinc-800/50 pt-8'>
-      <h2 className="text-2xl font-bold mb-6 text-white">
-        Layouts TH {thLevel} Lainnya
-      </h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <section className="border-t border-zinc-800/70 pt-8 sm:pt-10">
+      <div className="mb-6 flex items-end justify-between gap-4">
+        <div>
+          <p className="mb-2 text-[9px] font-black uppercase tracking-[0.2em] text-amber-400">
+            Explore more bases
+          </p>
+          <h2 className="text-xl font-bold tracking-tight text-zinc-100 sm:text-2xl">
+            More Town Hall {thLevel} layouts
+          </h2>
+        </div>
+        <span className="hidden shrink-0 text-xs font-medium text-zinc-500 sm:block">
+          Same Town Hall
+        </span>
+      </div>
+
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
         {layouts.map((related) => (
           <Link
             key={Number(related.id)}
             href={`/layout/${Number(related.id)}`}
-            className="group bg-zinc-900/50 border border-white/10 rounded-2xl overflow-hidden hover:border-amber-500/50 transition-all"
+            className="group min-w-0"
           >
-            {related.image_url && (
-              <div className="relative w-full aspect-video overflow-hidden bg-zinc-800">
+            <div className="relative aspect-[16/10] w-full overflow-hidden rounded-xl bg-zinc-900">
+              {related.image_url ? (
                 <Image
                   src={String(related.image_url)}
-                  alt={String(related.base_tag)}
+                  alt={parseDescription(String(related.description || '')).title}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover transition duration-500 group-hover:scale-[1.03] group-hover:opacity-90"
                 />
-              </div>
-            )}
-            <div className="p-4">
-              <h3 className="font-semibold text-white group-hover:text-amber-500 transition-colors line-clamp-2">
+              ) : (
+                <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-zinc-900 to-zinc-950" />
+              )}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent opacity-70 transition-opacity group-hover:opacity-100" />
+              <span className="absolute bottom-3 left-3 rounded-md border border-white/15 bg-black/50 px-2 py-1 text-[9px] font-bold uppercase tracking-[0.14em] text-zinc-100 backdrop-blur-sm">
+                {String(related.base_tag)}
+              </span>
+            </div>
+            <div className="flex items-start justify-between gap-3 px-0.5 pt-3">
+              <h3 className="line-clamp-2 text-sm font-semibold leading-6 text-zinc-200 transition-colors group-hover:text-amber-300 sm:text-base">
                 {parseDescription(String(related.description || '')).title}
               </h3>
-              <p className="text-sm text-gray-400 mt-1">
-                {String(related.base_tag)}
-              </p>
+              <ArrowUpRight
+                size={16}
+                className="mt-1 shrink-0 text-zinc-600 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-amber-400"
+              />
             </div>
           </Link>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

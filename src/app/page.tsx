@@ -137,9 +137,9 @@ export default async function Home() {
         {/* Clan Badge */}
         <Link
           href="/members"
-          className="flex items-center gap-2 rounded-full p-1 pr-3 mt-23 font-poppins text-amber-100 bg-amber-200/15 border border-amber-500/20 animate-slide-up transition hover:border-amber-500/40 hover:bg-amber-500/10"
+          className="mt-23 flex items-center gap-2 rounded-full border border-amber-500/20 bg-amber-200/10 p-1 pr-3 font-poppins text-amber-100 transition-colors hover:border-amber-500/40 hover:bg-amber-500/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
         >
-          <span className="bg-amber-800 text-white text-xs px-3.5 py-1 rounded-full font-black">
+          <span className="rounded-full bg-amber-900 px-3.5 py-1 text-xs font-black text-white">
             {totalMemberCount < 100 ? "OPEN" : "CLOSED"}
           </span>
           <p className="flex items-center gap-1 text-sm">
@@ -150,10 +150,9 @@ export default async function Home() {
         
         {/* Main Title */}
         <MorphingTitle />
-        
-        {/* Clan Description */}
-        <p className="text-base text-center text-slate-300 max-w-lg md:max-w-lg lg:max-w-lg mb-8 font-poppins animate-slide-up">
-          Di sini strategi dimainkan, sesuai dengan yang diramalkan kami akan menang dengan mudah. 
+
+        <p className="mt-2 mb-8 max-w-lg text-center text-base text-slate-300" style={{ fontFamily: "'Clash', sans-serif" }}>
+          Gold, Glory, and The Gospel
         </p>
         
         {/* Action Buttons */}
@@ -169,7 +168,7 @@ export default async function Home() {
           </a>
           <Link 
             href="/sigma"
-            className="flex items-center gap-1 border-2 border-amber-900 hover:bg-amber-950/50 transition rounded rounded-tl-3xl rounded-br-3xl rounded-bl-3xl px-6 h-11 font-medium animate-slide-up"
+            className="flex items-center gap-1 border-2 border-amber-900 hover:bg-amber-950/50 transition rounded rounded-tl-3xl rounded-br-3xl rounded-bl-3xl px-6 h-11 font-medium font-poppins animate-slide-up"
           >
             <Sigma strokeWidth={1} size={18} />
             <span>Ask Sigma</span>

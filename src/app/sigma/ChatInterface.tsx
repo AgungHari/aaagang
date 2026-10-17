@@ -10,6 +10,7 @@ interface Message {
   role: "ai" | "user";
   text: string;
   thinking?: string; // Optional untuk teks "mikir"
+  sigmaMood?: "happy" | "thinking" | "explaining";
 }
 
 const STORAGE_KEY = "aaa-gang-chat-log";
@@ -50,6 +51,7 @@ export default function ChatInterface() {
   const [isLoading, setIsLoading] = useState(false);
   const [selectedModel, setSelectedModel] = useState("plus");
   const [showModelDropdown, setShowModelDropdown] = useState(false);
+  const [sigmaMood, setSigmaMood] = useState<"happy" | "thinking" | "explaining">("happy");
 
   // Load chat dari localStorage
   useEffect(() => {
@@ -71,6 +73,7 @@ export default function ChatInterface() {
     if (confirm("Hapus semua memori Sigma?")) {
       setMessages(initialMessages);
       localStorage.removeItem(STORAGE_KEY);
+      setSigmaMood("happy");
     }
   };
 
@@ -79,6 +82,7 @@ export default function ChatInterface() {
       if (confirm("Merubah varian akan menghapus memori sigma")) {
         setMessages(initialMessages);
         localStorage.removeItem(STORAGE_KEY);
+        setSigmaMood("happy");
         setSelectedModel(newModelValue);
         setShowModelDropdown(false);
       }
@@ -96,7 +100,11 @@ export default function ChatInterface() {
     setMessages(newMessages);
     setInput("");
     setIsLoading(true);
-    setMessages((prev) => [...prev, { role: "ai", text: "" } as Message]);
+    setSigmaMood("thinking");
+    setMessages((prev) => [
+      ...prev,
+      { role: "ai", text: "", sigmaMood: "thinking" },
+    ]);
 
     try {
       const formattedHistory = newMessages.map(msg => ({
@@ -152,6 +160,7 @@ export default function ChatInterface() {
               } else if (typeof delta.content === "string") {
                 // Kalau bentuknya String, berarti dia lagi "Bicara" jawaban akhir
                 accumulatedText += delta.content;
+                if (delta.content.trim()) setSigmaMood("explaining");
               }
             }
 
@@ -188,7 +197,8 @@ export default function ChatInterface() {
           updated[lastIndex] = {
             ...updated[lastIndex],
             text: accumulatedText,
-            thinking: accumulatedThinking
+            thinking: accumulatedThinking,
+            sigmaMood: accumulatedText.trim() ? "explaining" : "thinking",
           };
           return updated;
         });
@@ -202,7 +212,21 @@ export default function ChatInterface() {
         updated[lastIndex] = {
           ...updated[lastIndex],
           text: accumulatedText,
-          thinking: accumulatedThinking
+          thinking: accumulatedThinking,
+          sigmaMood: accumulatedText.trim() ? "explaining" : "thinking",
+        };
+        return updated;
+      });
+    } catch (error) {
+      console.error("Sigma chat failed:", error);
+      setSigmaMood("explaining");
+      setMessages((prev) => {
+        const updated = [...prev];
+        const lastIndex = updated.length - 1;
+        updated[lastIndex] = {
+          ...updated[lastIndex],
+          text: "Maaf, Sigma gagal menjawab. Coba kirim pesanmu lagi sebentar.",
+          sigmaMood: "explaining",
         };
         return updated;
       });
@@ -212,9 +236,11 @@ export default function ChatInterface() {
   };
 
   return (
-    <div className="ring-1 ring-white/10 flex flex-col h-[min(88vh,740px)] max-h-[calc(100vh-3rem)] overflow-visible shadow-[0_35px_80px_rgba(0,0,0,0.35)]">
+    <div className="flex h-[min(78vh,760px)] min-h-[520px] flex-col overflow-visible rounded-2xl border border-white/10 bg-[#090909]/95 shadow-[0_35px_90px_rgba(0,0,0,0.55)] backdrop-blur-xl">
       <ChatHeader
         selectedModel={selectedModel}
+        sigmaMood={sigmaMood}
+        isLoading={isLoading}
         showModelDropdown={showModelDropdown}
         onToggleModelDropdown={() => setShowModelDropdown(!showModelDropdown)}
         onModelChange={handleModelChange}

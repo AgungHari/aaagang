@@ -48,10 +48,10 @@ export default function LikeButton({ layoutId, initialCount }: LikeButtonProps) 
     <button
       onClick={handleLike}
       disabled={hasLiked || isLoading}
-      className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg transition font-semibold text-sm ${
+      className={`inline-flex min-h-10 items-center gap-2 px-1 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:text-amber-200 ${
         hasLiked
-          ? 'bg-blue-500/20 text-blue-400 cursor-not-allowed'
-          : 'bg-blue-600/20 hover:bg-blue-600/30 text-blue-400 active:scale-[0.98]'
+          ? 'text-amber-300'
+          : 'text-zinc-400 hover:text-amber-200'
       }`}
     >
       <ThumbsUp size={16} />
