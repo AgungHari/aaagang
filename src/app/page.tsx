@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import TiltedImage from "@/components/TiltImage";
+import HomeHeroBackground from "@/components/HomeHeroBackground";
 import ScrollReveal from "@/components/ScrollReveal";
 import HallOfFame from "@/components/HallOfFame";
 import LeaderboardCard from "@/components/LeaderboardCard";
@@ -125,13 +126,14 @@ export default async function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <DecorativeHeroes />
       
       {/* 1. Navbar Component */}
       <Navbar clanName={clan.name} badge="/badge_clan.webp" />
 
       {/* Hero Section - Merged from HeroSection.tsx */}
-      <section className="relative flex flex-col items-center justify-center px-4 md:px-16 lg:px-24 xl:px-32 pt-20 pb-20">
+      <section className="relative isolate flex flex-col items-center justify-center px-4 md:px-16 lg:px-24 xl:px-32 pt-20 pb-20">
+        <HomeHeroBackground />
+        <DecorativeHeroes />
         <div className="absolute top-30 -z-10 left-1/4 size-72 bg-amber-600/10 blur-[300px]"></div>
         
         {/* Clan Badge */}

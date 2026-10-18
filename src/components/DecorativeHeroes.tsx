@@ -11,14 +11,14 @@ export default function DecorativeHeroes() {
       xl:top-[7%] xl:left-[-28%] 
       2xl:top-[7%] 2xl:left-[-21%] 
       3xl:top-[7%] 3xl:left-[-12%]
-      -z-10 opacity-10 pointer-events-none animate-fade-inX"> 
+      -z-10 opacity-100 pointer-events-none animate-fade-inX">
         <Image 
-          src="/Minion_Archer.webp" 
+          src="/octo_queen_rc98.webp" 
           alt="Archer Queen" 
           width={500}
           height={500}
           loading="eager"
-          className="w-40 md:w-96 lg:w-110 xl:w-200 h-auto object-contain"
+          className="w-40 md:w-96 lg:w-110 xl:w-200 h-auto object-contain brightness-70"
         />
       </div>
       <div className="hidden md:block absolute 
@@ -28,14 +28,14 @@ export default function DecorativeHeroes() {
       xl:top-[7%] xl:right-[-34%]
       2xl:top-[7%] 2xl:right-[-27%]
       3xl:top-[7%] 3xl:right-[-15%]
-      -z-10 opacity-10 pointer-events-none animate-fade-inX">
+      -z-10 opacity-100 pointer-events-none animate-fade-inX">
         <Image 
-          src="/Duke_Warden.webp" 
+          src="/octo_warden_bk99.webp" 
           alt="Warden" 
           width={500}
           height={500}
           loading="eager"
-          className="w-40 md:w-96 lg:w-120 xl:w-215 h-auto object-contain"
+          className="w-40 md:w-96 lg:w-120 xl:w-215 h-auto object-contain brightness-70"
         />
       </div>
     </>
