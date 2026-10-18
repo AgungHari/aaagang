@@ -17,7 +17,17 @@ const client = createClient({
 export default async function LayoutPage() {
   const [clan, layoutsResult] = await Promise.all([
     getClanData(),
-    client.execute("SELECT * FROM layouts ORDER BY upload_date DESC"),
+    client.execute(`
+      SELECT layouts.*, COALESCE(comment_counts.comment_count, 0) AS comment_count
+      FROM layouts
+      LEFT JOIN (
+        SELECT layout_id, COUNT(*) AS comment_count
+        FROM layout_comments
+        WHERE is_visible = TRUE
+        GROUP BY layout_id
+      ) AS comment_counts ON comment_counts.layout_id = layouts.id
+      ORDER BY layouts.upload_date DESC
+    `),
   ]);
 
   if (!clan) {

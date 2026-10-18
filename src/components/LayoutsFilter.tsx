@@ -2,7 +2,6 @@
 
 import { useState, useMemo } from 'react';
 import { Check, ChevronDown, Filter, RotateCcw, Tags, ArrowUpDown } from 'lucide-react';
-import Link from 'next/link';
 import ScrollReveal from '@/components/ScrollReveal';
 import LayoutCard from '@/components/LayoutCard';
 
@@ -18,6 +17,7 @@ interface Layout {
   upload_date: string;
   view_count: number;
   like_count: number;
+  comment_count: number;
   is_active: number;
 }
 
@@ -30,6 +30,23 @@ export default function LayoutsFilter({ layouts }: LayoutsFilterProps) {
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
   const [sortMode, setSortMode] = useState<'newest' | 'views'>('newest');
   const [openDropdown, setOpenDropdown] = useState<'townHall' | 'tag' | 'sort' | null>(null);
+
+  const baseFileNumbers = useMemo(() => {
+    const chronologicalLayouts = layouts
+      .filter(layout => layout.is_active === 1)
+      .toSorted((a, b) => {
+        const aTime = new Date(a.upload_date).getTime();
+        const bTime = new Date(b.upload_date).getTime();
+
+        if (Number.isNaN(aTime)) return Number.isNaN(bTime) ? a.id - b.id : 1;
+        if (Number.isNaN(bTime)) return -1;
+        return aTime - bTime || a.id - b.id;
+      });
+
+    return new Map(
+      chronologicalLayouts.map((layout, index) => [Number(layout.id), index + 1])
+    );
+  }, [layouts]);
 
   const toggleDropdown = (dropdown: 'townHall' | 'tag' | 'sort') => {
     setOpenDropdown((current) => current === dropdown ? null : dropdown);
@@ -320,27 +337,24 @@ export default function LayoutsFilter({ layouts }: LayoutsFilterProps) {
 
             return (
                 <ScrollReveal key={layout.id} delay={index * 0.002}>
-                <Link 
-                  href={`/layout/${Number(layout.id)}`}
-                  className="hover:opacity-90 transition-opacity"
-                >
-                  <LayoutCard
-                    id={Number(layout.id)}
-                    th_level={Number(layout.th_level)}
-                    base_tag={String(layout.base_tag)}
-                    copy_link={String(layout.copy_link)}
-                    image_url={String(layout.image_url)}
-                    description={String(layout.description || "")}
-                    source_type={String(layout.source_type || "")}
-                    source_url={String(layout.source_url || "")}
-                    upload_date={String(layout.upload_date)}
-                    view_count={Number(layout.view_count || 0)}
-                    like_count={Number(layout.like_count || 0)}
-                    is_active={Number(layout.is_active || 1)}
-                    isNewest={isNewest}
-                    isPriority={index === 0}
-                  />
-                </Link>
+                <LayoutCard
+                  id={Number(layout.id)}
+                  baseFileNumber={baseFileNumbers.get(Number(layout.id)) ?? 0}
+                  th_level={Number(layout.th_level)}
+                  base_tag={String(layout.base_tag)}
+                  copy_link={String(layout.copy_link)}
+                  image_url={String(layout.image_url)}
+                  description={String(layout.description || "")}
+                  source_type={String(layout.source_type || "")}
+                  source_url={String(layout.source_url || "")}
+                  upload_date={String(layout.upload_date)}
+                  view_count={Number(layout.view_count || 0)}
+                  like_count={Number(layout.like_count || 0)}
+                  comment_count={Number(layout.comment_count || 0)}
+                  is_active={Number(layout.is_active || 1)}
+                  isNewest={isNewest}
+                  isPriority={index === 0}
+                />
               </ScrollReveal>
             );
           })}
