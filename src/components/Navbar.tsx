@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, ChevronDown, Handshake, Shield, Sigma, User, Users, Import, Trophy, Sword, ClipboardPenLine, Newspaper, BookOpen } from "lucide-react";
+import { Menu, X, ChevronDown, Handshake, Shield, Sigma, User, Users, Import, Trophy, Sword, ClipboardPenLine, Newspaper, BookOpen, ScanLine } from "lucide-react";
 import { motion } from "framer-motion";
 import { Poppins } from "next/font/google";
 
@@ -26,13 +26,14 @@ export default function Navbar({ clanName, badge }: { clanName: string, badge: s
 
   const featureLinks = [
     { name: "Base Layouts", href: "/layout", disabled: false, icon: Import, description: "Explore & Import base layouts", image: "/Scenery_XL_AnimeFury_Shrink.webp" },
+    { name: "Basehunt", href: "/basehunt", disabled: false, icon: ScanLine, description: "Temukan base serupa dari screenshot", image: "/basehunt.webp" },
     { name: "Player Search", href: "/search", disabled: false, icon: User, description: "Cari & Stalk players", image: "/GW_DarkDays_f22_2k_V2.webp" },
     { name: "Clan Search", href: "/clansearch", disabled: false, icon: Users, description: "Cari & Stalk clans", image: "/BK_DE_Pose02_NoShadows.webp" },
     { name: "Live War Status", href: "/livewarstatus", disabled: false, icon: Sword, description: "Statistik War Live", image: "/Icon_HV_CWL_Silver_13_Shrink.webp" },
     { name: "CWL Live Reports", href: "/livecwlstatus", disabled: false, icon: ClipboardPenLine, description: "Live Report CWL", image: "/Icon_HV_CWL_Champion_3_Shrink.webp" }, 
     { name: "Deffend Analysis", href: "/deffendanalysis", disabled: true, icon: Shield, description: "Analisa Defffense Berbasis AI", image: "/Hero_Pet_HV_Angry_Jelly_05.webp" },
     { name: "Attack Coaching", href: "/cwlsearch", disabled: true, icon: Trophy, description: "Attack Pathing Berbasis AI", image: "/Super_Troop_Super_Wizard_2.webp" },
-    { name: "Friendly Wars", href: "/friendlywars", disabled: true, icon: Handshake, description: "Tantangan Friendly Wars", image: "/Troop_BB_Raged_Barbarian_no_grass.webp" },
+    // { name: "Friendly Wars", href: "/friendlywars", disabled: true, icon: Handshake, description: "Tantangan Friendly Wars", image: "/Troop_BB_Raged_Barbarian_no_grass.webp" },
   ];
 
   const newsLinks = [

@@ -4,12 +4,14 @@ import { useEffect, useState } from 'react';
 
 type BrowserVideoProps = {
     className?: string;
+    controls?: boolean;
     src: string;
     safariSrc: string;
 };
 
 export default function BrowserVideo({
     className,
+    controls = false,
     src,
     safariSrc,
 }: BrowserVideoProps) {
@@ -30,6 +32,7 @@ export default function BrowserVideo({
             muted
             loop
             playsInline
+            controls={controls}
             className={className}
         />
     );
