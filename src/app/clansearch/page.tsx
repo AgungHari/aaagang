@@ -1,12 +1,13 @@
 'use client';
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import { Search, Users, Trophy, Sword, ArrowRight, Shield } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
-import BrowserVideo from "@/components/BrowserVideo";
+import FeatureTutorialVideo from "@/components/FeatureTutorialVideo";
 
 export default function ClanSearchPage() {
   const [searchTag, setSearchTag] = useState("");
@@ -77,9 +78,20 @@ export default function ClanSearchPage() {
   }
 
   return (
-    <main className="relative w-full min-h-screen text-zinc-100 font-poppins selection:bg-amber-500 selection:text-black overflow-x-hidden">
-      {/* Background Ornamen Gradien Halus */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-amber-500/5 blur-[120px] rounded-full pointer-events-none z-0" />
+    <main className="relative isolate w-full min-h-screen overflow-x-hidden bg-[#050505] text-zinc-100 font-poppins selection:bg-amber-500 selection:text-black">
+      <div className="pointer-events-none absolute inset-x-0 top-0 -z-20 h-[760px] md:h-[900px]">
+        <Image
+          src="/Loading_Screen_2022_Clan_Capital.webp"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/40 to-black/25" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/15 via-[#050505]/35 to-[#050505]" />
+      </div>
+      <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[760px] bg-[radial-gradient(ellipse_at_50%_0%,rgba(245,158,11,0.16),transparent_52%)] md:h-[900px]" />
 
       <Navbar clanName={clanData.name} badge="/badge_clan.webp" />
 
@@ -92,9 +104,6 @@ export default function ClanSearchPage() {
           <h1 className="text-5xl md:text-7xl uppercase italic leading-none" style={{ fontFamily: "'Docallisme', sans-serif" }}>
             Find <span className="text-amber-500 drop-shadow-[0_4px_12px_rgba(245,158,11,0.15)]">Clan</span>
           </h1>
-          <p className="text-zinc-400 text-sm md:text-base mt-4 max-w-2xl leading-relaxed">
-            Dapatkan info detail clan Clash of Clans dengan memasukkan tag mereka. Lihat member, level, war league, dan statistik lainnya! (in progress)
-          </p>
         </div>
 
         {/* Search Form */}
@@ -224,21 +233,11 @@ export default function ClanSearchPage() {
 
         {/* Video Tutorial Section (Hanya tampil sebelum search) */}
         {!hasSearched && (
-          <ScrollReveal delay={0.1}>
-            <div className="mb-8 p-4 bg-zinc-900/20 border border-zinc-900/50 rounded-[2rem] backdrop-blur-sm mx-auto shadow-2xl relative group hover:border-zinc-800 transition-colors duration-300">
-              <div className="flex items-center gap-2 mb-3 px-1.5 text-[10px] font-black uppercase tracking-widest text-zinc-500 transition-colors">
-                <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"/>Cara Salin Tag Klan
-              </div>
-                      
-              <div className="relative aspect-video rounded-2xl overflow-hidden border border-zinc-800/80 bg-zinc-950 shadow-inner">
-                <BrowserVideo
-                  src="/Feature_ClanSearch.webm"
-                  safariSrc="/Feature_ClanSearch_Safari.mov"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          </ScrollReveal>
+          <FeatureTutorialVideo
+            title="Cara Salin Tag Klan"
+            src="/Feature_ClanSearch.webm"
+            safariSrc="/Feature_ClanSearch_Safari.mov"
+          />
         )}
 
         {/* Info Section (FIXED & SYMMETRICAL) */}

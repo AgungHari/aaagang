@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import FeatureTutorialVideo from "@/components/FeatureTutorialVideo";
 import {
   AlertCircle,
   ArrowRight,
@@ -10,11 +11,9 @@ import {
   RotateCcw,
   ScanLine,
   ShieldCheck,
-  Sparkles,
   Upload,
   X,
 } from "lucide-react";
-import BrowserVideo from "@/components/BrowserVideo";
 import LayoutCard from "@/components/LayoutCard";
 
 const MAX_IMAGE_BYTES = 10 * 1024 * 1024;
@@ -188,7 +187,19 @@ export default function BasehuntSearch() {
   return (
     <>
       <section className="relative isolate overflow-hidden px-5 pb-12 pt-32 sm:px-8 sm:pb-16 md:pt-40">
-        <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_50%_0%,rgba(245,158,11,0.13),transparent_52%)]" />
+        <div className="pointer-events-none absolute inset-x-0 top-0 -z-20 h-[760px] md:h-[900px]">
+          <Image
+            src="/Loading_Screen_2023_September.webp"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/40 to-black/25" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/15 via-[#050505]/35 to-[#050505]" />
+        </div>
+        <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[760px] bg-[radial-gradient(ellipse_at_50%_0%,rgba(245,158,11,0.16),transparent_52%)] md:h-[900px]" />
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-3xl text-center">
             <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-amber-400/25 bg-amber-400/[0.06] px-3.5 py-2 text-[9px] font-black uppercase tracking-[0.24em] text-amber-300 sm:text-[10px]">
@@ -200,61 +211,10 @@ export default function BasehuntSearch() {
               <br />
               <span className="text-amber-400">NEXT BASE</span>
             </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-zinc-400 sm:text-base">
-              Unggah screenshot base Clash of Clans. Basehunt akan mencari lima layout aktif yang paling mirip dari koleksi kami.
-            </p>
           </div>
 
-          <section
-            aria-labelledby="basehunt-tutorial-title"
-            className="mx-auto mt-9 max-w-5xl overflow-hidden rounded-[1.75rem] border border-zinc-800/80 bg-gradient-to-br from-zinc-950 via-zinc-950 to-amber-950/15"
-          >
-            <div className="grid lg:grid-cols-[minmax(0,1.2fr)_minmax(280px,0.8fr)]">
-              <div className="relative aspect-video min-h-52 overflow-hidden border-b border-zinc-800/70 bg-zinc-950 lg:border-b-0 lg:border-r">
-                <BrowserVideo
-                  src="/Basehunt.webm"
-                  safariSrc="/Basehunt_Safari.mov"
-                  controls
-                  className="h-full w-full object-cover"
-                />
-                <span className="absolute bottom-3 right-3 rounded-md border border-white/10 bg-black/65 px-2 py-1 text-[8px] font-bold uppercase tracking-[0.15em] text-zinc-300 backdrop-blur">
-                  how to use basehunt
-                </span>
-              </div>
-
-              <div className="flex flex-col justify-center p-5 sm:p-7">
-                <p className="text-[9px] font-black uppercase tracking-[0.22em] text-amber-400">
-                  Panduan Basehunt
-                </p>
-                <h2
-                  id="basehunt-tutorial-title"
-                  className="mt-2 text-2xl font-black uppercase italic leading-tight text-white sm:text-3xl"
-                  style={{ fontFamily: "'Docallisme', sans-serif" }}
-                >
-                  Tiga langkah
-                  <br />
-                  <span className="text-amber-400">cari base</span>
-                </h2>
-                <ol className="mt-5 space-y-3">
-                  {[
-                    "Screenshot base Clash of Clans yang ingin dicari.",
-                    "Tekan scan base untuk memulai pencarian, tunggu beberapa detik hingga hasil muncul.",
-                    "Pilih salah satu dari lima hasil yang paling mirip, lalu buka detail atau import ke akunmu.",
-                  ].map((step, index) => (
-                    <li key={step} className="flex items-start gap-3 text-xs leading-5 text-zinc-400">
-                      <span className="flex size-6 shrink-0 items-center justify-center rounded-lg border border-amber-400/20 bg-amber-400/[0.06] text-[9px] font-black text-amber-300">
-                        0{index + 1}
-                      </span>
-                      <span className="pt-0.5">{step}</span>
-                    </li>
-                  ))}
-                </ol>
-              </div>
-            </div>
-          </section>
-
-          <div className="mx-auto mt-10 grid max-w-5xl gap-5 lg:grid-cols-[minmax(0,1.15fr)_minmax(280px,0.85fr)]">
-            <div className="rounded-[1.75rem] border border-zinc-800/80 bg-zinc-950/75 p-4 shadow-[0_24px_80px_-45px_rgba(245,158,11,0.25)] backdrop-blur sm:p-6">
+          <div className="mx-auto mt-9 grid max-w-5xl items-stretch gap-5 lg:grid-cols-[minmax(0,1.15fr)_minmax(280px,0.85fr)]">
+            <div className="flex flex-col rounded-[2rem] border border-zinc-900/50 bg-zinc-900/20 p-4 shadow-2xl backdrop-blur-sm transition-colors duration-300 hover:border-zinc-800 sm:p-6">
               <div className="mb-4 flex items-center justify-between gap-4">
                 <div>
                   <p className="text-[9px] font-black uppercase tracking-[0.2em] text-amber-400">01 / Upload screenshot</p>
@@ -303,10 +263,10 @@ export default function BasehuntSearch() {
                   setDragging(false);
                   selectImage(event.dataTransfer.files[0]);
                 }}
-                className={`group relative flex min-h-64 w-full flex-col items-center justify-center overflow-hidden rounded-2xl border border-dashed p-5 text-center transition sm:min-h-72 disabled:cursor-wait disabled:opacity-70 ${
+                className={`group relative flex min-h-64 w-full flex-1 flex-col items-center justify-center overflow-hidden rounded-2xl border border-dashed p-5 text-center transition sm:min-h-72 disabled:cursor-wait disabled:opacity-70 ${
                   dragging
                     ? "border-amber-300 bg-amber-400/[0.08]"
-                    : "border-zinc-700 bg-black/35 hover:border-amber-400/50 hover:bg-amber-400/[0.03]"
+                    : "border-white/10 bg-white/[0.02] backdrop-blur-sm hover:border-amber-400/40 hover:bg-white/[0.04]"
                 }`}
               >
                 {previewUrl ? (
@@ -339,7 +299,7 @@ export default function BasehuntSearch() {
               </button>
 
               {file && (
-                <div className="mt-3 flex items-center justify-between gap-3 rounded-xl border border-zinc-800/70 bg-black/30 px-3.5 py-3">
+                <div className="mt-3 flex items-center justify-between gap-3 rounded-xl border border-white/[0.08] bg-white/[0.03] px-3.5 py-3 backdrop-blur-sm">
                   <div className="flex min-w-0 items-center gap-2.5">
                     <ImagePlus size={15} className="shrink-0 text-amber-400" />
                     <span className="truncate text-xs font-semibold text-zinc-300">{file.name}</span>
@@ -393,38 +353,44 @@ export default function BasehuntSearch() {
               )}
             </div>
 
-            <aside className="flex flex-col justify-between rounded-[1.75rem] border border-zinc-800/70 bg-gradient-to-br from-zinc-900/70 via-zinc-950/80 to-amber-950/15 p-5 sm:p-7">
-              <div>
-                <div className="mb-5 inline-flex size-11 items-center justify-center rounded-2xl border border-amber-500/20 bg-amber-500/[0.07] text-amber-300">
-                  <Sparkles size={21} />
+            <div className="space-y-5">
+              <FeatureTutorialVideo
+                title="Cara Menggunakan Basehunt"
+                src="/Basehunt.webm"
+                safariSrc="/Basehunt_Safari.mov"
+                className="mb-0"
+              />
+
+              <aside className="rounded-[1.75rem] border border-zinc-800/70 bg-gradient-to-br from-zinc-900/70 via-zinc-950/80 to-amber-950/15 p-5 sm:p-6">
+                <div>
+                  <p className="text-[9px] font-black uppercase tracking-[0.2em] text-amber-400">How it works</p>
+                  <h2 className="mt-1 text-lg font-black uppercase italic leading-tight text-white" style={{ fontFamily: "'Docallisme', sans-serif" }}>
+                    Screenshot to layout
+                  </h2>
                 </div>
-                <p className="text-[9px] font-black uppercase tracking-[0.2em] text-amber-400">How it works</p>
-                <h2 className="mt-2 text-2xl font-black uppercase italic leading-tight text-white sm:text-3xl" style={{ fontFamily: "'Docallisme', sans-serif" }}>
-                  YOUR SCREENSHOT
-                  <br />
-                  <span className="text-amber-400">MEETS THE ARCHIVE</span>
-                </h2>
-                <div className="mt-6 space-y-4">
+
+                <ol className="mt-5 grid gap-3 sm:grid-cols-3 lg:grid-cols-1">
                   {[
-                    ["01", "Upload screenshot", "Screenshot base yang ingin kamu cari."],
-                    ["02", "AI Mencocokkan", "AI akan menganalisis screenshot dan mencari lima layout aktif yang paling mirip dari ratusan base di database kami."],
-                    ["03", "Pilih hasil", "Buka detail atau import salah satu dari lima hasil."],
+                    ["01", "Upload", "Pilih screenshot base."],
+                    ["02", "Cari kemiripan", "AI mencocokkan dengan layout aktif."],
+                    ["03", "Pilih layout", "Buka detail atau import hasilnya."],
                   ].map(([number, title, description]) => (
-                    <div key={number} className="flex gap-3">
-                      <span className="flex size-7 shrink-0 items-center justify-center rounded-lg border border-amber-400/20 bg-amber-400/[0.06] text-[9px] font-black text-amber-300">{number}</span>
-                      <div>
-                        <p className="text-xs font-bold text-zinc-200">{title}</p>
-                        <p className="mt-1 text-[10px] leading-5 text-zinc-500">{description}</p>
-                      </div>
-                    </div>
+                    <li key={number} className="flex items-start gap-3 rounded-xl border border-white/[0.05] bg-black/20 p-3">
+                      <span className="flex size-6 shrink-0 items-center justify-center rounded-lg border border-amber-400/20 bg-amber-400/[0.06] text-[9px] font-black text-amber-300">{number}</span>
+                      <span>
+                        <span className="block text-xs font-bold text-zinc-200">{title}</span>
+                        <span className="mt-1 block text-[10px] leading-4 text-zinc-500">{description}</span>
+                      </span>
+                    </li>
                   ))}
+                </ol>
+
+                <div className="mt-4 flex items-start gap-2.5 border-t border-white/[0.07] pt-4 text-[10px] leading-5 text-zinc-500">
+                  <ShieldCheck size={15} className="mt-0.5 shrink-0 text-amber-500/70" />
+                  Screenshot hanya digunakan untuk pencarian dan tidak disimpan.
                 </div>
-              </div>
-              <div className="mt-7 flex items-start gap-2.5 border-t border-white/[0.07] pt-4 text-[10px] leading-5 text-zinc-600">
-                <ShieldCheck size={15} className="mt-0.5 shrink-0 text-amber-500/70" />
-                Screenshot yang kamu unggah hanya digunakan untuk mencari base. Kami tidak menyimpan screenshot yang kamu unggah.
-              </div>
-            </aside>
+              </aside>
+            </div>
           </div>
         </div>
       </section>

@@ -1,0 +1,64 @@
+name: Keep Basehunt Space Awake
+
+on:
+  schedule:
+    - cron: "17 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: basehunt-space-keepalive
+  cancel-in-progress: false
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Send sample image to Basehunt API
+        env:
+          BASEHUNT_API_URL: ${{ vars.BASEHUNT_API_URL || 'https://agunghari2-llm111.hf.space' }}
+          BASEHUNT_API_KEY: ${{ secrets.BASEHUNT_API_KEY }}
+        run: |
+          set -euo pipefail
+
+          if [[ -z "$BASEHUNT_API_KEY" ]]; then
+            echo "::error::Add BASEHUNT_API_KEY as a GitHub Actions repository secret."
+            exit 1
+          fi
+
+          response_file="$(mktemp)"
+          trap 'rm -f "$response_file"' EXIT
+
+          if ! status_code="$(curl \
+            --silent \
+            --show-error \
+            --max-time 900 \
+            --output "$response_file" \
+            --write-out '%{http_code}' \
+            --request POST \
+            --header "X-API-Key: $BASEHUNT_API_KEY" \
+            --form 'image=@public/CronJob_keepalive.jpg;type=image/jpeg' \
+            "${BASEHUNT_API_URL%/}/match")"; then
+            echo "::error::Could not reach the Basehunt API."
+            exit 1
+          fi
+
+          if [[ "$status_code" != "200" ]]; then
+            echo "::error::Basehunt API returned HTTP $status_code."
+            cat "$response_file"
+            exit 1
+          fi
+
+          if ! jq -e '.matches | type == "array"' "$response_file" >/dev/null; then
+            echo "::error::Basehunt API returned an unexpected response."
+            cat "$response_file"
+            exit 1
+          fi
+
+          echo "Basehunt API is responding successfully."

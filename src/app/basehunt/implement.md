@@ -5,10 +5,13 @@ perubahan berikutnya dapat mengikuti alur dan batasan yang sudah ada.
 
 ## Struktur
 
-- `page.tsx` — route App Router `/basehunt`, metadata halaman, navbar, dan
-  komponen pencarian.
-- `../../components/BasehuntSearch.tsx` — UI client untuk tutorial, upload,
+- `page.tsx` — route App Router `/basehunt`, metadata halaman, navbar,
+  komponen pencarian, dan footer.
+- `../../components/BasehuntSearch.tsx` — UI client untuk upload,
   preview, pencarian, error/loading, dan hasil Top 5.
+- `../../components/FeatureTutorialVideo.tsx` — container tutorial video yang
+  konsisten untuk Search, Clan Search, Live War, Live CWL, dan Basehunt; video
+  autoplay tanpa kontrol native.
 - `../api/basehunt/route.ts` — endpoint server-side `POST /api/basehunt`.
 - `../../components/BrowserVideo.tsx` — memilih aset video berdasarkan browser.
 - `../../../public/Basehunt.webm` — video untuk browser selain Safari.
@@ -56,6 +59,22 @@ Jangan gunakan prefix `NEXT_PUBLIC_` untuk API key atau kredensial Turso.
 Nilai secret harus disetel melalui secret manager hosting, tidak ditulis ke
 source, dokumentasi, log, atau bundle browser. API key yang pernah dibagikan
 harus dirotasi sebelum production jika belum dilakukan.
+
+## Workflow keep-alive Hugging Face
+
+`.github/workflows/basehunt-keepalive.yml` mengirim
+`public/CronJob_keepalive.jpg` ke `POST /match` sekali sehari melalui GitHub
+Actions, dan bisa dijalankan manual dengan
+**Actions → Keep Basehunt Space Awake → Run workflow**. Workflow ini
+memerlukan secret repository `BASEHUNT_API_KEY`. URL Space memakai default
+`https://agunghari2-llm111.hf.space`; untuk menggantinya, atur repository
+variable `BASEHUNT_API_URL`.
+
+Request inference ini dapat membangunkan Space yang sedang sleep, tetapi
+penjadwalan GitHub Actions tidak dijamin tepat waktu dan bukan jaminan Space
+selalu hidup. Pada hardware berbayar, request juga dapat menimbulkan biaya
+karena inference dijalankan. Untuk ketersediaan tanpa sleep, gunakan pengaturan
+paid hardware Hugging Face.
 
 ## Batas upload dan kegagalan
 
